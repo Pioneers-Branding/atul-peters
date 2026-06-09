@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initStickyNav();
   initBackToTop();
   initJourneySpine();
-  initHeroCarousel();
+  initHeroVideo();
   initSuccessCarousel();
   initVideoList();
   initFitnessFactory();
@@ -225,7 +225,7 @@ function initBMICalculator() {
 
 /* === Animated Counters === */
 function initCounters() {
-  const counters = document.querySelectorAll('.int-num[data-target]');
+  const counters = document.querySelectorAll('.int-num[data-target], .about-stats-num[data-target]');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -233,7 +233,7 @@ function initCounters() {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.3 });
 
   counters.forEach(c => observer.observe(c));
 }
@@ -313,68 +313,50 @@ function initBackToTop() {
   btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 }
 
-/* === Hero Carousel === */
-function initHeroCarousel() {
-  const carousel = document.getElementById('heroCarousel');
-  const prevBtn = document.getElementById('carouselPrev');
-  const nextBtn = document.getElementById('carouselNext');
-  const dotsContainer = document.getElementById('carouselDots');
-  const progressBar = document.getElementById('carouselProgress');
+/* === Hero Video === */
+function initHeroVideo() {
+  const video = document.querySelector('.hero-video');
+  if (!video) return;
 
-  if (!carousel) return;
-  const slides = carousel.querySelectorAll('.hero-slide');
-  if (slides.length <= 1) return;
+  // Force the looping + autoplay attributes programmatically too, in case
+  // any markup stripping removed them.
+  video.muted = true;
+  video.loop = true;
+  video.playsInline = true;
+  video.autoplay = true;
 
-  let current = 0;
-  let autoPlayInterval;
-  let progressInterval;
-  const duration = 6000;
-
-  // Create dots
-  slides.forEach((_, i) => {
-    const dot = document.createElement('button');
-    dot.className = `carousel-dot${i === 0 ? ' active' : ''}`;
-    dot.setAttribute('aria-label', `Slide ${i + 1}`);
-    dot.addEventListener('click', () => goTo(i));
-    dotsContainer.appendChild(dot);
+  // Safety net: if the `loop` attribute ever fails (e.g. video streams that
+  // don't have a clean end-of-stream), rewind and play again.
+  video.addEventListener('ended', () => {
+    video.currentTime = 0;
+    video.play().catch(() => { /* ignore */ });
   });
-  const dots = dotsContainer.querySelectorAll('.carousel-dot');
 
-  function goTo(i) {
-    slides[current].classList.remove('active');
-    dots[current].classList.remove('active');
-    current = i;
-    slides[current].classList.add('active');
-    dots[current].classList.add('active');
-    resetProgress();
+  // Some browsers (esp. mobile) ignore `autoplay` even when muted is set.
+  // Calling .play() explicitly — wrapped in a promise catch so it never throws.
+  const tryPlay = () => {
+    const p = video.play();
+    if (p && typeof p.catch === 'function') p.catch(() => { /* autoplay blocked; poster shown */ });
+  };
+  tryPlay();
+
+  // If the video ever gets paused (tab background, browser policy, etc.),
+  // re-trigger playback on the next user-visible tick.
+  video.addEventListener('pause', () => {
+    if (video.currentTime >= video.duration - 0.1) return; // ended-handler will run
+    setTimeout(tryPlay, 250);
+  });
+
+  // Pause when off-screen to save battery/CPU; resume on return.
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) tryPlay();
+        else video.pause();
+      });
+    }, { threshold: 0.25 });
+    io.observe(video);
   }
-
-  function resetProgress() {
-    let prog = 0;
-    clearInterval(progressInterval);
-    progressInterval = setInterval(() => {
-      prog += 100 / (duration / 50);
-      if (progressBar) progressBar.style.width = `${Math.min(prog, 100)}%`;
-      if (prog >= 100) clearInterval(progressInterval);
-    }, 50);
-  }
-
-  function next() { goTo((current + 1) % slides.length); }
-  function prev() { goTo((current - 1 + slides.length) % slides.length); }
-
-  prevBtn?.addEventListener('click', () => { prev(); resetProgress(); });
-  nextBtn?.addEventListener('click', () => { next(); resetProgress(); });
-
-  let paused = false;
-  carousel.addEventListener('mouseenter', () => paused = true);
-  carousel.addEventListener('mouseleave', () => { paused = false; resetProgress(); });
-
-  let tx = 0, txEnd = 0;
-  carousel.addEventListener('touchstart', e => { tx = e.changedTouches[0].screenX; paused = true; }, { passive: true });
-  carousel.addEventListener('touchend', e => { txEnd = e.changedTouches[0].screenX; if (tx - txEnd > 50) next(); else if (txEnd - tx > 50) prev(); resetProgress(); paused = false; }, { passive: true });
-
-  autoPlayInterval = setInterval(() => { if (!paused) next(); }, duration);
-  resetProgress();
 }
 
 /* === Success Stories Carousel === */
@@ -477,6 +459,86 @@ function initFitnessFactory() {
     });
   });
 }
+
+/* === FAQ Category Filter === */
+function initFAQFilter() {
+  const cats = document.querySelectorAll('.faq-cat');
+  const cards = document.querySelectorAll('.faq-card');
+
+  cats.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const cat = btn.dataset.cat;
+
+      // Toggle active state
+      cats.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Filter cards with animation
+      cards.forEach(card => {
+        const cardCat = card.dataset.category;
+        if (cat === 'all' || cardCat === cat) {
+          card.style.display = 'block';
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(10px)';
+          requestAnimationFrame(() => {
+            card.style.transition = 'all 0.3s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          });
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+}
+
+// Initialize if present
+document.addEventListener('DOMContentLoaded', () => {
+  if (document.querySelector('.faq-cat')) {
+    initFAQFilter();
+  }
+});
+
+/* === FAQ Category Filter === */
+function initFAQFilter() {
+  const cats = document.querySelectorAll('.faq-cat');
+  const cards = document.querySelectorAll('.faq-card');
+
+  cats.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const cat = btn.dataset.cat;
+
+      // Toggle active state
+      cats.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Filter cards with animation
+      cards.forEach(card => {
+        const cardCat = card.dataset.category;
+        if (cat === 'all' || cardCat === cat) {
+          card.style.display = 'block';
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(10px)';
+          requestAnimationFrame(() => {
+            card.style.transition = 'all 0.3s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          });
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+}
+
+// Initialize if present
+document.addEventListener('DOMContentLoaded', () => {
+  if (document.querySelector('.faq-cat')) {
+    initFAQFilter();
+  }
+});
 
 /* === Spinner CSS === */
 const style = document.createElement('style');

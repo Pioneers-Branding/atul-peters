@@ -85,7 +85,7 @@
       </a>
 
       <ul class="nav-menu" id="navLinks">
-        <li class="nav-item"><a href="https://www.atulpeters.com/about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
         <li class="nav-item has-dropdown">
           <a href="https://www.atulpeters.com/weight-loss-surgery/overview" class="nav-link">Weight Loss Surgery <svg
               width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -170,45 +170,17 @@
     </div>
   </nav>
 
-  <!-- Hero Carousel -->
+  <!-- Hero Video -->
   <section class="hero" id="home">
-    <div class="hero-carousel" id="heroCarousel">
-      <div class="hero-slide active">
+    <div class="hero-video-wrap">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto"
+        poster="https://www.atulpeters.com/front/img2/Smart-Bariatric-Web-banner-01-2024.webp">
+        <source src="https://dzen-two.vercel.app/video-hero.mp4" type="video/mp4">
+        <!-- Fallback image if video cannot play -->
         <img src="https://www.atulpeters.com/front/img2/Smart-Bariatric-Web-banner-01-2024.webp" alt="Dr. Atul Peters"
           class="hero-bg-img">
-      </div>
-      <div class="hero-slide">
-        <img src="https://www.atulpeters.com/front/img2/Smart-Bariatric-Web-banner-02-2025.webp"
-          alt="Smart Bariatric Surgery" class="hero-bg-img">
-      </div>
-      <div class="hero-slide">
-        <img src="https://www.atulpeters.com/front/img2/Smart-Bariatric-Web-banner-03-2024.webp" alt="Metabolic Surgery"
-          class="hero-bg-img">
-      </div>
-      <div class="hero-slide">
-        <img src="https://www.atulpeters.com/front/img2/Smart-Bariatric-Web-banner-04-2024.webp"
-          alt="Bariatric Excellence" class="hero-bg-img">
-      </div>
-      <div class="hero-slide">
-        <img src="https://www.atulpeters.com/front/img2/Smart-Bariatric-Web-banner-05-2024.webp" alt="Weight Loss"
-          class="hero-bg-img">
-      </div>
-    </div>
-    <div class="hero-nav">
-      <button class="hero-arrow prev" id="carouselPrev" aria-label="Previous">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polyline points="15 18 9 12 15 6" />
-        </svg>
-      </button>
-      <div class="hero-dots" id="carouselDots"></div>
-      <button class="hero-arrow next" id="carouselNext" aria-label="Next">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polyline points="9 18 15 12 9 6" />
-        </svg>
-      </button>
-    </div>
-    <div class="hero-progress">
-      <div class="hero-progress-bar" id="carouselProgress"></div>
+      </video>
+      <div class="hero-overlay" aria-hidden="true"></div>
     </div>
   </section>
 
@@ -280,27 +252,27 @@
             <!-- Vertical Stat Ribbon -->
             <div class="about-ribbon">
               <div class="about-ribbon-item">
-                <span class="about-ribbon-num">15<small>K</small><sup>+</sup></span>
-                <span class="about-ribbon-lbl">Surgeries</span>
+                <span class="about-ribbon-num">25<sup>+</sup></span>
+                <span class="about-ribbon-lbl">Years</span>
               </div>
               <div class="about-ribbon-divider"></div>
               <div class="about-ribbon-item">
-                <span class="about-ribbon-num">50<sup>+</sup></span>
+                <span class="about-ribbon-num">1500<small>+</small></span>
+                <span class="about-ribbon-lbl">Cases/Year</span>
+              </div>
+              <div class="about-ribbon-divider"></div>
+              <div class="about-ribbon-item">
+                <span class="about-ribbon-num">3</span>
                 <span class="about-ribbon-lbl">Countries</span>
-              </div>
-              <div class="about-ribbon-divider"></div>
-              <div class="about-ribbon-item">
-                <span class="about-ribbon-num">98<small>%</small></span>
-                <span class="about-ribbon-lbl">Success</span>
               </div>
             </div>
           </div>
 
           <!-- Credential Pills -->
           <div class="about-creds">
-            <div class="about-cred" title="Diplomate of National Board">
-              <span class="about-cred-abbr">DNB</span>
-              <span class="about-cred-full">National Board</span>
+            <div class="about-cred" title="Fellow of American College of Surgeons">
+              <span class="about-cred-abbr">FACS</span>
+              <span class="about-cred-full">American College</span>
             </div>
             <div class="about-cred" title="Fellowship in Minimal Access Surgery">
               <span class="about-cred-abbr">FMAS</span>
@@ -308,11 +280,15 @@
             </div>
             <div class="about-cred" title="Fellowship of Indian Association of GI Endo Surgeons">
               <span class="about-cred-abbr">FIAGES</span>
-              <span class="about-cred-full">GI Surgery</span>
+              <span class="about-cred-full">GI Endo-Surgery</span>
             </div>
             <div class="about-cred" title="Fellow of American Society for Metabolic & Bariatric Surgery">
               <span class="about-cred-abbr">FASMBS</span>
-              <span class="about-cred-full">Metabolic</span>
+              <span class="about-cred-full">Metabolic & Bariatric</span>
+            </div>
+            <div class="about-cred" title="Fellowship in Advanced Laparoscopic Surgery">
+              <span class="about-cred-abbr">FALS</span>
+              <span class="about-cred-full">Advanced Laparoscopic</span>
             </div>
           </div>
         </div>
@@ -334,7 +310,8 @@
           <div class="about-meta">
             <span class="about-meta-role">Vice Chairman</span>
             <span class="about-meta-dept">Dept. of Bariatric, Minimal Access &amp; Robotic Surgery</span>
-            <span class="about-meta-place">Max Smart Super Specialty Hospital, Saket, New Delhi, India</span>
+            <span class="about-meta-place">Max Smart Super Speciality Hospital, Saket, New Delhi</span>
+            <span class="about-meta-place">Dubai · Muscat · New Delhi</span>
           </div>
 
           <!-- Editorial Pull Quote -->
@@ -343,19 +320,13 @@
               <path
                 d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 .991 0 1 0 1 1v1c0 1-1 2-2 2-.991 0-1 .008-1 1.031V20c0 1 0 1 1 1z" />
             </svg>
-            <p>Every patient deserves more than a procedure — they deserve a transformation backed by science, refined
-              by experience, and delivered with care.</p>
-            <cite>— Dr. Atul Peters</cite>
+            <p>Behind every brilliant performance there were countless hours of practice and preparation.</p>
+            <cite>— Prof. (Dr.) Atul N.C. Peters</cite>
           </blockquote>
 
-          <p class="about-text">A renowned bariatric and metabolic surgeon with over <strong>25 years of
-              experience</strong> in advanced laparoscopic and robotic procedures, Dr. Peters has performed
-            <strong>15,000+ successful surgeries</strong>, transforming lives across India and internationally.
-          </p>
+          <p class="about-text">Prof. (Dr.) Atul N.C. Peters is Vice Chairman of the Dept. of Bariatric, Minimal Access & Robotic Surgery at Max Smart Super Speciality Hospital, Saket – New Delhi. With close to <strong>three decades of surgical experience</strong>, his practice is dedicated to advanced GI, minimal access and robotic surgery with special interest in Bariatric & Metabolic Surgery for diabetes, performing over <strong>1,500 cases annually</strong>.</p>
 
-          <p class="about-text">As a <strong>Limca Book Record holder</strong> for the highest number of bariatric
-            surgeries in India, he brings world-class expertise to every patient — refined through specialised training
-            at leading centres across the <strong>USA, UK and Europe</strong>.</p>
+          <p class="about-text">Dr. Peters is a DHA Certified, Specialist Bariatric and Robotic Surgeon at New Modern Hospital, Dubai and consultant Bariatric Surgeon at NMC, Muscat. He has been awarded as CENTRE OF EXCELLENCE for Bariatric and Metabolic Surgery by OSSI and CENTRE OF EXCELLENCE for Robotic and Innovative Surgery by ARIS. He is also a 'Proctor' in Robotic surgery providing real-time guidance to trainee surgeons.</p>
 
           <!-- Highlight Cards -->
           <div class="about-highlights">
@@ -371,8 +342,8 @@
                 </svg>
               </div>
               <div class="about-hl-body">
-                <h4>Limca Book Record</h4>
-                <p>Highest bariatric surgeries in India</p>
+                <h4>Centre of Excellence</h4>
+                <p>Bariatric & Metabolic Surgery (OSSI)</p>
               </div>
               <span class="about-hl-shine" aria-hidden="true"></span>
             </div>
@@ -1917,6 +1888,75 @@
   </section>
 
 
+  <!-- Peters' Fitness Factory -->
+  <section class="fitness-section section" id="fitness-factory">
+    <div class="container">
+      <!-- Header -->
+      <div class="section-header center">
+        <div class="section-eyebrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6.5 6.5L17.5 17.5" />
+            <path d="M21 21l-1-1" />
+            <path d="M3 3l1 1" />
+          </svg>
+          Fitness Factory
+        </div>
+        <h2 class="section-title">
+          Peters' <span class="section-title-accent">Fitness Factory</span>
+        </h2>
+        <p class="section-sub">Guided exercise videos designed to complement your weight-loss journey — build strength, stamina, and confidence with expert-led routines.</p>
+      </div>
+
+      <!-- Video Grid -->
+      <div class="fitness-grid" style="grid-template-columns: repeat(2, 1fr);">
+        <!-- Video 1 -->
+        <a href="https://www.youtube.com/watch?v=9VolgbGEF8M" target="_blank" rel="noopener" class="fitness-card">
+          <div class="fitness-thumb">
+            <img src="https://img.youtube.com/vi/9VolgbGEF8M/0.jpg" alt="Inclined Dumbbell Press">
+            <div class="fitness-play">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+            </div>
+          </div>
+          <div class="fitness-info">
+            <span class="blog-tag blog-tag--surgery">Upper Body</span>
+            <h3>Inclined Dumbbell Press</h3>
+            <p>Build chest and shoulder strength with this controlled, expert-guided movement.</p>
+          </div>
+        </a>
+
+        <!-- Video 2 -->
+        <a href="https://www.youtube.com/watch?v=nQbtIlAn_FQ" target="_blank" rel="noopener" class="fitness-card">
+          <div class="fitness-thumb">
+            <img src="https://img.youtube.com/vi/nQbtIlAn_FQ/0.jpg" alt="Behind the Neck Barbell Press">
+            <div class="fitness-play">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+            </div>
+          </div>
+          <div class="fitness-info">
+            <span class="blog-tag blog-tag--surgery">Shoulders</span>
+            <h3>Behind the Neck Barbell Press</h3>
+            <p>Develop shoulder power and posture with this classic compound lift.</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- CTA -->
+      <div class="fitness-cta">
+        <a href="https://www.atulpeters.com/fitness-factory" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3" />
+          </svg>
+          See More Fitness Factory
+        </a>
+      </div>
+    </div>
+  </section>
+
+
   <section class="blog-section section" id="blog">
     <div class="blog-bg-dots" aria-hidden="true"></div>
     <div class="blog-bg-glow blog-bg-glow--1" aria-hidden="true"></div>
@@ -2616,7 +2656,7 @@
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul class="footer-links">
-            <li><a href="#about"><span class="footer-link-dot"></span>About Dr. Peters</a></li>
+            <li><a href="about.html"><span class="footer-link-dot"></span>About Dr. Peters</a></li>
             <li><a href="#success"><span class="footer-link-dot"></span>Success Stories</a></li>
             <li><a href="#videos"><span class="footer-link-dot"></span>Video Gallery</a></li>
             <li><a href="#faq"><span class="footer-link-dot"></span>FAQ</a></li>
