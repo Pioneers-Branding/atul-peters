@@ -500,46 +500,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-/* === FAQ Category Filter === */
-function initFAQFilter() {
-  const cats = document.querySelectorAll('.faq-cat');
-  const cards = document.querySelectorAll('.faq-card');
-
-  cats.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const cat = btn.dataset.cat;
-
-      // Toggle active state
-      cats.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      // Filter cards with animation
-      cards.forEach(card => {
-        const cardCat = card.dataset.category;
-        if (cat === 'all' || cardCat === cat) {
-          card.style.display = 'block';
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(10px)';
-          requestAnimationFrame(() => {
-            card.style.transition = 'all 0.3s ease';
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-          });
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
-}
-
-// Initialize if present
-document.addEventListener('DOMContentLoaded', () => {
-  if (document.querySelector('.faq-cat')) {
-    initFAQFilter();
-  }
-});
-
 /* === Spinner CSS === */
 const style = document.createElement('style');
 style.textContent = `
@@ -547,3 +507,34 @@ style.textContent = `
   .spin { animation: spin 1s linear infinite; }
 `;
 document.head.appendChild(style);
+
+/* === Conferences Tab Filter === */
+function initConferenceTabs() {
+  const tabs = document.querySelectorAll('.about-conf-tab');
+  const timelines = {
+    recent: document.querySelector('.about-conf-timeline--recent'),
+    '2010s': document.querySelector('.about-conf-timeline--2010s'),
+    older: document.querySelector('.about-conf-timeline--older')
+  };
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      const year = tab.dataset.year;
+      Object.values(timelines).forEach(tl => {
+        if (tl) tl.style.display = 'none';
+      });
+      if (timelines[year]) {
+        timelines[year].style.display = 'block';
+      }
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (document.querySelector('.about-conf-tab')) {
+    initConferenceTabs();
+  }
+});
