@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +11,67 @@
   <link href="styles-improved.css" rel="stylesheet">
   <link href="styles-forms.css" rel="stylesheet">
 </head>
+
 <body class="service-page">
+
+
+  <!-- ============================================
+   SITE HEADER (Partial)
+   Edit this file to update header on ALL pages
+   ============================================ -->
 
   <!-- Top Bar -->
   <div class="top-bar">
     <div class="top-bar-inner">
       <div class="top-bar-left">
         <span class="top-bar-badge">Limca Book Record Holder</span>
-        <a href="tel:+917770001900" class="top-bar-phone">+91-7770001900</a>
+        <span class="top-bar-divider">|</span>
+        <a href="tel:+917770001900" class="top-bar-phone">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 0 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          +91-7770001900
+        </a>
+        <a href="tel:+911139595519" class="top-bar-phone">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 0 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          +91-11-39595119
+        </a>
       </div>
       <div class="top-bar-right">
-        <a href="https://www.facebook.com/dratulpeters" target="_blank" class="top-social">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        <a href="https://www.facebook.com/dratulpeters" target="_blank" class="top-social" aria-label="Facebook">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+          </svg>
         </a>
-        <a href="https://www.instagram.com/dratulpeters/" target="_blank" class="top-social">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
+        <a href="https://www.instagram.com/dratulpeters/" target="_blank" class="top-social" aria-label="Instagram">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+          </svg>
         </a>
+        <a href="https://www.youtube.com/user/chrysalishealthcare" target="_blank" class="top-social"
+          aria-label="YouTube">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.6c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+            <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white" />
+          </svg>
+        </a>
+        <a href="https://in.linkedin.com/in/dr-atul-n-c-peters-6a854444" target="_blank" class="top-social"
+          aria-label="LinkedIn">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+        <span class="top-bar-divider">|</span>
+        <a href="https://www.atulpeters.com/travel-desk" class="top-bar-link">Travel Desk</a>
       </div>
     </div>
   </div>
@@ -34,20 +80,86 @@
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <img src="https://www.atulpeters.com/front/img/logo-04.png" alt="Dr. Atul Peters">
+        <img src="https://www.atulpeters.com/front/img/logo-04.png" alt="Dr. Atul Peters" class="logo-img"
+          onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%23B8975A%22/%3E%3Ctext x=%2250%22 y=%2258%22 font-size=%2238%22 fill=%22white%22 text-anchor=%22middle%22%3EAP%3C/text%3E%3C/svg%3E'">
       </a>
-      <ul class="nav-menu">
+
+      <ul class="nav-menu" id="navLinks">
         <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="weight-loss.html" class="nav-link nav-link--active">Weight Loss</a></li>
-        <li class="nav-item"><a href="index.html#success" class="nav-link">Success Stories</a></li>
-        <li class="nav-item"><a href="#appointment" class="nav-link">Book Appointment</a></li>
+        <li class="nav-item has-dropdown">
+          <a href="weight-loss.html" class="nav-link" data-page="weight-loss">Weight Loss Surgery <svg width="10"
+              height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9" />
+            </svg></a>
+          <div class="dropdown">
+            <div class="dropdown-group"><span class="dropdown-label">Procedures</span></div>
+            <a href="roux-en-y-gastric-bypass.html" class="dropdown-item">Roux-en-Y Gastric Bypass</a>
+            <a href="sleeve-gastrectomy.html" class="dropdown-item">Sleeve Gastrectomy</a>
+            <a href="mini-gastric-bypass.html" class="dropdown-item">Mini Gastric Bypass</a>
+            <a href="banded-bariatric.html" class="dropdown-item">Banded Bariatric Procedures</a>
+            <a href="intra-gastric-balloon.html" class="dropdown-item">Intra Gastric Balloon</a>
+            <div class="dropdown-divider"></div>
+            <a href="weight-loss.html" class="dropdown-item">Overview</a>
+            <a href="weight-loss.html#candidate" class="dropdown-item">Are You a Candidate?</a>
+            <a href="weight-loss.html#faq" class="dropdown-item">FAQs</a>
+          </div>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="#" class="nav-link">Surgery for Diabetes <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9" />
+            </svg></a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-item">Overview</a>
+            <a href="#" class="dropdown-item">Laparoscopic Ileal Interposition</a>
+            <a href="#" class="dropdown-item">Laparoscopic Duodenojejunal Bypass</a>
+            <a href="#" class="dropdown-item">Sleeve Gastrectomy with Proximal Jejunal Bypass</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link">Robotic Surgery</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">GI &amp; MAS</a></li>
+        <li class="nav-item has-dropdown">
+          <a href="#" class="nav-link">Smart Nutrition <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9" />
+            </svg></a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-item">Nutrition Clinic</a>
+            <a href="#" class="dropdown-item">Smart Weight Loss</a>
+          </div>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="#" class="nav-link">Success Stories <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9" />
+            </svg></a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-item">Before &amp; After Pictures</a>
+            <a href="#" class="dropdown-item">Video Testimonials</a>
+          </div>
+        </li>
       </ul>
+
       <div class="nav-actions">
-        <a href="#appointment" class="nav-cta">Book Appointment</a>
+        <a href="#appointment" class="nav-cta">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+          Book Appointment
+        </a>
       </div>
-      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
+
+
+
 
   <!-- Hero Section -->
   <section class="service-hero">
@@ -73,12 +185,16 @@
             <span class="service-hero-title-line">Transform Your Life</span>
             <span class="service-hero-title-line"><span class="text-accent">Permanently</span></span>
           </h1>
-          <p class="service-hero-sub">Scientific weight loss procedures backed by 25+ years of surgical excellence. Achieve sustainable results with India's most trusted bariatric team.</p>
+          <p class="service-hero-sub">Scientific weight loss procedures backed by 25+ years of surgical excellence.
+            Achieve sustainable results with India's most trusted bariatric team.</p>
 
           <div class="service-hero-stats">
             <div class="service-hero-stat">
               <div class="service-hero-stat-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
               </div>
               <div>
                 <span class="service-hero-stat-num">15K<small>+</small></span>
@@ -87,7 +203,10 @@
             </div>
             <div class="service-hero-stat">
               <div class="service-hero-stat-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
               </div>
               <div>
                 <span class="service-hero-stat-num">98<small>%</small></span>
@@ -96,7 +215,10 @@
             </div>
             <div class="service-hero-stat">
               <div class="service-hero-stat-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
               </div>
               <div>
                 <span class="service-hero-stat-num">2-3<small>days</small></span>
@@ -108,10 +230,15 @@
           <div class="service-hero-actions">
             <a href="#appointment" class="btn btn-gold btn-lg service-hero-cta-primary">
               <span>Start Your Journey</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </a>
             <a href="#procedures" class="btn btn-outline btn-lg service-hero-cta-secondary">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
               <span>Watch Procedures</span>
             </a>
           </div>
@@ -124,11 +251,21 @@
             </div>
             <div class="service-hero-trust-text">
               <div class="service-hero-stars">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z" />
+                </svg>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z" />
+                </svg>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z" />
+                </svg>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z" />
+                </svg>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z" />
+                </svg>
               </div>
               <span>Trusted by <strong>2,400+ patients</strong></span>
             </div>
@@ -139,13 +276,16 @@
           <div class="service-hero-img-wrap">
             <div class="service-hero-img-deco"></div>
             <div class="service-hero-img-frame">
-              <img src="https://www.atulpeters.com/front/img/focus-area-bariatric-surgery.jpg" alt="Weight Loss Surgery">
+              <img src="https://www.atulpeters.com/front/img/candidate-img.png" alt="Weight Loss Surgery Success">
             </div>
 
             <!-- Floating Cards -->
             <div class="service-hero-card service-hero-card--top">
               <div class="service-hero-card-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
               </div>
               <div class="service-hero-card-body">
                 <strong>Limca Book Record</strong>
@@ -160,8 +300,9 @@
               </div>
               <div class="service-hero-card-chart">
                 <svg viewBox="0 0 60 40" fill="none">
-                  <path d="M5 35 L15 25 L25 28 L35 18 L45 12 L55 8" stroke="var(--teal)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                  <circle cx="55" cy="8" r="3" fill="var(--teal)"/>
+                  <path d="M5 35 L15 25 L25 28 L35 18 L45 12 L55 8" stroke="var(--teal)" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <circle cx="55" cy="8" r="3" fill="var(--teal)" />
                 </svg>
               </div>
             </div>
@@ -174,6 +315,589 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Procedures -->
+  <section class="service-procedures section" id="procedures">
+    <div class="sp-bg-accent"></div>
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-eyebrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            <path d="M2 17l10 5 10-5" />
+          </svg>
+          Our Procedures
+        </div>
+        <h2 class="section-title">Surgical Solutions <span class="text-accent">We Offer</span></h2>
+      </div>
+      <div class="service-proc-grid">
+
+        <!-- Gastric Bypass -->
+        <article class="service-proc-card" style="--i:0">
+          <div class="service-proc-img">
+            <img src="https://www.atulpeters.com/front/img/roux-en-img.png" alt="Roux-en-Y Gastric Bypass">
+            <span class="service-proc-badge">Most Popular</span>
+          </div>
+          <div class="service-proc-body">
+            <h3>Roux-en-Y Gastric Bypass</h3>
+            <p class="service-proc-type">Gold standard combining restriction and malabsorption for maximum, sustainable
+              weight loss.</p>
+            <div class="service-proc-stats">
+              <div class="service-proc-stat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>70-80% EWL</span>
+              </div>
+              <div class="service-proc-stat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                <span>2-3 days stay</span>
+              </div>
+              <div class="service-proc-stat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                </svg>
+                <span>Diabetes Reversal</span>
+              </div>
+            </div>
+            <a href="#appointment" class="service-proc-cta">Learn More</a>
+          </div>
+        </article>
+
+        <!-- Sleeve Gastrectomy -->
+        <article class="service-proc-card" style="--i:1">
+          <div class="service-proc-img">
+            <img src="https://www.atulpeters.com/front/img/sleeve-gastrectomy-img.png" alt="Sleeve Gastrectomy">
+            <span class="service-proc-badge service-proc-badge--alt">Simple</span>
+          </div>
+          <div class="service-proc-body">
+            <h3>Laparoscopic Sleeve Gastrectomy</h3>
+            <p class="service-proc-type">Restrictive procedure removing ~80% of the stomach, creating a smaller
+              tube-like stomach.</p>
+            <div class="service-proc-stats">
+              <div class="service-proc-stat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>60-70% EWL</span>
+              </div>
+              <div class="service-proc-stat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                <span>2 days stay</span>
+              </div>
+              <div class="service-proc-stat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                <span>Simple Recovery</span>
+              </div>
+            </div>
+            <a href="#appointment" class="service-proc-cta">Learn More</a>
+          </div>
+        </article>
+
+        <!-- Mini Bypass -->
+        <article class="service-proc-card" style="--i:2">
+          <div class="service-proc-img">
+            <img src="https://www.atulpeters.com/front/img/mini-gastric-img.png" alt="Mini Gastric Bypass">
+            <span class="service-proc-badge">Less Invasive</span>
+          </div>
+          <div class="service-proc-body">
+            <h3>Mini Gastric Bypass</h3>
+            <p class="service-proc-type">Single-anastomosis procedure with faster recovery and excellent weight loss
+              outcomes.</p>
+            <div class="service-proc-stats">
+              <div class="service-proc-stat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>75-85% EWL</span>
+              </div>
+              <div class="service-proc-stat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                <span>2 days stay</span>
+              </div>
+              <div class="service-proc-stat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                </svg>
+                <span>Quick Recovery</span>
+              </div>
+            </div>
+            <a href="#appointment" class="service-proc-cta">Learn More</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- More Procedures -->
+  <section class="service-procedures service-procedures--alt section">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-eyebrow">Additional Options</div>
+        <h2 class="section-title">Non-Surgical & <span class="text-accent">Revision Options</span></h2>
+      </div>
+      <div class="service-proc-grid">
+
+        <!-- Intragastric Balloon -->
+        <article class="service-proc-card" style="--i:3">
+          <div class="service-proc-img">
+            <img src="https://www.atulpeters.com/front/img/intra-gastric-balloon.jpg" alt="Intragastric Balloon">
+            <span class="service-proc-badge">Non-Surgical</span>
+          </div>
+          <div class="service-proc-body">
+            <h3>Intra Gastric Balloon</h3>
+            <p class="service-proc-type">Temporary balloon placed endoscopically for 6 months — no surgery required.</p>
+            <div class="service-proc-stats">
+              <div class="service-proc-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg><span>30-40% EWL</span></div>
+              <div class="service-proc-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg><span>Same-day</span></div>
+              <div class="service-proc-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg><span>Reversible</span></div>
+            </div>
+            <a href="#appointment" class="service-proc-cta">Learn More</a>
+          </div>
+        </article>
+
+        <!-- Banded Bariatric -->
+        <article class="service-proc-card" style="--i:4">
+          <div class="service-proc-img">
+            <img src="https://www.atulpeters.com/front/img/banded-img.png" alt="Banded Bariatric">
+            <span class="service-proc-badge">Enhanced</span>
+          </div>
+          <div class="service-proc-body">
+            <h3>Banded Bariatric Procedures</h3>
+            <p class="service-proc-type">Add-on adjustable band for enhanced restriction and long-term weight
+              maintenance.</p>
+            <div class="service-proc-stats">
+              <div class="service-proc-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg><span>80%+ EWL</span></div>
+              <div class="service-proc-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg><span>3 days stay</span></div>
+              <div class="service-proc-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                </svg><span>Adjustable</span></div>
+            </div>
+            <a href="#appointment" class="service-proc-cta">Learn More</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== TECHNOLOGY / TECH SECTION ===== -->
+  <section class="service-tech section">
+    <!-- Decorative background -->
+    <div class="tech-grid-bg" aria-hidden="true"></div>
+    <div class="tech-glow tech-glow--blue" aria-hidden="true"></div>
+    <div class="tech-glow tech-glow--teal" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="tech-header">
+        <div class="tech-eyebrow-row">
+          <div class="section-eyebrow tech-eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="8" width="18" height="12" rx="2" />
+              <circle cx="8" cy="14" r="1.5" />
+              <circle cx="16" cy="14" r="1.5" />
+              <path d="M12 4v4" />
+            </svg>
+            Advanced Technology
+          </div>
+          <span class="tech-tag">FDA Approved</span>
+        </div>
+        <h2 class="tech-title">
+          State-of-the-Art <span class="text-accent">Robotic Surgery</span>
+        </h2>
+        <p class="tech-sub">
+          Dr. Peters uses the latest <strong>da Vinci Xi</strong> robotic system for unmatched precision,
+          minimal scarring, and significantly faster recovery.
+        </p>
+      </div>
+
+      <div class="tech-layout">
+
+        <!-- LEFT: Visual + stats -->
+        <div class="tech-visual">
+          <div class="tech-robot-frame">
+            <span class="tech-corner tech-corner--tl"></span>
+            <span class="tech-corner tech-corner--tr"></span>
+            <span class="tech-corner tech-corner--bl"></span>
+            <span class="tech-corner tech-corner--br"></span>
+            <img src="assets/img/robotic-surgery.webp" alt="da Vinci Xi Robotic System">
+            <div class="tech-robot-badge">
+              <div class="tech-robot-badge-text">
+                <span class="tech-robot-badge-line">da Vinci</span>
+                <span class="tech-robot-badge-version">Xi</span>
+              </div>
+              <div class="tech-robot-badge-meta">Latest Generation</div>
+            </div>
+          </div>
+
+          <!-- Stat strip below image -->
+          <div class="tech-stat-strip">
+            <div class="tech-stat-cell">
+              <div class="tech-stat-cell-num">4K</div>
+              <div class="tech-stat-cell-label">HD Vision</div>
+            </div>
+            <div class="tech-stat-cell">
+              <div class="tech-stat-cell-num">540°</div>
+              <div class="tech-stat-cell-label">Rotation</div>
+            </div>
+            <div class="tech-stat-cell">
+              <div class="tech-stat-cell-num">0.5mm</div>
+              <div class="tech-stat-cell-label">Precision</div>
+            </div>
+            <div class="tech-stat-cell">
+              <div class="tech-stat-cell-num">10×</div>
+              <div class="tech-stat-cell-label">Magnification</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Features + benefits -->
+        <div class="tech-content">
+          <div class="tech-intro">
+            <h3>Precision beyond human capability</h3>
+            <p>The da Vinci Xi system translates Dr. Peters' hand movements into micro-precision instrument motions,
+              filtering out natural hand tremor for sub-millimeter accuracy.</p>
+          </div>
+
+          <div class="tech-features-grid">
+            <div class="tech-feature-card">
+              <div class="tech-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M23 7l-7 5 7 5V7z" />
+                  <rect x="1" y="5" width="15" height="14" rx="2" />
+                </svg>
+              </div>
+              <div class="tech-feature-body">
+                <h4>4K HD 3D Vision</h4>
+                <p>Crystal-clear, 10× magnified 3D view of the surgical area.</p>
+              </div>
+            </div>
+
+            <div class="tech-feature-card">
+              <div class="tech-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+              </div>
+              <div class="tech-feature-body">
+                <h4>Wristed Instruments</h4>
+                <p>540° rotation exceeds the dexterity of the human hand.</p>
+              </div>
+            </div>
+
+            <div class="tech-feature-card">
+              <div class="tech-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <polyline points="9 12 11 14 15 10" />
+                </svg>
+              </div>
+              <div class="tech-feature-body">
+                <h4>Minimal Scarring</h4>
+                <p>Small 1-2 cm incisions reduce visible scarring and infection risk.</p>
+              </div>
+            </div>
+
+            <div class="tech-feature-card">
+              <div class="tech-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+              </div>
+              <div class="tech-feature-body">
+                <h4>Faster Recovery</h4>
+                <p>Reduced tissue trauma means getting back to life 2-3× sooner.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-cta-row">
+            <a href="#appointment" class="btn btn-gold">
+              Book Robotic Surgery Consultation
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <div class="tech-trust">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 11l3 3L22 4" />
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+              </svg>
+              <span>Robotic Surgeon of Excellence</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Nutrition & Care -->
+  <section class="service-nutrition section">
+    <!-- Background decorations -->
+    <div class="nutrition-bg-pattern" aria-hidden="true"></div>
+    <div class="nutrition-bg-glow nutrition-bg-glow--1" aria-hidden="true"></div>
+    <div class="nutrition-bg-glow nutrition-bg-glow--2" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-eyebrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2v20M5 9c0-3 3-5 7-5s7 2 7 5-3 5-7 5-7 2-7 5 3 5 7 5" />
+          </svg>
+          Lifetime Support
+        </div>
+        <h2 class="section-title">Nutrition & <span class="text-accent">Follow-Up Care</span></h2>
+        <p class="section-sub">Surgery is just the beginning. We support you for life.</p>
+      </div>
+
+      <!-- Top: Featured Dietician Block -->
+      <div class="nutrition-hero">
+        <div class="nutrition-hero-content">
+          <span class="nutrition-hero-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7l3-7z" />
+            </svg>
+            Chief Dietician
+          </span>
+          <h3 class="nutrition-hero-title">1-on-1 Personalized Plans with <span class="text-accent">Dr. Beena
+              Arora</span></h3>
+          <p class="nutrition-hero-text">
+            With <strong>20+ years</strong> of specialized experience in post-bariatric nutrition, Dr. Beena Arora
+            designs customized meal plans tailored to your specific procedure, lifestyle and personal preferences.
+          </p>
+          <div class="nutrition-hero-stats">
+            <div class="nutrition-hero-stat">
+              <span class="nutrition-hero-stat-num">20+</span>
+              <span class="nutrition-hero-stat-label">Years Experience</span>
+            </div>
+            <div class="nutrition-hero-stat">
+              <span class="nutrition-hero-stat-num">5K+</span>
+              <span class="nutrition-hero-stat-label">Patients Coached</span>
+            </div>
+            <div class="nutrition-hero-stat">
+              <span class="nutrition-hero-stat-num">100%</span>
+              <span class="nutrition-hero-stat-label">Custom Plans</span>
+            </div>
+          </div>
+          <a href="#appointment" class="btn btn-gold">
+            Meet Our Dietician
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <div class="nutrition-hero-visual">
+          <div class="nutrition-hero-frame">
+            <span class="nutrition-hero-corner nutrition-hero-corner--tl"></span>
+            <span class="nutrition-hero-corner nutrition-hero-corner--tr"></span>
+            <span class="nutrition-hero-corner nutrition-hero-corner--bl"></span>
+            <span class="nutrition-hero-corner nutrition-hero-corner--br"></span>
+            <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" class="nutrition-hero-illust">
+              <defs>
+                <linearGradient id="plateGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" style="stop-color:#FFFFFF" />
+                  <stop offset="100%" style="stop-color:#F0F7FB" />
+                </linearGradient>
+                <linearGradient id="leafGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" style="stop-color:#81CDBF" />
+                  <stop offset="100%" style="stop-color:#4FA898" />
+                </linearGradient>
+                <linearGradient id="fruitGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" style="stop-color:#F5C99B" />
+                  <stop offset="100%" style="stop-color:#E89B5A" />
+                </linearGradient>
+                <radialGradient id="glowGrad2" cx="50%" cy="50%">
+                  <stop offset="0%" style="stop-color:rgba(129,205,191,0.3)" />
+                  <stop offset="100%" style="stop-color:rgba(129,205,191,0)" />
+                </radialGradient>
+              </defs>
+              <circle cx="150" cy="150" r="140" fill="url(#glowGrad2)" />
+              <ellipse cx="150" cy="170" rx="115" ry="35" fill="rgba(21,71,121,0.08)" />
+              <circle cx="150" cy="150" r="110" fill="url(#plateGrad)" stroke="rgba(21,71,121,0.15)" stroke-width="2" />
+              <circle cx="150" cy="150" r="92" fill="none" stroke="rgba(21,71,121,0.08)" stroke-width="1.5" />
+              <ellipse cx="120" cy="140" rx="35" ry="15" fill="url(#leafGrad)" transform="rotate(-15 120 140)" />
+              <ellipse cx="170" cy="135" rx="28" ry="18" fill="#D9B894" stroke="rgba(184,151,90,0.4)"
+                stroke-width="1" />
+              <ellipse cx="170" cy="135" rx="22" ry="13" fill="#E89B5A" opacity="0.6" />
+              <circle cx="135" cy="165" r="11" fill="url(#fruitGrad)" stroke="#D4844A" stroke-width="0.8" />
+              <path d="M131 156 L135 152 L139 156" fill="none" stroke="#3A8775" stroke-width="1.5" />
+              <path d="M180 160 L195 175 L185 175 Z" fill="#E89B5A" stroke="#D4844A" stroke-width="0.8" />
+              <circle cx="160" cy="160" r="8" fill="#5A8F3D" />
+              <circle cx="155" cy="158" r="6" fill="#6FAE4D" />
+              <circle cx="165" cy="162" r="6" fill="#6FAE4D" />
+              <g transform="translate(30, 70)">
+                <rect x="0" y="0" width="62" height="22" rx="11" fill="white" stroke="rgba(129,205,191,0.4)"
+                  stroke-width="1" />
+                <circle cx="11" cy="11" r="3" fill="#1D5D95" />
+                <text x="20" y="15" font-size="9" fill="#1D5D95" font-weight="600">Protein</text>
+              </g>
+              <g transform="translate(220, 60)">
+                <rect x="0" y="0" width="55" height="22" rx="11" fill="white" stroke="rgba(184,151,90,0.4)"
+                  stroke-width="1" />
+                <circle cx="11" cy="11" r="3" fill="#8E6F3F" />
+                <text x="20" y="15" font-size="9" fill="#8E6F3F" font-weight="600">Fiber</text>
+              </g>
+              <g transform="translate(40, 220)">
+                <rect x="0" y="0" width="68" height="22" rx="11" fill="white" stroke="rgba(79,168,152,0.4)"
+                  stroke-width="1" />
+                <circle cx="11" cy="11" r="3" fill="#4FA898" />
+                <text x="20" y="15" font-size="9" fill="#4FA898" font-weight="600">Vitamins</text>
+              </g>
+              <g transform="translate(220, 220)">
+                <rect x="0" y="0" width="70" height="22" rx="11" fill="white" stroke="rgba(21,93,149,0.4)"
+                  stroke-width="1" />
+                <circle cx="11" cy="11" r="3" fill="#1D5D95" />
+                <text x="20" y="15" font-size="9" fill="#1D5D95" font-weight="600">Minerals</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Follow-up Schedule Timeline -->
+      <div class="nutrition-timeline-wrap">
+        <h3 class="nutrition-timeline-title">Your Follow-Up Schedule</h3>
+        <div class="nutrition-timeline">
+          <div class="nutrition-timeline-item">
+            <div class="nutrition-timeline-marker">
+              <span class="nutrition-timeline-num">1</span>
+            </div>
+            <div class="nutrition-timeline-content">
+              <strong>Weekly</strong>
+              <span>Week 1-4</span>
+            </div>
+          </div>
+          <div class="nutrition-timeline-item">
+            <div class="nutrition-timeline-marker">
+              <span class="nutrition-timeline-num">2</span>
+            </div>
+            <div class="nutrition-timeline-content">
+              <strong>Monthly</strong>
+              <span>Month 2-12</span>
+            </div>
+          </div>
+          <div class="nutrition-timeline-item">
+            <div class="nutrition-timeline-marker">
+              <span class="nutrition-timeline-num">3</span>
+            </div>
+            <div class="nutrition-timeline-content">
+              <strong>Quarterly</strong>
+              <span>Year 2+</span>
+            </div>
+          </div>
+          <div class="nutrition-timeline-item nutrition-timeline-item--final">
+            <div class="nutrition-timeline-marker nutrition-timeline-marker--final">
+              <span class="nutrition-timeline-num">&#8734;</span>
+            </div>
+            <div class="nutrition-timeline-content">
+              <strong>Annual</strong>
+              <span>For life</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Support Channels Grid -->
+      <div class="nutrition-support-grid">
+        <div class="nutrition-support-card">
+          <div class="nutrition-support-icon nutrition-support-icon--teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3" />
+            </svg>
+          </div>
+          <h4>WhatsApp Direct Line</h4>
+          <p>Reach our care team anytime with concerns, questions or to share your progress.</p>
+          <span class="nutrition-support-meta">
+            <span class="nutrition-support-dot nutrition-support-dot--online"></span>
+            Active &middot; 24/7
+          </span>
+        </div>
+
+        <div class="nutrition-support-card">
+          <div class="nutrition-support-icon nutrition-support-icon--blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M23 7l-7 5 7 5V7z" />
+              <rect x="1" y="5" width="15" height="14" rx="2" />
+            </svg>
+          </div>
+          <h4>Video Consultations</h4>
+          <p>From anywhere in the world &mdash; connect with our team via secure video calls.</p>
+          <span class="nutrition-support-meta">
+            <span class="nutrition-support-dot nutrition-support-dot--online"></span>
+            Bookable online
+          </span>
+        </div>
+
+        <div class="nutrition-support-card">
+          <div class="nutrition-support-icon nutrition-support-icon--gold">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+            </svg>
+          </div>
+          <h4>Diet Plan Library</h4>
+          <p>Phased meal plans, recipes and grocery lists for every stage of recovery.</p>
+          <span class="nutrition-support-meta">
+            <span class="nutrition-support-dot"></span>
+            200+ recipes
+          </span>
+        </div>
+
+        <div class="nutrition-support-card">
+          <div class="nutrition-support-icon nutrition-support-icon--purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h4>Patient Community</h4>
+          <p>Connect with fellow patients for motivation, tips and shared experiences.</p>
+          <span class="nutrition-support-meta">
+            <span class="nutrition-support-dot"></span>
+            2,400+ members
+          </span>
         </div>
       </div>
     </div>
@@ -209,7 +933,10 @@
         </div>
         <div class="doctor-content">
           <div class="section-eyebrow">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
             About The Surgeon
           </div>
           <h2 class="section-title">Meet <span class="text-accent">Dr. Atul Peters</span></h2>
@@ -217,8 +944,12 @@
           <p class="doctor-hospital">Max Smart Super Specialty Hospital, Saket, New Delhi</p>
 
           <blockquote class="doctor-quote">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 .991 0 1 0 1 1v1c0 1-1 2-2 2-.991 0-1 .008-1 1.031V20c0 1 0 1 1 1z"/></svg>
-            <p>Every patient deserves more than a procedure — they deserve a transformation backed by science, refined by experience, and delivered with care.</p>
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 .991 0 1 0 1 1v1c0 1-1 2-2 2-.991 0-1 .008-1 1.031V20c0 1 0 1 1 1z" />
+            </svg>
+            <p>Every patient deserves more than a procedure — they deserve a transformation backed by science, refined
+              by experience, and delivered with care.</p>
             <cite>— Dr. Atul Peters</cite>
           </blockquote>
 
@@ -244,7 +975,10 @@
     <div class="container">
       <div class="section-header center">
         <div class="section-eyebrow">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+            <polyline points="22 4 12 14.01 9 11.01" />
+          </svg>
           Why Dr. Peters
         </div>
         <h2 class="section-title">India's Most Trusted <span class="text-accent">Bariatric Surgeon</span></h2>
@@ -274,151 +1008,6 @@
     </div>
   </section>
 
-  <!-- Procedures -->
-  <section class="service-procedures section" id="procedures">
-    <div class="sp-bg-accent"></div>
-    <div class="container">
-      <div class="section-header center">
-        <div class="section-eyebrow">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/></svg>
-          Our Procedures
-        </div>
-        <h2 class="section-title">Surgical Solutions <span class="text-accent">We Offer</span></h2>
-      </div>
-      <div class="service-proc-grid">
-
-        <!-- Gastric Bypass -->
-        <article class="service-proc-card" style="--i:0">
-          <div class="service-proc-img">
-            <img src="https://www.atulpeters.com/front/img/focus-area-bariatric-surgery.jpg" alt="Gastric Bypass">
-            <span class="service-proc-badge">Most Popular</span>
-          </div>
-          <div class="service-proc-body">
-            <h3>Roux-en-Y Gastric Bypass</h3>
-            <p class="service-proc-type">Gold standard combining restriction and malabsorption for maximum, sustainable weight loss.</p>
-            <div class="service-proc-stats">
-              <div class="service-proc-stat">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>70-80% EWL</span>
-              </div>
-              <div class="service-proc-stat">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                <span>2-3 days stay</span>
-              </div>
-              <div class="service-proc-stat">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/></svg>
-                <span>Diabetes Reversal</span>
-              </div>
-            </div>
-            <a href="#appointment" class="service-proc-cta">Learn More</a>
-          </div>
-        </article>
-
-        <!-- Sleeve Gastrectomy -->
-        <article class="service-proc-card" style="--i:1">
-          <div class="service-proc-img">
-            <img src="https://www.atulpeters.com/front/img/focus-area-bariatric-surgery.jpg" alt="Sleeve Gastrectomy">
-          </div>
-          <div class="service-proc-body">
-            <h3>Laparoscopic Sleeve Gastrectomy</h3>
-            <p class="service-proc-type">Restrictive procedure removing ~80% of the stomach, creating a smaller tube-like stomach.</p>
-            <div class="service-proc-stats">
-              <div class="service-proc-stat">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>60-70% EWL</span>
-              </div>
-              <div class="service-proc-stat">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                <span>2 days stay</span>
-              </div>
-              <div class="service-proc-stat">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                <span>Simple Recovery</span>
-              </div>
-            </div>
-            <a href="#appointment" class="service-proc-cta">Learn More</a>
-          </div>
-        </article>
-
-        <!-- Mini Bypass -->
-        <article class="service-proc-card" style="--i:2">
-          <div class="service-proc-img">
-            <img src="https://www.atulpeters.com/front/img/focus-area-bariatric-surgery.jpg" alt="Mini Gastric Bypass">
-            <span class="service-proc-badge">Less Invasive</span>
-          </div>
-          <div class="service-proc-body">
-            <h3>Mini Gastric Bypass</h3>
-            <p class="service-proc-type">Single-anastomosis procedure with faster recovery and excellent weight loss outcomes.</p>
-            <div class="service-proc-stats">
-              <div class="service-proc-stat">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>75-85% EWL</span>
-              </div>
-              <div class="service-proc-stat">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                <span>2 days stay</span>
-              </div>
-              <div class="service-proc-stat">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/></svg>
-                <span>Quick Recovery</span>
-              </div>
-            </div>
-            <a href="#appointment" class="service-proc-cta">Learn More</a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- More Procedures -->
-  <section class="service-procedures service-procedures--alt section">
-    <div class="container">
-      <div class="section-header center">
-        <div class="section-eyebrow">Additional Options</div>
-        <h2 class="section-title">Non-Surgical & <span class="text-accent">Revision Options</span></h2>
-      </div>
-      <div class="service-proc-grid">
-
-        <!-- Intragastric Balloon -->
-        <article class="service-proc-card" style="--i:3">
-          <div class="service-proc-img">
-            <img src="https://www.atulpeters.com/front/img/focus-area-bariatric-surgery.jpg" alt="Intragastric Balloon">
-            <span class="service-proc-badge">Non-Surgical</span>
-          </div>
-          <div class="service-proc-body">
-            <h3>Intra Gastric Balloon</h3>
-            <p class="service-proc-type">Temporary balloon placed endoscopically for 6 months — no surgery required.</p>
-            <div class="service-proc-stats">
-              <div class="service-proc-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>30-40% EWL</span></div>
-              <div class="service-proc-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Same-day</span></div>
-              <div class="service-proc-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Reversible</span></div>
-            </div>
-            <a href="#appointment" class="service-proc-cta">Learn More</a>
-          </div>
-        </article>
-
-        <!-- Banded Bariatric -->
-        <article class="service-proc-card" style="--i:4">
-          <div class="service-proc-img">
-            <img src="https://www.atulpeters.com/front/img/focus-area-bariatric-surgery.jpg" alt="Banded Bariatric">
-            <span class="service-proc-badge">Enhanced</span>
-          </div>
-          <div class="service-proc-body">
-            <h3>Banded Bariatric Procedures</h3>
-            <p class="service-proc-type">Add-on adjustable band for enhanced restriction and long-term weight maintenance.</p>
-            <div class="service-proc-stats">
-              <div class="service-proc-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span>80%+ EWL</span></div>
-              <div class="service-proc-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>3 days stay</span></div>
-              <div class="service-proc-stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/></svg><span>Adjustable</span></div>
-            </div>
-            <a href="#appointment" class="service-proc-cta">Learn More</a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
 
   <!-- Success Transformations -->
   <section class="service-success section" id="success">
@@ -426,38 +1015,21 @@
     <div class="container">
       <div class="section-header center">
         <div class="section-eyebrow">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+          </svg>
           Real Transformations
         </div>
         <h2 class="section-title">Patient <span class="text-accent">Success Stories</span></h2>
         <p class="section-sub">Real people, real numbers, real second chances</p>
       </div>
 
-      <div class="success-stats-bar">
-        <div class="success-stat-pill">
-          <span class="success-stat-num">280<small>K+</small></span>
-          <span class="success-stat-lbl">Kilos Lost</span>
-        </div>
-        <div class="success-stat-pill">
-          <span class="success-stat-num">15<small>K+</small></span>
-          <span class="success-stat-lbl">Lives Transformed</span>
-        </div>
-        <div class="success-stat-pill success-stat-pill--rating">
-          <div class="success-stat-stars">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-          </div>
-          <span class="success-stat-lbl"><strong>4.9</strong> · 2,400+ reviews</span>
-        </div>
-      </div>
-
       <div class="success-grid">
         <article class="success-card">
           <div class="success-card-image">
-            <img src="https://www.atulpeters.com/media_upload/success-stories/72fe46cad29ab492165639df85e9f7c1.jpg" alt="Ms. Usha Diwan">
+            <img src="https://www.atulpeters.com/media_upload/success-stories/72fe46cad29ab492165639df85e9f7c1.jpg"
+              alt="Ms. Usha Diwan">
             <div class="success-card-badge">57% Lost</div>
           </div>
           <div class="success-card-body">
@@ -467,7 +1039,9 @@
                 <span class="success-procedure">Sleeve Gastrectomy · 18 Months</span>
               </div>
               <div class="success-verified" title="Verified Patient">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
               </div>
             </div>
 
@@ -478,7 +1052,10 @@
                   <span class="success-weight-value">98 kg</span>
                 </div>
                 <div class="success-weight-arrow">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                  </svg>
                 </div>
                 <div class="success-weight-end success-weight-end--after">
                   <span class="success-weight-label">After</span>
@@ -491,8 +1068,12 @@
             </div>
 
             <div class="success-tags">
-              <span class="success-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Diabetes Reversed</span>
-              <span class="success-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Off All Meds</span>
+              <span class="success-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> Diabetes Reversed</span>
+              <span class="success-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> Off All Meds</span>
             </div>
 
             <blockquote class="success-quote">
@@ -503,7 +1084,8 @@
 
         <article class="success-card">
           <div class="success-card-image">
-            <img src="https://www.atulpeters.com/media_upload/success-stories/7ed28bdd2a41a5498d63cae46879c4f3.jpg" alt="Mr. Raj Bakshi">
+            <img src="https://www.atulpeters.com/media_upload/success-stories/7ed28bdd2a41a5498d63cae46879c4f3.jpg"
+              alt="Mr. Raj Bakshi">
             <div class="success-card-badge">39% Lost</div>
           </div>
           <div class="success-card-body">
@@ -513,7 +1095,9 @@
                 <span class="success-procedure">Gastric Bypass · 2 Years</span>
               </div>
               <div class="success-verified" title="Verified Patient">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
               </div>
             </div>
 
@@ -524,7 +1108,10 @@
                   <span class="success-weight-value">142 kg</span>
                 </div>
                 <div class="success-weight-arrow">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                  </svg>
                 </div>
                 <div class="success-weight-end success-weight-end--after">
                   <span class="success-weight-label">After</span>
@@ -537,8 +1124,12 @@
             </div>
 
             <div class="success-tags">
-              <span class="success-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> BP Normalised</span>
-              <span class="success-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Sleep Apnea Gone</span>
+              <span class="success-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> BP Normalised</span>
+              <span class="success-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> Sleep Apnea Gone</span>
             </div>
 
             <blockquote class="success-quote">
@@ -549,7 +1140,8 @@
 
         <article class="success-card">
           <div class="success-card-image">
-            <img src="https://www.atulpeters.com/media_upload/success-stories/bd499bc02d08332420d811a70918542c.jpg" alt="Pinky Singh">
+            <img src="https://www.atulpeters.com/media_upload/success-stories/bd499bc02d08332420d811a70918542c.jpg"
+              alt="Pinky Singh">
             <div class="success-card-badge">34% Lost</div>
           </div>
           <div class="success-card-body">
@@ -559,7 +1151,9 @@
                 <span class="success-procedure">Mini Bypass · 14 Months</span>
               </div>
               <div class="success-verified" title="Verified Patient">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
               </div>
             </div>
 
@@ -570,7 +1164,10 @@
                   <span class="success-weight-value">112 kg</span>
                 </div>
                 <div class="success-weight-arrow">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                  </svg>
                 </div>
                 <div class="success-weight-end success-weight-end--after">
                   <span class="success-weight-label">After</span>
@@ -583,8 +1180,12 @@
             </div>
 
             <div class="success-tags">
-              <span class="success-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Hormonal Balance</span>
-              <span class="success-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> PCOS Resolved</span>
+              <span class="success-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> Hormonal Balance</span>
+              <span class="success-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> PCOS Resolved</span>
             </div>
 
             <blockquote class="success-quote">
@@ -596,405 +1197,218 @@
 
       <div class="success-cta">
         <a href="index.html#success" class="btn btn-outline btn-lg">View All 200+ Transformations
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
         </a>
       </div>
     </div>
   </section>
 
   <!-- Patient Journey -->
-  <section class="service-journey section">
-    <div class="journey-bg-pattern"></div>
+  <!-- ===== PATIENT JOURNEY (Clean v3) ===== -->
+  <section class="journey-v3 section">
+    <!-- Background elements -->
+    <div class="journey-v3-bg">
+      <div class="journey-v3-bg-line"></div>
+      <div class="journey-v3-bg-glow"></div>
+    </div>
+
     <div class="container">
       <div class="section-header center">
         <div class="section-eyebrow">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+          </svg>
           The Process
         </div>
         <h2 class="section-title">Your <span class="text-accent">Patient Journey</span></h2>
         <p class="section-sub">Five guided steps from first call to lifelong wellness</p>
       </div>
 
-      <div class="journey-timeline">
-        <div class="journey-line"></div>
+      <!-- Vertical Stepped Timeline -->
+      <div class="journey-v3-timeline">
 
-        <article class="journey-step" style="--i:0">
-          <div class="journey-step-card">
-            <div class="journey-step-num">Step 01</div>
-            <div class="journey-step-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <!-- Step 1 -->
+        <div class="journey-v3-step">
+          <div class="journey-v3-step-marker">
+            <span class="journey-v3-step-number">01</span>
+            <div class="journey-v3-step-line"></div>
+          </div>
+          <div class="journey-v3-step-card">
+            <div class="journey-v3-step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              </svg>
             </div>
-            <h3>Consultation</h3>
-            <p>Meet Dr. Peters in person or via video to discuss your goals, history and expectations.</p>
-            <div class="journey-step-foot">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              ~ 30 min
+            <h3>Initial Consultation</h3>
+            <p>Meet Dr. Peters in person or via video call to discuss your goals, medical history, and expectations.</p>
+            <div class="journey-v3-step-meta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>~30 min</span>
             </div>
           </div>
-        </article>
+        </div>
 
-        <article class="journey-step" style="--i:1">
-          <div class="journey-step-card">
-            <div class="journey-step-num">Step 02</div>
-            <div class="journey-step-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        <!-- Step 2 -->
+        <div class="journey-v3-step">
+          <div class="journey-v3-step-marker">
+            <span class="journey-v3-step-number">02</span>
+            <div class="journey-v3-step-line"></div>
+          </div>
+          <div class="journey-v3-step-card">
+            <div class="journey-v3-step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
             </div>
-            <h3>Evaluation</h3>
-            <p>Full health workup, BMI and bloodwork to confirm you're a safe candidate for surgery.</p>
-            <div class="journey-step-foot">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              2-3 days
+            <h3>Health Evaluation</h3>
+            <p>Complete health screening including blood tests, BMI analysis, and medical fitness confirmation.</p>
+            <div class="journey-v3-step-meta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>2-3 days</span>
             </div>
           </div>
-        </article>
+        </div>
 
-        <article class="journey-step" style="--i:2">
-          <div class="journey-step-card">
-            <div class="journey-step-num">Step 03</div>
-            <div class="journey-step-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        <!-- Step 3 - Featured -->
+        <div class="journey-v3-step journey-v3-step--featured">
+          <div class="journey-v3-step-marker">
+            <span class="journey-v3-step-number journey-v3-step-number--gold">03</span>
+            <div class="journey-v3-step-line"></div>
+          </div>
+          <div class="journey-v3-step-card">
+            <div class="journey-v3-step-badge">Surgery Day</div>
+            <div class="journey-v3-step-icon journey-v3-step-icon--gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+              </svg>
             </div>
-            <h3>Surgery Day</h3>
-            <p>Advanced laparoscopic or robotic procedure at Max Hospital, Saket — typically 60-90 minutes.</p>
-            <div class="journey-step-foot">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              1 day
+            <h3>Surgery</h3>
+            <p>Laparoscopic procedure at Max Hospital, Saket. Advanced minimally invasive technique.</p>
+            <div class="journey-v3-step-meta journey-v3-step-meta--gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>1 day admission</span>
             </div>
           </div>
-        </article>
+        </div>
 
-        <article class="journey-step" style="--i:3">
-          <div class="journey-step-card">
-            <div class="journey-step-num">Step 04</div>
-            <div class="journey-step-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <!-- Step 4 -->
+        <div class="journey-v3-step">
+          <div class="journey-v3-step-marker">
+            <span class="journey-v3-step-number">04</span>
+            <div class="journey-v3-step-line"></div>
+          </div>
+          <div class="journey-v3-step-card">
+            <div class="journey-v3-step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg>
             </div>
             <h3>Recovery</h3>
-            <p>1-3 nights in hospital, then a structured 2-week at-home recovery plan with our team.</p>
-            <div class="journey-step-foot">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              ~ 2 weeks
+            <p>1-3 nights hospital stay with structured 2-week at-home recovery plan and full support.</p>
+            <div class="journey-v3-step-meta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>~2 weeks</span>
             </div>
           </div>
-        </article>
+        </div>
 
-        <article class="journey-step" style="--i:4">
-          <div class="journey-step-card">
-            <div class="journey-step-num">Step 05</div>
-            <div class="journey-step-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8 5.8 21.3l2.4-7.4L2 9.4h7.6z"/></svg>
+        <!-- Step 5 -->
+        <div class="journey-v3-step">
+          <div class="journey-v3-step-marker">
+            <span class="journey-v3-step-number journey-v3-step-number--purple">05</span>
+          </div>
+          <div class="journey-v3-step-card">
+            <div class="journey-v3-step-icon journey-v3-step-icon--purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8 5.8 21.3l2.4-7.4L2 9.4h7.6z" />
+              </svg>
             </div>
             <h3>Lifelong Wellness</h3>
-            <p>Annual reviews, nutrition guidance and community support — for life.</p>
-            <div class="journey-step-foot">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8 5.8 21.3l2.4-7.4L2 9.4h7.6z"/></svg>
-              For life
+            <p>Annual reviews, nutrition guidance, and ongoing community support for life.</p>
+            <div class="journey-v3-step-meta journey-v3-step-meta--purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l2.4 7.4H22" />
+              </svg>
+              <span>For life</span>
             </div>
           </div>
-        </article>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Technology -->
-  <section class="service-tech section">
-    <div class="tech-bg-pattern"></div>
-    <div class="tech-bg-glow tech-bg-glow--1"></div>
-    <div class="tech-bg-glow tech-bg-glow--2"></div>
-    <div class="container">
-      <div class="section-header center">
-        <div class="section-eyebrow tech-eyebrow">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="8" width="18" height="12" rx="2"/><circle cx="8" cy="14" r="1.5"/><circle cx="16" cy="14" r="1.5"/><path d="M12 4v4"/></svg>
-          Advanced Technology
-        </div>
-        <h2 class="section-title tech-title">State-of-the-Art <span class="text-accent">Robotic Surgery</span></h2>
-        <p class="section-sub tech-sub">Dr. Peters uses the latest da Vinci robotic system for unmatched precision and faster recovery.</p>
-      </div>
-
-      <div class="tech-layout">
-        <!-- Visual Side -->
-        <div class="tech-visual">
-          <div class="tech-robot">
-            <div class="tech-robot-image">
-              <img src="https://www.atulpeters.com/front/img/other-laparoscopic-procedures.jpg" alt="da Vinci Xi System" onerror="this.style.display='none'">
-            </div>
-            <div class="tech-robot-overlay">
-              <div class="tech-robot-spec">
-                <span>da Vinci</span>
-                <strong>Xi</strong>
-              </div>
-            </div>
-          </div>
-
-          <!-- Floating stat cards -->
-          <div class="tech-stat tech-stat--1">
-            <div class="tech-stat-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"/></svg>
-            </div>
-            <div>
-              <strong>4K HD</strong>
-              <span>Vision System</span>
-            </div>
-          </div>
-
-          <div class="tech-stat tech-stat--2">
-            <div class="tech-stat-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            </div>
-            <div>
-              <strong>0.5mm</strong>
-              <span>Precision</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Content Side -->
-        <div class="tech-content">
-          <div class="tech-features-grid">
-            <div class="tech-feature-card">
-              <div class="tech-feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
-              </div>
-              <h4>4K HD Vision</h4>
-              <p>10x magnified 3D view for unmatched surgical precision.</p>
-            </div>
-
-            <div class="tech-feature-card">
-              <div class="tech-feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-              </div>
-              <h4>Wristed Instruments</h4>
-              <p>540° rotation for greater dexterity than the human hand.</p>
-            </div>
-
-            <div class="tech-feature-card">
-              <div class="tech-feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-              <h4>Minimal Scarring</h4>
-              <p>Small incisions reduce visible scarring and infection risk.</p>
-            </div>
-
-            <div class="tech-feature-card">
-              <div class="tech-feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-              </div>
-              <h4>Faster Recovery</h4>
-              <p>Reduced tissue trauma means getting back to life sooner.</p>
-            </div>
-          </div>
-
-          <div class="tech-cta">
-            <a href="#appointment" class="btn btn-gold">Book Robotic Surgery Consultation</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Nutrition & Care -->
-  <section class="service-nutrition section">
-    <div class="container">
-      <div class="section-header center">
-        <div class="section-eyebrow">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M5 9c0-3 3-5 7-5s7 2 7 5-3 5-7 5-7 2-7 5 3 5 7 5"/></svg>
-          Lifetime Support
-        </div>
-        <h2 class="section-title">Nutrition & <span class="text-accent">Follow-Up Care</span></h2>
-        <p class="section-sub">Surgery is just the beginning. We support you for life.</p>
-      </div>
-
-      <div class="nutrition-layout">
-        <div class="nutrition-features">
-          <div class="nutrition-feature nutrition-feature--featured">
-            <div class="nutrition-feature-header">
-              <div class="nutrition-feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              </div>
-              <span class="nutrition-tag">Chief Dietician</span>
-            </div>
-            <h3>1-on-1 Personalized Plans</h3>
-            <p>Work directly with Dr. Beena Arora, our Chief Dietician with 20+ years of experience. Customized meal plans based on your procedure, lifestyle and preferences.</p>
-            <a href="#appointment" class="nutrition-link">Meet Our Dietician →</a>
-          </div>
-
-          <div class="nutrition-feature">
-            <div class="nutrition-feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <h3>Lifetime Follow-ups</h3>
-            <p>Monthly check-ins for year one, quarterly after, annual reviews for life.</p>
-          </div>
-
-          <div class="nutrition-feature">
-            <div class="nutrition-feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3"/></svg>
-            </div>
-            <h3>WhatsApp Direct Line</h3>
-            <p>Reach our care team anytime with concerns, questions or just to share your progress.</p>
-          </div>
-
-          <div class="nutrition-feature">
-            <div class="nutrition-feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <h3>Video Consultations</h3>
-            <p>From anywhere in the world — connect with our team via secure video calls.</p>
-          </div>
-
-          <div class="nutrition-feature">
-            <div class="nutrition-feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            </div>
-            <h3>Diet Plan Library</h3>
-            <p>Phased meal plans, recipes and grocery lists for every stage of recovery.</p>
-          </div>
-
-          <div class="nutrition-feature">
-            <div class="nutrition-feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <h3>Patient Community</h3>
-            <p>Connect with fellow patients for motivation, tips and shared experiences.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- International -->
-  <section class="service-intl section">
-    <div class="intl-bg-pattern"></div>
-    <div class="intl-bg-glow intl-bg-glow--1"></div>
-    <div class="intl-bg-glow intl-bg-glow--2"></div>
-
-    <div class="container">
-      <div class="section-header center">
-        <div class="section-eyebrow intl-eyebrow">
-          <span class="intl-pulse"></span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          International Patients
-        </div>
-        <h2 class="section-title intl-title">Caring for Patients<br><span class="text-accent">Across Borders</span></h2>
-        <p class="section-sub intl-sub">Trusted by 5,000+ patients from 50+ countries</p>
-      </div>
-
-      <div class="intl-stats-row">
-        <div class="intl-stat-item">
-          <div class="intl-stat-num">50<small>+</small></div>
-          <div class="intl-stat-label">Countries</div>
-        </div>
-        <div class="intl-stat-item">
-          <div class="intl-stat-num">5,000<small>+</small></div>
-          <div class="intl-stat-label">Patients Treated</div>
-        </div>
-        <div class="intl-stat-item">
-          <div class="intl-stat-num">24<small>/7</small></div>
-          <div class="intl-stat-label">Travel Support</div>
-        </div>
-        <div class="intl-stat-item">
-          <div class="intl-stat-num">15<small>+</small></div>
-          <div class="intl-stat-label">Languages</div>
-        </div>
-      </div>
-
-      <div class="intl-services-grid">
-        <div class="intl-service-card">
-          <div class="intl-service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          </div>
-          <h4>Visa Assistance</h4>
-          <p>Fast-track medical visa with invitation letter</p>
-        </div>
-
-        <div class="intl-service-card">
-          <div class="intl-service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
-          </div>
-          <h4>Airport Pickup</h4>
-          <p>Complimentary luxury pickup & drop service</p>
-        </div>
-
-        <div class="intl-service-card">
-          <div class="intl-service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 22h20M3 9.5L12 2l9 7.5M5 22V11M19 22V11M9 22v-6h6v6"/></svg>
-          </div>
-          <h4>Accommodation</h4>
-          <p>Partner 4★/5★ hotels with negotiated rates</p>
-        </div>
-
-        <div class="intl-service-card">
-          <div class="intl-service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          </div>
-          <h4>Language Support</h4>
-          <p>Arabic, English, French, Hindi & Swahili coordinators</p>
-        </div>
-
-        <div class="intl-service-card">
-          <div class="intl-service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 11l-3-3m0 0l-3 3m3-3v12"/></svg>
-          </div>
-          <h4>Dietary Care</h4>
-          <p>Halal, kosher, vegan & cultural meal plans</p>
-        </div>
-
-        <div class="intl-service-card">
-          <div class="intl-service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3"/></svg>
-          </div>
-          <h4>Tele Follow-up</h4>
-          <p>Lifelong video consultations post return</p>
-        </div>
-      </div>
-
-      <div class="intl-flags">
-        <span class="intl-flag">🇦🇪 UAE</span>
-        <span class="intl-flag">🇸🇦 Saudi Arabia</span>
-        <span class="intl-flag">🇴🇲 Oman</span>
-        <span class="intl-flag">🇶🇦 Qatar</span>
-        <span class="intl-flag">🇰🇼 Kuwait</span>
-        <span class="intl-flag">🇰🇪 Kenya</span>
-        <span class="intl-flag">🇳🇬 Nigeria</span>
-        <span class="intl-flag">🇪🇹 Ethiopia</span>
-        <span class="intl-flag">🇺🇸 USA</span>
-        <span class="intl-flag">🇬🇧 UK</span>
-        <span class="intl-flag">🇧🇩 Bangladesh</span>
-        <span class="intl-flag intl-flag--more">+38 more</span>
-      </div>
-
-      <div class="intl-cta">
-        <a href="#appointment" class="btn btn-gold btn-lg">Plan Your Medical Visit
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Candidate + BMI Calculator -->
+  <!-- Candidate + Eligibility Insights -->
   <section class="service-candidate section">
-    <div class="candidate-bg-pattern"></div>
-    <div class="candidate-bg-glow candidate-bg-glow--1"></div>
-    <div class="candidate-bg-glow candidate-bg-glow--2"></div>
+    <!-- Background decorations -->
+    <div class="candidate-bg-pattern" aria-hidden="true"></div>
+    <div class="candidate-bg-glow candidate-bg-glow--1" aria-hidden="true"></div>
+    <div class="candidate-bg-glow candidate-bg-glow--2" aria-hidden="true"></div>
+
     <div class="container">
       <div class="section-header center">
         <div class="section-eyebrow">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+            <polyline points="22 4 12 14.01 9 11.01" />
+          </svg>
           Eligibility
         </div>
         <h2 class="section-title">Are You a <span class="text-accent">Candidate?</span></h2>
         <p class="section-sub">Find out if weight loss surgery is right for you</p>
       </div>
 
+      <!-- Top: Quick Stats Strip -->
+      <div class="candidate-stats-strip">
+        <div class="candidate-stat-cell">
+          <span class="candidate-stat-num">35+</span>
+          <span class="candidate-stat-label">BMI Threshold</span>
+        </div>
+        <div class="candidate-stat-divider"></div>
+        <div class="candidate-stat-cell">
+          <span class="candidate-stat-num">18-65</span>
+          <span class="candidate-stat-label">Age Range</span>
+        </div>
+        <div class="candidate-stat-divider"></div>
+        <div class="candidate-stat-cell">
+          <span class="candidate-stat-num">5K+</span>
+          <span class="candidate-stat-label">Patients Treated</span>
+        </div>
+        <div class="candidate-stat-divider"></div>
+        <div class="candidate-stat-cell">
+          <span class="candidate-stat-num">Free</span>
+          <span class="candidate-stat-label">Evaluation</span>
+        </div>
+      </div>
+
       <div class="candidate-layout">
         <!-- Left: Eligibility Criteria -->
         <div class="candidate-criteria">
-          <h3 class="criteria-title">You may qualify if you meet these criteria:</h3>
+          <div class="criteria-header">
+            <h3 class="criteria-title">You may qualify if you meet these criteria:</h3>
+            <span class="criteria-badge">4 Criteria</span>
+          </div>
 
           <div class="criteria-list">
             <div class="criteria-item criteria-item--yes">
+              <div class="criteria-num">01</div>
               <div class="criteria-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
               </div>
               <div class="criteria-body">
                 <h4>BMI 35 or higher</h4>
@@ -1003,8 +1417,11 @@
             </div>
 
             <div class="criteria-item criteria-item--yes">
+              <div class="criteria-num">02</div>
               <div class="criteria-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
               </div>
               <div class="criteria-body">
                 <h4>BMI 30-35 with comorbidities</h4>
@@ -1013,8 +1430,11 @@
             </div>
 
             <div class="criteria-item criteria-item--yes">
+              <div class="criteria-num">03</div>
               <div class="criteria-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
               </div>
               <div class="criteria-body">
                 <h4>Failed conservative methods</h4>
@@ -1023,8 +1443,11 @@
             </div>
 
             <div class="criteria-item criteria-item--yes">
+              <div class="criteria-num">04</div>
               <div class="criteria-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
               </div>
               <div class="criteria-body">
                 <h4>Committed to lifestyle change</h4>
@@ -1035,90 +1458,66 @@
 
           <div class="criteria-note">
             <div class="criteria-note-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 16v-4" />
+                <path d="M12 8h.01" />
+              </svg>
             </div>
-            <div>
+            <div class="criteria-note-body">
               <strong>Not sure?</strong>
-              <p>Schedule a free evaluation — we'll assess your eligibility with no obligation.</p>
+              <p>Schedule a free evaluation &mdash; we'll assess your eligibility with no obligation.</p>
             </div>
             <a href="#appointment" class="btn btn-gold">Free Evaluation</a>
           </div>
         </div>
 
-        <!-- Right: BMI Calculator -->
-        <div class="bmi-calculator">
-          <div class="bmi-calc-header">
-            <div class="bmi-calc-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3v4M8 3v4M2 11h20"/></svg>
+        <!-- Right: Eligibility Insight Cards -->
+        <div class="candidate-insights">
+          <div class="insight-card insight-card--primary">
+            <div class="insight-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
             </div>
-            <div>
-              <h3>BMI Calculator</h3>
-              <p>Check your Body Mass Index</p>
-            </div>
-          </div>
-
-          <div class="bmi-inputs">
-            <div class="bmi-input-group">
-              <div class="bmi-input-head">
-                <label>Height</label>
-                <span class="bmi-val" id="bmiHeightValue">170 cm</span>
-              </div>
-              <div class="bmi-slider-wrap">
-                <input type="range" id="bmi-height" min="140" max="220" value="170" step="1">
-                <div class="bmi-ticks">
-                  <span>140</span><span>170</span><span>200</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="bmi-input-group">
-              <div class="bmi-input-head">
-                <label>Weight</label>
-                <span class="bmi-val" id="bmiWeightValue">100 kg</span>
-              </div>
-              <div class="bmi-slider-wrap">
-                <input type="range" id="bmi-weight" min="50" max="200" value="100" step="1">
-                <div class="bmi-ticks">
-                  <span>50</span><span>100</span><span>150</span><span>200</span>
-                </div>
-              </div>
+            <h4>98% Eligibility Success</h4>
+            <p>Patients who meet the criteria and proceed with surgery achieve lasting results.</p>
+            <div class="insight-stat">
+              <div class="insight-stat-num">5,000+</div>
+              <div class="insight-stat-lbl">Successful procedures</div>
             </div>
           </div>
 
-          <div class="bmi-display">
-            <svg class="bmi-gauge" viewBox="0 0 200 120">
-              <defs>
-                <linearGradient id="bmiGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="#3B82F6"/>
-                  <stop offset="25%" stop-color="#22C55E"/>
-                  <stop offset="50%" stop-color="#EAB308"/>
-                  <stop offset="75%" stop-color="#F97316"/>
-                  <stop offset="100%" stop-color="#DC2626"/>
-                </linearGradient>
-              </defs>
-              <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="#E5E7EB" stroke-width="14" stroke-linecap="round"/>
-              <path id="bmiGaugeArc" d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="url(#bmiGradient)" stroke-width="14" stroke-linecap="round" stroke-dasharray="0 251"/>
-              <g id="bmiNeedle" transform="rotate(-90 100 100)">
-                <line x1="100" y1="100" x2="100" y2="35" stroke="#1A2535" stroke-width="3" stroke-linecap="round"/>
-                <circle cx="100" cy="100" r="6" fill="#1A2535"/>
-              </g>
-            </svg>
-            <div class="bmi-readout">
-              <div class="bmi-num" id="bmiNumber">34.6</div>
-              <div class="bmi-unit">kg/m²</div>
+          <div class="insight-card">
+            <div class="insight-icon insight-icon--blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
             </div>
+            <h4>Quick Assessment</h4>
+            <p>Most evaluations are completed in a single 30-minute consultation.</p>
+            <ul class="insight-list">
+              <li>Medical history review</li>
+              <li>BMI &amp; health analysis</li>
+              <li>Personalized recommendation</li>
+            </ul>
           </div>
 
-          <div class="bmi-result-card" id="bmiResult">
-            <span class="bmi-category" id="bmiCategory">Class I Obesity</span>
-            <p class="bmi-advice" id="bmiAdvice">You may be a candidate for bariatric surgery.</p>
-          </div>
-
-          <div class="bmi-legend">
-            <span><i style="background:#3B82F6"></i>Underweight</span>
-            <span><i style="background:#22C55E"></i>Normal</span>
-            <span><i style="background:#EAB308"></i>Overweight</span>
-            <span><i style="background:#F97316"></i>Obese</span>
+          <div class="insight-card">
+            <div class="insight-icon insight-icon--teal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h4>Insurance &amp; Financing</h4>
+            <p>Most insurance plans cover bariatric surgery when criteria are met.</p>
+            <ul class="insight-list">
+              <li>Insurance pre-authorization</li>
+              <li>0% EMI options available</li>
+              <li>Cashless hospital network</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -1127,172 +1526,373 @@
 
   <!-- FAQ -->
   <section class="service-faq section">
+    <!-- Background decorations -->
+    <div class="faq-bg-pattern" aria-hidden="true"></div>
+    <div class="faq-bg-glow faq-bg-glow--1" aria-hidden="true"></div>
+    <div class="faq-bg-glow faq-bg-glow--2" aria-hidden="true"></div>
+
     <div class="container">
       <div class="section-header center">
         <div class="section-eyebrow">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+            <path d="M12 17h.01" />
+          </svg>
           Common Questions
         </div>
         <h2 class="section-title">Frequently Asked <span class="text-accent">Questions</span></h2>
         <p class="section-sub">Everything you need to know before your first consultation</p>
       </div>
 
-      <div class="faq-grid">
-        <details class="faq-card" data-category="weight">
-          <summary class="faq-question">
-            <span>How much weight will I lose?</span>
-            <div class="faq-toggle">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </div>
-          </summary>
-          <div class="faq-answer">
-            <p>Most patients lose <strong>60-80% of their excess weight</strong> within 12-18 months after surgery. Exact results vary by procedure:</p>
-            <ul>
-              <li><strong>Sleeve Gastrectomy:</strong> 60-70% excess weight loss</li>
-              <li><strong>Gastric Bypass:</strong> 70-80% excess weight loss</li>
-              <li><strong>Mini Bypass:</strong> 75-85% excess weight loss</li>
-            </ul>
-            <p class="faq-note">Weight loss is typically fastest in months 3-6, then stabilizes over 12-18 months.</p>
+      <!-- Two-column layout: categories sidebar + accordion -->
+      <div class="faq-layout">
+        <!-- Left sidebar: category cards -->
+        <aside class="faq-sidebar">
+          <div class="faq-sidebar-head">
+            <h3>Browse by Topic</h3>
+            <p>Click a topic to filter</p>
           </div>
-        </details>
 
-        <details class="faq-card" data-category="safety">
-          <summary class="faq-question">
-            <span>Is weight loss surgery safe?</span>
-            <div class="faq-toggle">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </div>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — when performed by an experienced bariatric surgeon, these procedures are among the safest major surgeries. The <strong>mortality rate is under 0.3%</strong>, which is lower than many common procedures like gallbladder removal or hip replacement.</p>
-            <div class="faq-stat">
-              <div class="faq-stat-num">98%</div>
-              <p>Success rate at Dr. Peters' center</p>
-            </div>
-            <p>Risks are minimized through:</p>
-            <ul>
-              <li>25+ years of surgical experience</li>
-              <li>Advanced laparoscopic/robotic techniques</li>
-              <li>Comprehensive pre-op evaluation</li>
-              <li>Lifetime follow-up support</li>
-            </ul>
-          </div>
-        </details>
+          <div class="faq-categories">
+            <button class="faq-cat-btn faq-cat-btn--active" data-cat="all">
+              <div class="faq-cat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="7" height="7" />
+                  <rect x="14" y="3" width="7" height="7" />
+                  <rect x="14" y="14" width="7" height="7" />
+                  <rect x="3" y="14" width="7" height="7" />
+                </svg>
+              </div>
+              <div class="faq-cat-body">
+                <strong>All Questions</strong>
+                <span>8 topics</span>
+              </div>
+            </button>
 
-        <details class="faq-card" data-category="recovery">
-          <summary class="faq-question">
-            <span>How long is the hospital stay?</span>
-            <div class="faq-toggle">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </div>
-          </summary>
-          <div class="faq-answer">
-            <p>Most patients stay <strong>2-3 nights</strong> in hospital. Here's the typical timeline:</p>
-            <ul>
-              <li><strong>Day 0:</strong> Surgery (60-90 minutes)</li>
-              <li><strong>Day 1:</strong> Walk with assistance</li>
-              <li><strong>Day 2:</strong> Drain removal, discharge</li>
-              <li><strong>Week 1-2:</strong> Liquid → Pureed diet</li>
-              <li><strong>Week 2-4:</strong> Soft foods</li>
-              <li><strong>Week 4+:</strong> Regular foods (small portions)</li>
-            </ul>
-          </div>
-        </details>
+            <button class="faq-cat-btn" data-cat="weight">
+              <div class="faq-cat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 5.69l5 4.5V18h-2v-3.5H9V18H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z" />
+                </svg>
+              </div>
+              <div class="faq-cat-body">
+                <strong>Weight Loss</strong>
+                <span>2 questions</span>
+              </div>
+            </button>
 
-        <details class="faq-card" data-category="lifestyle">
-          <summary class="faq-question">
-            <span>Can I get pregnant after surgery?</span>
-            <div class="faq-toggle">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </div>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes! Many patients who previously struggled with fertility conceive naturally after weight loss. We recommend:</p>
-            <ul>
-              <li>Wait <strong>18-24 months</strong> after surgery before pregnancy</li>
-              <li>Stable weight is ideal before trying</li>
-              <li>Monthly follow-ups ensure you're ready</li>
-            </ul>
-            <p class="faq-note">Weight loss often improves PCOS and hormonal balance, increasing fertility.</p>
-          </div>
-        </details>
+            <button class="faq-cat-btn" data-cat="safety">
+              <div class="faq-cat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <div class="faq-cat-body">
+                <strong>Safety &amp; Risk</strong>
+                <span>2 questions</span>
+              </div>
+            </button>
 
-        <details class="faq-card" data-category="weight">
-          <summary class="faq-question">
-            <span>Will I have loose skin?</span>
-            <div class="faq-toggle">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </div>
-          </summary>
-          <div class="faq-answer">
-            <p>Some skin excess is normal after major weight loss. Factors affecting skin:</p>
-            <ul>
-              <li><strong>Age:</strong> Younger = better elasticity</li>
-              <li><strong>Weight lost:</strong> More = more loose skin</li>
-              <li><strong>Genetics:</strong> Some skin retracts better</li>
-            </ul>
-            <p class="faq-note">We offer skin removal procedures (tummy tuck, arm lift, etc.) once you've reached your goal weight. Typically 12-18 months post-surgery.</p>
-          </div>
-        </details>
+            <button class="faq-cat-btn" data-cat="recovery">
+              <div class="faq-cat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <div class="faq-cat-body">
+                <strong>Recovery Time</strong>
+                <span>2 questions</span>
+              </div>
+            </button>
 
-        <details class="faq-card" data-category="lifestyle">
-          <summary class="faq-question">
-            <span>What about diet after surgery?</span>
-            <div class="faq-toggle">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </div>
-          </summary>
-          <div class="faq-answer">
-            <p>You'll follow a phased diet progression:</p>
-            <ul>
-              <li><strong>Weeks 1-2:</strong> Clear liquids → Full liquids</li>
-              <li><strong>Weeks 2-4:</strong> Pureed/protein shakes</li>
-              <li><strong>Months 1-3:</strong> Soft foods</li>
-              <li><strong>Month 3+:</strong> Regular foods</li>
-            </ul>
-            <p class="faq-note">Long-term: Smaller portions, more protein, less sugar. Our dietician creates personalized plans.</p>
+            <button class="faq-cat-btn" data-cat="lifestyle">
+              <div class="faq-cat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+              </div>
+              <div class="faq-cat-body">
+                <strong>Lifestyle</strong>
+                <span>2 questions</span>
+              </div>
+            </button>
           </div>
-        </details>
 
-        <details class="faq-card" data-category="safety">
-          <summary class="faq-question">
-            <span>Is it dolorosaful?</span>
-            <div class="faq-toggle">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          <!-- Trust badge in sidebar -->
+          <div class="faq-trust-card">
+            <div class="faq-trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
             </div>
-          </summary>
-          <div class="faq-answer">
-            <p>You'll be under general anesthesia during surgery — <strong>no pain during the procedure</strong>. Post-op discomfort is managed with medication and is typically mild. Most patients describe it as:</p>
-            <ul>
-              <li>Mild abdominal soreness (2-3 days)</li>
-              <li>Manageable with prescribed pain relievers</li>
-              <li>Walking same day helps reduce discomfort</li>
-            </ul>
+            <h4>Still need answers?</h4>
+            <p>Speak with a coordinator &mdash; no obligation, fully private.</p>
+            <a href="#appointment" class="faq-trust-btn">Book Free Call</a>
           </div>
-        </details>
+        </aside>
 
-        <details class="faq-card" data-category="recovery">
-          <summary class="faq-question">
-            <span>How soon can I return to work?</span>
-            <div class="faq-toggle">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        <!-- Right: accordion questions -->
+        <div class="faq-accordion" id="faqAccordion">
+          <details class="faq-card" data-category="weight" open>
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--weight">Weight Loss</span>
+                <span class="faq-q-text">How much weight will I lose?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>Most patients lose <strong>60-80% of their excess weight</strong> within 12-18 months after surgery.
+                Exact results vary by procedure:</p>
+              <ul>
+                <li><strong>Sleeve Gastrectomy:</strong> 60-70% excess weight loss</li>
+                <li><strong>Gastric Bypass:</strong> 70-80% excess weight loss</li>
+                <li><strong>Mini Bypass:</strong> 75-85% excess weight loss</li>
+              </ul>
+              <div class="faq-note">
+                <div class="faq-note-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 16v-4" />
+                    <path d="M12 8h.01" />
+                  </svg>
+                </div>
+                <p>Weight loss is typically fastest in months 3-6, then stabilizes over 12-18 months.</p>
+              </div>
             </div>
-          </summary>
-          <div class="faq-answer">
-            <p>Timeline varies by job type:</p>
-            <ul>
-              <li><strong>Sedentary work:</strong> 1-2 weeks</li>
-              <li><strong>Office work:</strong> 2-3 weeks</li>
-              <li><strong>Physical work:</strong> 4-6 weeks</li>
-            </ul>
-            <p class="faq-note">Light walking is encouraged from day 1 to aid recovery and prevent blood clots.</p>
-          </div>
-        </details>
+          </details>
+
+          <details class="faq-card" data-category="safety">
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--safety">Safety &amp; Risk</span>
+                <span class="faq-q-text">Is weight loss surgery safe?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes &mdash; when performed by an experienced bariatric surgeon, these procedures are among the safest
+                major surgeries. The <strong>mortality rate is under 0.3%</strong>, which is lower than many common
+                procedures like gallbladder removal or hip replacement.</p>
+              <div class="faq-stat">
+                <div class="faq-stat-num">98%</div>
+                <p>Success rate at Dr. Peters&rsquo; center</p>
+              </div>
+              <p>Risks are minimized through:</p>
+              <ul>
+                <li>25+ years of surgical experience</li>
+                <li>Advanced laparoscopic/robotic techniques</li>
+                <li>Comprehensive pre-op evaluation</li>
+                <li>Lifetime follow-up support</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="faq-card" data-category="recovery">
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--recovery">Recovery Time</span>
+                <span class="faq-q-text">How long is the hospital stay?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>Most patients stay <strong>2-3 nights</strong> in hospital. Here&rsquo;s the typical timeline:</p>
+              <ul>
+                <li><strong>Day 0:</strong> Surgery (60-90 minutes)</li>
+                <li><strong>Day 1:</strong> Walk with assistance</li>
+                <li><strong>Day 2:</strong> Drain removal, discharge</li>
+                <li><strong>Week 1-2:</strong> Liquid &rarr; Pureed diet</li>
+                <li><strong>Week 2-4:</strong> Soft foods</li>
+                <li><strong>Week 4+:</strong> Regular foods (small portions)</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="faq-card" data-category="lifestyle">
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--lifestyle">Lifestyle</span>
+                <span class="faq-q-text">Can I get pregnant after surgery?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes! Many patients who previously struggled with fertility conceive naturally after weight loss. We
+                recommend:</p>
+              <ul>
+                <li>Wait <strong>18-24 months</strong> after surgery before pregnancy</li>
+                <li>Stable weight is ideal before trying</li>
+                <li>Monthly follow-ups ensure you&rsquo;re ready</li>
+              </ul>
+              <div class="faq-note">
+                <div class="faq-note-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 16v-4" />
+                    <path d="M12 8h.01" />
+                  </svg>
+                </div>
+                <p>Weight loss often improves PCOS and hormonal balance, increasing fertility.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq-card" data-category="weight">
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--weight">Weight Loss</span>
+                <span class="faq-q-text">Will I have loose skin?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>Some skin excess is normal after major weight loss. Factors affecting skin:</p>
+              <ul>
+                <li><strong>Age:</strong> Younger = better elasticity</li>
+                <li><strong>Weight lost:</strong> More = more loose skin</li>
+                <li><strong>Genetics:</strong> Some skin retracts better</li>
+              </ul>
+              <div class="faq-note">
+                <div class="faq-note-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 16v-4" />
+                    <path d="M12 8h.01" />
+                  </svg>
+                </div>
+                <p>We offer skin removal procedures (tummy tuck, arm lift, etc.) once you&rsquo;ve reached your goal
+                  weight. Typically 12-18 months post-surgery.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq-card" data-category="lifestyle">
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--lifestyle">Lifestyle</span>
+                <span class="faq-q-text">What about diet after surgery?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>You&rsquo;ll follow a phased diet progression:</p>
+              <ul>
+                <li><strong>Weeks 1-2:</strong> Clear liquids &rarr; Full liquids</li>
+                <li><strong>Weeks 2-4:</strong> Pureed/protein shakes</li>
+                <li><strong>Months 1-3:</strong> Soft foods</li>
+                <li><strong>Month 3+:</strong> Regular foods</li>
+              </ul>
+              <div class="faq-note">
+                <div class="faq-note-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 16v-4" />
+                    <path d="M12 8h.01" />
+                  </svg>
+                </div>
+                <p>Long-term: Smaller portions, more protein, less sugar. Our dietician creates personalized plans.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq-card" data-category="safety">
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--safety">Safety &amp; Risk</span>
+                <span class="faq-q-text">Is it painful?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>You&rsquo;ll be under general anesthesia during surgery &mdash; <strong>no pain during the
+                  procedure</strong>. Post-op discomfort is managed with medication and is typically mild. Most patients
+                describe it as:</p>
+              <ul>
+                <li>Mild abdominal soreness (2-3 days)</li>
+                <li>Manageable with prescribed pain relievers</li>
+                <li>Walking same day helps reduce discomfort</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="faq-card" data-category="recovery">
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--recovery">Recovery Time</span>
+                <span class="faq-q-text">How soon can I return to work?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>Timeline varies by job type:</p>
+              <ul>
+                <li><strong>Sedentary work:</strong> 1-2 weeks</li>
+                <li><strong>Office work:</strong> 2-3 weeks</li>
+                <li><strong>Physical work:</strong> 4-6 weeks</li>
+              </ul>
+              <div class="faq-note">
+                <div class="faq-note-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 16v-4" />
+                    <path d="M12 8h.01" />
+                  </svg>
+                </div>
+                <p>Light walking is encouraged from day 1 to aid recovery and prevent blood clots.</p>
+              </div>
+            </div>
+          </details>
+        </div>
       </div>
 
       <div class="faq-cta">
         <p>Still have questions?</p>
-        <a href="#appointment" class="btn btn-outline">Ask Our Team →</a>
+        <a href="#appointment" class="btn btn-outline">Ask Our Team &rarr;</a>
       </div>
     </div>
   </section>
@@ -1309,7 +1909,9 @@
         <div class="cta-content">
           <div class="section-eyebrow cta-eyebrow">
             <span class="cta-pulse"></span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
             Free Consultation
           </div>
           <h2 class="cta-title">Ready to <span class="text-accent">Transform</span> Your Life?</h2>
@@ -1318,7 +1920,9 @@
           <div class="cta-trust">
             <div class="cta-trust-item">
               <div class="cta-trust-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
               </div>
               <div>
                 <strong>100% Confidential</strong>
@@ -1327,7 +1931,10 @@
             </div>
             <div class="cta-trust-item">
               <div class="cta-trust-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
               </div>
               <div>
                 <strong>Callback in 2 hours</strong>
@@ -1336,7 +1943,10 @@
             </div>
             <div class="cta-trust-item">
               <div class="cta-trust-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="1" x2="12" y2="23" />
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg>
               </div>
               <div>
                 <strong>Zero Obligation</strong>
@@ -1347,7 +1957,10 @@
 
           <div class="cta-testimonial">
             <div class="cta-testimonial-quote">
-              <svg viewBox="0 0 24 24" fill="currentColor" opacity="0.3"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c.25 0 .25.008.25.083v1.667c0 .667-.167 1.083-.5 1.25s-.5.342-.5.5v1c0 .667.333 1 1 1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" opacity="0.3">
+                <path
+                  d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c.25 0 .25.008.25.083v1.667c0 .667-.167 1.083-.5 1.25s-.5.342-.5.5v1c0 .667.333 1 1 1z" />
+              </svg>
               <p>"From my first call to the surgery, the team made me feel cared for. Best decision of my life."</p>
             </div>
             <div class="cta-testimonial-author">
@@ -1362,8 +1975,6 @@
 
         <!-- Right: Form Card -->
         <div class="cta-form-card">
-          <div class="form-decor form-decor--1"></div>
-          <div class="form-decor form-decor--2"></div>
 
           <div class="form-card-header">
             <h3>Request Your Free Consultation</h3>
@@ -1375,14 +1986,20 @@
               <div class="form-field">
                 <label for="fullName">Full Name *</label>
                 <div class="form-input-wrap">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
                   <input type="text" id="fullName" placeholder="John Doe" required>
                 </div>
               </div>
               <div class="form-field">
                 <label for="phone">Phone *</label>
                 <div class="form-input-wrap">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3" />
+                  </svg>
                   <input type="tel" id="phone" placeholder="+91 98765 43210" required>
                 </div>
               </div>
@@ -1391,7 +2008,10 @@
             <div class="form-field">
               <label for="email">Email Address</label>
               <div class="form-input-wrap">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
                 <input type="email" id="email" placeholder="you@example.com">
               </div>
             </div>
@@ -1400,14 +2020,21 @@
               <div class="form-field">
                 <label for="age">Age</label>
                 <div class="form-input-wrap">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg>
                   <input type="number" id="age" placeholder="35" min="18" max="80">
                 </div>
               </div>
               <div class="form-field">
                 <label for="bmi">Current BMI</label>
                 <div class="form-input-wrap">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                  </svg>
                   <input type="number" id="bmi" placeholder="38" step="0.1">
                 </div>
               </div>
@@ -1416,7 +2043,9 @@
             <div class="form-field">
               <label for="procedure">Interested Procedure</label>
               <div class="form-input-wrap">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
                 <select id="procedure">
                   <option>Select a procedure</option>
                   <option>Not sure — please advise</option>
@@ -1441,12 +2070,20 @@
 
             <button type="submit" class="btn btn-gold btn-lg form-submit">
               <span>Request Free Consultation</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </button>
 
             <div class="form-badges">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Secure & Private</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2hr Response</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg> Secure & Private</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg> 2hr Response</span>
             </div>
           </form>
         </div>
@@ -1454,12 +2091,181 @@
     </div>
   </section>
 
-  <footer class="footer">
+
+  <!-- ============================================
+   SITE FOOTER (Partial)
+   Edit this file to update footer on ALL pages
+   ============================================ -->
+
+  <footer class="footer" id="contact">
+    <div class="footer-bg-glow" aria-hidden="true"></div>
     <div class="container">
-      <p>&copy; 2026 Dr. Atul Peters. All rights reserved.</p>
+
+      <!-- Centered big logo + tagline -->
+      <div class="footer-hero">
+        <a href="index.html" class="footer-logo-big" aria-label="Dr. Atul Peters - Home">
+          <img src="https://www.atulpeters.com/front/img/logo-04.png" alt="Dr. Atul Peters" class="footer-logo-img"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 60%22%3E%3Ctext x=%22100%22 y=%2240%22 text-anchor=%22middle%22 font-family=%22Georgia%22 font-size=%2230%22 fill=%22%23fff%22%3EDr. Atul Peters%3C/text%3E%3C/svg%3E'">
+        </a>
+        <div class="footer-tagline-wrap">
+          <p class="footer-tagline">Transforming lives through advanced bariatric and metabolic surgery for over 25
+            years.</p>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.6c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+              <polygon points="9.75 15.02 15.5 12 9.75 8.48 9.75 15.02" fill="#fff" />
+            </svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
+            </svg></a>
+        </div>
+      </div>
+
+      <!-- Services columns -->
+      <div class="footer-services">
+        <div class="footer-col">
+          <h4>Bariatric &amp; Metabolic</h4>
+          <ul class="footer-links">
+            <li><a href="roux-en-y-gastric-bypass.html"><span class="footer-link-dot"></span>Gastric Bypass</a></li>
+            <li><a href="sleeve-gastrectomy.html"><span class="footer-link-dot"></span>Sleeve Gastrectomy</a></li>
+            <li><a href="mini-gastric-bypass.html"><span class="footer-link-dot"></span>Mini Gastric Bypass</a></li>
+            <li><a href="#"><span class="footer-link-dot"></span>Diabetes Surgery</a></li>
+            <li><a href="#"><span class="footer-link-dot"></span>Revision Surgery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>General &amp; Robotic</h4>
+          <ul class="footer-links">
+            <li><a href="#"><span class="footer-link-dot"></span>Robotic Surgery</a></li>
+            <li><a href="#"><span class="footer-link-dot"></span>Hernia Repair</a></li>
+            <li><a href="#"><span class="footer-link-dot"></span>Gallbladder Surgery</a></li>
+            <li><a href="#"><span class="footer-link-dot"></span>Endoscopy</a></li>
+            <li><a href="#"><span class="footer-link-dot"></span>Lap Band Removal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html"><span class="footer-link-dot"></span>About Dr. Peters</a></li>
+            <li><a href="weight-loss.html#success"><span class="footer-link-dot"></span>Success Stories</a></li>
+            <li><a href="#"><span class="footer-link-dot"></span>Video Gallery</a></li>
+            <li><a href="weight-loss.html#faq"><span class="footer-link-dot"></span>FAQ</a></li>
+            <li><a href="#appointment"><span class="footer-link-dot"></span>Book Consultation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <div class="footer-contact">
+            <a href="tel:+917770001900" class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 0 2 1.72" />
+              </svg>
+              <div><strong>+91-7770001900</strong><span>Mon–Sat · 9am – 7pm</span></div>
+            </a>
+            <a href="mailto:info@atulpeters.com" class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <div><strong>info@atulpeters.com</strong><span>We reply within 24 hours</span></div>
+            </a>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <div><strong>Max Hospital, Saket</strong><span>New Delhi - 110017, India</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dr. Atul Peters. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
     </div>
   </footer>
 
+
+
+
   <script src="main.js"></script>
+  // -- ACTIVE NAV INJECTOR --
+
+  <script>
+    (function () {
+      var p = 'weight-loss.html';
+      document.querySelectorAll('.navbar .nav-link').forEach(function (l) {
+        var href = (l.getAttribute('href') || '').split('#')[0];
+        if (href === p) l.classList.add('nav-link--active');
+      });
+    })();
+
+    // FAQ category filter
+    (function () {
+      var buttons = document.querySelectorAll('.faq-cat-btn');
+      var cards = document.querySelectorAll('.faq-card');
+      if (!buttons.length || !cards.length) return;
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var cat = btn.getAttribute('data-cat');
+          buttons.forEach(function (b) { b.classList.remove('faq-cat-btn--active'); });
+          btn.classList.add('faq-cat-btn--active');
+          cards.forEach(function (card) {
+            if (cat === 'all' || card.getAttribute('data-category') === cat) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    })();
+
+    // FAQ accordion: only one open at a time
+    (function () {
+      var accordions = document.querySelectorAll('.faq-accordion .faq-card');
+      if (!accordions.length) return;
+      accordions.forEach(function (card) {
+        card.addEventListener('toggle', function () {
+          if (card.hasAttribute('open')) {
+            accordions.forEach(function (other) {
+              if (other !== card && other.hasAttribute('open')) {
+                other.removeAttribute('open');
+              }
+            });
+          }
+        });
+      });
+    })();
+  </script>
 </body>
+
 </html>
