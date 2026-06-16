@@ -3,7 +3,19 @@
    Premium Clinical Design v1.0
    =================================== */
 
+
+
+function setActiveNavLink() {
+  const p = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.navbar .nav-link').forEach(function(l) {
+    const href = (l.getAttribute('href') || '').split('#')[0];
+    if (href === p) l.classList.add('nav-link--active');
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  setActiveNavLink();
+
   initNavigation();
   initScrollAnimations();
   initFAQAccordion();
@@ -162,8 +174,7 @@ function initBMICalculator() {
   // Gauge arc: half-circle path, length is ~251
   const ARC_LEN = 251;
 
-  // Colors for the BMI value & category
-  const CATS = [
+  const CATS_CAUCASIAN = [
     { max: 18.5, cat: 'Underweight',    numColor: '#60A5FA', bg: 'rgba(96,165,250,0.18)',  border: 'rgba(96,165,250,0.4)',  adv: 'You may need to gain weight. Consult with a nutritionist.' },
     { max: 25,   cat: 'Normal Weight',  numColor: '#34D399', bg: 'rgba(52,211,153,0.18)',  border: 'rgba(52,211,153,0.4)',  adv: 'Great! Maintain your healthy weight with balanced diet.' },
     { max: 30,   cat: 'Overweight',     numColor: '#FBBF24', bg: 'rgba(251,191,36,0.18)',  border: 'rgba(251,191,36,0.4)',  adv: 'Consider lifestyle changes. A consultation can help.' },
@@ -172,7 +183,18 @@ function initBMICalculator() {
     { max: 999,  cat: 'Class III Obesity',numColor: '#EF4444', bg: 'rgba(239,68,68,0.20)',  border: 'rgba(239,68,68,0.45)',  adv: 'We strongly recommend scheduling a consultation.' }
   ];
 
+  const CATS_ASIAN = [
+    { max: 18.5, cat: 'Underweight',    numColor: '#60A5FA', bg: 'rgba(96,165,250,0.18)',  border: 'rgba(96,165,250,0.4)',  adv: 'You may need to gain weight. Consult with a nutritionist.' },
+    { max: 23,   cat: 'Normal Weight',  numColor: '#34D399', bg: 'rgba(52,211,153,0.18)',  border: 'rgba(52,211,153,0.4)',  adv: 'Great! Maintain your healthy weight with balanced diet.' },
+    { max: 25,   cat: 'Overweight',     numColor: '#FBBF24', bg: 'rgba(251,191,36,0.18)',  border: 'rgba(251,191,36,0.4)',  adv: 'Consider lifestyle changes. A consultation can help.' },
+    { max: 30,   cat: 'Class I Obesity',numColor: '#FB923C', bg: 'rgba(251,146,60,0.18)',  border: 'rgba(251,146,60,0.4)',  adv: 'You may be a candidate for bariatric surgery.' },
+    { max: 35,   cat: 'Class II Obesity',numColor: '#F97316',bg: 'rgba(249,115,22,0.20)',  border: 'rgba(249,115,22,0.45)', adv: 'Bariatric surgery could significantly improve your health.' },
+    { max: 999,  cat: 'Class III Obesity',numColor: '#EF4444', bg: 'rgba(239,68,68,0.20)',  border: 'rgba(239,68,68,0.45)',  adv: 'We strongly recommend scheduling a consultation.' }
+  ];
+
   function getCat(bmi) {
+    const ethnicity = document.querySelector('input[name="ethnicity"]:checked')?.value || 'caucasian';
+    const CATS = ethnicity === 'asian' ? CATS_ASIAN : CATS_CAUCASIAN;
     return CATS.find(c => bmi < c.max) || CATS[CATS.length - 1];
   }
 
@@ -220,6 +242,10 @@ function initBMICalculator() {
 
   heightInput.addEventListener('input', calculateBMI);
   weightInput.addEventListener('input', calculateBMI);
+  
+  const ethnicityRadios = document.querySelectorAll('input[name="ethnicity"]');
+  ethnicityRadios.forEach(r => r.addEventListener('change', calculateBMI));
+  
   calculateBMI();
 }
 

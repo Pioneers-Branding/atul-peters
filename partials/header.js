@@ -1,4 +1,4 @@
-<!-- ============================================
+document.write(`<!-- ============================================
    SITE HEADER (Partial)
    Edit this file to update header on ALL pages
    ============================================ -->
@@ -102,12 +102,12 @@
       <li class="nav-item"><a href="#" class="nav-link">Robotic Surgery</a></li>
       <li class="nav-item"><a href="#" class="nav-link">GI &amp; MAS</a></li>
       <li class="nav-item has-dropdown">
-        <a href="#" class="nav-link">Smart Nutrition <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+        <a href="nutrition-clinic.html" class="nav-link">Smart Nutrition <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2.5">
             <polyline points="6 9 12 15 18 9" />
           </svg></a>
         <div class="dropdown">
-          <a href="#" class="dropdown-item">Nutrition Clinic</a>
+          <a href="nutrition-clinic.html" class="dropdown-item">Nutrition Clinic</a>
           <a href="#" class="dropdown-item">Smart Weight Loss</a>
         </div>
       </li>
@@ -139,4 +139,4 @@
       <span></span><span></span><span></span>
     </button>
   </div>
-</nav>
+</nav>`);

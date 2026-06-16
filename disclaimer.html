@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disclaimer | Dr Atul Peters</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="nutrition-page">
+
+  <!-- Global Header -->
+  <script src="partials/header.js"></script>
+
+  <!-- Hero Section -->
+  <section class="policy-hero">
+    <div class="container policy-hero-container">
+      <span class="policy-hero-meta">Legal Documentation</span>
+      <h1 class="policy-hero-title">Medical Disclaimer</h1>
+      <p style="color: var(--teal-light); opacity: 0.8;">Last Updated: June 2026</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="policy-content-section">
+    <div class="container">
+      <div class="policy-document">
+        
+        <p>Please know that the information provided on <a href="http://www.atulpeters.com">www.atulpeters.com</a> is intended for general informational and educational purposes only.</p>
+
+        <p>It is most certainly not meant to substitute professional medical advice, diagnosis, or treatment of any kind provided by your physician or any other qualified healthcare provider. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition or treatment plan.</p>
+        
+        <p>Never disregard professional medical advice or delay in seeking it because of something you have read on this website. Reliance on any information provided by Dr. Atul Peters, SMART Nutrition Clinic, its employees, or others appearing on this site at the invitation of Dr. Atul Peters is solely at your own risk.</p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('partials/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

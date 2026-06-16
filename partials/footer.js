@@ -1,4 +1,4 @@
-<!-- ============================================
+document.write(`<!-- ============================================
    SITE FOOTER (Partial)
    Edit this file to update footer on ALL pages
    ============================================ -->
@@ -114,4 +114,4 @@
       </div>
     </div>
   </div>
-</footer>
+</footer>`);
