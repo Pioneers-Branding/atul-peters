@@ -178,8 +178,8 @@ function initBMICalculator() {
     { max: 18.5, cat: 'Underweight',    numColor: '#60A5FA', bg: 'rgba(96,165,250,0.18)',  border: 'rgba(96,165,250,0.4)',  adv: 'You may need to gain weight. Consult with a nutritionist.' },
     { max: 25,   cat: 'Normal Weight',  numColor: '#34D399', bg: 'rgba(52,211,153,0.18)',  border: 'rgba(52,211,153,0.4)',  adv: 'Great! Maintain your healthy weight with balanced diet.' },
     { max: 30,   cat: 'Overweight',     numColor: '#FBBF24', bg: 'rgba(251,191,36,0.18)',  border: 'rgba(251,191,36,0.4)',  adv: 'Consider lifestyle changes. A consultation can help.' },
-    { max: 35,   cat: 'Class I Obesity',numColor: '#FB923C', bg: 'rgba(251,146,60,0.18)',  border: 'rgba(251,146,60,0.4)',  adv: 'You may be a candidate for bariatric surgery.' },
-    { max: 40,   cat: 'Class II Obesity',numColor: '#F97316',bg: 'rgba(249,115,22,0.20)',  border: 'rgba(249,115,22,0.45)', adv: 'Bariatric surgery could significantly improve your health.' },
+    { max: 35,   cat: 'Class I Obesity',numColor: '#FB923C', bg: 'rgba(251,146,60,0.18)',  border: 'rgba(251,146,60,0.4)',  adv: 'Consider a consultation to discuss your health and treatment options.' },
+    { max: 40,   cat: 'Class II Obesity',numColor: '#F97316',bg: 'rgba(249,115,22,0.20)',  border: 'rgba(249,115,22,0.45)', adv: 'A consultation can help you explore the right treatment options.' },
     { max: 999,  cat: 'Class III Obesity',numColor: '#EF4444', bg: 'rgba(239,68,68,0.20)',  border: 'rgba(239,68,68,0.45)',  adv: 'We strongly recommend scheduling a consultation.' }
   ];
 
@@ -187,8 +187,8 @@ function initBMICalculator() {
     { max: 18.5, cat: 'Underweight',    numColor: '#60A5FA', bg: 'rgba(96,165,250,0.18)',  border: 'rgba(96,165,250,0.4)',  adv: 'You may need to gain weight. Consult with a nutritionist.' },
     { max: 23,   cat: 'Normal Weight',  numColor: '#34D399', bg: 'rgba(52,211,153,0.18)',  border: 'rgba(52,211,153,0.4)',  adv: 'Great! Maintain your healthy weight with balanced diet.' },
     { max: 25,   cat: 'Overweight',     numColor: '#FBBF24', bg: 'rgba(251,191,36,0.18)',  border: 'rgba(251,191,36,0.4)',  adv: 'Consider lifestyle changes. A consultation can help.' },
-    { max: 30,   cat: 'Class I Obesity',numColor: '#FB923C', bg: 'rgba(251,146,60,0.18)',  border: 'rgba(251,146,60,0.4)',  adv: 'You may be a candidate for bariatric surgery.' },
-    { max: 35,   cat: 'Class II Obesity',numColor: '#F97316',bg: 'rgba(249,115,22,0.20)',  border: 'rgba(249,115,22,0.45)', adv: 'Bariatric surgery could significantly improve your health.' },
+    { max: 30,   cat: 'Class I Obesity',numColor: '#FB923C', bg: 'rgba(251,146,60,0.18)',  border: 'rgba(251,146,60,0.4)',  adv: 'Consider a consultation to discuss your health and treatment options.' },
+    { max: 35,   cat: 'Class II Obesity',numColor: '#F97316',bg: 'rgba(249,115,22,0.20)',  border: 'rgba(249,115,22,0.45)', adv: 'A consultation can help you explore the right treatment options.' },
     { max: 999,  cat: 'Class III Obesity',numColor: '#EF4444', bg: 'rgba(239,68,68,0.20)',  border: 'rgba(239,68,68,0.45)',  adv: 'We strongly recommend scheduling a consultation.' }
   ];
 
