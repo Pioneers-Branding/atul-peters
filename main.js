@@ -488,7 +488,7 @@ function initFitnessFactory() {
 
 /* === FAQ Category Filter === */
 function initFAQFilter() {
-  const cats = document.querySelectorAll('.faq-cat');
+  const cats = document.querySelectorAll('.faq-filter-btn, .faq-cat');
   const cards = document.querySelectorAll('.faq-card');
 
   cats.forEach(btn => {
@@ -496,8 +496,12 @@ function initFAQFilter() {
       const cat = btn.dataset.cat;
 
       // Toggle active state
-      cats.forEach(b => b.classList.remove('active'));
+      cats.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
       btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
 
       // Filter cards with animation
       cards.forEach(card => {
@@ -521,7 +525,7 @@ function initFAQFilter() {
 
 // Initialize if present
 document.addEventListener('DOMContentLoaded', () => {
-  if (document.querySelector('.faq-cat')) {
+  if (document.querySelector('.faq-filter-btn, .faq-cat')) {
     initFAQFilter();
   }
 });
