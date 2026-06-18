@@ -475,7 +475,7 @@
   background: var(--teal);
   color: #fff;
   padding: 1rem 2rem;
-  border-radius: 50px;
+  border-radius: 4px;
   font-weight: 600;
   text-decoration: none;
   font-size: 0.95rem;
@@ -1127,7 +1127,7 @@
   background: var(--teal);
   color: #fff;
   padding: 1rem 1.75rem;
-  border-radius: 10px;
+  border-radius: 4px;
   font-weight: 600;
   font-size: 0.95rem;
   border: none;

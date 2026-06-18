@@ -1,195 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Desk - International Patients | Dr Atul Peters</title>
+  <title>International Patient Guide | Dr Atul Peters</title>
+  <meta name="description" content="Comprehensive guide for foreign patients seeking bariatric and metabolic surgery with Prof. Dr. Atul Peters in New Delhi.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <!-- FontAwesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body class="nutrition-page">
+
+<body class="about-page">
 
   <!-- Global Header -->
   <script src="partials/header.js"></script>
 
-  <!-- Split Hero Section -->
-  <section class="travel-hero">
-    <div class="container travel-hero-container">
-      
-      <!-- Left Content -->
-      <div class="travel-hero-content">
-        <span class="travel-hero-badge">International Patients</span>
-        <h1 class="travel-hero-title">Your Journey to Health, <span>Made Simple.</span></h1>
-        
-        <!-- Welcome Card -->
-        <div class="travel-manager-card">
-          <div class="travel-manager-header">
-            <div class="manager-avatar">N</div>
-            <div class="manager-info">
-              <h3>Nalini</h3>
-              <p>Program Manager</p></div></div>
+  <!-- ===== Page Hero ===== -->
+  <section class="about-hero">
+    <div class="about-hero-bg" aria-hidden="true"></div>
+    <div class="about-hero-grid" aria-hidden="true"></div>
+    <div class="about-hero-glow about-hero-glow--1" aria-hidden="true"></div>
+    <div class="about-hero-glow about-hero-glow--2" aria-hidden="true"></div>
+
+    <div class="container about-hero-inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">International Patients</span>
+      </nav>
+
+      <div class="about-hero-grid-wrap">
+        <!-- LEFT: copy -->
+        <div class="about-hero-copy">
+          <div class="about-hero-eyebrow">
+            <span class="about-hero-dot"></span>
+            Dedicated International Patient Care
           </div>
-          <p class="intro-text">"Greetings! I shall help you through the process of booking your surgery with us. I will assist you with answering initial queries, your travel preparations, your transfer from the airport, visit to the hospital, and follow-up care, till your return journey."</p></div></div>
-      </div>
-      
-      <!-- Right Side is background image (handled in CSS), but we can add a spacer -->
-      <div class="travel-hero-spacer"></div>
 
+          <h1 class="about-hero-title">
+            Your Global Pathway to<br>
+            <span class="about-hero-title-accent">Surgical Excellence</span>
+          </h1>
+
+          <p class="about-hero-sub">
+            Traveling for surgery can be overwhelming. We have designed a world-class concierge experience for our international patients—ensuring that from your initial video consultation to your safe return home, you receive uncompromising care and seamless logistical support.
+          </p>
+
+          <div class="about-hero-cta" style="margin-top: 2.5rem;">
+            <a href="mailto:nalini@atulpeters.com" class="btn btn-gold">
+              Email Our Coordinator
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/919999999999" class="btn btn-ghost" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3"/>
+              </svg>
+              WhatsApp Support
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: portrait card with floating elements -->
+        <div class="about-hero-portrait">
+          <div class="about-hero-portrait-frame">
+            <span class="about-hero-portrait-corner about-hero-portrait-corner--tl"></span>
+            <span class="about-hero-portrait-corner about-hero-portrait-corner--tr"></span>
+            <span class="about-hero-portrait-corner about-hero-portrait-corner--bl"></span>
+            <span class="about-hero-portrait-corner about-hero-portrait-corner--br"></span>
+            <img src="assets/img/international-bg.webp" alt="International Patient Services" loading="eager" style="object-position: center;">
+          </div>
+
+          <!-- Floating accent cards -->
+          <div class="about-hero-float about-hero-float--1">
+            <div class="about-hero-float-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Fast-Track Visa</strong>
+              <span>Medical Invitations</span>
+            </div>
+          </div>
+
+          <div class="about-hero-float about-hero-float--2">
+            <div class="about-hero-float-icon about-hero-float-icon--teal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14v-4zM3 16h8a2 2 0 002-2v-4a2 2 0 00-2-2H3a2 2 0 00-2 2v4a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Airport Pickup</strong>
+              <span>VIP Transfer Service</span>
+            </div>
+          </div>
+
+          <div class="about-hero-float about-hero-float--3">
+            <div class="about-hero-float-icon about-hero-float-icon--gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Premium Stay</strong>
+              <span>4 &amp; 5-Star Hotel Tie-ups</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave separator -->
+    <div class="about-hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path d="M0 50 Q360 90 720 50 T1440 50 V100 H0 Z" fill="var(--bg-cream, #F5F5F3)"/>
+      </svg>
     </div>
   </section>
 
-  <!-- Steps Grid Section -->
-  <section class="travel-steps-section">
+  <!-- ===== Quick Facts Bar ===== -->
+  <section class="about-meta-bar" id="about-meta-bar">
+    <div class="container about-meta-bar-inner">
+      <div class="about-meta-bar-item">
+        <div class="about-meta-bar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7l3-7z" />
+          </svg>
+        </div>
+        <div>
+          <span class="about-meta-bar-label">Facilities</span>
+          <span class="about-meta-bar-value">Dedicated Int'l Lounge</span>
+        </div>
+      </div>
+      <div class="about-meta-bar-item">
+        <div class="about-meta-bar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15 15 0 000 20"/>
+          </svg>
+        </div>
+        <div>
+          <span class="about-meta-bar-label">Experience</span>
+          <span class="about-meta-bar-value">1,500+ Int'l Patients</span>
+        </div>
+      </div>
+      <div class="about-meta-bar-item">
+        <div class="about-meta-bar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+          </svg>
+        </div>
+        <div>
+          <span class="about-meta-bar-label">Support</span>
+          <span class="about-meta-bar-value">Multilingual Translation</span>
+        </div>
+      </div>
+      <div class="about-meta-bar-item">
+        <div class="about-meta-bar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          </svg>
+        </div>
+        <div>
+          <span class="about-meta-bar-label">Convenience</span>
+          <span class="about-meta-bar-value">Airport VIP Transfer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== The Journey (Timeline) ===== -->
+  <section class="about-edu section">
     <div class="container">
-      <div class="section-title text-center" style="margin-bottom: 2rem;">
-        <span class="section-eyebrow">How It Works</span>
-        <h2>Your Medical Journey</h2>
+      <div class="section-header center">
+        <div class="section-eyebrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+            <path d="M6 12v5c3 3 9 3 12 0v-5" />
+          </svg>
+          How It Works
+        </div>
+        <h2 class="section-title">Your <span class="text-accent">Medical Journey</span></h2>
+        <p class="section-sub">A streamlined, 4-step process designed to prioritize your health, comfort, and peace of mind.</p>
       </div>
-      
-      <div class="travel-steps-grid">
-        <div class="travel-step-card">
-          <div class="step-number">1</div>
-          <div class="step-icon"><i class="fa-solid fa-calendar-check"></i></div>
-          <h3>Book Surgery</h3>
-          <p>Transfer a 50% advance deposit to confirm your mutually agreed surgery date.</p></div></div>
-        
-        <div class="travel-step-card">
-          <div class="step-number">2</div>
-          <div class="step-icon"><i class="fa-solid fa-passport"></i></div>
-          <h3>Medical Visa</h3>
-          <p>We provide the necessary visa invite once the doctor reviews your reports.</p></div></div>
 
-        <div class="travel-step-card">
-          <div class="step-number">3</div>
-          <div class="step-icon"><i class="fa-solid fa-plane-arrival"></i></div>
-          <h3>Arrival & Transfer</h3>
-          <p>Complimentary airport transfer. Our associate will greet you with a name placard.</p></div></div>
+      <div class="about-timeline">
+        <div class="about-timeline-item">
+          <span class="about-timeline-mile">01</span>
+          <div class="about-timeline-dot"></div>
+          <div class="about-timeline-card">
+            <span class="about-timeline-year">Initial Phase</span>
+            <h3>Query &amp; Virtual Consultation</h3>
+            <p>Send your medical reports to our team. Dr. Peters will review them and conduct a detailed online video consultation to discuss concerns and formulate a personalized treatment plan.</p>
+          </div>
+        </div>
 
-        <div class="travel-step-card">
-          <div class="step-number">4</div>
-          <div class="step-icon"><i class="fa-solid fa-bed"></i></div>
-          <h3>Accommodation</h3>
-          <p>Your attendant stays with you. We also help book 3, 4, or 5-star hotels post-discharge.</p></div></div>
+        <div class="about-timeline-item">
+          <span class="about-timeline-mile">02</span>
+          <div class="about-timeline-dot"></div>
+          <div class="about-timeline-card">
+            <span class="about-timeline-year">Preparation Phase</span>
+            <h3>Visa Invite &amp; Travel Booking</h3>
+            <p>Upon transferring a 50% advance deposit to confirm your surgery date, we will immediately issue the necessary Medical e-Visa Invitation Letter for your embassy appointment.</p>
+          </div>
+        </div>
+
+        <div class="about-timeline-item">
+          <span class="about-timeline-mile">03</span>
+          <div class="about-timeline-dot"></div>
+          <div class="about-timeline-card">
+            <span class="about-timeline-year">Arrival Phase</span>
+            <h3>Airport Pickup &amp; Admission</h3>
+            <p>Enjoy a complimentary VIP airport transfer. Our associate will greet you with a placard, escort you to the International Lounge at the hospital, and expedite your admission process.</p>
+          </div>
+        </div>
+
+        <div class="about-timeline-item">
+          <span class="about-timeline-mile">04</span>
+          <div class="about-timeline-dot"></div>
+          <div class="about-timeline-card">
+            <span class="about-timeline-year">Treatment Phase</span>
+            <h3>Surgery, Recovery &amp; Follow-up</h3>
+            <p>Your attendant stays with you during admission with complimentary meals. Post-discharge, we assist with hotel accommodation and provide long-term digital health support after you fly home.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ Section (Using our beautiful Accordion) -->
-  <section class="section" style="background: var(--bg-white);">
-    <div class="container" style="max-width: 900px;">
-      
-      <div class="section-title text-center" style="margin-bottom: 4rem;">
-        <span class="section-eyebrow">Common Queries</span>
-        <h2>Frequently Asked Questions</h2>
-        <p style="color: var(--gray-dark); margin-top: 1rem; font-size: 1.1rem;">As you would be travelling overseas for the surgery, you must have many queries. These FAQs address the most common concerns.</p></div></div>
-
-      <div class="faq-accordion">
-        
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            How do I book my surgery?
-            <span class="faq-icon"></span>
-          </button>
-          <div class="faq-answer"><div class="faq-answer-inner"><p>After confirmation of a mutually agreed date, we would request you to transfer 50% of the surgery fees as an advance deposit which will help us confirm the surgery slot for you on that date. The remaining funds can be paid on the day of admission before the surgery.</p></div></div>
+  <!-- ===== Success Stories (Grid) ===== -->
+  <section class="focus-section section">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-eyebrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/>
+          </svg>
+          Testimonials
         </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            How do I reach the hospital once I arrive at the airport?
-            <span class="faq-icon"></span>
-          </button>
-          <div class="faq-answer"><div class="faq-answer-inner"><p>We would arrange for a complimentary transfer between the airport and the hospital. At the Airport, our travel associate from the hospital/clinic will receive you with a placard with your name on it.</p></div></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            How far is the hospital from the airport?
-            <span class="faq-icon"></span>
-          </button>
-          <div class="faq-answer"><div class="faq-answer-inner"><p>We operate from three different hospitals; the usual airport to hospital traveling time is 30 minutes but may be more at times due to traffic conditions.</p></div></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            Who should I meet once I reach the hospital?
-            <span class="faq-icon"></span>
-          </button>
-          <div class="faq-answer"><div class="faq-answer-inner"><p>When you reach the hospital, you will be escorted to the international patient lounge and one of our staff will help you with the admission process.</p></div></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            Will I get a confirmation after my advance payment?
-            <span class="faq-icon"></span>
-          </button>
-          <div class="faq-answer"><div class="faq-answer-inner"><p>Yes, you will receive a confirmation email from us for the same.</p></div></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            Would my attendant get accommodation while I’m admitted?
-            <span class="faq-icon"></span>
-          </button>
-          <div class="faq-answer"><div class="faq-answer-inner"><p>Your attendant would stay with you while you are in the hospital and it will be our pleasure to provide them with complimentary meals.</p></div></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            Can we get help in arranging local tours?
-            <span class="faq-icon"></span>
-          </button>
-          <div class="faq-answer"><div class="faq-answer-inner"><p>We can arrange sightseeing tours for you locally or across the country as per your convenience and the number of days you stay in the country. We can also arrange a chauffeur-driven car at an extra cost.</p></div></div>
-        </div>
-
+        <h2 class="section-title">Global <span class="text-accent">Success Stories</span></h2>
+        <p class="section-sub">Join thousands of patients worldwide who chose Dr. Peters for their life-changing transformation.</p>
       </div>
 
-      <!-- Contact Block CTA -->
-      <div class="travel-contact">
-        <h2>Still Have Questions?</h2>
-        <p>I am here to ensure your entire journey is comfortable, safe, and stress-free. Please feel free to reach out to me directly.</p>
-        <a href="mailto:nalini@atulpeters.com" class="btn">Email Nalini</a>
+      <div class="focus-grid">
+        <!-- Story 1 -->
+        <div class="focus-card">
+          <div class="focus-card-img">
+            <img src="success-larai.jpg" alt="Patient Larai Success Story">
+          </div>
+          <div class="focus-card-body">
+            <h3>Larai's Transformation</h3>
+            <p>A beautiful journey to health and wellness.</p>
+          </div>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="focus-card">
+          <div class="focus-card-img">
+            <img src="success-mahesh.jpg" alt="Patient Mahesh Success Story">
+          </div>
+          <div class="focus-card-body">
+            <h3>Mahesh's Journey</h3>
+            <p>Reclaiming life with bariatric surgery.</p>
+          </div>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="focus-card">
+          <div class="focus-card-img">
+            <img src="success-pinky.jpg" alt="Patient Pinky Success Story">
+          </div>
+          <div class="focus-card-body">
+            <h3>Pinky's Transformation</h3>
+            <p>Confidence restored through expert care.</p>
+          </div>
+        </div>
+
+        <!-- Story 4 -->
+        <div class="focus-card">
+          <div class="focus-card-img">
+            <img src="success-sunil.jpg" alt="Patient Sunil Success Story">
+          </div>
+          <div class="focus-card-body">
+            <h3>Sunil's Experience</h3>
+            <p>Overcoming metabolic challenges safely.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQs using Interactive Accordion Layout ===== -->
+  <section class="service-faq section">
+    <!-- Background decorations -->
+    <div class="faq-bg-pattern" aria-hidden="true"></div>
+    <div class="faq-bg-glow faq-bg-glow--1" aria-hidden="true"></div>
+    <div class="faq-bg-glow faq-bg-glow--2" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-eyebrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+            <path d="M12 17h.01" />
+          </svg>
+          Common Questions
+        </div>
+        <h2 class="section-title">Frequently Asked <span class="text-accent">Questions</span></h2>
+        <p class="section-sub">Comprehensive logistics and medical answers for international patients</p>
       </div>
 
+      <!-- Centered Accordion Layout -->
+      <div class="faq-layout" style="display: block; max-width: 900px; margin: 4rem auto 0;">
+        <!-- Accordion questions -->
+        <div class="faq-accordion" id="faqAccordion">
+          
+          <!-- Question 1 (Travel) -->
+          <details class="faq-card" data-category="travel" open>
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--travel" style="background: rgba(129, 205, 191, 0.12); color: var(--teal-dark);">Travel</span>
+                <span class="faq-q-text">How do I reach the hospital from the airport?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>We arrange a <strong>complimentary airport transfer</strong> between Indira Gandhi International Airport (DEL) and the hospital or your hotel. A dedicated travel associate will receive you at the arrival terminal with a placard displaying your name and escort you to a private vehicle.</p>
+            </div>
+          </details>
+
+          <!-- Question 2 (Travel) -->
+          <details class="faq-card" data-category="travel">
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--travel" style="background: rgba(129, 205, 191, 0.12); color: var(--teal-dark);">Travel</span>
+                <span class="faq-q-text">How far is the hospital from the airport?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>Our hospital facilities are located in Saket, New Delhi. Under standard traffic conditions, the travel time from Indira Gandhi International Airport is approximately <strong>30 to 45 minutes</strong>.</p>
+            </div>
+          </details>
+
+          <!-- Question 3 (Travel) -->
+          <details class="faq-card" data-category="travel">
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--travel" style="background: rgba(129, 205, 191, 0.12); color: var(--teal-dark);">Travel</span>
+                <span class="faq-q-text">What is the admission process upon arrival?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>Once you reach the hospital, you will be escorted to our exclusive <strong>International Patient Lounge</strong>. Our dedicated coordinators will manage all admission paperwork, registration, and coordinate directly with clinical staff to ensure a seamless experience.</p>
+            </div>
+          </details>
+
+          <!-- Question 4 (Travel) -->
+          <details class="faq-card" data-category="travel">
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--travel" style="background: rgba(129, 205, 191, 0.12); color: var(--teal-dark);">Travel</span>
+                <span class="faq-q-text">Can my companion stay with me in the hospital room?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes. One attendant or companion is permitted to stay with you in your private room throughout your hospital admission. We provide them with a companion bed and <strong>complimentary daily meals</strong>.</p>
+            </div>
+          </details>
+
+          <!-- Question 5 (Travel) -->
+          <details class="faq-card" data-category="travel">
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--travel" style="background: rgba(129, 205, 191, 0.12); color: var(--teal-dark);">Travel</span>
+                <span class="faq-q-text">Can you help organize local sightseeing tours?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>Absolutely. We partner with reputable local travel providers to arrange custom sightseeing tours across Delhi, Jaipur, or the Taj Mahal in Agra. Chauffeur-driven private vehicles can also be booked upon request.</p>
+            </div>
+          </details>
+
+          <!-- Question 6 (Travel) -->
+          <details class="faq-card" data-category="travel">
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--travel" style="background: rgba(129, 205, 191, 0.12); color: var(--teal-dark);">Travel</span>
+                <span class="faq-q-text">When is it safe to fly back home after surgery?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>Most patients are medically cleared to fly back home **7 to 10 days after surgery**. This timeline allows us to perform a thorough post-operative evaluation and ensures that you are walking comfortably, hydrated, and fully past the early recovery phase. We will issue a formal medical clearance certificate for the airline prior to your travel.</p>
+            </div>
+          </details>
+
+          <!-- Question 7 (Safety) -->
+          <details class="faq-card" data-category="safety">
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--safety" style="background: rgba(29, 93, 149, 0.1); color: var(--blue);">Safety</span>
+                <span class="faq-q-text">Is weight loss surgery safe for international travelers?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes. When performed in our center of excellence using advanced minimally invasive (laparoscopic or robotic) techniques, the safety profile is extremely high (complication rates below 1%). We take special clinical precautions for international travelers, including pre-flight DVT prevention strategies and custom travel clearance checks.</p>
+            </div>
+          </details>
+
+          <!-- Question 8 (Safety) -->
+          <details class="faq-card" data-category="safety">
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--safety" style="background: rgba(29, 93, 149, 0.1); color: var(--blue);">Safety</span>
+                <span class="faq-q-text">Will I experience severe pain after the procedure?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>Pain is typically mild and highly manageable because we perform these operations through small keyhole incisions (laparoscopy). We use advanced post-operative pain protocols, allowing most patients to walk comfortably within hours of their surgery.</p>
+            </div>
+          </details>
+
+          <!-- Question 9 (Recovery) -->
+          <details class="faq-card" data-category="recovery">
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--recovery" style="background: rgba(184, 151, 90, 0.12); color: #8E6F3F;">Recovery</span>
+                <span class="faq-q-text">How long is the hospital stay?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>The standard hospital stay is <strong>2 to 3 nights</strong>. This allows our clinical team to monitor your initial recovery, manage pain, and guide you through the initial liquid hydration phase before discharge.</p>
+            </div>
+          </details>
+
+          <!-- Question 10 (Recovery) -->
+          <details class="faq-card" data-category="recovery">
+            <summary class="faq-question">
+              <div class="faq-q-left">
+                <span class="faq-cat-pill faq-cat-pill--recovery" style="background: rgba(184, 151, 90, 0.12); color: #8E6F3F;">Recovery</span>
+                <span class="faq-q-text">What kind of diet will I follow after surgery?</span>
+              </div>
+              <div class="faq-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+              </div>
+            </summary>
+            <div class="faq-answer">
+              <p>Your diet progresses in clear phases: clear liquids for the first 7 days, pureed protein shakes in week 2, soft foods in weeks 3-4, and small portions of solid foods starting in week 5. Before you leave, our specialized dieticians will sit down with you to establish a personalized nutritional plan.</p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+
+      <div class="faq-cta" style="margin-top: 4rem; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1.25rem;">
+        <p class="section-sub" style="margin: 0 auto;">Still have questions? Our Program Coordinator is here to help.</p>
+        <a href="mailto:nalini@atulpeters.com" class="btn btn-green btn-lg">Email Our Coordinator</a>
+      </div>
     </div>
   </section>
 
   <!-- Global Footer -->
-  <div id="footer-placeholder"></div>
-  
-  <!-- Scripts -->
-  <script>
-    // Inject Footer
-    fetch('partials/footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      });
+  <script src="partials/footer.js"></script>
+  <script src="main.js"></script>
 
-    // Initialize FAQ Accordion Logic
-    document.addEventListener('DOMContentLoaded', () => {
-      const questions = document.querySelectorAll('.faq-question');
-      
-      questions.forEach(question => {
-        question.addEventListener('click', () => {
-          const expanded = question.getAttribute('aria-expanded') === 'true';
-          
-          // Close all other accordions (optional)
-          questions.forEach(q => {
-            q.setAttribute('aria-expanded', 'false');
-            q.nextElementSibling.style.maxHeight = null;
-          });
-          
-          // Toggle current
-          if (!expanded) {
-            question.setAttribute('aria-expanded', 'true');
-            const answer = question.nextElementSibling;
-            answer.style.maxHeight = answer.scrollHeight + "px";
+  <script>
+    // FAQ accordion: only one open at a time (robust click-based logic)
+    (function () {
+      var accordions = document.querySelectorAll('.faq-accordion .faq-card');
+      if (!accordions.length) return;
+      accordions.forEach(function (card) {
+        var summary = card.querySelector('.faq-question');
+        if (!summary) return;
+        summary.addEventListener('click', function () {
+          var isOpening = !card.hasAttribute('open');
+          if (isOpening) {
+            accordions.forEach(function (other) {
+              if (other !== card && other.hasAttribute('open')) {
+                other.removeAttribute('open');
+              }
+            });
           }
         });
       });
-    });
+    })();
   </script>
 
 </body>
