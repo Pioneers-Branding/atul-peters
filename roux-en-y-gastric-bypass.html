@@ -245,137 +245,9 @@
         <div class="rygb-hero-visual">
           <div class="rygb-hero-image-wrap">
             <div class="rygb-hero-image-frame">
-              <svg class="rygb-hero-anatomy" viewbox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <lineargradient id="pouchGradHero" x1="0%" x2="100%" y1="0%" y2="100%">
-                    <stop offset="0%" style="stop-color:#2A7AB5"></stop>
-                    <stop offset="100%" style="stop-color:#154779"></stop>
-                  </lineargradient>
-                  <lineargradient id="bgGradHero" x1="0%" x2="0%" y1="0%" y2="100%">
-                    <stop offset="0%" style="stop-color:#F0F7FB"></stop>
-                    <stop offset="100%" style="stop-color:#D6E8F5"></stop>
-                  </lineargradient>
-                  <lineargradient id="foodGrad" x1="0%" x2="100%" y1="0%" y2="0%">
-                    <stop offset="0%" style="stop-color:#B8975A"></stop>
-                    <stop offset="100%" style="stop-color:#E89B5A"></stop>
-                  </lineargradient>
-                  <radialgradient cx="50%" cy="50%" id="glowGrad">
-                    <stop offset="0%" style="stop-color:rgba(129,205,191,0.4)"></stop>
-                    <stop offset="100%" style="stop-color:rgba(129,205,191,0)"></stop>
-                  </radialgradient>
-                </defs>
-                <!-- Background -->
-                <rect fill="url(#bgGradHero)" height="500" width="500"></rect>
-                <circle cx="250" cy="250" fill="url(#glowGrad)" r="180"></circle>
-                <!-- Decorative grid pattern -->
-                <g opacity="0.15">
-                  <circle cx="120" cy="120" fill="#1D5D95" r="3"></circle>
-                  <circle cx="380" cy="120" fill="#1D5D95" r="3"></circle>
-                  <circle cx="120" cy="380" fill="#1D5D95" r="3"></circle>
-                  <circle cx="380" cy="380" fill="#1D5D95" r="3"></circle>
-                </g>
-                <!-- Bypassed stomach (faded) -->
-                <path
-                  d="M280 120 Q340 105 380 130 Q420 165 410 230 Q400 290 365 320 Q330 340 285 320 Q245 295 240 240 Q235 180 260 145 Q270 130 280 120"
-                  fill="rgba(21,71,121,0.1)" stroke="rgba(21,71,121,0.35)" stroke-dasharray="5,3" stroke-width="2">
-                </path>
-                <text fill="rgba(21,71,121,0.5)" font-size="11" font-weight="600" text-anchor="middle" x="335"
-                  y="220">Bypassed</text>
-                <text fill="rgba(21,71,121,0.4)" font-size="9" text-anchor="middle" x="335" y="232">Stomach</text>
-                <!-- New small pouch (prominent) -->
-                <ellipse cx="200" cy="220" fill="url(#pouchGradHero)" rx="50" ry="60" stroke="#154779"
-                  stroke-width="2.5"></ellipse>
-                <text fill="white" font-size="16" font-weight="700" text-anchor="middle" x="200" y="215">New</text>
-                <text fill="white" font-size="14" font-weight="600" text-anchor="middle" x="200" y="232">Pouch</text>
-                <text fill="rgba(255,255,255,0.85)" font-size="9" text-anchor="middle" x="200" y="248">30ml
-                  capacity</text>
-                <!-- Highlight ring around pouch -->
-                <ellipse cx="200" cy="220" fill="none" opacity="0.6" rx="58" ry="68" stroke="#81CDBF"
-                  stroke-dasharray="3,3" stroke-width="1.5">
-                  <animatetransform attributename="transform" dur="20s" from="0 200 220" repeatcount="indefinite"
-                    to="360 200 220" type="rotate"></animatetransform>
-                </ellipse>
-                <!-- Esophagus (entrance) -->
-                <path d="M200 150 L195 100 Q190 80 200 70" fill="none" opacity="0.7" stroke="#1D5D95"
-                  stroke-linecap="round" stroke-width="6"></path>
-                <text fill="rgba(21,71,121,0.6)" font-size="9" text-anchor="middle" x="155" y="75">Esophagus</text>
-                <!-- Food particles in pouch -->
-                <g class="food-particles">
-                  <circle cx="190" cy="210" fill="url(#foodGrad)" opacity="0.7" r="3">
-                    <animatetransform attributename="transform" dur="3s" repeatcount="indefinite" type="translate"
-                      values="0,0; 0,5; 0,0"></animatetransform>
-                  </circle>
-                  <circle cx="210" cy="225" fill="url(#foodGrad)" opacity="0.6" r="2.5">
-                    <animatetransform attributename="transform" dur="2.5s" repeatcount="indefinite" type="translate"
-                      values="0,0; 0,4; 0,0"></animatetransform>
-                  </circle>
-                  <circle cx="200" cy="245" fill="url(#foodGrad)" opacity="0.5" r="2">
-                    <animatetransform attributename="transform" dur="2s" repeatcount="indefinite" type="translate"
-                      values="0,0; 0,3; 0,0"></animatetransform>
-                  </circle>
-                </g>
-                <!-- Connection to Y-junction -->
-                <path d="M240 250 Q290 290 340 330" fill="none" stroke="#1D5D95" stroke-linecap="round"
-                  stroke-width="5"></path>
-                <text fill="#1D5D95" font-size="9" font-weight="600" text-anchor="middle" x="290" y="285">Roux
-                  limb</text>
-                <!-- Y-junction -->
-                <circle cx="345" cy="335" fill="#E89B5A" r="14" stroke="#D4844A" stroke-width="2.5"></circle>
-                <text fill="white" font-size="13" font-weight="700" text-anchor="middle" x="345" y="339">Y</text>
-                <!-- Bypassed intestine path (faded) -->
-                <path d="M335 345 Q380 310 410 290 M345 345 Q380 370 410 380" fill="none" stroke="rgba(21,71,121,0.3)"
-                  stroke-dasharray="4,3" stroke-width="3"></path>
-                <!-- Alimentary limb (continues) -->
-                <path d="M345 350 Q330 390 310 410 Q280 430 240 425 Q200 420 170 410" fill="none" stroke="#E89B5A"
-                  stroke-linecap="round" stroke-width="6"></path>
-                <text fill="#D4844A" font-size="9" font-weight="600" text-anchor="middle" x="280" y="445">Alimentary
-                  Limb</text>
-                <text fill="#D4844A" font-size="8" text-anchor="middle" x="280" y="458">(food bypasses 100-170cm)</text>
-                <!-- Labels with leader lines -->
-                <g fill="none" opacity="0.5" stroke="#1D5D95" stroke-width="1">
-                  <path d="M200 280 L130 290" stroke-dasharray="2,2"></path>
-                  <circle cx="200" cy="280" fill="#1D5D95" opacity="1" r="2"></circle>
-                </g>
-                <text fill="#1D5D95" font-size="9" font-weight="600" text-anchor="end" x="125" y="295">Egg-sized</text>
-                <!-- Decorative corner badge -->
-                <g transform="translate(420, 60)">
-                  <rect fill="white" height="24" rx="12" stroke="#81CDBF" stroke-width="1.5" width="55" x="-25" y="-12">
-                  </rect>
-                  <text fill="#1D5D95" font-size="10" font-weight="700" text-anchor="middle" x="2" y="4">RYGB</text>
-                </g>
-                <!-- Bottom info -->
-                <g transform="translate(60, 470)">
-                  <rect fill="rgba(21,71,121,0.08)" height="22" rx="11" width="380" x="0" y="-15"></rect>
-                  <text fill="#1D5D95" font-size="10" font-weight="600" text-anchor="middle" x="190" y="0">RESTRICTIVE +
-                    MALABSORPTIVE + HORMONAL RESET</text>
-                </g>
-              </svg>
+              <img src="https://www.atulpeters.com/front/img/roux-en-img.png">
             </div>
-            <div class="rygb-hero-card rygb-hero-card--1">
-              <div class="rygb-hero-card-icon">
-                <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z">
-                  </path>
-                </svg>
-              </div>
-              <div>
-                <strong>Gold Standard</strong>
-                <span>Bariatric Surgery</span>
-              </div>
-            </div>
-            <div class="rygb-hero-card rygb-hero-card--2">
-              <div class="rygb-hero-card-icon rygb-hero-card-icon--teal">
-                <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
-                  <path
-                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                  </path>
-                </svg>
-              </div>
-              <div>
-                <strong>Resolves</strong>
-                <span>Type 2 Diabetes</span>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
@@ -681,7 +553,7 @@
         </div>
         <div class="rygb-mechanism-image-container">
           <div class="rygb-mechanism-image">
-            <img src="assets/img/surgery-img.jpg" alt="Gastric Bypass Mechanism"
+            <img src="https://img.youtube.com/vi/bVdgspz3qoY/0.jpg" alt="Gastric Bypass Mechanism"
               style="width: 100%; height: auto; border-radius: 24px; box-shadow: 0 10px 30px rgba(21, 71, 121, 0.12); border: 1px solid rgba(21, 71, 121, 0.1);" />
           </div>
         </div>
@@ -774,7 +646,7 @@
         <p class="section-sub">Backed by 60+ years of research and thousands of successful surgeries</p>
       </div>
       <!-- Weight Loss Journey Chart -->
-      <div class="rygb-journey-chart">
+      <div class="rygb-journey-chart" style="display: none;">
         <div class="rygb-journey-chart-head">
           <h3>Typical Weight Loss Journey</h3>
           <span>Average patient timeline post-surgery</span>
@@ -1189,17 +1061,20 @@
           border: 1px solid rgba(21, 71, 121, 0.08);
           transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .success-card-image-only:hover {
           transform: translateY(-6px);
           box-shadow: 0 24px 48px rgba(21, 71, 121, 0.15);
         }
+
         .success-card-image-only img {
           width: 100%;
           height: auto;
           display: block;
         }
       </style>
-      <div class="rygb-ba-images" style="display: flex; gap: 2.5rem; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 3.5rem;">
+      <div class="rygb-ba-images"
+        style="display: flex; gap: 2.5rem; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 3.5rem;">
         <div class="success-card-image-only">
           <img alt="Ms. Usha Diwan weight loss transformation after gastric bypass" src="assets/img/success-usha.jpg" />
         </div>
