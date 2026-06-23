@@ -69,58 +69,326 @@ document.write(`<!-- ============================================
 
     <ul class="nav-menu" id="navLinks">
       <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-      <li class="nav-item has-dropdown">
-        <a href="#" class="nav-link" data-page="weight-loss">Weight Loss Surgery <svg width="10" height="10"
-            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+
+      <!-- ==================== WEIGHT LOSS SURGERY ==================== -->
+      <li class="nav-item has-mega">
+        <a href="#" class="nav-link" data-page="weight-loss">
+          Weight Loss Surgery
+          <svg class="nav-link-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <polyline points="6 9 12 15 18 9" />
-          </svg></a>
-        <div class="dropdown">
-          <div class="dropdown-group"><span class="dropdown-label">Procedures</span></div>
-          <a href="roux-en-y-gastric-bypass.html" class="dropdown-item">Roux-en-Y Gastric Bypass</a>
-          <a href="#" class="dropdown-item">Sleeve Gastrectomy</a>
-          <a href="#" class="dropdown-item">Mini Gastric Bypass</a>
-          <a href="#" class="dropdown-item">Banded Bariatric Procedures</a>
-          <a href="#" class="dropdown-item">Intra Gastric Balloon</a>
-          <div class="dropdown-divider"></div>
-          <a href="weight-loss.html" class="dropdown-item">Overview</a>
-          <a href="#" class="dropdown-item">Are You a Candidate?</a>
-          <a href="#" class="dropdown-item">FAQs</a>
+          </svg>
+        </a>
+        <div class="mega-menu">
+          <div class="mega-menu-inner">
+            <div class="mega-menu-grid">
+              <div class="mega-menu-col">
+                <span class="mega-menu-label">Procedures</span>
+                <a href="roux-en-y-gastric-bypass.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Roux-en-Y Gastric Bypass</strong>
+                    <small>Gold-standard bypass with proven long-term results</small>
+                  </span>
+                </a>
+                <a href="#" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Sleeve Gastrectomy</strong>
+                    <small>Most common weight loss procedure worldwide</small>
+                  </span>
+                </a>
+                <a href="#" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Mini Gastric Bypass</strong>
+                    <small>Simpler, shorter surgery with similar outcomes</small>
+                  </span>
+                </a>
+                <a href="#" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Banded Bariatric Procedures</strong>
+                    <small>Adjustable band added to other surgeries</small>
+                  </span>
+                </a>
+                <a href="#" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Intra Gastric Balloon</strong>
+                    <small>Non-surgical, temporary weight loss option</small>
+                  </span>
+                </a>
+              </div>
+
+              <div class="mega-menu-col">
+                <span class="mega-menu-label">Learn More</span>
+                <a href="weight-loss.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-book-open"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Overview</strong>
+                    <small>Introduction to bariatric &amp; metabolic surgery</small>
+                  </span>
+                </a>
+                <a href="weight-loss-surgery/candidate.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-user-check"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Are You a Candidate?</strong>
+                    <small>BMI criteria, eligibility, and indications</small>
+                  </span>
+                </a>
+                <a href="#" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-question"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>FAQs</strong>
+                    <small>Common questions answered by Dr. Peters</small>
+                  </span>
+                </a>
+              </div>
+
+              <div class="mega-menu-feature">
+                <div class="mega-menu-feature-inner">
+                  <span class="mega-menu-feature-eyebrow">Limca Book Record</span>
+                  <h4>5,000+ Bariatric<br>Surgeries Performed</h4>
+                  <p>India's most experienced bariatric surgeon with outcomes that match the best centers in the world.</p>
+                  <a href="contact.html" class="mega-menu-feature-cta">
+                    Book a Consultation
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </li>
-      <li class="nav-item has-dropdown">
-        <a href="#" class="nav-link">Surgery for Diabetes <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2.5">
+
+      <!-- ==================== SURGERY FOR DIABETES ==================== -->
+      <li class="nav-item has-mega">
+        <a href="#" class="nav-link">
+          Surgery for Diabetes
+          <svg class="nav-link-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <polyline points="6 9 12 15 18 9" />
-          </svg></a>
-        <div class="dropdown">
-          <a href="#" class="dropdown-item">Overview</a>
-          <a href="#" class="dropdown-item">Laparoscopic Ileal Interposition</a>
-          <a href="#" class="dropdown-item">Laparoscopic Duodenojejunal Bypass</a>
-          <a href="#" class="dropdown-item">Sleeve Gastrectomy with Proximal Jejunal Bypass</a>
+          </svg>
+        </a>
+        <div class="mega-menu">
+          <div class="mega-menu-inner">
+            <div class="mega-menu-grid">
+              <div class="mega-menu-col">
+                <span class="mega-menu-label">Metabolic Procedures</span>
+                <a href="#" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Overview</strong>
+                    <small>How surgery can reverse Type 2 Diabetes</small>
+                  </span>
+                </a>
+                <a href="#" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Laparoscopic Ileal Interposition</strong>
+                    <small>Repositioning intestinal segments for hormonal reset</small>
+                  </span>
+                </a>
+                <a href="#" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Duodenojejunal Bypass</strong>
+                    <small>Bypass first portion of small intestine</small>
+                  </span>
+                </a>
+                <a href="#" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Sleeve with Proximal Jejunal Bypass</strong>
+                    <small>Combined sleeve and metabolic bypass</small>
+                  </span>
+                </a>
+              </div>
+
+              <div class="mega-menu-col">
+                <span class="mega-menu-label">Patient Resources</span>
+                <a href="#" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-clipboard-check"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Eligibility &amp; Indications</strong>
+                    <small>Who qualifies for metabolic surgery</small>
+                  </span>
+                </a>
+                <a href="#" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-vial"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Outcomes &amp; Research</strong>
+                    <small>Long-term diabetes remission data</small>
+                  </span>
+                </a>
+                <a href="#" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-question"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>FAQs</strong>
+                    <small>Answers about diabetes surgery</small>
+                  </span>
+                </a>
+              </div>
+
+              <div class="mega-menu-feature mega-menu-feature--alt">
+                <div class="mega-menu-feature-inner">
+                  <span class="mega-menu-feature-eyebrow">Diabetes Reversal</span>
+                  <h4>80% Patients Off<br>Insulin in 1 Year</h4>
+                  <p>Metabolic surgery delivers long-term Type 2 Diabetes remission — often within days of the procedure.</p>
+                  <a href="contact.html" class="mega-menu-feature-cta">
+                    Check Eligibility
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </li>
+
       <li class="nav-item"><a href="#" class="nav-link">Robotic Surgery</a></li>
       <li class="nav-item"><a href="#" class="nav-link">GI &amp; MAS</a></li>
-      <li class="nav-item has-dropdown">
-        <a href="nutrition-clinic.html" class="nav-link">Smart Nutrition <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2.5">
+
+      <!-- ==================== SMART NUTRITION ==================== -->
+      <li class="nav-item has-mega">
+        <a href="nutrition-clinic.html" class="nav-link">
+          Smart Nutrition
+          <svg class="nav-link-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <polyline points="6 9 12 15 18 9" />
-          </svg></a>
-        <div class="dropdown">
-          <a href="nutrition-clinic.html" class="dropdown-item">Nutrition Clinic</a>
-          <a href="#" class="dropdown-item">Smart Weight Loss</a>
+          </svg>
+        </a>
+        <div class="mega-menu">
+          <div class="mega-menu-inner">
+            <div class="mega-menu-grid">
+              <div class="mega-menu-col">
+                <span class="mega-menu-label">Nutrition Services</span>
+                <a href="nutrition-clinic.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-apple-whole"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Nutrition Clinic</strong>
+                    <small>Personalized diet plans by certified dietitians</small>
+                  </span>
+                </a>
+                <a href="#" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-weight-scale"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Smart Weight Loss</strong>
+                    <small>Medically supervised, non-surgical program</small>
+                  </span>
+                </a>
+              </div>
+
+              <div class="mega-menu-col">
+                <span class="mega-menu-label">Tools &amp; Guides</span>
+                <a href="bmi-calculator.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-calculator"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>BMI Calculator</strong>
+                    <small>Calculate your body mass index instantly</small>
+                  </span>
+                </a>
+                <a href="#" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-utensils"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Diet Plans</strong>
+                    <small>Pre-op and post-op meal plans</small>
+                  </span>
+                </a>
+                <a href="blog.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-newspaper"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Nutrition Blog</strong>
+                    <small>Expert articles on healthy eating</small>
+                  </span>
+                </a>
+              </div>
+
+              <div class="mega-menu-feature">
+                <div class="mega-menu-feature-inner">
+                  <span class="mega-menu-feature-eyebrow">Personalized Plans</span>
+                  <h4>Tailored to Your<br>Goals &amp; Lifestyle</h4>
+                  <p>Our dietitians create custom plans that work with your surgery, schedule, and food preferences.</p>
+                  <a href="contact.html" class="mega-menu-feature-cta">
+                    Book a Dietitian
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </li>
-      <li class="nav-item has-dropdown">
-        <a href="#" class="nav-link">Success Stories <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2.5">
+
+      <!-- ==================== SUCCESS STORIES ==================== -->
+      <li class="nav-item has-mega">
+        <a href="#" class="nav-link">
+          Success Stories
+          <svg class="nav-link-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <polyline points="6 9 12 15 18 9" />
-          </svg></a>
-        <div class="dropdown">
-          <a href="#" class="dropdown-item">Before &amp; After Pictures</a>
-          <a href="#" class="dropdown-item">Video Testimonials</a>
+          </svg>
+        </a>
+        <div class="mega-menu">
+          <div class="mega-menu-inner">
+            <div class="mega-menu-grid">
+              <div class="mega-menu-col">
+                <span class="mega-menu-label">Patient Stories</span>
+                <a href="#" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-images"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Before &amp; After Pictures</strong>
+                    <small>Real patient transformations gallery</small>
+                  </span>
+                </a>
+                <a href="#" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-play"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Video Testimonials</strong>
+                    <small>Hear directly from our patients</small>
+                  </span>
+                </a>
+              </div>
+
+              <div class="mega-menu-col">
+                <span class="mega-menu-label">Resources</span>
+                <a href="blog.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-newspaper"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>News &amp; Articles</strong>
+                    <small>Latest updates from the clinic</small>
+                  </span>
+                </a>
+                <a href="events.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-regular fa-calendar"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Events &amp; Workshops</strong>
+                    <small>Upcoming seminars and live workshops</small>
+                  </span>
+                </a>
+                <a href="publications.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-book"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Publications</strong>
+                    <small>Dr. Peters' research &amp; papers</small>
+                  </span>
+                </a>
+              </div>
+
+              <div class="mega-menu-feature mega-menu-feature--alt">
+                <div class="mega-menu-feature-inner">
+                  <span class="mega-menu-feature-eyebrow">Real Patients</span>
+                  <h4>50 kg Lost.<br>Life Regained.</h4>
+                  <p>Browse inspiring journeys of patients who transformed their health and confidence.</p>
+                  <a href="#" class="mega-menu-feature-cta">
+                    View All Stories
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </li>
+
+      <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
     </ul>
 
     <div class="nav-actions">

@@ -15,6 +15,7 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -1383,127 +1384,6 @@
       <p class="success-disclaimer">*Results may vary. Individual outcomes depend on health conditions, lifestyle and
         adherence to post-op guidance.
       </p>
-    </div>
-  </section>
-
-  <!-- BMI Calculator -->
-  <section class="bmi-section">
-    <div class="bmi-inner">
-      <div class="bmi-card">
-        <div class="bmi-header">
-          <div class="bmi-eyebrow">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="2" y="7" width="20" height="14" rx="2" />
-              <path d="M16 3v4M8 3v4M2 11h20" />
-            </svg>
-            Health Tool
-          </div>
-          <h2>BMI Calculator</h2>
-          <p>Understand your weight status and what to do next</p>
-        </div>
-
-        <div class="bmi-body">
-          <!-- LEFT: Inputs -->
-          <div class="bmi-inputs">
-            <!-- Ethnicity Selector -->
-            <div class="bmi-field">
-              <div class="bmi-field-head">
-                <label>Ethnicity</label>
-              </div>
-              <div class="bmi-radio-group">
-                <label class="bmi-radio">
-                  <input type="radio" name="ethnicity" value="caucasian" checked>
-                  <span>Caucasian</span>
-                </label>
-                <label class="bmi-radio">
-                  <input type="radio" name="ethnicity" value="asian">
-                  <span>Asian</span>
-                </label>
-              </div>
-            </div>
-
-            <div class="bmi-field">
-              <div class="bmi-field-head">
-                <label for="height">Height</label>
-                <span class="bmi-val" id="heightValue">170 cm</span>
-              </div>
-              <div class="bmi-slider-wrap">
-                <input type="range" id="height" min="140" max="220" value="170" step="1">
-                <div class="bmi-ticks">
-                  <span>140</span><span>160</span><span>180</span><span>200</span><span>220</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="bmi-field">
-              <div class="bmi-field-head">
-                <label for="weight">Weight</label>
-                <span class="bmi-val" id="weightValue">100 kg</span>
-              </div>
-              <div class="bmi-slider-wrap">
-                <input type="range" id="weight" min="50" max="200" value="100" step="1">
-                <div class="bmi-ticks">
-                  <span>50</span><span>90</span><span>130</span><span>170</span><span>200</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- RIGHT: Gauge + Result -->
-          <div class="bmi-display">
-            <div class="bmi-gauge" id="bmiGauge">
-              <svg class="bmi-gauge-svg" viewBox="0 0 200 130" aria-hidden="true">
-                <defs>
-                  <linearGradient id="bmiArc" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stop-color="#3B82F6" />
-                    <stop offset="35%" stop-color="#22C55E" />
-                    <stop offset="55%" stop-color="#EAB308" />
-                    <stop offset="75%" stop-color="#F97316" />
-                    <stop offset="100%" stop-color="#DC2626" />
-                  </linearGradient>
-                </defs>
-                <!-- Track -->
-                <path d="M 20 110 A 80 80 0 0 1 180 110" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="14"
-                  stroke-linecap="round" />
-                <!-- Filled arc -->
-                <path id="bmiGaugeArc" d="M 20 110 A 80 80 0 0 1 180 110" fill="none" stroke="url(#bmiArc)"
-                  stroke-width="14" stroke-linecap="round" stroke-dasharray="0 251" />
-                <!-- Needle -->
-                <g id="bmiNeedle" transform="rotate(-90 100 110)">
-                  <line x1="100" y1="110" x2="100" y2="40" stroke="#fff" stroke-width="3" stroke-linecap="round" />
-                  <circle cx="100" cy="110" r="6" fill="#fff" />
-                </g>
-              </svg>
-              <div class="bmi-gauge-readout">
-                <span class="bmi-num" id="bmiNumber">34.6</span>
-                <span class="bmi-num-unit">kg/m²</span>
-              </div>
-            </div>
-
-            <span class="bmi-category" id="bmiCategory">Class I Obesity</span>
-            <p class="bmi-advice" id="bmiAdvice">Consider a consultation to discuss your health and treatment options.
-            </p>
-          </div>
-        </div>
-
-        <!-- Bottom: legend + CTA -->
-        <div class="bmi-foot">
-          <div class="bmi-legend">
-            <span class="bmi-legend-item"><i class="bmi-dot bmi-dot--under"></i>Underweight</span>
-            <span class="bmi-legend-item"><i class="bmi-dot bmi-dot--normal"></i>Normal</span>
-            <span class="bmi-legend-item"><i class="bmi-dot bmi-dot--over"></i>Overweight</span>
-            <span class="bmi-legend-item"><i class="bmi-dot bmi-dot--obese"></i>Obese</span>
-            <span class="bmi-legend-item"><i class="bmi-dot bmi-dot--severe"></i>Severe Obesity</span>
-          </div>
-          <a href="#appointment" class="bmi-cta">
-            Get Personalized Assessment
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <polyline points="12 5 19 12 12 19" />
-            </svg>
-          </a>
-        </div>
-      </div>
     </div>
   </section>
 

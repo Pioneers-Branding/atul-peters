@@ -1,482 +1,583 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BMI Calculator | Dr Atul Peters</title>
-  <link rel="stylesheet" href="styles.css?v=2">
-  <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <!-- FontAwesome for Icons -->
+  <title>BMI Calculator | Calculate Your Body Mass Index Online | Dr. Atul Peters</title>
+  <meta name="description"
+    content="Free online BMI calculator. Calculate your Body Mass Index in metric or imperial units and understand your weight category with personalized guidance from Dr. Atul Peters.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bellefair&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="nutrition-page">
+
+<body class="bmi-page">
 
   <!-- Global Header -->
   <script src="partials/header.js"></script>
 
-  <!-- Hero Section -->
+  <!-- ===== HERO ===== -->
   <section class="bmi-hero">
+    <div class="bmi-hero-bg">
+      <div class="bmi-hero-pattern"></div>
+      <div class="bmi-hero-blob bmi-hero-blob--1"></div>
+      <div class="bmi-hero-blob bmi-hero-blob--2"></div>
+    </div>
+
     <div class="container">
-      <h1 class="bmi-hero-title">BMI Calculator</h1>
-      <p class="bmi-hero-subtitle">Understanding your Body Mass Index is the first step towards a healthier, more active lifestyle. Use our smart calculator to instantly discover your category.</p>
+      <nav class="bmi-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a href="#">Calculators</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="bmi-breadcrumb-current">BMI Calculator</span>
+      </nav>
+
+      <div class="bmi-hero-content">
+        <div class="bmi-hero-eyebrow">
+          <span class="bmi-pulse-dot"></span>
+          Free Health Tool
+        </div>
+
+        <h1 class="bmi-hero-title">
+          <span class="bmi-hero-accent">BMI</span> Calculator
+        </h1>
+
+        <p class="bmi-hero-sub">
+          Calculate your Body Mass Index in seconds. Enter your height and weight to understand your
+          weight category — and get personalized guidance on next steps.
+        </p>
+
+        <div class="bmi-hero-cta">
+          <a href="#bmiCalculator" class="bmi-btn bmi-btn--primary">
+            <span>Calculate Your BMI</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#bmiCategories" class="bmi-btn bmi-btn--ghost">
+            <i class="fa-solid fa-chart-pie"></i>
+            <span>View Categories</span>
+          </a>
+        </div>
+
+        <div class="bmi-hero-points">
+          <div class="bmi-hero-point">
+            <i class="fa-solid fa-bolt"></i>
+            <span><strong>Instant Results</strong> — Real-time calculation</span>
+          </div>
+          <div class="bmi-hero-point">
+            <i class="fa-solid fa-globe"></i>
+            <span><strong>Metric or Imperial</strong> — Switch anytime</span>
+          </div>
+          <div class="bmi-hero-point">
+            <i class="fa-solid fa-user-doctor"></i>
+            <span><strong>Expert Backed</strong> — Curated by Dr. Atul Peters</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bmi-hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path d="M0 50 Q360 90 720 50 T1440 50 V100 H0 Z" fill="#FBFBF9" />
+      </svg>
     </div>
   </section>
 
-  <!-- Calculator Section -->
-  <section class="bmi-calculator-section">
+  <!-- ===== MAIN CALCULATOR ===== -->
+  <section class="bmi-calc section" id="bmiCalculator">
     <div class="container">
-      
-      <!-- Tabs Navigation -->
-      <div class="calc-tabs-container">
-        <button class="calc-tab active" onclick="switchCalcTab('bmi')" id="tab-bmi">Body Mass Index (BMI)</button>
-        <button class="calc-tab" onclick="switchCalcTab('ibw')" id="tab-ibw">Ideal Body Weight</button>
-        <button class="calc-tab" onclick="switchCalcTab('thr')" id="tab-thr">Target Heart Rate</button>
+      <div class="bmi-section-header center">
+        <div class="bmi-section-eyebrow">
+          <span class="bmi-pulse-dot"></span>
+          Calculate Now
+        </div>
+        <h2 class="bmi-section-title">Calculate Your <span class="text-accent">Body Mass Index</span></h2>
+        <p class="bmi-section-sub">To determine if you're obese or not, enter the following information
+          and calculate your Body Mass Index (BMI).</p>
       </div>
 
-      <div class="bmi-card calc-pane" id="pane-bmi">
-        <!-- Input Area -->
-        <div class="bmi-input-area">
-          
-          <div class="bmi-header-text">
-            <h2>Enter Your Details</h2>
-            <p>Select your preferred units and enter your height and weight below. Your BMI will calculate automatically.</p>
+      <div class="bmi-calc-card">
+        <div class="bmi-calc-form-side">
+          <div class="bmi-calc-form-head">
+            <div class="bmi-calc-icon">
+              <i class="fa-solid fa-calculator"></i>
+            </div>
+            <div>
+              <h3>Your Measurements</h3>
+              <p>Enter your height and weight</p>
+            </div>
           </div>
 
-          <div class="bmi-controls">
-            <!-- Unit Toggles (Segmented Control) -->
-            <div class="bmi-segmented-control">
-              <div class="segment-group">
-                <span class="segment-label">Height Unit</span>
-                <div class="segment-toggle">
-                  <input type="radio" name="height-unit" id="h-metric" value="metric" checked onchange="toggleUnit('height', 'metric')">
-                  <label for="h-metric">CM</label>
-                  <input type="radio" name="height-unit" id="h-imperial" value="imperial" onchange="toggleUnit('height', 'imperial')">
-                  <label for="h-imperial">FT/IN</label>
-                  <div class="segment-glider"></div>
-                </div>
-              </div>
-              
-              <div class="segment-group">
-                <span class="segment-label">Weight Unit</span>
-                <div class="segment-toggle">
-                  <input type="radio" name="weight-unit" id="w-metric" value="metric" checked onchange="toggleUnit('weight', 'metric')">
-                  <label for="w-metric">KG</label>
-                  <input type="radio" name="weight-unit" id="w-imperial" value="imperial" onchange="toggleUnit('weight', 'imperial')">
-                  <label for="w-imperial">LBS</label>
-                  <div class="segment-glider"></div>
-                </div>
+          <!-- Unit Toggle -->
+          <div class="bmi-unit-toggle" role="tablist" aria-label="Unit system">
+            <button class="bmi-unit-btn bmi-unit-btn--active" data-unit="metric" type="button">
+              <i class="fa-solid fa-globe"></i>
+              <span>Metric</span>
+              <small>kg / cm</small>
+            </button>
+            <button class="bmi-unit-btn" data-unit="imperial" type="button">
+              <i class="fa-solid fa-globe"></i>
+              <span>Imperial</span>
+              <small>lbs / in</small>
+            </button>
+          </div>
+
+          <!-- Inputs -->
+          <div class="bmi-inputs">
+            <div class="bmi-input-group">
+              <label for="bmiWeight">
+                <i class="fa-solid fa-weight-scale"></i>
+                <span>Weight</span>
+                <em class="bmi-input-unit" data-metric="kg" data-imperial="lbs">kg</em>
+              </label>
+              <div class="bmi-input-wrap">
+                <input type="number" id="bmiWeight" min="1" step="0.1" placeholder="70">
+                <span class="bmi-input-suffix" data-metric="kg" data-imperial="lbs">kg</span>
               </div>
             </div>
 
-            <!-- Height Input -->
-            <div class="bmi-form-group">
-              <div class="bmi-input-wrapper metric-fields" id="height-metric-wrap">
-                <input type="number" id="height-cm" placeholder=" " min="50" max="300" oninput="calculateBMI()">
-                <label class="floating-label">Height (cm)</label>
-                <div class="input-focus-bg"></div>
-              </div>
-              
-              <div class="imperial-fields hidden" id="height-imperial-wrap">
-                <div class="bmi-input-wrapper">
-                  <input type="number" id="height-ft" placeholder=" " min="2" max="8" oninput="calculateBMI()">
-                  <label class="floating-label">Feet</label>
-                  <div class="input-focus-bg"></div>
-                </div>
-                <div class="bmi-input-wrapper">
-                  <input type="number" id="height-in" placeholder=" " min="0" max="11" oninput="calculateBMI()">
-                  <label class="floating-label">Inches</label>
-                  <div class="input-focus-bg"></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Weight Input -->
-            <div class="bmi-form-group">
-              <div class="bmi-input-wrapper metric-fields" id="weight-metric-wrap">
-                <input type="number" id="weight-kg" placeholder=" " min="20" max="400" oninput="calculateBMI()">
-                <label class="floating-label">Weight (kg)</label>
-                <div class="input-focus-bg"></div>
-              </div>
-              
-              <div class="imperial-fields hidden" id="weight-imperial-wrap">
-                <div class="bmi-input-wrapper">
-                  <input type="number" id="weight-lbs" placeholder=" " min="40" max="900" oninput="calculateBMI()">
-                  <label class="floating-label">Weight (lbs)</label>
-                  <div class="input-focus-bg"></div>
-                </div>
+            <div class="bmi-input-group">
+              <label for="bmiHeight">
+                <i class="fa-solid fa-ruler-vertical"></i>
+                <span>Height</span>
+                <em class="bmi-input-unit" data-metric="cm" data-imperial="in">cm</em>
+              </label>
+              <div class="bmi-input-wrap">
+                <input type="number" id="bmiHeight" min="1" step="0.1" placeholder="170">
+                <span class="bmi-input-suffix" data-metric="cm" data-imperial="in">cm</span>
               </div>
             </div>
           </div>
 
+          <button class="bmi-btn bmi-btn--primary" id="bmiCalculateBtn" type="button">
+            <i class="fa-solid fa-calculator"></i>
+            <span>Calculate BMI</span>
+          </button>
+
+          <button class="bmi-btn bmi-btn--ghost" id="bmiResetBtn" type="button">
+            <i class="fa-solid fa-rotate-left"></i>
+            <span>Reset</span>
+          </button>
         </div>
 
-        <!-- Result Area -->
-        <div class="bmi-result-area" id="result-box">
-          <!-- Decorative Background Elements -->
-          <div class="result-orb orb-1"></div>
-          <div class="result-orb orb-2"></div>
-          
-          <div class="result-glass">
-            <div id="result-content" class="empty-state">
-              <div class="bmi-number-wrapper">
-                <div class="bmi-number" id="bmi-value">0.0</div>
-              </div>
-              <div class="bmi-category" id="bmi-category">Enter Details</div>
-              
-              <!-- BMI Scale -->
-              <div class="bmi-scale">
-                <div class="scale-track">
-                  <div class="scale-zone zone-under" title="Underweight (<18.5)"></div>
-                  <div class="scale-zone zone-normal" title="Normal (18.5 - 24.9)"></div>
-                  <div class="scale-zone zone-over" title="Overweight (25 - 29.9)"></div>
-                  <div class="scale-zone zone-obese" title="Obese (≥30)"></div>
-                  <div class="scale-indicator" id="bmi-indicator">
-                    <div class="indicator-arrow"></div>
-                  </div>
-                </div>
-                <div class="scale-labels">
-                  <span>18.0</span>
-                  <span>22.5</span>
-                  <span>27.5</span>
-                </div>
-              </div>
+        <div class="bmi-calc-result-side">
+          <div class="bmi-result-eyebrow">
+            <i class="fa-solid fa-chart-pie"></i>
+            <span>Your Result</span>
+          </div>
 
-              <p class="bmi-message" id="bmi-message">Please provide your height and weight to calculate your Body Mass Index.</p>
+          <div class="bmi-result-display" id="bmiResultDisplay">
+            <div class="bmi-result-empty" id="bmiResultEmpty">
+              <div class="bmi-result-empty-icon">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+              <p>Enter your measurements<br>to see your BMI result</p>
+            </div>
+
+            <div class="bmi-result-content" id="bmiResultContent" hidden>
+              <div class="bmi-result-num">
+                <span class="bmi-result-value" id="bmiResultValue">0.0</span>
+                <span class="bmi-result-unit">kg/m²</span>
+              </div>
+              <div class="bmi-result-tag" id="bmiResultTag">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Normal</span>
+              </div>
+              <p class="bmi-result-text" id="bmiResultText">Your BMI is within the healthy range.</p>
+
+              <div class="bmi-result-bar" aria-hidden="true">
+                <div class="bmi-result-bar-track">
+                  <div class="bmi-result-bar-fill" id="bmiResultBarFill"></div>
+                  <div class="bmi-result-bar-marker" id="bmiResultBarMarker"></div>
+                </div>
+                <div class="bmi-result-bar-labels">
+                  <span>15</span>
+                  <span>20</span>
+                  <span>25</span>
+                  <span>30</span>
+                  <span>35</span>
+                  <span>40</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- IDEAL BODY WEIGHT PANE -->
-      <div class="bmi-card calc-pane hidden-pane" id="pane-ibw">
-        <div class="bmi-input-area">
-          <div class="bmi-header-text">
-            <h2>Ideal Body Weight</h2>
-            <p>Calculate your healthy weight range based on your height and biological sex.</p>
-          </div>
-          <div class="bmi-controls">
-            <!-- Gender Segmented Control -->
-            <div class="bmi-segmented-control">
-              <div class="segment-group" style="width: 100%;">
-                <span class="segment-label">Biological Sex</span>
-                <div class="segment-toggle">
-                  <input type="radio" name="ibw-gender" id="g-male" value="male" checked onchange="calculateIBW()">
-                  <label for="g-male">Male</label>
-                  <input type="radio" name="ibw-gender" id="g-female" value="female" onchange="calculateIBW()">
-                  <label for="g-female">Female</label>
-                  <div class="segment-glider"></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Height Unit -->
-            <div class="bmi-segmented-control">
-              <div class="segment-group" style="width: 100%;">
-                <span class="segment-label">Height Unit</span>
-                <div class="segment-toggle">
-                  <input type="radio" name="ibw-height-unit" id="ibw-h-metric" value="metric" checked onchange="toggleIbwUnit('metric')">
-                  <label for="ibw-h-metric">CM</label>
-                  <input type="radio" name="ibw-height-unit" id="ibw-h-imperial" value="imperial" onchange="toggleIbwUnit('imperial')">
-                  <label for="ibw-h-imperial">FT/IN</label>
-                  <div class="segment-glider"></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Height Input -->
-            <div class="bmi-form-group">
-              <div class="bmi-input-wrapper metric-fields" id="ibw-height-metric-wrap">
-                <input type="number" id="ibw-height-cm" placeholder=" " min="50" max="300" oninput="calculateIBW()">
-                <label class="floating-label">Height (cm)</label>
-                <div class="input-focus-bg"></div>
-              </div>
-              
-              <div class="imperial-fields hidden" id="ibw-height-imperial-wrap">
-                <div class="bmi-input-wrapper">
-                  <input type="number" id="ibw-height-ft" placeholder=" " min="2" max="8" oninput="calculateIBW()">
-                  <label class="floating-label">Feet</label>
-                  <div class="input-focus-bg"></div>
-                </div>
-                <div class="bmi-input-wrapper">
-                  <input type="number" id="ibw-height-in" placeholder=" " min="0" max="11" oninput="calculateIBW()">
-                  <label class="floating-label">Inches</label>
-                  <div class="input-focus-bg"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+  <!-- ===== BMI CATEGORIES GAUGE ===== -->
+  <section class="bmi-categories section" id="bmiCategories">
+    <div class="container">
+      <div class="bmi-section-header center">
+        <div class="bmi-section-eyebrow">
+          <span class="bmi-pulse-dot"></span>
+          BMI Categories
         </div>
-        
-        <div class="bmi-result-area" id="ibw-result-box">
-          <div class="result-orb orb-1"></div>
-          <div class="result-orb orb-2"></div>
-          <div class="result-glass">
-            <div id="ibw-result-content" class="empty-state">
-              <div class="bmi-category" style="margin-bottom: 0.5rem;" id="ibw-category">Ideal Range</div>
-              <div class="bmi-number-wrapper" style="margin-top: 1rem; margin-bottom: 1rem;">
-                <div class="bmi-number" style="font-size: 3rem;" id="ibw-value">--</div>
-              </div>
-              <p class="bmi-message" id="ibw-message">Enter your details to calculate your ideal body weight.</p>
-            </div>
+        <h2 class="bmi-section-title">Understanding <span class="text-accent">Your Results</span></h2>
+        <p class="bmi-section-sub">BMI is classified into 5 categories for Asian populations. Use this
+          reference to understand where your result falls.</p>
+      </div>
+
+      <!-- Personal Result Slider -->
+      <div class="bmi-result-slider">
+        <div class="bmi-result-slider-pop" id="bmiResultPop">
+          <span id="bmiResultPopValue">24.5</span>
+          <i class="fa-solid fa-caret-down bmi-result-pop-tail"></i>
+        </div>
+        <div class="bmi-result-slider-bar">
+          <div class="bmi-slider-seg bmi-slider-seg--under">
+            <span class="bmi-slider-bound">15</span>
+            <span class="bmi-slider-name">Under-weight</span>
+          </div>
+          <div class="bmi-slider-seg bmi-slider-seg--normal">
+            <span class="bmi-slider-bound">18</span>
+            <span class="bmi-slider-name">Normal</span>
+          </div>
+          <div class="bmi-slider-seg bmi-slider-seg--risk">
+            <span class="bmi-slider-bound">22.5</span>
+            <span class="bmi-slider-name">Over-weight &amp; Above</span>
           </div>
         </div>
       </div>
 
-      <!-- TARGET HEART RATE PANE -->
-      <div class="bmi-card calc-pane hidden-pane" id="pane-thr">
-        <div class="bmi-input-area">
-          <div class="bmi-header-text">
-            <h2>Target Heart Rate</h2>
-            <p>Find your optimal heart rate zone for exercise to maximize benefits and lessen risks.</p>
+      <!-- Detailed Category Cards -->
+      <div class="bmi-categories-grid">
+        <div class="bmi-cat-card bmi-cat-card--under">
+          <span class="bmi-cat-bar"></span>
+          <h4>Under-weight</h4>
+          <span class="bmi-cat-range">BMI &lt; 18</span>
+          <p>Below healthy weight. May need nutritional support to reach a healthy range.</p>
+        </div>
+        <div class="bmi-cat-card bmi-cat-card--normal">
+          <span class="bmi-cat-bar"></span>
+          <h4>Normal</h4>
+          <span class="bmi-cat-range">BMI 18 – 22.4</span>
+          <p>Within a healthy range for Asian populations. Maintain a balanced diet and exercise.</p>
+        </div>
+        <div class="bmi-cat-card bmi-cat-card--over">
+          <span class="bmi-cat-bar"></span>
+          <h4>Over-weight</h4>
+          <span class="bmi-cat-range">BMI 22.5 – 27.4</span>
+          <p>Above ideal weight. Lifestyle changes can help prevent progression to obesity.</p>
+        </div>
+        <div class="bmi-cat-card bmi-cat-card--obese">
+          <span class="bmi-cat-bar"></span>
+          <h4>Obese</h4>
+          <span class="bmi-cat-range">BMI 27.5 – 37.4</span>
+          <p>Significantly above healthy weight. Medical guidance and structured weight loss are
+            recommended.</p>
+        </div>
+        <div class="bmi-cat-card bmi-cat-card--morbid">
+          <span class="bmi-cat-bar"></span>
+          <h4>Morbidly Obese</h4>
+          <span class="bmi-cat-range">BMI &gt; 37.5</span>
+          <p>Severe obesity with elevated health risks. Bariatric surgery may be a life-changing option.
+            Consult a specialist.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT IS BMI ===== -->
+  <section class="bmi-about section">
+    <div class="container">
+      <div class="bmi-about-grid">
+        <div class="bmi-about-content">
+          <div class="bmi-section-eyebrow">
+            <span class="bmi-pulse-dot"></span>
+            Learn More
           </div>
-          <div class="bmi-controls">
-            <div class="bmi-form-group">
-              <div class="bmi-input-wrapper">
-                <input type="number" id="thr-age" placeholder=" " min="10" max="100" oninput="calculateTHR()">
-                <label class="floating-label">Your Age (yrs)</label>
-                <div class="input-focus-bg"></div>
-              </div>
+          <h2 class="bmi-section-title">What is <span class="text-accent">BMI?</span></h2>
+          <p class="bmi-about-lead">BMI (Body Mass Index) is a simple measurement that uses your height
+            and weight to categorize whether you're underweight, healthy weight, overweight, or obese for
+            your height.</p>
+          <p>It is a useful screening tool — not a diagnosis. Talk to your doctor to understand what your
+            BMI means for your overall health.</p>
+
+          <div class="bmi-formula">
+            <span class="bmi-formula-label">Formula</span>
+            <div class="bmi-formula-card">
+              <span class="bmi-formula-frac">
+                <span class="bmi-formula-num">Body Weight (kg)</span>
+                <span class="bmi-formula-den">Height² (m²)</span>
+              </span>
+              <span class="bmi-formula-eq">=</span>
+              <span class="bmi-formula-result">BMI</span>
             </div>
-            <p style="font-size: 0.95rem; color: var(--text-3); margin-top: 2rem; line-height: 1.6; padding: 1rem; background: rgba(42, 122, 181, 0.05); border-radius: 12px; border: 1px solid rgba(42, 122, 181, 0.1);">
-              <i class="fa-solid fa-heart-pulse" style="color: var(--blue); margin-right: 0.5rem;"></i>
-              You gain the most benefits when you exercise in your target heart rate zone. Usually this is <strong>60% to 80%</strong> of your maximum heart rate.
-            </p>
           </div>
         </div>
 
-        <div class="bmi-result-area normal" id="thr-result-box">
-          <div class="result-orb orb-1"></div>
-          <div class="result-orb orb-2"></div>
-          <div class="result-glass">
-            <div id="thr-result-content" class="empty-state">
-              <div class="bmi-category" style="margin-bottom: 0.5rem;">Target Zone</div>
-              <div class="bmi-number-wrapper" style="margin-top: 1rem; margin-bottom: 1rem;">
-                <div class="bmi-number" style="font-size: 3.5rem;" id="thr-value">--</div>
-              </div>
-              <p class="bmi-message" id="thr-message">Enter your age to see your target and maximum heart rate.</p>
+        <div class="bmi-about-points">
+          <div class="bmi-point">
+            <div class="bmi-point-icon">
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <div>
+              <h5>Why BMI matters</h5>
+              <p>It helps identify weight-related health risks like type 2 diabetes, heart disease, and
+                high blood pressure.</p>
+            </div>
+          </div>
+          <div class="bmi-point">
+            <div class="bmi-point-icon">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div>
+              <h5>Limitations of BMI</h5>
+              <p>BMI doesn't distinguish between muscle and fat mass. Athletes may have a high BMI but
+                low body fat.</p>
+            </div>
+          </div>
+          <div class="bmi-point">
+            <div class="bmi-point-icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div>
+              <h5>Asian BMI Standards</h5>
+              <p>The categories on this page use the Asia-Pacific BMI standards, which are stricter than
+                Western guidelines.</p>
+            </div>
+          </div>
+          <div class="bmi-point">
+            <div class="bmi-point-icon">
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <div>
+              <h5>Talk to a Specialist</h5>
+              <p>BMI is just one indicator. A complete health assessment considers diet, exercise, and
+                family history.</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
+  <!-- ===== DIET + CTA ===== -->
+  <section class="bmi-bottom section">
+    <div class="container">
+      <div class="bmi-bottom-grid">
+        <div class="bmi-diet-card">
+          <div class="bmi-diet-head">
+            <span class="bmi-diet-tag">Post-Surgery Reference</span>
+            <h3>Phase I — <span class="text-accent">Clear Liquid Diet</span></h3>
+            <p>A quick reference for the first phase of your post-bariatric diet.</p>
+          </div>
+          <ul class="bmi-diet-list">
+            <li><i class="fa-solid fa-check"></i><span>Only clear liquids are allowed during this phase.</span></li>
+            <li><i class="fa-solid fa-check"></i><span>Avoid sweetened beverages — they can cause dumping syndrome.</span></li>
+            <li><i class="fa-solid fa-check"></i><span>Sip very slowly — small frequent sips throughout the day.</span></li>
+            <li><i class="fa-solid fa-xmark"></i><span>Do not use straws — they introduce excess air.</span></li>
+            <li><i class="fa-solid fa-xmark"></i><span>Avoid caffeinated, carbonated, and alcoholic beverages.</span></li>
+            <li><i class="fa-solid fa-circle-exclamation"></i><span><strong>Stop drinking</strong> if you feel fullness, pain, or discomfort.</span></li>
+          </ul>
+        </div>
+
+        <div class="bmi-cta-card">
+          <div class="bmi-cta-decor">
+            <div class="bmi-cta-decor-circle bmi-cta-decor-circle--1"></div>
+            <div class="bmi-cta-decor-circle bmi-cta-decor-circle--2"></div>
+          </div>
+          <div class="bmi-cta-content">
+            <div class="bmi-cta-icon">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+            <h3>Need a <span class="bmi-cta-accent">Health Assessment?</span></h3>
+            <p>Book a consultation with Dr. Atul Peters for a complete evaluation and personalized
+              weight-loss plan.</p>
+            <div class="bmi-cta-buttons">
+              <a href="contact.html" class="bmi-btn bmi-btn--white">
+                <i class="fa-regular fa-calendar"></i>
+                <span>Book Consultation</span>
+              </a>
+              <a href="tel:+917770001900" class="bmi-btn bmi-btn--ghost-white">
+                <i class="fa-solid fa-phone"></i>
+                <span>+91-7770001900</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Global Footer -->
   <script src="partials/footer.js"></script>
-  
-  <!-- Scripts -->
+
+  <a href="https://wa.me/917770001900" class="whatsapp-float" target="_blank" rel="noopener"
+    aria-label="Chat on WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
+    </svg>
+  </a>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <script src="main.js"></script>
+
   <script>
-    // BMI Logic
-    let isMetricHeight = true;
-    let isMetricWeight = true;
-    let isIbwMetricHeight = true;
-    let animationReq = null;
+    (function () {
+      var p = 'bmi-calculator.html';
+      document.querySelectorAll('.navbar .nav-link').forEach(function (l) {
+        var href = (l.getAttribute('href') || '').split('#')[0];
+        if (href === p) l.classList.add('nav-link--active');
+      });
+    })();
 
-    function switchCalcTab(tabName) {
-      document.querySelectorAll('.calc-tab').forEach(t => t.classList.remove('active'));
-      document.querySelectorAll('.calc-pane').forEach(p => p.classList.add('hidden-pane'));
-      
-      document.getElementById('tab-' + tabName).classList.add('active');
-      document.getElementById('pane-' + tabName).classList.remove('hidden-pane');
-    }
+    // BMI Calculator Logic
+    (function () {
+      var unitBtns = document.querySelectorAll('.bmi-unit-btn');
+      var weightInput = document.getElementById('bmiWeight');
+      var heightInput = document.getElementById('bmiHeight');
+      var calculateBtn = document.getElementById('bmiCalculateBtn');
+      var resetBtn = document.getElementById('bmiResetBtn');
+      var resultEmpty = document.getElementById('bmiResultEmpty');
+      var resultContent = document.getElementById('bmiResultContent');
+      var resultValue = document.getElementById('bmiResultValue');
+      var resultTag = document.getElementById('bmiResultTag');
+      var resultText = document.getElementById('bmiResultText');
+      var barFill = document.getElementById('bmiResultBarFill');
+      var barMarker = document.getElementById('bmiResultBarMarker');
+      var sliderPop = document.getElementById('bmiResultPop');
+      var sliderPopValue = document.getElementById('bmiResultPopValue');
 
-    function toggleUnit(type, unit) {
-      if (type === 'height') {
-        isMetricHeight = (unit === 'metric');
-        if (isMetricHeight) {
-          document.getElementById('height-metric-wrap').classList.remove('hidden');
-          document.getElementById('height-imperial-wrap').classList.add('hidden');
+      var currentUnit = 'metric';
+      var lastWeight = null;
+      var lastHeight = null;
+      var lastUnit = 'metric';
+
+      // Unit toggle
+      unitBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          unitBtns.forEach(function (b) { b.classList.remove('bmi-unit-btn--active'); });
+          btn.classList.add('bmi-unit-btn--active');
+          currentUnit = btn.getAttribute('data-unit');
+          // Update unit labels
+          document.querySelectorAll('[data-metric][data-imperial]').forEach(function (el) {
+            el.textContent = el.getAttribute('data-' + currentUnit);
+          });
+          // Convert current values if any
+          if (lastWeight !== null && lastHeight !== null) {
+            if (currentUnit === 'imperial' && lastUnit === 'metric') {
+              weightInput.value = (lastWeight * 2.20462).toFixed(1);
+              heightInput.value = (lastHeight / 2.54).toFixed(1);
+            } else if (currentUnit === 'metric' && lastUnit === 'imperial') {
+              weightInput.value = (lastWeight / 2.20462).toFixed(1);
+              heightInput.value = (lastHeight * 2.54).toFixed(1);
+            }
+          }
+        });
+      });
+
+      function getCategory(bmi) {
+        if (bmi < 18) return { name: 'Under-weight', range: 'BMI < 18', tagClass: 'bmi-tag--under', barColor: '#3B82F6', icon: 'fa-circle-info' };
+        if (bmi < 22.5) return { name: 'Normal', range: 'BMI 18 – 22.4', tagClass: 'bmi-tag--normal', barColor: '#10B981', icon: 'fa-circle-check' };
+        if (bmi < 27.5) return { name: 'Over-weight', range: 'BMI 22.5 – 27.4', tagClass: 'bmi-tag--over', barColor: '#F59E0B', icon: 'fa-triangle-exclamation' };
+        if (bmi < 37.5) return { name: 'Obese', range: 'BMI 27.5 – 37.4', tagClass: 'bmi-tag--obese', barColor: '#F97316', icon: 'fa-circle-exclamation' };
+        return { name: 'Morbidly Obese', range: 'BMI > 37.5', tagClass: 'bmi-tag--morbid', barColor: '#EF4444', icon: 'fa-circle-exclamation' };
+      }
+
+      function getText(category) {
+        var messages = {
+          'Under-weight': 'Your BMI is below the healthy range. A nutrition consultation can help you gain weight safely.',
+          'Normal': 'Your BMI is within the healthy range. Maintain a balanced diet and active lifestyle.',
+          'Over-weight': 'You are above the ideal weight. Lifestyle changes can help prevent progression to obesity.',
+          'Obese': 'You are in the obese range. Medical guidance and structured weight loss are recommended.',
+          'Morbidly Obese': 'Severe obesity carries significant health risks. Bariatric surgery may be a life-changing option.'
+        };
+        return messages[category] || '';
+      }
+
+      function calculate() {
+        var w = parseFloat(weightInput.value);
+        var h = parseFloat(heightInput.value);
+        if (!w || !h) return;
+
+        lastUnit = currentUnit;
+        lastWeight = w;
+        lastHeight = h;
+
+        var bmi;
+        if (currentUnit === 'metric') {
+          bmi = w / ((h / 100) * (h / 100));
         } else {
-          document.getElementById('height-metric-wrap').classList.add('hidden');
-          document.getElementById('height-imperial-wrap').classList.remove('hidden');
-        }
-      } else if (type === 'weight') {
-        isMetricWeight = (unit === 'metric');
-        if (isMetricWeight) {
-          document.getElementById('weight-metric-wrap').classList.remove('hidden');
-          document.getElementById('weight-imperial-wrap').classList.add('hidden');
-        } else {
-          document.getElementById('weight-metric-wrap').classList.add('hidden');
-          document.getElementById('weight-imperial-wrap').classList.remove('hidden');
-        }
-      }
-      calculateBMI();
-    }
-
-    function toggleIbwUnit(unit) {
-      isIbwMetricHeight = (unit === 'metric');
-      if (isIbwMetricHeight) {
-        document.getElementById('ibw-height-metric-wrap').classList.remove('hidden');
-        document.getElementById('ibw-height-imperial-wrap').classList.add('hidden');
-      } else {
-        document.getElementById('ibw-height-metric-wrap').classList.add('hidden');
-        document.getElementById('ibw-height-imperial-wrap').classList.remove('hidden');
-      }
-      calculateIBW();
-    }
-
-    function calculateBMI() {
-      let weightInKg = 0;
-      let heightInM = 0;
-
-      // Get Weight
-      if (isMetricWeight) {
-        weightInKg = parseFloat(document.getElementById('weight-kg').value) || 0;
-      } else {
-        const lbs = parseFloat(document.getElementById('weight-lbs').value) || 0;
-        weightInKg = lbs * 0.453592;
-      }
-
-      // Get Height
-      if (isMetricHeight) {
-        const cm = parseFloat(document.getElementById('height-cm').value) || 0;
-        heightInM = cm / 100;
-      } else {
-        const ft = parseFloat(document.getElementById('height-ft').value) || 0;
-        const inc = parseFloat(document.getElementById('height-in').value) || 0;
-        const totalInches = (ft * 12) + inc;
-        heightInM = totalInches * 0.0254;
-      }
-
-      const resultContent = document.getElementById('result-content');
-      const resultBox = document.getElementById('result-box');
-      const valEl = document.getElementById('bmi-value');
-      const catEl = document.getElementById('bmi-category');
-      const msgEl = document.getElementById('bmi-message');
-      const indicator = document.getElementById('bmi-indicator');
-
-      if (animationReq) {
-        cancelAnimationFrame(animationReq);
-        animationReq = null;
-      }
-
-      if (weightInKg > 0 && heightInM > 0) {
-        const bmi = (weightInKg / (heightInM * heightInM)).toFixed(1);
-        
-        // Animate number change
-        animateValue(valEl, parseFloat(valEl.textContent) || 0, parseFloat(bmi), 500);
-        
-        resultContent.classList.remove('empty-state');
-        resultBox.className = 'bmi-result-area';
-
-        // Calculate indicator position using Asian/Indian standards
-        let percentage = 0;
-        if (bmi < 18.0) {
-          percentage = (bmi / 18.0) * 25;
-        } else if (bmi < 22.5) {
-          percentage = 25 + ((bmi - 18.0) / 4.5) * 25;
-        } else if (bmi < 27.5) {
-          percentage = 50 + ((bmi - 22.5) / 5) * 25;
-        } else {
-          percentage = 75 + Math.min(((bmi - 27.5) / 10), 1) * 25;
-        }
-        indicator.style.left = Math.max(0, Math.min(percentage, 100)) + '%';
-        indicator.style.opacity = '1';
-
-        // Set categories based on Asian standard
-        if (bmi < 18.0) {
-          catEl.textContent = 'Underweight';
-          msgEl.textContent = 'You are currently considered underweight. It may be beneficial to consult with our nutrition clinic for a healthy weight gain plan.';
-          resultBox.classList.add('underweight');
-        } else if (bmi >= 18.0 && bmi < 22.5) {
-          catEl.textContent = 'Normal Weight';
-          msgEl.textContent = 'Great job! You are within the healthy weight range for your height according to Asian standards.';
-          resultBox.classList.add('normal');
-        } else if (bmi >= 22.5 && bmi < 27.5) {
-          catEl.textContent = 'Overweight';
-          msgEl.textContent = 'You are currently in the overweight range. Adopting a structured nutrition plan can help you reach your ideal weight.';
-          resultBox.classList.add('overweight');
-        } else {
-          catEl.textContent = 'Obese';
-          msgEl.textContent = 'Your BMI indicates obesity. We recommend booking a consultation with Dr. Peters to discuss your health and available treatment options.';
-          resultBox.classList.add('obese');
+          // Imperial: weight in lbs, height in inches
+          bmi = (w / (h * h)) * 703;
         }
 
-      } else {
-        // Reset
-        valEl.textContent = '0.0';
-        catEl.textContent = 'Enter Details';
-        msgEl.textContent = 'Please provide your height and weight to calculate your Body Mass Index.';
-        resultContent.classList.add('empty-state');
-        resultBox.className = 'bmi-result-area';
-        indicator.style.opacity = '0';
-      }
-    }
+        bmi = Math.round(bmi * 10) / 10;
+        var cat = getCategory(bmi);
 
-    function calculateIBW() {
-      let heightInInches = 0;
-      
-      if (isIbwMetricHeight) {
-        const cm = parseFloat(document.getElementById('ibw-height-cm').value) || 0;
-        heightInInches = cm / 2.54;
-      } else {
-        const ft = parseFloat(document.getElementById('ibw-height-ft').value) || 0;
-        const inc = parseFloat(document.getElementById('ibw-height-in').value) || 0;
-        heightInInches = (ft * 12) + inc;
-      }
-
-      const isMale = document.getElementById('g-male').checked;
-      const resultContent = document.getElementById('ibw-result-content');
-      const valEl = document.getElementById('ibw-value');
-      const msgEl = document.getElementById('ibw-message');
-
-      if (heightInInches > 40) { // arbitrary minimum height for IBW formula
-        // Devine Formula
-        let baseWeight = isMale ? 50.0 : 45.5;
-        let extraInches = heightInInches > 60 ? (heightInInches - 60) : 0;
-        let ibwKg = baseWeight + (2.3 * extraInches);
-        
-        let ibwLbs = ibwKg * 2.20462;
-
-        valEl.textContent = Math.round(ibwKg) + ' kg';
-        msgEl.innerHTML = `Your ideal body weight is approximately <strong>${Math.round(ibwKg)} kg (${Math.round(ibwLbs)} lbs)</strong> based on the Devine Formula for your height and gender.`;
-        resultContent.classList.remove('empty-state');
-      } else {
-        valEl.textContent = '--';
-        msgEl.textContent = 'Enter your details to calculate your ideal body weight.';
-        resultContent.classList.add('empty-state');
-      }
-    }
-
-    function calculateTHR() {
-      const age = parseInt(document.getElementById('thr-age').value) || 0;
-      const resultContent = document.getElementById('thr-result-content');
-      const valEl = document.getElementById('thr-value');
-      const msgEl = document.getElementById('thr-message');
-
-      if (age >= 10 && age <= 120) {
-        const maxHR = 220 - age;
-        const targetMin = Math.round(maxHR * 0.60);
-        const targetMax = Math.round(maxHR * 0.80);
-
-        valEl.innerHTML = `${targetMin} - ${targetMax} <span style="font-size: 1.5rem;">BPM</span>`;
-        msgEl.innerHTML = `While exercising, aim for a heart rate between <strong>${targetMin} and ${targetMax} beats per minute</strong>. Your absolute maximum heart rate is <strong>${maxHR} beats per minute</strong>.`;
-        resultContent.classList.remove('empty-state');
-      } else {
-        valEl.textContent = '--';
-        msgEl.textContent = 'Enter your age to see your target and maximum heart rate.';
-        resultContent.classList.add('empty-state');
-      }
-    }
-
-    function animateValue(obj, start, end, duration) {
-      let startTimestamp = null;
-      const step = (timestamp) => {
-        if (!startTimestamp) startTimestamp = timestamp;
-        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-        // Easing out cubic
-        const easeProgress = 1 - Math.pow(1 - progress, 3);
-        const current = start + (end - start) * easeProgress;
-        obj.innerHTML = current.toFixed(1);
-        if (progress < 1) {
-          animationReq = window.requestAnimationFrame(step);
-        } else {
-          obj.innerHTML = end.toFixed(1);
+        resultEmpty.style.display = 'none';
+        resultContent.hidden = false;
+        resultValue.textContent = bmi.toFixed(1);
+        resultTag.className = 'bmi-result-tag ' + cat.tagClass;
+        resultTag.querySelector('span').textContent = cat.name;
+        var tagIcon = resultTag.querySelector('i');
+        if (tagIcon) {
+          tagIcon.className = 'fa-solid ' + cat.icon;
         }
-      };
-      animationReq = window.requestAnimationFrame(step);
-    }
+        resultText.textContent = getText(cat.name);
+
+        var pct = Math.min(100, Math.max(0, ((bmi - 15) / 30) * 100));
+        barFill.style.width = pct + '%';
+        barFill.style.background = cat.barColor;
+        barMarker.style.left = pct + '%';
+        barMarker.style.background = cat.barColor;
+        barMarker.style.boxShadow = '0 0 0 4px ' + cat.barColor + '33';
+
+        // Position the result pop above the slider
+        sliderPop.style.setProperty('--bmi-pop-color', cat.barColor);
+        sliderPopValue.textContent = bmi.toFixed(1);
+        // Use the slider track width to position the pop
+        var bar = document.querySelector('.bmi-result-slider-bar');
+        if (bar) {
+          var barWidth = bar.offsetWidth;
+          var popX = Math.max(40, Math.min(barWidth - 40, (pct / 100) * barWidth));
+          sliderPop.style.setProperty('--bmi-pop-x', popX + 'px');
+        }
+      }
+
+      function reset() {
+        weightInput.value = '';
+        heightInput.value = '';
+        resultEmpty.style.display = '';
+        resultContent.hidden = true;
+        barFill.style.width = '0%';
+        barMarker.style.left = '0%';
+      }
+
+      if (calculateBtn) calculateBtn.addEventListener('click', calculate);
+      if (resetBtn) resetBtn.addEventListener('click', reset);
+
+      var timer;
+      function liveCalc() {
+        clearTimeout(timer);
+        timer = setTimeout(calculate, 350);
+      }
+      if (weightInput) weightInput.addEventListener('input', liveCalc);
+      if (heightInput) heightInput.addEventListener('input', liveCalc);
+
+      // Reposition pop on resize
+      window.addEventListener('resize', function () {
+        if (!resultContent.hidden) calculate();
+      });
+    })();
   </script>
+
 </body>
+
 </html>

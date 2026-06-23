@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Nutrition Clinic Delhi | Diet & Nutrition | Dr. Atul Peters</title>
+  <title>SMART Nutrition Cliniqs | Diet &amp; Nutrition | Dr. Atul Peters</title>
   <meta name="description"
-    content="Achieve Your Health Goals! SMART Nutrition Offers Personalized Plans in Delhi. Weight Loss, Diabetes, PCOS, & More. In-Person & Virtual Consultations Available!">
+    content="SMART Nutrition Cliniqs offers specialised nutritional guidance — Diabetes, PCOS, Thyroid, Bariatric Surgery, Pregnancy, Sports Nutrition, and more. In-person &amp; virtual consultations.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,141 +14,464 @@
     href="https://fonts.googleapis.com/css2?family=Bellefair&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&display=swap"
     rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nutrition-page">
 
-  <!-- ============================================
-   SITE HEADER (Partial)
-   ============================================ -->
+  <!-- Global Header -->
   <script src="partials/header.js"></script>
 
-
   <!-- ===== HERO ===== -->
-  <section class="nutrition-page-hero">
-    <div class="nutrition-page-hero-bg">
-      <div class="nutrition-page-hero-blob nutrition-page-hero-blob--1"></div>
-      <div class="nutrition-page-hero-blob nutrition-page-hero-blob--2"></div>
-      <div class="nutrition-page-hero-grid"></div>
+  <section class="nc-hero">
+    <div class="nc-hero-bg">
+      <div class="nc-hero-pattern"></div>
+      <div class="nc-hero-blob nc-hero-blob--1"></div>
+      <div class="nc-hero-blob nc-hero-blob--2"></div>
     </div>
-    <div class="container nutrition-page-hero-container">
-      <div class="nutrition-page-hero-content">
-        <span class="nutrition-page-hero-badge">SMART Nutrition Clinic</span>
-        <h1 class="nutrition-page-hero-title">Fuel Your Body for a <span>Healthier You</span></h1>
-        <p class="nutrition-page-hero-desc">Personalized, evidence-based nutritional guidance for weight loss, chronic disease management, and overall well-being. Available in-person and virtually.</p>
-        <div>
-          <a href="contact.html" class="btn btn--primary">Book a Consultation</a>
+
+    <div class="container">
+      <nav class="nc-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="nc-breadcrumb-current">Nutrition Clinic</span>
+      </nav>
+
+      <div class="nc-hero-content">
+        <div class="nc-hero-eyebrow">
+          <span class="nc-pulse-dot"></span>
+          SMART Nutrition Cliniqs · Saket, New Delhi
+        </div>
+        <h1 class="nc-hero-title">
+          Nutrition <span class="nc-hero-accent">Clinic</span>
+        </h1>
+        <p class="nc-hero-sub">
+          Nutrition is absolutely essential for well-being — and even more so in chronic ailments. The right
+          nutrition helps the body heal better. A healthy diet makes a healthy body and reduces stress.
+        </p>
+
+        <div class="nc-hero-cta">
+          <a href="#conditions" class="nc-btn nc-btn--primary">
+            <span>Explore Conditions</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="nc-btn nc-btn--ghost">
+            <i class="fa-regular fa-calendar"></i>
+            <span>Book Consultation</span>
+          </a>
         </div>
       </div>
-      <div class="nutrition-page-hero-image">
-        <img src="https://www.atulpeters.com/front/img2/Smart-Bariatric-Web-banner-02-2024.webp" alt="Nutrition Clinic" loading="lazy">
-      </div>
+    </div>
+
+    <div class="nc-hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path d="M0 50 Q360 90 720 50 T1440 50 V100 H0 Z" fill="#FBFBF9" />
+      </svg>
     </div>
   </section>
 
   <!-- ===== ABOUT CLINIC ===== -->
-  <section class="nutrition-about section">
+  <section class="nc-about section">
     <div class="container">
-      <div class="nutrition-about-grid">
-        <div class="nutrition-about-content">
-          <div class="section-eyebrow">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
-            </svg>
-            Our Philosophy
+      <div class="nc-section-header center">
+        <div class="nc-section-eyebrow">
+          <span class="nc-pulse-dot"></span>
+          About SMART Nutrition Cliniqs
+        </div>
+        <h2 class="nc-section-title">Specialised Nutritional <span class="text-accent">Guidance</span></h2>
+        <p class="nc-section-sub">
+          SMART Nutrition Cliniqs offers specialised nutritional guidance in general as well as specific health
+          conditions — because one-size-fits-all does not hold true.
+        </p>
+      </div>
+
+      <div class="nc-about-grid">
+        <div class="nc-about-card">
+          <div class="nc-about-card-icon nc-about-card-icon--blue">
+            <i class="fa-solid fa-notes-medical"></i>
           </div>
-          <h2 class="section-title">Because One Size Does Not Fit All</h2>
-          <p class="section-desc">Nutrition is absolutely essential for well-being, especially in chronic ailments. The right nutrition helps the body heal better, creates a healthy body, and reduces stress.</p>
-          <p><strong>SMART Nutrition Cliniqs</strong> offers specialized nutritional guidance. People suffering from Diabetes, Hypertension, Thyroid Disorders, or Dyslipidaemia require a different approach to food. During pregnancy and lactation, the nutritional approach must also differ radically. We cater to your specific individual needs to promote good health through the right food.</p>
-          <p>Our experts assess you thoroughly—evaluating your height, BMI, body composition, lifestyle, food preferences, genetics, and existing medical conditions—to design tailored plans that help you achieve your unique goals.</p></div></div>
-        <div class="nutrition-about-image" style="position: relative;">
-          <div class="image-wrapper">
-            <img src="https://www.atulpeters.com/front/img/bariatic-what-we-are-2.jpg" alt="Nutrition Clinic Assessment">
+          <h3>Condition-Specific Plans</h3>
+          <p>Diabetes, hypertension, thyroid disorders, dyslipidaemia, and other chronic conditions each demand
+            a radically different nutritional approach — no two patients are the same.</p>
+        </div>
+        <div class="nc-about-card">
+          <div class="nc-about-card-icon nc-about-card-icon--teal">
+            <i class="fa-solid fa-person-pregnant"></i>
           </div>
-          <div class="floating-badge">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-              <polyline points="22 4 12 14.01 9 11.01"></polyline>
-            </svg>
-            <span>Evidence-Based</span>
+          <h3>Pregnancy &amp; Lactation</h3>
+          <p>Pregnancy and lactation require a deeply personalised plan — for the mother's health, foetal
+            development, and successful long-term recovery.</p>
+        </div>
+        <div class="nc-about-card">
+          <div class="nc-about-card-icon nc-about-card-icon--gold">
+            <i class="fa-solid fa-scale-balanced"></i>
           </div>
+          <h3>Balanced Approach</h3>
+          <p>We balance science, taste, culture, and lifestyle — designing plans that are evidence-based,
+            sustainable, and rooted in real food.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== FEATURES ===== -->
-  <section class="nutrition-features section">
+  <!-- ===== EDUCATIONAL PROGRAMS ===== -->
+  <section class="nc-programs section">
     <div class="container">
-      <div class="feature-grid-3">
-        <div class="feature-card text-center">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-            </svg>
+      <div class="nc-section-header center">
+        <div class="nc-section-eyebrow">
+          <span class="nc-pulse-dot"></span>
+          Educational Programs
+        </div>
+        <h2 class="nc-section-title">Classes for <span class="text-accent">Schools &amp; Corporates</span></h2>
+        <p class="nc-section-sub">
+          We conduct classes for schools, educational institutes, and corporate houses — building healthier
+          communities through awareness and education.
+        </p>
+      </div>
+
+      <div class="nc-programs-grid">
+        <div class="nc-program-card">
+          <div class="nc-program-card-icon">
+            <i class="fa-solid fa-school"></i>
           </div>
-          <h3>In-Person & Virtual</h3>
-          <p>Consult with our expert nutritionists securely online from anywhere, or visit our Delhi clinic for a face-to-face assessment.</p></div></div>
-        <div class="feature-card text-center">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-            </svg>
+          <h3>Schools &amp; Institutes</h3>
+          <p>Interactive nutrition sessions for students, teachers, and parents covering balanced eating,
+            label reading, and lifelong habits.</p>
+          <span class="nc-program-tag">K-12 · Higher Ed</span>
+        </div>
+        <div class="nc-program-card">
+          <div class="nc-program-card-icon nc-program-card-icon--alt">
+            <i class="fa-solid fa-building"></i>
           </div>
-          <h3>Educational Classes</h3>
-          <p>We run teaching programs for schools, educational institutes & corporate houses to spread awareness of nutritive food.</p></div></div>
-        <div class="feature-card text-center">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-              <line x1="16" y1="2" x2="16" y2="6"></line>
-              <line x1="8" y1="2" x2="8" y2="6"></line>
-              <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>
+          <h3>Corporate Wellness</h3>
+          <p>On-site or virtual sessions, BMI camps, and one-on-one counselling as part of workplace wellness
+            initiatives.</p>
+          <span class="nc-program-tag">On-site · Virtual</span>
+        </div>
+        <div class="nc-program-card">
+          <div class="nc-program-card-icon nc-program-card-icon--alt2">
+            <i class="fa-solid fa-user-doctor"></i>
           </div>
-          <h3>Customized Plans</h3>
-          <p>In-depth, one-on-one nutrition counselling that fits smoothly into your lifestyle and dietary preferences.</p></div></div>
+          <h3>1-on-1 Counselling</h3>
+          <p>Personalised weight-loss and healthy-eating programs with one-on-one nutrition counselling
+            tailored to your body and goals.</p>
+          <span class="nc-program-tag">Personalised</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ASSESSMENT APPROACH ===== -->
+  <section class="nc-assessment section">
+    <div class="container">
+      <div class="nc-assessment-card">
+        <div class="nc-assessment-decor">
+          <div class="nc-assessment-decor-circle nc-assessment-decor-circle--1"></div>
+          <div class="nc-assessment-decor-circle nc-assessment-decor-circle--2"></div>
+        </div>
+
+        <div class="nc-section-header center">
+          <div class="nc-section-eyebrow">
+            <span class="nc-pulse-dot"></span>
+            How We Assess
+          </div>
+          <h2 class="nc-section-title">Our <span class="text-accent">Assessment Approach</span></h2>
+          <p class="nc-section-sub">
+            Our experts assess each individual based on the following factors before designing a tailored
+            nutritional plan.
+          </p>
+        </div>
+
+        <div class="nc-assessment-grid">
+          <div class="nc-assessment-item">
+            <i class="fa-solid fa-ruler-vertical"></i>
+            <span>Height &amp; BMI</span>
+          </div>
+          <div class="nc-assessment-item">
+            <i class="fa-solid fa-weight-scale"></i>
+            <span>Body Composition</span>
+          </div>
+          <div class="nc-assessment-item">
+            <i class="fa-solid fa-utensils"></i>
+            <span>Habits &amp; Food Preferences</span>
+          </div>
+          <div class="nc-assessment-item">
+            <i class="fa-solid fa-person-walking"></i>
+            <span>Lifestyle &amp; Activity</span>
+          </div>
+          <div class="nc-assessment-item">
+            <i class="fa-solid fa-dna"></i>
+            <span>Genetics</span>
+          </div>
+          <div class="nc-assessment-item">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <span>Existing Diseases</span>
+          </div>
+        </div>
+
+        <div class="nc-assessment-foot">
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Each plan is then <strong>tailored to the individual</strong> — not a generic template.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ===== CONDITIONS WE TREAT ===== -->
-  <section class="nutrition-conditions section">
+  <section class="nc-conditions section" id="conditions">
     <div class="container">
-      <h2 class="section-title text-center">Conditions We Manage</h2>
-      <p class="section-desc text-center" style="max-width: 700px; margin: 0 auto 3rem;">We provide specialized nutritional assistance and menu design for a wide array of health conditions and requirements.</p>
-      
-      <div class="conditions-pills">
-        <span class="pill">Bariatric Surgery Nutrition</span>
-        <span class="pill">Diabetes & Insulin Resistance</span>
-        <span class="pill">PCOS & Irregular Periods</span>
-        <span class="pill">Thyroid Disorders</span>
-        <span class="pill">Lipid & Cholesterol Management</span>
-        <span class="pill">Nutrition During Pregnancy</span>
-        <span class="pill">Paediatric Nutrition</span>
-        <span class="pill">Sports Nutrition</span>
-        <span class="pill">Heart Disease</span>
-        <span class="pill">Kidney Disease</span>
-        <span class="pill">IBS & Crohn’s Disease</span>
-        <span class="pill">Food Allergy and Intolerance</span>
-        <span class="pill">Nutrition During Chemotherapy</span>
-        <span class="pill">Geriatrics</span>
-        <span class="pill">Eating Disorders</span>
-        <span class="pill">Chronic Fatigue Syndrome</span>
+      <div class="nc-section-header center">
+        <div class="nc-section-eyebrow">
+          <span class="nc-pulse-dot"></span>
+          Conditions We Treat
+        </div>
+        <h2 class="nc-section-title">Areas of <span class="text-accent">Nutritional Expertise</span></h2>
+        <p class="nc-section-sub">From chronic metabolic conditions to specialised life-stage nutrition, we
+          provide expert guidance across a wide range of health areas.</p>
+      </div>
+
+      <div class="nc-conditions-grid">
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-stethoscope"></i>
+          <h4>Diabetes</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-droplet"></i>
+          <h4>Insulin Resistance</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-bowl-food"></i>
+          <h4>Eating Disorder</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-venus"></i>
+          <h4>PCOS</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-calendar-xmark"></i>
+          <h4>Irregular Periods</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-shield-virus"></i>
+          <h4>Nutrition During Chemotherapy</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-user-clock"></i>
+          <h4>Geriatrics</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <h4>Thyroid Disorder</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-baby"></i>
+          <h4>Pregnancy Nutrition</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-medal"></i>
+          <h4>Sports Nutrition</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-child"></i>
+          <h4>Paediatric Nutrition</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-droplet-half"></i>
+          <h4>Kidney Disease</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <h4>Heart Disease</h4>
+        </div>
+        <div class="nc-condition-card nc-condition-card--featured">
+          <i class="fa-solid fa-weight-scale"></i>
+          <h4>Bariatric Surgery Nutrition</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-bolt"></i>
+          <h4>IBS</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-vial"></i>
+          <h4>Lipid &amp; Cholesterol</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-clipboard-list"></i>
+          <h4>Menu Design &amp; Analysis</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-battery-quarter"></i>
+          <h4>Chronic Fatigue Syndrome</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <h4>Crohn's &amp; Ulcerative Colitis</h4>
+        </div>
+        <div class="nc-condition-card">
+          <i class="fa-solid fa-carrot"></i>
+          <h4>Food Allergy &amp; Intolerance</h4>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================================
-   SITE FOOTER (Partial)
-   ============================================ -->
+  <!-- ===== DELIVERY BANNERS ===== -->
+  <section class="nc-delivery section">
+    <div class="container">
+      <div class="nc-delivery-grid">
+        <div class="nc-delivery-card">
+          <div class="nc-delivery-icon">
+            <i class="fa-solid fa-laptop-medical"></i>
+          </div>
+          <div class="nc-delivery-content">
+            <h3>In-Person &amp; Virtual</h3>
+            <p>We are available in person at our SMART Cliniqs in Saket, and virtually for patients across India
+              and abroad.</p>
+          </div>
+        </div>
+        <div class="nc-delivery-card nc-delivery-card--alt">
+          <div class="nc-delivery-icon nc-delivery-icon--alt">
+            <i class="fa-solid fa-hand-holding-medical"></i>
+          </div>
+          <div class="nc-delivery-content">
+            <h3>Specialist Expertise</h3>
+            <p>Our specialists have expertise in catering to a wide range of dietary needs, cultural preferences,
+              and health conditions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SAMPLE DIET PHASE ===== -->
+  <section class="nc-diet section">
+    <div class="container">
+      <div class="nc-section-header center">
+        <div class="nc-section-eyebrow">
+          <span class="nc-pulse-dot"></span>
+          Sample Diet Plan
+        </div>
+        <h2 class="nc-section-title">Phase I — <span class="text-accent">Clear Liquid Diet</span></h2>
+        <p class="nc-section-sub">A sample post-bariatric nutrition protocol — shared for educational
+          purposes. Always follow the plan prescribed by your nutritionist.</p>
+      </div>
+
+      <div class="nc-diet-card">
+        <div class="nc-diet-head">
+          <div class="nc-diet-head-icon">
+            <i class="fa-solid fa-glass-water"></i>
+          </div>
+          <div>
+            <span class="nc-diet-head-tag">Post-Op Day 1 - 7</span>
+            <h3>Clear Liquid Diet</h3>
+          </div>
+        </div>
+
+        <ul class="nc-diet-list">
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <span>Only clear liquids are allowed during this phase.</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <span>Avoid sweetened beverages — they can cause dumping syndrome.</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <span>Sip very slowly — small frequent sips throughout the day.</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-xmark"></i>
+            <span>Do not use straws — they can introduce excess air and discomfort.</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-xmark"></i>
+            <span>Avoid caffeinated, carbonated, and alcoholic beverages.</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span><strong>Stop drinking</strong> if you feel fullness, pain, or discomfort.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / LOCATIONS ===== -->
+  <section class="nc-contact section" id="contact">
+    <div class="container">
+      <div class="nc-section-header center">
+        <div class="nc-section-eyebrow">
+          <span class="nc-pulse-dot"></span>
+          Visit Us
+        </div>
+        <h2 class="nc-section-title">Practice <span class="text-accent">Locations</span></h2>
+        <p class="nc-section-sub">Visit us at our New Delhi clinics or connect with us virtually from anywhere
+          in the world.</p>
+      </div>
+
+      <div class="nc-contact-grid">
+        <div class="nc-location-card">
+          <div class="nc-location-icon">
+            <i class="fa-solid fa-hospital"></i>
+          </div>
+          <h3>Max Smart Super Speciality Hospital</h3>
+          <p>B-8 OPD, Ground Floor, Saket, New Delhi</p>
+          <div class="nc-location-actions">
+            <a href="tel:+911139595119" class="nc-location-btn">
+              <i class="fa-solid fa-phone"></i> +91-11-39595119
+            </a>
+          </div>
+        </div>
+        <div class="nc-location-card">
+          <div class="nc-location-icon">
+            <i class="fa-solid fa-clinic-medical"></i>
+          </div>
+          <h3>SMART Cliniqs</h3>
+          <p>J-24, Basement, Saket, Delhi-110017</p>
+          <div class="nc-location-actions">
+            <a href="tel:+917770001900" class="nc-location-btn">
+              <i class="fa-solid fa-phone"></i> +91-7770001900
+            </a>
+            <a href="https://wa.me/917770001900" target="_blank" rel="noopener" class="nc-location-btn">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
   <script src="partials/footer.js"></script>
 
+  <a href="https://wa.me/917770001900" class="whatsapp-float" target="_blank" rel="noopener"
+    aria-label="Chat on WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
+    </svg>
+  </a>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
   <script src="main.js"></script>
+
+  <script>
+    (function () {
+      var p = 'nutrition-clinic.html';
+      document.querySelectorAll('.navbar .nav-link').forEach(function (l) {
+        var href = (l.getAttribute('href') || '').split('#')[0];
+        if (href === p) l.classList.add('nav-link--active');
+      });
+    })();
+  </script>
+
 </body>
+
 </html>

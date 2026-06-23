@@ -16,8 +16,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- Link up to parent folder since we are in /weight-loss-surgery -->
-  <link rel="stylesheet" href="../styles.css?v=2">
-  <link rel="stylesheet" href="overview.css">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="ovw-page">
@@ -29,6 +28,8 @@
   <section class="ovw-hero">
     <div class="ovw-hero-bg">
       <div class="ovw-hero-pattern"></div>
+      <div class="ovw-hero-blob ovw-hero-blob--1"></div>
+      <div class="ovw-hero-blob ovw-hero-blob--2"></div>
     </div>
 
     <div class="container">
@@ -42,8 +43,8 @@
 
       <div class="ovw-hero-grid">
         <div class="ovw-hero-content">
-          <div class="section-eyebrow">
-            <span class="eyebrow-dot"></span>
+          <div class="ovw-hero-eyebrow">
+            <span class="ovw-pulse-dot"></span>
             Comprehensive Bariatric Care
           </div>
 
@@ -76,26 +77,30 @@
           </div>
 
           <div class="ovw-hero-cta">
-            <a href="#consultation" class="btn-rygb-primary">
-              Book Free Consultation
+            <a href="#consultation" class="ovw-btn ovw-btn--primary">
+              <span>Book Free Consultation</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </a>
-            <a href="#bmi" class="btn-rygb-ghost">
-              Check Your BMI
-              <span>↓</span>
+            <a href="#bmi" class="ovw-btn ovw-btn--ghost">
+              <span>Check Your BMI</span>
+              <i class="fa-solid fa-arrow-down"></i>
             </a>
           </div>
 
           <div class="ovw-hero-trust">
             <div class="ovw-hero-trust-item">
               <i class="fa-solid fa-certificate"></i>
-              Certified Bariatric Center
+              <span>Certified Bariatric Center</span>
             </div>
             <div class="ovw-hero-trust-item">
               <i class="fa-solid fa-shield-heart"></i>
-              NABH Accredited
+              <span>NABH Accredited</span>
+            </div>
+            <div class="ovw-hero-trust-item">
+              <i class="fa-solid fa-stethoscope"></i>
+              <span>Max Hospital, Delhi</span>
             </div>
           </div>
         </div>
@@ -106,6 +111,7 @@
               <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80&w=800"
                 alt="Healthy lifestyle journey"
                 onerror="this.onerror=null;this.src='../assets/img/focus-area-bariatric-surgery.jpg'">
+              <div class="ovw-hero-image-overlay"></div>
             </div>
             <div class="ovw-hero-card ovw-hero-card--1">
               <div class="ovw-hero-card-icon">
@@ -126,7 +132,7 @@
               </div>
             </div>
             <div class="ovw-hero-card ovw-hero-card--3">
-              <div class="ovw-hero-card-icon">
+              <div class="ovw-hero-card-icon ovw-hero-card-icon--gold">
                 <i class="fa-solid fa-award"></i>
               </div>
               <div>
@@ -150,20 +156,23 @@
           </div>
           <h3 class="ovw-stat-number">1.9 Billion</h3>
           <p class="ovw-stat-text">Adults globally are considered overweight (WHO, 2016)</p>
+          <div class="ovw-stat-tag">Global</div>
         </div>
-        <div class="ovw-stat-card">
-          <div class="ovw-stat-icon">
+        <div class="ovw-stat-card ovw-stat-card--featured">
+          <div class="ovw-stat-icon ovw-stat-icon--teal">
             <i class="fa-solid fa-chart-line"></i>
           </div>
           <h3 class="ovw-stat-number">2X</h3>
           <p class="ovw-stat-text">Increase in obesity rates in India over the last 10 years</p>
+          <div class="ovw-stat-tag">India</div>
         </div>
         <div class="ovw-stat-card">
-          <div class="ovw-stat-icon">
+          <div class="ovw-stat-icon ovw-stat-icon--gold">
             <i class="fa-solid fa-droplet"></i>
           </div>
           <h3 class="ovw-stat-number">80-85%</h3>
           <p class="ovw-stat-text">Of the risk for developing Type-2 Diabetes is obesity-related</p>
+          <div class="ovw-stat-tag">Diabetes Link</div>
         </div>
       </div>
     </div>
@@ -172,48 +181,83 @@
   <!-- ===== UNDERSTANDING (INTRO) ===== -->
   <section class="ovw-intro section">
     <div class="container">
-      <div class="section-header center">
-        <div class="section-eyebrow">
-          <span class="eyebrow-dot"></span>
-          Understanding Obesity
+      <div class="ovw-intro-grid">
+        <div class="ovw-intro-visual">
+          <div class="ovw-intro-image">
+            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=800"
+              alt="Understanding obesity"
+              onerror="this.onerror=null;this.style.display='none'">
+          </div>
+          <div class="ovw-intro-stat-card">
+            <div class="ovw-intro-stat-num">3X</div>
+            <div class="ovw-intro-stat-label">Obesity rates have tripled globally since 1975</div>
+          </div>
         </div>
-        <h2 class="section-title">What is <span class="text-accent">Weight Loss Surgery</span>?</h2>
-      </div>
-
-      <div class="ovw-intro-lead max-w-800" style="max-width: 800px; margin: 0 auto;">
-        <p>Obesity is a major health hazard with worldwide rates having <strong>tripled since 1975</strong>. In 2016,
-          more than 1.9 billion adults aged 18+ were overweight, and over 650 million were obese with related health
-          complications.</p>
-
-        <p>In India, the number of obese people has <strong>doubled in the last 10 years</strong>, according to the
-          National Family Health Survey. Urban populations are notably more prone to obesity than their rural
-          counterparts.</p>
-
-        <p>Research confirms that obesity is difficult to treat and often requires <strong>long-term lifestyle
-            changes</strong>. It accounts for 80-85% of the risk of developing Type-2 Diabetes and tends to run in
-          families — suggesting both genetic and environmental contributions.</p>
-
-        <p>Childhood obesity is also rising, with <strong>41 million children under 5</strong> estimated to be
-          overweight or obese in 2016 — affecting the newborns of these adults and creating intergenerational
-          health challenges.</p>
+        <div class="ovw-intro-content">
+          <div class="ovw-section-eyebrow">
+            <span class="ovw-pulse-dot"></span>
+            Understanding Obesity
+          </div>
+          <h2 class="ovw-section-title">What is <span class="text-accent">Weight Loss Surgery</span>?</h2>
+          <p class="ovw-intro-lead">
+            Obesity is a major health hazard with worldwide rates having <strong>tripled since 1975</strong>. In
+            2016, more than 1.9 billion adults aged 18+ were overweight, and over 650 million were obese with
+            related health complications.
+          </p>
+          <div class="ovw-intro-points">
+            <div class="ovw-intro-point">
+              <div class="ovw-intro-point-icon">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+              </div>
+              <div>
+                <strong>India's Obesity Crisis</strong>
+                <p>The number of obese people has <strong>doubled in the last 10 years</strong> (NFHS), with urban
+                  populations notably more affected than rural counterparts.</p>
+              </div>
+            </div>
+            <div class="ovw-intro-point">
+              <div class="ovw-intro-point-icon">
+                <i class="fa-solid fa-dna"></i>
+              </div>
+              <div>
+                <strong>Complex Medical Condition</strong>
+                <p>Accounts for <strong>80-85% of Type-2 Diabetes risk</strong>, runs in families, and requires
+                  long-term lifestyle changes beyond simple dieting.</p>
+              </div>
+            </div>
+            <div class="ovw-intro-point">
+              <div class="ovw-intro-point-icon">
+                <i class="fa-solid fa-children"></i>
+              </div>
+              <div>
+                <strong>Childhood Epidemic</strong>
+                <p><strong>41 million children under 5</strong> are overweight or obese — creating
+                  intergenerational health challenges that demand early intervention.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== BMI CALCULATOR PROMO ===== -->
+  <!-- ===== PROMO BANNER (BMI) ===== -->
   <section class="ovw-promo">
     <div class="container">
       <div class="ovw-promo-card">
         <div class="ovw-promo-content">
-          <div class="ovw-promo-eyebrow">BMI Calculator</div>
+          <div class="ovw-promo-eyebrow">
+            <i class="fa-solid fa-calculator"></i>
+            BMI Calculator
+          </div>
           <h3>Find Your BMI Instantly</h3>
           <p>Don't guess. Calculate your precise Body Mass Index and ideal weight using our interactive tool — and
             understand where you stand.</p>
         </div>
         <div class="ovw-promo-action">
           <a href="../bmi-calculator.html" class="ovw-promo-btn">
-            Launch Calculator
-            <i class="fa-solid fa-calculator"></i>
+            <span>Launch Calculator</span>
+            <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
       </div>
@@ -224,37 +268,53 @@
   <section class="ovw-causes section">
     <div class="container">
       <div class="section-header center">
-        <div class="section-eyebrow">
-          <span class="eyebrow-dot"></span>
+        <div class="ovw-section-eyebrow">
+          <span class="ovw-pulse-dot"></span>
           Root Causes
         </div>
-        <h2 class="section-title">What Causes <span class="text-accent">Obesity</span>?</h2>
-        <p class="section-sub">The basic cause is an energy imbalance between calories consumed and calories spent.
-        </p>
+        <h2 class="ovw-section-title">What Causes <span class="text-accent">Obesity</span>?</h2>
+        <p class="ovw-section-sub">The basic cause is an energy imbalance between calories consumed and calories
+          spent — but the underlying factors are often more complex.</p>
       </div>
 
-      <ul class="ovw-causes-list">
-        <li>
-          <i class="fa-solid fa-circle-check"></i>
-          <span><strong>Excessive intake of energy-dense foods</strong> — high in fat, sugar, and processed
-            ingredients that are easy to overconsume.</span>
-        </li>
-        <li>
-          <i class="fa-solid fa-circle-check"></i>
-          <span><strong>Decrease in physical activity</strong> — due to sedentary work, changing modes of
-            transportation, and increasing urbanization.</span>
-        </li>
-        <li>
-          <i class="fa-solid fa-circle-check"></i>
-          <span><strong>Genetic and family factors</strong> — obesity tends to run in families, with shared diet
-            and lifestyle habits amplifying the risk.</span>
-        </li>
-        <li>
-          <i class="fa-solid fa-circle-check"></i>
-          <span><strong>Environmental and behavioral factors</strong> — what and how often a person eats, stress
-            levels, sleep patterns, and emotional triggers all play a role.</span>
-        </li>
-      </ul>
+      <div class="ovw-causes-grid">
+        <div class="ovw-cause-card">
+          <div class="ovw-cause-num">01</div>
+          <div class="ovw-cause-icon">
+            <i class="fa-solid fa-burger"></i>
+          </div>
+          <h4>Energy-Dense Foods</h4>
+          <p><strong>Excessive intake</strong> of high-fat, high-sugar, processed foods that are easy to
+            overconsume without feeling full.</p>
+        </div>
+        <div class="ovw-cause-card">
+          <div class="ovw-cause-num">02</div>
+          <div class="ovw-cause-icon">
+            <i class="fa-solid fa-couch"></i>
+          </div>
+          <h4>Sedentary Lifestyle</h4>
+          <p><strong>Decrease in physical activity</strong> due to desk jobs, motorized transport, and increasing
+            urbanization.</p>
+        </div>
+        <div class="ovw-cause-card">
+          <div class="ovw-cause-num">03</div>
+          <div class="ovw-cause-icon">
+            <i class="fa-solid fa-dna"></i>
+          </div>
+          <h4>Genetics & Family</h4>
+          <p>Obesity tends to <strong>run in families</strong>, with shared diet, lifestyle and genetic factors
+            amplifying the risk.</p>
+        </div>
+        <div class="ovw-cause-card">
+          <div class="ovw-cause-num">04</div>
+          <div class="ovw-cause-icon">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <h4>Environment & Behavior</h4>
+          <p>Stress levels, sleep patterns, emotional triggers, and <strong>environmental cues</strong> all play a
+            significant role.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -262,13 +322,13 @@
   <section class="ovw-consequences section">
     <div class="container">
       <div class="section-header center">
-        <div class="section-eyebrow">
-          <span class="eyebrow-dot"></span>
+        <div class="ovw-section-eyebrow">
+          <span class="ovw-pulse-dot"></span>
           Health Impact
         </div>
-        <h2 class="section-title">Common Health <span class="text-accent">Consequences</span></h2>
-        <p class="section-sub">Obesity isn't just a cosmetic concern — it's a medical problem that increases your
-          risk of other serious diseases.</p>
+        <h2 class="ovw-section-title">Common Health <span class="text-accent">Consequences</span></h2>
+        <p class="ovw-section-sub">Obesity isn't just a cosmetic concern — it's a medical problem that increases
+          your risk of other serious diseases.</p>
       </div>
 
       <div class="ovw-consequence-grid">
@@ -278,36 +338,45 @@
           </div>
           <h4>Cardiovascular</h4>
           <p>Increased risk for heart disease and stroke due to elevated blood pressure and cholesterol.</p>
+          <div class="ovw-consequence-stat">2-3x higher risk</div>
         </div>
         <div class="ovw-consequence-card">
-          <div class="ovw-consequence-icon">
+          <div class="ovw-consequence-icon ovw-consequence-icon--teal">
             <i class="fa-solid fa-droplet"></i>
           </div>
           <h4>Type 2 Diabetes</h4>
           <p>Severe impact on insulin regulation, with obesity being the leading modifiable risk factor.</p>
+          <div class="ovw-consequence-stat">6x higher risk</div>
         </div>
         <div class="ovw-consequence-card">
-          <div class="ovw-consequence-icon">
+          <div class="ovw-consequence-icon ovw-consequence-icon--gold">
             <i class="fa-solid fa-bone"></i>
           </div>
           <h4>Musculoskeletal</h4>
           <p>Degenerative joint disease and chronic pain, especially in knees, hips, and lower back.</p>
+          <div class="ovw-consequence-stat">4-5x higher risk</div>
         </div>
         <div class="ovw-consequence-card">
-          <div class="ovw-consequence-icon">
+          <div class="ovw-consequence-icon ovw-consequence-icon--rose">
             <i class="fa-solid fa-ribbon"></i>
           </div>
           <h4>Certain Cancers</h4>
           <p>Increased risk for breast, colon, endometrial, liver, kidney, and pancreatic cancers.</p>
+          <div class="ovw-consequence-stat">1.5-2x higher risk</div>
         </div>
       </div>
 
       <div class="ovw-consequence-note">
-        <p>Childhood obesity is associated with a <strong>higher chance of obesity, premature death, and disability
-            in adulthood</strong> — making early intervention critical.</p>
-        <p>Low-calorie, low-fat diets paired with exercise are typically the first line of treatment. Crash diets and
-          appetite suppressants are only appropriate under very specific conditions and strict medical supervision.
-        </p>
+        <div class="ovw-consequence-note-icon">
+          <i class="fa-solid fa-circle-info"></i>
+        </div>
+        <div class="ovw-consequence-note-content">
+          <p>Childhood obesity is associated with a <strong>higher chance of obesity, premature death, and
+              disability in adulthood</strong> — making early intervention critical.</p>
+          <p>Low-calorie, low-fat diets paired with exercise are typically the first line of treatment. Crash diets
+            and appetite suppressants are only appropriate under very specific conditions and strict medical
+            supervision.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -316,38 +385,165 @@
   <section class="ovw-bmi section" id="bmi">
     <div class="container">
       <div class="section-header center">
-        <div class="section-eyebrow">
-          <span class="eyebrow-dot"></span>
+        <div class="ovw-section-eyebrow">
+          <span class="ovw-pulse-dot"></span>
           Definitions
         </div>
-        <h2 class="section-title">Definitions of <span class="text-accent">Obesity</span></h2>
-        <p class="section-sub">Body Mass Index (BMI) is the standard medical screening tool used to categorize
-          weight status.</p>
+        <h2 class="ovw-section-title">Definitions of <span class="text-accent">Obesity</span></h2>
+        <p class="ovw-section-sub">Body Mass Index (BMI) is the standard medical screening tool used to categorize
+          weight status. Asian populations use lower thresholds than Western standards.</p>
       </div>
 
       <div class="ovw-bmi-formula">
-        <strong>BMI (Body Mass Index)</strong> = Body Weight (in kg) / Height<sup>2</sup> (in m)
+        <div class="ovw-bmi-formula-icon">
+          <i class="fa-solid fa-square-root-variable"></i>
+        </div>
+        <div class="ovw-bmi-formula-content">
+          <strong>BMI (Body Mass Index)</strong> = Body Weight (kg) ÷ Height<sup>2</sup> (m)
+        </div>
       </div>
 
       <div class="ovw-bmi-zones">
-        <h3 class="ovw-bmi-zones-title">Ideal BMI (Asian Standard)</h3>
+        <h3 class="ovw-bmi-zones-title">
+          <i class="fa-solid fa-chart-simple"></i>
+          Ideal BMI (Asian Standard)
+        </h3>
         <div class="ovw-bmi-zones-grid">
           <div class="ovw-bmi-zone ovw-bmi-zone--normal">
+            <div class="ovw-bmi-zone-icon">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
             <span class="ovw-bmi-zone-label">Normal</span>
             <span class="ovw-bmi-zone-range">18.0 - 22.4</span>
+            <span class="ovw-bmi-zone-note">Healthy range</span>
           </div>
           <div class="ovw-bmi-zone ovw-bmi-zone--overweight">
+            <div class="ovw-bmi-zone-icon">
+              <i class="fa-solid fa-exclamation"></i>
+            </div>
             <span class="ovw-bmi-zone-label">Over-weight</span>
             <span class="ovw-bmi-zone-range">22.5 - 27.4</span>
+            <span class="ovw-bmi-zone-note">Needs attention</span>
           </div>
           <div class="ovw-bmi-zone ovw-bmi-zone--obese">
+            <div class="ovw-bmi-zone-icon">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
             <span class="ovw-bmi-zone-label">Obese</span>
             <span class="ovw-bmi-zone-range">27.5 - 37.4</span>
+            <span class="ovw-bmi-zone-note">Medical concern</span>
           </div>
           <div class="ovw-bmi-zone ovw-bmi-zone--morbid">
+            <div class="ovw-bmi-zone-icon">
+              <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
             <span class="ovw-bmi-zone-label">Morbidly Obese</span>
             <span class="ovw-bmi-zone-range">&gt; 37.5</span>
+            <span class="ovw-bmi-zone-note">Surgery indicated</span>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TREATMENT OPTIONS ===== -->
+  <section class="ovw-treatments section">
+    <div class="container">
+      <div class="section-header center">
+        <div class="ovw-section-eyebrow">
+          <span class="ovw-pulse-dot"></span>
+          Treatment Approach
+        </div>
+        <h2 class="ovw-section-title">Surgical <span class="text-accent">Treatment Options</span></h2>
+        <p class="ovw-section-sub">Modern bariatric surgery offers multiple proven approaches — each tailored to
+          your unique health profile, BMI, and goals.</p>
+      </div>
+
+      <div class="ovw-treatments-grid">
+        <div class="ovw-treatment-card ovw-treatment-card--featured">
+          <div class="ovw-treatment-badge">Most Common</div>
+          <div class="ovw-treatment-icon">
+            <i class="fa-solid fa-stomach"></i>
+          </div>
+          <h4>Sleeve Gastrectomy</h4>
+          <p>Removes ~75% of the stomach, reducing capacity and hunger hormones. Irreversible but highly
+            effective.</p>
+          <div class="ovw-treatment-stats">
+            <div class="ovw-treatment-stat">
+              <span class="ovw-treatment-stat-num">~65%</span>
+              <span class="ovw-treatment-stat-label">Excess Weight Loss</span>
+            </div>
+            <div class="ovw-treatment-stat">
+              <span class="ovw-treatment-stat-num">~60%</span>
+              <span class="ovw-treatment-stat-label">Diabetes Remission</span>
+            </div>
+          </div>
+          <a href="../sleeve-gastrectomy.html" class="ovw-treatment-link">
+            Learn more <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="ovw-treatment-card">
+          <div class="ovw-treatment-icon">
+            <i class="fa-solid fa-route"></i>
+          </div>
+          <h4>Roux-en-Y Bypass</h4>
+          <p>The gold-standard metabolic surgery. Restricts intake and reroutes digestion for hormonal reset.</p>
+          <div class="ovw-treatment-stats">
+            <div class="ovw-treatment-stat">
+              <span class="ovw-treatment-stat-num">~80%</span>
+              <span class="ovw-treatment-stat-label">Excess Weight Loss</span>
+            </div>
+            <div class="ovw-treatment-stat">
+              <span class="ovw-treatment-stat-num">~85%</span>
+              <span class="ovw-treatment-stat-label">Diabetes Remission</span>
+            </div>
+          </div>
+          <a href="../roux-en-y-gastric-bypass.html" class="ovw-treatment-link">
+            Learn more <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="ovw-treatment-card">
+          <div class="ovw-treatment-icon">
+            <i class="fa-solid fa-link"></i>
+          </div>
+          <h4>Mini Gastric Bypass</h4>
+          <p>Simpler single-loop anatomy. Shorter OR time with comparable weight loss outcomes.</p>
+          <div class="ovw-treatment-stats">
+            <div class="ovw-treatment-stat">
+              <span class="ovw-treatment-stat-num">~75%</span>
+              <span class="ovw-treatment-stat-label">Excess Weight Loss</span>
+            </div>
+            <div class="ovw-treatment-stat">
+              <span class="ovw-treatment-stat-num">~80%</span>
+              <span class="ovw-treatment-stat-label">Diabetes Remission</span>
+            </div>
+          </div>
+          <a href="#" class="ovw-treatment-link">
+            Learn more <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="ovw-treatment-card">
+          <div class="ovw-treatment-icon">
+            <i class="fa-solid fa-bandage"></i>
+          </div>
+          <h4>Gastric Band</h4>
+          <p>Adjustable silicone band around the upper stomach. Reversible option with moderate weight loss.</p>
+          <div class="ovw-treatment-stats">
+            <div class="ovw-treatment-stat">
+              <span class="ovw-treatment-stat-num">~50%</span>
+              <span class="ovw-treatment-stat-label">Excess Weight Loss</span>
+            </div>
+            <div class="ovw-treatment-stat">
+              <span class="ovw-treatment-stat-num">~45%</span>
+              <span class="ovw-treatment-stat-label">Diabetes Remission</span>
+            </div>
+          </div>
+          <a href="#" class="ovw-treatment-link">
+            Learn more <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -357,77 +553,291 @@
   <section class="ovw-results section">
     <div class="container">
       <div class="section-header center">
-        <div class="section-eyebrow">
-          <span class="eyebrow-dot"></span>
+        <div class="ovw-section-eyebrow">
+          <span class="ovw-pulse-dot"></span>
           Expected Results
         </div>
-        <h2 class="section-title">Results & Benefits of <span class="text-accent">Surgical Weight Loss</span></h2>
-        <p class="section-sub">Beyond the scale — surgery resolves or improves a wide range of weight-related
-          conditions.</p>
+        <h2 class="ovw-section-title">Results & Benefits of <span class="text-accent">Surgical Weight Loss</span>
+        </h2>
+        <p class="ovw-section-sub">Beyond the scale — surgery resolves or improves a wide range of weight-related
+          conditions, often within days or months.</p>
       </div>
 
-      <div class="ovw-results-highlight">
-        <div class="ovw-results-num">60-80%</div>
-        <div class="ovw-results-label">Excess Body Weight Loss</div>
-        <p>After a gastric bypass procedure, most patients achieve this dramatic weight loss within 9-12 months
-          post-surgery — with sustained long-term results.</p>
+      <!-- Top Stats Row -->
+      <div class="ovw-results-stats">
+        <div class="ovw-results-stat-card ovw-results-stat-card--primary">
+          <div class="ovw-results-stat-decor">
+            <div class="ovw-results-stat-decor-circle ovw-results-stat-decor-circle--1"></div>
+            <div class="ovw-results-stat-decor-circle ovw-results-stat-decor-circle--2"></div>
+          </div>
+          <div class="ovw-results-stat-content">
+            <div class="ovw-results-stat-eyebrow">
+              <i class="fa-solid fa-weight-scale"></i>
+              Average Excess Body Weight Loss
+            </div>
+            <div class="ovw-results-stat-num">
+              <span class="ovw-results-stat-prefix">~</span>60-80<span class="ovw-results-stat-suffix">%</span>
+            </div>
+            <div class="ovw-results-stat-meta">
+              <span class="ovw-results-stat-badge">
+                <i class="fa-solid fa-clock"></i> 9-12 months
+              </span>
+            </div>
+            <p>Sustained long-term results with significant comorbidity resolution across metabolic, cardiovascular and hormonal systems.</p>
+          </div>
+        </div>
+
+        <div class="ovw-results-stat-card">
+          <div class="ovw-results-stat-icon ovw-results-stat-icon--teal">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+          <div class="ovw-results-stat-value">~85%</div>
+          <div class="ovw-results-stat-name">Type 2 Diabetes</div>
+          <div class="ovw-results-stat-desc">Remission within days of surgery, independent of weight loss</div>
+          <div class="ovw-results-stat-bar">
+            <div class="ovw-results-stat-bar-fill" style="--w: 85%"></div>
+          </div>
+        </div>
+
+        <div class="ovw-results-stat-card">
+          <div class="ovw-results-stat-icon ovw-results-stat-icon--blue">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <div class="ovw-results-stat-value">~70%</div>
+          <div class="ovw-results-stat-name">Hypertension</div>
+          <div class="ovw-results-stat-desc">Normalized blood pressure in majority of patients</div>
+          <div class="ovw-results-stat-bar">
+            <div class="ovw-results-stat-bar-fill" style="--w: 70%"></div>
+          </div>
+        </div>
+
+        <div class="ovw-results-stat-card">
+          <div class="ovw-results-stat-icon ovw-results-stat-icon--gold">
+            <i class="fa-solid fa-bed"></i>
+          </div>
+          <div class="ovw-results-stat-value">~85%</div>
+          <div class="ovw-results-stat-name">Sleep Apnea</div>
+          <div class="ovw-results-stat-desc">Resolution of obstructive sleep apnea in most cases</div>
+          <div class="ovw-results-stat-bar">
+            <div class="ovw-results-stat-bar-fill" style="--w: 85%"></div>
+          </div>
+        </div>
       </div>
 
-      <div class="ovw-results-list">
-        <div class="ovw-results-item">
-          <span class="ovw-results-check">✓</span>
-          <div>
-            <strong>Type 2 Diabetes</strong>
-            <span>Resolved or improved in majority of patients — often within days of surgery</span>
+      <!-- Benefits Grid by Category -->
+      <div class="ovw-benefits-wrap">
+        <div class="ovw-benefits-head">
+          <h3 class="ovw-benefits-title">Conditions That Improve or Resolve</h3>
+          <p class="ovw-benefits-sub">Bariatric surgery delivers system-wide health benefits backed by 60+ years of clinical research.</p>
+        </div>
+
+        <div class="ovw-benefits-grid">
+          <div class="ovw-benefit-card">
+            <div class="ovw-benefit-card-head">
+              <div class="ovw-benefit-icon ovw-benefit-icon--teal">
+                <i class="fa-solid fa-droplet"></i>
+              </div>
+              <div class="ovw-benefit-tag">Metabolic</div>
+            </div>
+            <h4>Type 2 Diabetes</h4>
+            <p>Resolved or improved in majority of patients — often within days of surgery due to changes in gut hormones (GLP-1, PYY, ghrelin).</p>
+            <div class="ovw-benefit-progress">
+              <div class="ovw-benefit-progress-label">
+                <span>Remission rate</span>
+                <strong>~85%</strong>
+              </div>
+              <div class="ovw-benefit-progress-bar">
+                <div class="ovw-benefit-progress-fill" style="--w: 85%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ovw-benefit-card">
+            <div class="ovw-benefit-card-head">
+              <div class="ovw-benefit-icon ovw-benefit-icon--blue">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <div class="ovw-benefit-tag">Cardiovascular</div>
+            </div>
+            <h4>High Blood Pressure</h4>
+            <p>Blood pressure normalizes in most patients as weight decreases and metabolic health improves.</p>
+            <div class="ovw-benefit-progress">
+              <div class="ovw-benefit-progress-label">
+                <span>Resolution rate</span>
+                <strong>~70%</strong>
+              </div>
+              <div class="ovw-benefit-progress-bar">
+                <div class="ovw-benefit-progress-fill" style="--w: 70%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ovw-benefit-card">
+            <div class="ovw-benefit-card-head">
+              <div class="ovw-benefit-icon ovw-benefit-icon--gold">
+                <i class="fa-solid fa-fire"></i>
+              </div>
+              <div class="ovw-benefit-tag">Digestive</div>
+            </div>
+            <h4>Acid Reflux (GERD)</h4>
+            <p>Roux-en-Y is the preferred bariatric option when reflux co-exists with obesity — significant improvement or complete resolution.</p>
+            <div class="ovw-benefit-progress">
+              <div class="ovw-benefit-progress-label">
+                <span>Improvement rate</span>
+                <strong>~90%</strong>
+              </div>
+              <div class="ovw-benefit-progress-bar">
+                <div class="ovw-benefit-progress-fill" style="--w: 90%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ovw-benefit-card">
+            <div class="ovw-benefit-card-head">
+              <div class="ovw-benefit-icon ovw-benefit-icon--rose">
+                <i class="fa-solid fa-bed"></i>
+              </div>
+              <div class="ovw-benefit-tag">Respiratory</div>
+            </div>
+            <h4>Sleep Apnea</h4>
+            <p>Resolution of obstructive sleep apnea in most cases — many patients come off CPAP machines within months.</p>
+            <div class="ovw-benefit-progress">
+              <div class="ovw-benefit-progress-label">
+                <span>Resolution rate</span>
+                <strong>~85%</strong>
+              </div>
+              <div class="ovw-benefit-progress-bar">
+                <div class="ovw-benefit-progress-fill" style="--w: 85%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ovw-benefit-card">
+            <div class="ovw-benefit-card-head">
+              <div class="ovw-benefit-icon ovw-benefit-icon--purple">
+                <i class="fa-solid fa-venus"></i>
+              </div>
+              <div class="ovw-benefit-tag">Hormonal</div>
+            </div>
+            <h4>PCOD / PCOS</h4>
+            <p>Improvement in polycystic ovarian disease, hormonal balance, and fertility outcomes in women of reproductive age.</p>
+            <div class="ovw-benefit-progress">
+              <div class="ovw-benefit-progress-label">
+                <span>Improvement rate</span>
+                <strong>~80%</strong>
+              </div>
+              <div class="ovw-benefit-progress-bar">
+                <div class="ovw-benefit-progress-fill" style="--w: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ovw-benefit-card">
+            <div class="ovw-benefit-card-head">
+              <div class="ovw-benefit-icon ovw-benefit-icon--blue">
+                <i class="fa-solid fa-bone"></i>
+              </div>
+              <div class="ovw-benefit-tag">Musculoskeletal</div>
+            </div>
+            <h4>Joint Pain</h4>
+            <p>Marked reduction in chronic joint pain and improved mobility — especially in knees, hips, and lower back.</p>
+            <div class="ovw-benefit-progress">
+              <div class="ovw-benefit-progress-label">
+                <span>Pain reduction</span>
+                <strong>~75%</strong>
+              </div>
+              <div class="ovw-benefit-progress-bar">
+                <div class="ovw-benefit-progress-fill" style="--w: 75%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ovw-benefit-card">
+            <div class="ovw-benefit-card-head">
+              <div class="ovw-benefit-icon ovw-benefit-icon--teal">
+                <i class="fa-solid fa-droplet"></i>
+              </div>
+              <div class="ovw-benefit-tag">Urological</div>
+            </div>
+            <h4>Stress Incontinence</h4>
+            <p>Resolution of urinary incontinence symptoms as abdominal pressure decreases and pelvic floor function improves.</p>
+            <div class="ovw-benefit-progress">
+              <div class="ovw-benefit-progress-label">
+                <span>Resolution rate</span>
+                <strong>~85%</strong>
+              </div>
+              <div class="ovw-benefit-progress-bar">
+                <div class="ovw-benefit-progress-fill" style="--w: 85%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ovw-benefit-card">
+            <div class="ovw-benefit-card-head">
+              <div class="ovw-benefit-icon ovw-benefit-icon--gold">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="ovw-benefit-tag">Mental Health</div>
+            </div>
+            <h4>Mental Wellbeing</h4>
+            <p>Improvements in psychosocial wellbeing, body image, self-esteem, and reductions in depressive and anxiety disorders.</p>
+            <div class="ovw-benefit-progress">
+              <div class="ovw-benefit-progress-label">
+                <span>Quality of life</span>
+                <strong>~90%</strong>
+              </div>
+              <div class="ovw-benefit-progress-bar">
+                <div class="ovw-benefit-progress-fill" style="--w: 90%"></div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="ovw-results-item">
-          <span class="ovw-results-check">✓</span>
-          <div>
-            <strong>High Blood Pressure</strong>
-            <span>Normalized in most patients as weight decreases</span>
-          </div>
+      </div>
+
+      <!-- Bottom Timeline -->
+      <div class="ovw-results-timeline">
+        <div class="ovw-results-timeline-head">
+          <h3 class="ovw-benefits-title">
+            <i class="fa-solid fa-chart-line"></i>
+            Your Recovery Timeline
+          </h3>
+          <p>What to expect in the months following your procedure.</p>
         </div>
-        <div class="ovw-results-item">
-          <span class="ovw-results-check">✓</span>
-          <div>
-            <strong>Acid Reflux (GERD)</strong>
-            <span>Significant improvement or complete resolution</span>
+        <div class="ovw-results-timeline-grid">
+          <div class="ovw-results-timeline-item">
+            <div class="ovw-results-timeline-num">01</div>
+            <div class="ovw-results-timeline-week">Week 1-2</div>
+            <h4>Initial Recovery</h4>
+            <p>Discharge from hospital. Begin clear liquid diet. Light walking. Many patients see immediate diabetes improvement.</p>
+            <div class="ovw-results-timeline-tag">Hospital Discharge</div>
           </div>
-        </div>
-        <div class="ovw-results-item">
-          <span class="ovw-results-check">✓</span>
-          <div>
-            <strong>Sleep Apnea</strong>
-            <span>Resolution of obstructive sleep apnea in most cases</span>
+          <div class="ovw-results-timeline-item">
+            <div class="ovw-results-timeline-num">02</div>
+            <div class="ovw-results-timeline-week">Month 1-3</div>
+            <h4>Rapid Loss</h4>
+            <p>Lose 15-30% of excess weight. Full liquid → soft food transition. Blood pressure and sugars normalize.</p>
+            <div class="ovw-results-timeline-tag">~30% EWL</div>
           </div>
-        </div>
-        <div class="ovw-results-item">
-          <span class="ovw-results-check">✓</span>
-          <div>
-            <strong>PCOD / PCOS</strong>
-            <span>Improvement in polycystic ovarian disease and fertility outcomes</span>
+          <div class="ovw-results-timeline-item">
+            <div class="ovw-results-timeline-num">03</div>
+            <div class="ovw-results-timeline-week">Month 3-6</div>
+            <h4>Steady Progress</h4>
+            <p>Solid food reintroduction. Continued weight loss. Sleep apnea resolves. Mobility and energy dramatically improve.</p>
+            <div class="ovw-results-timeline-tag">~50% EWL</div>
           </div>
-        </div>
-        <div class="ovw-results-item">
-          <span class="ovw-results-check">✓</span>
-          <div>
-            <strong>Joint Pain</strong>
-            <span>Marked reduction in pain and improved mobility</span>
+          <div class="ovw-results-timeline-item">
+            <div class="ovw-results-timeline-num">04</div>
+            <div class="ovw-results-timeline-week">Month 6-12</div>
+            <h4>Transformation</h4>
+            <p>Return to regular activities. Most comorbidities resolved. PCOS improves. Mental health uplift. Stable weight trajectory.</p>
+            <div class="ovw-results-timeline-tag">~70% EWL</div>
           </div>
-        </div>
-        <div class="ovw-results-item">
-          <span class="ovw-results-check">✓</span>
-          <div>
-            <strong>Stress Incontinence</strong>
-            <span>Resolution of urinary incontinence symptoms</span>
-          </div>
-        </div>
-        <div class="ovw-results-item">
-          <span class="ovw-results-check">✓</span>
-          <div>
-            <strong>Mental Health</strong>
-            <span>Improvements in psychosocial wellbeing and depressive disorders</span>
+          <div class="ovw-results-timeline-item">
+            <div class="ovw-results-timeline-num">05</div>
+            <div class="ovw-results-timeline-week">12+ Months</div>
+            <h4>Long-term Success</h4>
+            <p>Maximum weight loss achieved. Lifelong follow-up and nutrition plan. Sustained 70-80% excess weight loss at 10 years.</p>
+            <div class="ovw-results-timeline-tag">~80% EWL</div>
           </div>
         </div>
       </div>
@@ -438,12 +848,12 @@
   <section class="ovw-journey section">
     <div class="container">
       <div class="section-header center">
-        <div class="section-eyebrow">
-          <span class="eyebrow-dot"></span>
+        <div class="ovw-section-eyebrow">
+          <span class="ovw-pulse-dot"></span>
           The Patient Journey
         </div>
-        <h2 class="section-title">What to <span class="text-accent">Expect</span></h2>
-        <p class="section-sub">A guided, four-step process from your first call to lifelong follow-up care.</p>
+        <h2 class="ovw-section-title">What to <span class="text-accent">Expect</span></h2>
+        <p class="ovw-section-sub">A guided, four-step process from your first call to lifelong follow-up care.</p>
       </div>
 
       <div class="ovw-journey-timeline">
@@ -456,6 +866,7 @@
           <p>Initial assessment, BMI calculation, and exploring medical or surgical options tailored to your unique
             health profile.</p>
         </div>
+        <div class="ovw-journey-connector"></div>
         <div class="ovw-journey-step">
           <div class="ovw-journey-step-icon">
             <i class="fa-solid fa-clipboard-list"></i>
@@ -465,6 +876,7 @@
           <p>Comprehensive pre-op dietary plan, psychological counseling, and full medical evaluations to ready
             you for success.</p>
         </div>
+        <div class="ovw-journey-connector"></div>
         <div class="ovw-journey-step">
           <div class="ovw-journey-step-icon">
             <i class="fa-solid fa-hospital"></i>
@@ -474,6 +886,7 @@
           <p>State-of-the-art minimally invasive or robotic bariatric procedure performed by our expert surgical
             team.</p>
         </div>
+        <div class="ovw-journey-connector"></div>
         <div class="ovw-journey-step">
           <div class="ovw-journey-step-icon">
             <i class="fa-solid fa-person-running"></i>
@@ -487,34 +900,181 @@
     </div>
   </section>
 
+  <!-- ===== FAQ SECTION ===== -->
+  <section class="ovw-faq section">
+    <div class="container">
+      <div class="ovw-faq-grid">
+        <div class="ovw-faq-side">
+          <div class="ovw-section-eyebrow">
+            <span class="ovw-pulse-dot"></span>
+            FAQ
+          </div>
+          <h2 class="ovw-section-title">Common <span class="text-accent">Questions</span></h2>
+          <p class="ovw-faq-side-text">Get answers to the most frequently asked questions about weight loss
+            surgery, recovery, and long-term outcomes.</p>
+          <div class="ovw-faq-cta">
+            <a href="#consultation" class="ovw-btn ovw-btn--primary">
+              <span>Still have questions?</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="ovw-faq-list">
+          <details class="ovw-faq-item" open>
+            <summary>
+              <span>Am I a candidate for weight loss surgery?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </summary>
+            <div class="ovw-faq-ans">
+              <p>You may be a candidate if your BMI is ≥ 35 kg/m² (with or without comorbidities) or ≥ 32.5
+                kg/m² with Type 2 Diabetes. For Asian patients, thresholds may be lowered by 2.5 points per
+                IFSO-Asia guidelines. A consultation with Dr. Peters will confirm eligibility.</p>
+            </div>
+          </details>
+          <details class="ovw-faq-item">
+            <summary>
+              <span>How much weight will I lose after surgery?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </summary>
+            <div class="ovw-faq-ans">
+              <p>Most patients lose <strong>60-80% of excess body weight</strong> within 9-12 months. Sleeve
+                gastrectomy averages ~65%, Roux-en-Y ~80%, and Mini Gastric Bypass ~75%. Individual results vary
+                based on adherence to diet and exercise guidelines.</p>
+            </div>
+          </details>
+          <details class="ovw-faq-item">
+            <summary>
+              <span>Is bariatric surgery safe?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </summary>
+            <div class="ovw-faq-ans">
+              <p>Modern bariatric surgery has a complication rate of less than 2% in experienced hands. At Max
+                Hospital, Dr. Peters' team performs over 1,500 bariatric procedures annually with outcomes
+                matching international Centers of Excellence benchmarks.</p>
+            </div>
+          </details>
+          <details class="ovw-faq-item">
+            <summary>
+              <span>Will my insurance cover the surgery?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </summary>
+            <div class="ovw-faq-ans">
+              <p>Most IRDA-approved bariatric covers and cashless networks (Max, MediAssist, MDIndia,
+                Paramount) reimburse the procedure when BMI and comorbidity criteria are met. EMI and 0%
+                financing options are also available for self-pay patients.</p>
+            </div>
+          </details>
+          <details class="ovw-faq-item">
+            <summary>
+              <span>How long is the recovery period?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </summary>
+            <div class="ovw-faq-ans">
+              <p>Most patients stay 1-2 nights at Max Smart Hospital, Saket. Return to desk work is typically
+                within 1-2 weeks. Full recovery, including return to strenuous activity, is usually within 4-6
+                weeks for laparoscopic and robotic procedures.</p>
+            </div>
+          </details>
+          <details class="ovw-faq-item">
+            <summary>
+              <span>Will I regain weight after surgery?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </summary>
+            <div class="ovw-faq-ans">
+              <p>Most patients maintain 70-80% of their excess weight loss at 10 years. Some weight regain of
+                5-10% can occur around 18-24 months if dietary and exercise guidelines are not followed. Long-term
+                success depends on adherence to follow-up, protein intake and physical activity.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== CONSULTATION FORM ===== -->
   <section class="ovw-consult section" id="consultation">
     <div class="container">
       <div class="ovw-consult-wrapper">
         <div class="ovw-consult-text">
+          <div class="ovw-section-eyebrow">
+            <span class="ovw-pulse-dot"></span>
+            Get Started
+          </div>
           <h2>Ready to Take the <span class="text-accent">First Step</span>?</h2>
           <p>Request a callback from our specialized team. We'll answer your questions and help you schedule a
             comprehensive, no-obligation consultation with Dr. Peters and his team.</p>
           <ul class="ovw-consult-list">
-            <li><i class="fa-solid fa-shield-halved"></i> 100% Confidential Discussions</li>
-            <li><i class="fa-solid fa-user-doctor"></i> Expert Medical Guidance</li>
-            <li><i class="fa-solid fa-heart-pulse"></i> Personalized Treatment Plans</li>
-            <li><i class="fa-solid fa-comments"></i> Free Initial Consultation</li>
+            <li>
+              <span class="ovw-consult-list-icon"><i class="fa-solid fa-shield-halved"></i></span>
+              <div>
+                <strong>100% Confidential</strong>
+                <span>Discussions &amp; data privacy</span>
+              </div>
+            </li>
+            <li>
+              <span class="ovw-consult-list-icon"><i class="fa-solid fa-user-doctor"></i></span>
+              <div>
+                <strong>Expert Medical Guidance</strong>
+                <span>From a 25+ year veteran</span>
+              </div>
+            </li>
+            <li>
+              <span class="ovw-consult-list-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+              <div>
+                <strong>Personalized Plans</strong>
+                <span>Tailored to your profile</span>
+              </div>
+            </li>
+            <li>
+              <span class="ovw-consult-list-icon"><i class="fa-solid fa-comments"></i></span>
+              <div>
+                <strong>Free Consultation</strong>
+                <span>No obligation whatsoever</span>
+              </div>
+            </li>
           </ul>
         </div>
 
         <div class="ovw-consult-card">
-          <div class="ovw-consult-card-eyebrow">Free Consultation</div>
+          <div class="ovw-consult-card-decor">
+            <div class="ovw-consult-card-decor-circle ovw-consult-card-decor-circle--1"></div>
+            <div class="ovw-consult-card-decor-circle ovw-consult-card-decor-circle--2"></div>
+          </div>
+          <div class="ovw-consult-card-eyebrow">
+            <i class="fa-solid fa-calendar-check"></i>
+            Free Consultation
+          </div>
           <h3>Request a Callback</h3>
           <p>Fill in your details and our care team will reach out within 24 hours.</p>
           <form action="#" method="POST" class="ovw-consult-form">
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="tel" placeholder="Mobile Number" required>
-            <input type="text" placeholder="Preferred Date / Time" required>
-            <textarea placeholder="How can we help you?" rows="3" required></textarea>
+            <div class="ovw-consult-row">
+              <div class="ovw-consult-field">
+                <label for="ovw-name">Your Name</label>
+                <input id="ovw-name" type="text" placeholder="Full Name" required>
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="ovw-consult-field">
+                <label for="ovw-phone">Phone Number</label>
+                <input id="ovw-phone" type="tel" placeholder="+91 ..." required>
+                <i class="fa-solid fa-phone"></i>
+              </div>
+            </div>
+            <div class="ovw-consult-field">
+              <label for="ovw-email">Email Address</label>
+              <input id="ovw-email" type="email" placeholder="you@example.com" required>
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="ovw-consult-field">
+              <label for="ovw-date">Preferred Date / Time</label>
+              <input id="ovw-date" type="text" placeholder="e.g. 25 Dec, 10 AM" required>
+              <i class="fa-solid fa-calendar"></i>
+            </div>
+            <div class="ovw-consult-field">
+              <label for="ovw-message">Your Message</label>
+              <textarea id="ovw-message" placeholder="How can we help you?" rows="3" required></textarea>
+            </div>
             <button type="submit" class="ovw-consult-submit">
-              Request Consultation
+              <span>Request Consultation</span>
               <i class="fa-solid fa-paper-plane"></i>
             </button>
           </form>
@@ -531,12 +1091,13 @@
   <section class="ovw-heroes section">
     <div class="container">
       <div class="section-header center">
-        <div class="section-eyebrow">
-          <span class="eyebrow-dot"></span>
+        <div class="ovw-section-eyebrow">
+          <span class="ovw-pulse-dot"></span>
           Real People, Real Results
         </div>
-        <h2 class="section-title">Proud <span class="text-accent">Heroes</span></h2>
-        <p class="section-sub">Hear from patients who have transformed their lives through bariatric surgery.</p>
+        <h2 class="ovw-section-title">Proud <span class="text-accent">Heroes</span></h2>
+        <p class="ovw-section-sub">Hear from patients who have transformed their lives through bariatric surgery.
+        </p>
       </div>
 
       <div class="ovw-heroes-grid">
@@ -544,33 +1105,60 @@
           <div class="ovw-hero-card-img">
             <img src="../success-raj.jpg" alt="Raj's transformation" loading="lazy"
               onerror="this.onerror=null;this.style.display='none'">
-            <div class="play-icon"><i class="fa-solid fa-play"></i></div>
+            <div class="ovw-hero-card-overlay">
+              <div class="play-icon"><i class="fa-solid fa-play"></i></div>
+            </div>
           </div>
-          <h4>Raj's Story</h4>
-          <p>Lost 65 kgs in 14 months</p>
+          <div class="ovw-hero-card-body">
+            <div class="ovw-hero-card-stat">
+              <span class="ovw-hero-card-stat-num">-65 kg</span>
+              <span class="ovw-hero-card-stat-label">in 14 months</span>
+            </div>
+            <h4>Raj's Story</h4>
+            <p>From 145 kg to 80 kg — a complete lifestyle transformation with diabetes in remission.</p>
+          </div>
         </div>
         <div class="ovw-hero-card-test">
           <div class="ovw-hero-card-img">
             <img src="../success-pinky.jpg" alt="Pinky's transformation" loading="lazy"
               onerror="this.onerror=null;this.style.display='none'">
-            <div class="play-icon"><i class="fa-solid fa-play"></i></div>
+            <div class="ovw-hero-card-overlay">
+              <div class="play-icon"><i class="fa-solid fa-play"></i></div>
+            </div>
           </div>
-          <h4>Pinky's Story</h4>
-          <p>Resolved diabetes & lost 48 kgs</p>
+          <div class="ovw-hero-card-body">
+            <div class="ovw-hero-card-stat">
+              <span class="ovw-hero-card-stat-num">-48 kg</span>
+              <span class="ovw-hero-card-stat-label">diabetes resolved</span>
+            </div>
+            <h4>Pinky's Story</h4>
+            <p>Diabetes resolved and 48 kgs lighter — Pinky is now off all medications.</p>
+          </div>
         </div>
         <div class="ovw-hero-card-test">
           <div class="ovw-hero-card-img">
             <img src="../success-sunil.jpg" alt="Sunil's transformation" loading="lazy"
               onerror="this.onerror=null;this.style.display='none'">
-            <div class="play-icon"><i class="fa-solid fa-play"></i></div>
+            <div class="ovw-hero-card-overlay">
+              <div class="play-icon"><i class="fa-solid fa-play"></i></div>
+            </div>
           </div>
-          <h4>Sunil's Story</h4>
-          <p>New lease on life — 72 kgs down</p>
+          <div class="ovw-hero-card-body">
+            <div class="ovw-hero-card-stat">
+              <span class="ovw-hero-card-stat-num">-72 kg</span>
+              <span class="ovw-hero-card-stat-label">new lease on life</span>
+            </div>
+            <h4>Sunil's Story</h4>
+            <p>New lease on life — 72 kgs down, sleep apnea resolved, energy restored.</p>
+          </div>
         </div>
       </div>
 
       <div class="ovw-heroes-foot">
-        <a href="#" class="btn-outline">View All Stories</a>
+        <a href="#" class="ovw-btn ovw-btn--ghost">
+          <span>View All Stories</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
     </div>
   </section>
@@ -579,12 +1167,12 @@
   <section class="ovw-awards section">
     <div class="container">
       <div class="section-header center">
-        <div class="section-eyebrow">
-          <span class="eyebrow-dot"></span>
+        <div class="ovw-section-eyebrow">
+          <span class="ovw-pulse-dot"></span>
           Recognition
         </div>
-        <h2 class="section-title">Awards & <span class="text-accent">Achievements</span></h2>
-        <p class="section-sub">Recognized nationally for excellence in bariatric and metabolic surgery.</p>
+        <h2 class="ovw-section-title">Awards & <span class="text-accent">Achievements</span></h2>
+        <p class="ovw-section-sub">Recognized nationally for excellence in bariatric and metabolic surgery.</p>
       </div>
 
       <div class="ovw-awards-grid">
@@ -596,21 +1184,21 @@
           <p>2014 — Highest volume bariatric surgeon</p>
         </div>
         <div class="ovw-award-card">
-          <div class="ovw-award-icon">
+          <div class="ovw-award-icon ovw-award-icon--teal">
             <i class="fa-solid fa-award"></i>
           </div>
           <h4>Center of Excellence</h4>
           <p>Certified bariatric surgery program</p>
         </div>
         <div class="ovw-award-card">
-          <div class="ovw-award-icon">
+          <div class="ovw-award-icon ovw-award-icon--gold">
             <i class="fa-solid fa-medal"></i>
           </div>
           <h4>25+ Years</h4>
           <p>Of surgical excellence in India</p>
         </div>
         <div class="ovw-award-card">
-          <div class="ovw-award-icon">
+          <div class="ovw-award-icon ovw-award-icon--rose">
             <i class="fa-solid fa-star"></i>
           </div>
           <h4>10,000+ Lives</h4>
@@ -647,6 +1235,36 @@
         if (href === p) l.classList.add('nav-link--active');
       });
     })();
+  </script>
+
+  <script>
+    // Animate progress bars when they enter the viewport
+    document.addEventListener('DOMContentLoaded', function () {
+      if (!('IntersectionObserver' in window)) return;
+
+      var bars = document.querySelectorAll(
+        '.ovw-results-stat-bar-fill, .ovw-benefit-progress-fill'
+      );
+      bars.forEach(function (bar) {
+        var w = bar.style.getPropertyValue('--w');
+        bar.style.width = '0%';
+        bar.dataset.targetWidth = w;
+      });
+
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var bar = entry.target;
+            setTimeout(function () {
+              bar.style.width = bar.dataset.targetWidth;
+            }, 120);
+            io.unobserve(bar);
+          }
+        });
+      }, { threshold: 0.4 });
+
+      bars.forEach(function (bar) { io.observe(bar); });
+    });
   </script>
 
 </body>

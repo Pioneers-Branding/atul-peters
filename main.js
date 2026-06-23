@@ -53,12 +53,12 @@ function initNavigation() {
     }
   });
 
-  navLinks?.querySelectorAll('.nav-item.has-dropdown > .nav-link').forEach(link => {
+  navLinks?.querySelectorAll('.nav-item.has-mega > .nav-link, .nav-item.has-dropdown > .nav-link').forEach(link => {
     link.addEventListener('click', (e) => {
       if (window.innerWidth <= 992) {
         e.preventDefault();
         const navItem = link.parentElement;
-        navLinks.querySelectorAll('.nav-item.has-dropdown').forEach(item => {
+        navLinks.querySelectorAll('.nav-item.has-mega, .nav-item.has-dropdown').forEach(item => {
           if (item !== navItem) item.classList.remove('active');
         });
         navItem.classList.toggle('active');
