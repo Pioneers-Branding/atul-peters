@@ -992,95 +992,209 @@
   </section>
 
   <!-- ===== CONSULTATION FORM ===== -->
-  <section class="ovw-consult section" id="consultation">
+  <!-- Appointment Section -->
+  <section class="appt-section section" id="appointment">
+    <div class="appt-bg-glow appt-bg-glow--1" aria-hidden="true"></div>
+    <div class="appt-bg-glow appt-bg-glow--2" aria-hidden="true"></div>
+
     <div class="container">
-      <div class="ovw-consult-wrapper">
-        <div class="ovw-consult-text">
-          <div class="ovw-section-eyebrow">
-            <span class="ovw-pulse-dot"></span>
-            Get Started
+      <!-- Section Header -->
+      <div class="appt-section-head center">
+        <div class="section-eyebrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+          Get Started
+        </div>
+        <h2 class="appt-section-title">
+          Book Your <span class="appt-title-accent">Consultation</span> Today
+        </h2>
+        <p class="appt-section-sub">Take the first step towards better health. Choose how you'd like to connect — or
+          fill in the form for a free consultation.</p>
+      </div>
+
+      <div class="appt-wrapper">
+        <!-- LEFT: Contact options -->
+        <div class="appt-info">
+          <!-- <div class="appt-info-deco" aria-hidden="true"></div> -->
+
+          <div class="appt-info-head">
+            <span class="appt-info-badge">
+              <span class="appt-info-badge-dot"></span>
+              3 Ways to Reach Us
+            </span>
+            <h3>Talk to Our <span class="appt-info-accent">Care Team</span></h3>
+            <p>Real people, real answers — no automated bots. We respond within minutes during business hours.</p>
           </div>
-          <h2>Ready to Take the <span class="text-accent">First Step</span>?</h2>
-          <p>Request a callback from our specialized team. We'll answer your questions and help you schedule a
-            comprehensive, no-obligation consultation with Dr. Peters and his team.</p>
-          <ul class="ovw-consult-list">
-            <li>
-              <span class="ovw-consult-list-icon"><i class="fa-solid fa-shield-halved"></i></span>
-              <div>
-                <strong>100% Confidential</strong>
-                <span>Discussions &amp; data privacy</span>
+
+          <div class="appt-options">
+            <a href="tel:+917770001900" class="appt-opt appt-opt--call">
+              <div class="appt-opt-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 1 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 1 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
               </div>
-            </li>
-            <li>
-              <span class="ovw-consult-list-icon"><i class="fa-solid fa-user-doctor"></i></span>
-              <div>
-                <strong>Expert Medical Guidance</strong>
-                <span>From a 25+ year veteran</span>
+              <div class="appt-opt-text">
+                <span class="appt-opt-label">Call Us Now</span>
+                <span class="appt-opt-value">+91-7770001900</span>
               </div>
-            </li>
-            <li>
-              <span class="ovw-consult-list-icon"><i class="fa-solid fa-heart-pulse"></i></span>
-              <div>
-                <strong>Personalized Plans</strong>
-                <span>Tailored to your profile</span>
+              <svg class="appt-opt-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+
+            <a href="https://wa.me/919876543210" class="appt-opt appt-opt--wa" target="_blank">
+              <div class="appt-opt-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
               </div>
-            </li>
-            <li>
-              <span class="ovw-consult-list-icon"><i class="fa-solid fa-comments"></i></span>
-              <div>
-                <strong>Free Consultation</strong>
-                <span>No obligation whatsoever</span>
+              <div class="appt-opt-text">
+                <span class="appt-opt-label">WhatsApp</span>
+                <span class="appt-opt-value">Chat with Us · Avg reply 2 min</span>
               </div>
-            </li>
-          </ul>
+              <svg class="appt-opt-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+
+            <a href="https://maps.google.com/?q=Max+Hospital+Saket+New+Delhi" class="appt-opt appt-opt--visit"
+              target="_blank">
+              <div class="appt-opt-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div class="appt-opt-text">
+                <span class="appt-opt-label">Visit Us</span>
+                <span class="appt-opt-value">Max Hospital, Saket · New Delhi</span>
+              </div>
+              <svg class="appt-opt-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Trust badges -->
+          <div class="appt-trust">
+            <div class="appt-trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              100% Confidential
+            </div>
+            <div class="appt-trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              No Spam
+            </div>
+            <div class="appt-trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Free Consultation
+            </div>
+          </div>
         </div>
 
-        <div class="ovw-consult-card">
-          <div class="ovw-consult-card-decor">
-            <div class="ovw-consult-card-decor-circle ovw-consult-card-decor-circle--1"></div>
-            <div class="ovw-consult-card-decor-circle ovw-consult-card-decor-circle--2"></div>
-          </div>
-          <div class="ovw-consult-card-eyebrow">
-            <i class="fa-solid fa-calendar-check"></i>
-            Free Consultation
-          </div>
-          <h3>Request a Callback</h3>
-          <p>Fill in your details and our care team will reach out within 24 hours.</p>
-          <form action="#" method="POST" class="ovw-consult-form">
-            <div class="ovw-consult-row">
-              <div class="ovw-consult-field">
-                <label for="ovw-name">Your Name</label>
-                <input id="ovw-name" type="text" placeholder="Full Name" required>
-                <i class="fa-solid fa-user"></i>
+        <!-- RIGHT: Form -->
+        <div class="appt-form-wrapper">
+          <div class="appt-form-card">
+            <div class="appt-form-head">
+
+              <h3>Book Your Appointment</h3>
+              <p>Fill in your details and our team will contact you within 24 hours.</p>
+            </div>
+
+            <form class="appt-form" id="appointmentForm">
+              <div class="appt-row">
+                <div class="appt-field">
+                  <label for="name">Your Name *</label>
+                  <input type="text" id="name" name="name" required placeholder="Full name">
+                  <svg class="appt-field-check" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </div>
+                <div class="appt-field">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" required placeholder="+91 ...">
+                  <svg class="appt-field-check" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </div>
               </div>
-              <div class="ovw-consult-field">
-                <label for="ovw-phone">Phone Number</label>
-                <input id="ovw-phone" type="tel" placeholder="+91 ..." required>
-                <i class="fa-solid fa-phone"></i>
+
+              <div class="appt-field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
               </div>
-            </div>
-            <div class="ovw-consult-field">
-              <label for="ovw-email">Email Address</label>
-              <input id="ovw-email" type="email" placeholder="you@example.com" required>
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="ovw-consult-field">
-              <label for="ovw-date">Preferred Date / Time</label>
-              <input id="ovw-date" type="text" placeholder="e.g. 25 Dec, 10 AM" required>
-              <i class="fa-solid fa-calendar"></i>
-            </div>
-            <div class="ovw-consult-field">
-              <label for="ovw-message">Your Message</label>
-              <textarea id="ovw-message" placeholder="How can we help you?" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="ovw-consult-submit">
-              <span>Request Consultation</span>
-              <i class="fa-solid fa-paper-plane"></i>
-            </button>
-          </form>
-          <div class="ovw-consult-foot">
-            <i class="fa-solid fa-lock"></i>
-            Your information is 100% confidential and secure
+
+              <div class="appt-row">
+                <div class="appt-field">
+                  <label for="procedure">Procedure Interest *</label>
+                  <select id="procedure" name="procedure" required>
+                    <option value="">Select...</option>
+                    <option value="bariatric">Bariatric Surgery</option>
+                    <option value="diabetes">Metabolic / Diabetes Surgery</option>
+                    <option value="hernia">Hernia Surgery</option>
+                    <option value="gallbladder">Gallbladder Surgery</option>
+                    <option value="robotic">Robotic Surgery</option>
+                    <option value="revision">Revision Surgery</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="appt-field">
+                  <label for="country">Your Country</label>
+                  <select id="country" name="country">
+                    <option value="">Select...</option>
+                    <option value="india">India</option>
+                    <option value="uae">UAE</option>
+                    <option value="saudi">Saudi Arabia</option>
+                    <option value="oman">Oman</option>
+                    <option value="qatar">Qatar</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="appt-field">
+                <label for="message">Your Message <span class="appt-opt-tag">Optional</span></label>
+                <textarea id="message" name="message" rows="3"
+                  placeholder="Tell us about your health goals or any questions..."></textarea>
+              </div>
+
+              <button type="submit" class="appt-submit">
+                <span>Request Free Callback</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </button>
+
+              <p class="appt-form-foot">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2" />
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                </svg>
+                Your information is encrypted and never shared with third parties.
+              </p>
+            </form>
           </div>
         </div>
       </div>

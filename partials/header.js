@@ -1,3 +1,8 @@
+let basePath = '';
+if (window.location.pathname.indexOf('/weight-loss-surgery/') !== -1) {
+  basePath = '../';
+}
+
 document.write(`<!-- ============================================
    SITE HEADER (Partial)
    Edit this file to update header on ALL pages
@@ -54,7 +59,7 @@ document.write(`<!-- ============================================
         </svg>
       </a>
       <span class="top-bar-divider">|</span>
-      <a href="https://www.atulpeters.com/travel-desk" class="top-bar-link">Travel Desk</a>
+      <a href="${basePath}travel-desk.html" class="top-bar-link">Travel Desk</a>
     </div>
   </div>
 </div>
@@ -62,13 +67,13 @@ document.write(`<!-- ============================================
 <!-- Navigation -->
 <nav class="navbar" id="navbar">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
+    <a href="${basePath}index.html" class="nav-logo">
       <img src="https://www.atulpeters.com/front/img/logo-04.png" alt="Dr. Atul Peters" class="logo-img"
         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%23B8975A%22/%3E%3Ctext x=%2250%22 y=%2258%22 font-size=%2238%22 fill=%22white%22 text-anchor=%22middle%22%3EAP%3C/text%3E%3C/svg%3E'">
     </a>
 
     <ul class="nav-menu" id="navLinks">
-      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="${basePath}about.html" class="nav-link">About</a></li>
 
       <!-- ==================== WEIGHT LOSS SURGERY ==================== -->
       <li class="nav-item has-mega">
@@ -83,7 +88,7 @@ document.write(`<!-- ============================================
             <div class="mega-menu-grid">
               <div class="mega-menu-col">
                 <span class="mega-menu-label">Procedures</span>
-                <a href="roux-en-y-gastric-bypass.html" class="mega-menu-item">
+                <a href="${basePath}roux-en-y-gastric-bypass.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Roux-en-Y Gastric Bypass</strong>
@@ -111,7 +116,7 @@ document.write(`<!-- ============================================
                     <small>Adjustable band added to other surgeries</small>
                   </span>
                 </a>
-                <a href="#" class="mega-menu-item">
+                <a href="${basePath}weight-loss-surgery/intra-gastric-balloon.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Intra Gastric Balloon</strong>
@@ -122,25 +127,25 @@ document.write(`<!-- ============================================
 
               <div class="mega-menu-col">
                 <span class="mega-menu-label">Learn More</span>
-                <a href="weight-loss.html" class="mega-menu-item">
+                <a href="${basePath}weight-loss-surgery/overview.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-book-open"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Overview</strong>
                     <small>Introduction to bariatric &amp; metabolic surgery</small>
                   </span>
                 </a>
-                <a href="weight-loss-surgery/candidate.html" class="mega-menu-item">
+                <a href="${basePath}weight-loss-surgery/candidate.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-user-check"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Are You a Candidate?</strong>
                     <small>BMI criteria, eligibility, and indications</small>
                   </span>
                 </a>
-                <a href="#" class="mega-menu-item">
+                <a href="${basePath}weight-loss-surgery/faqs.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-question"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>FAQs</strong>
-                    <small>Common questions answered by Dr. Peters</small>
+                    <small>30+ questions answered by Dr. Peters</small>
                   </span>
                 </a>
               </div>
@@ -150,7 +155,7 @@ document.write(`<!-- ============================================
                   <span class="mega-menu-feature-eyebrow">Limca Book Record</span>
                   <h4>5,000+ Bariatric<br>Surgeries Performed</h4>
                   <p>India's most experienced bariatric surgeon with outcomes that match the best centers in the world.</p>
-                  <a href="contact.html" class="mega-menu-feature-cta">
+                  <a href="${basePath}contact.html" class="mega-menu-feature-cta">
                     Book a Consultation
                     <i class="fa-solid fa-arrow-right"></i>
                   </a>
@@ -234,7 +239,7 @@ document.write(`<!-- ============================================
                   <span class="mega-menu-feature-eyebrow">Diabetes Reversal</span>
                   <h4>80% Patients Off<br>Insulin in 1 Year</h4>
                   <p>Metabolic surgery delivers long-term Type 2 Diabetes remission — often within days of the procedure.</p>
-                  <a href="contact.html" class="mega-menu-feature-cta">
+                  <a href="${basePath}contact.html" class="mega-menu-feature-cta">
                     Check Eligibility
                     <i class="fa-solid fa-arrow-right"></i>
                   </a>
@@ -250,7 +255,7 @@ document.write(`<!-- ============================================
 
       <!-- ==================== SMART NUTRITION ==================== -->
       <li class="nav-item has-mega">
-        <a href="nutrition-clinic.html" class="nav-link">
+        <a href="${basePath}nutrition-clinic.html" class="nav-link">
           Smart Nutrition
           <svg class="nav-link-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <polyline points="6 9 12 15 18 9" />
@@ -261,7 +266,7 @@ document.write(`<!-- ============================================
             <div class="mega-menu-grid">
               <div class="mega-menu-col">
                 <span class="mega-menu-label">Nutrition Services</span>
-                <a href="nutrition-clinic.html" class="mega-menu-item">
+                <a href="${basePath}nutrition-clinic.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-apple-whole"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Nutrition Clinic</strong>
@@ -279,7 +284,7 @@ document.write(`<!-- ============================================
 
               <div class="mega-menu-col">
                 <span class="mega-menu-label">Tools &amp; Guides</span>
-                <a href="bmi-calculator.html" class="mega-menu-item">
+                <a href="${basePath}bmi-calculator.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-calculator"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>BMI Calculator</strong>
@@ -293,7 +298,7 @@ document.write(`<!-- ============================================
                     <small>Pre-op and post-op meal plans</small>
                   </span>
                 </a>
-                <a href="blog.html" class="mega-menu-item">
+                <a href="${basePath}blog.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-newspaper"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Nutrition Blog</strong>
@@ -307,7 +312,7 @@ document.write(`<!-- ============================================
                   <span class="mega-menu-feature-eyebrow">Personalized Plans</span>
                   <h4>Tailored to Your<br>Goals &amp; Lifestyle</h4>
                   <p>Our dietitians create custom plans that work with your surgery, schedule, and food preferences.</p>
-                  <a href="contact.html" class="mega-menu-feature-cta">
+                  <a href="${basePath}contact.html" class="mega-menu-feature-cta">
                     Book a Dietitian
                     <i class="fa-solid fa-arrow-right"></i>
                   </a>
@@ -349,21 +354,21 @@ document.write(`<!-- ============================================
 
               <div class="mega-menu-col">
                 <span class="mega-menu-label">Resources</span>
-                <a href="blog.html" class="mega-menu-item">
+                <a href="${basePath}blog.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-newspaper"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>News &amp; Articles</strong>
                     <small>Latest updates from the clinic</small>
                   </span>
                 </a>
-                <a href="events.html" class="mega-menu-item">
+                <a href="${basePath}events.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-regular fa-calendar"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Events &amp; Workshops</strong>
                     <small>Upcoming seminars and live workshops</small>
                   </span>
                 </a>
-                <a href="publications.html" class="mega-menu-item">
+                <a href="${basePath}publications.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-book"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Publications</strong>
@@ -386,13 +391,11 @@ document.write(`<!-- ============================================
             </div>
           </div>
         </div>
-      </li>
-
-      <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+      </li>     
     </ul>
 
     <div class="nav-actions">
-      <a href="contact.html" class="nav-cta">
+      <a href="${basePath}contact.html" class="nav-cta">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <rect x="3" y="4" width="18" height="18" rx="2" />
           <line x1="16" y1="2" x2="16" y2="6" />

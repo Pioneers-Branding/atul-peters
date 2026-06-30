@@ -1,3 +1,8 @@
+let basePath = '';
+if (window.location.pathname.indexOf('/weight-loss-surgery/') !== -1) {
+  basePath = '../';
+}
+
 document.write(`<!-- ============================================
    SITE FOOTER (Partial)
    Edit this file to update footer on ALL pages
@@ -9,7 +14,7 @@ document.write(`<!-- ============================================
 
     <!-- Centered big logo + tagline -->
     <div class="footer-hero">
-      <a href="index.html" class="footer-logo-big" aria-label="Dr. Atul Peters - Home">
+      <a href="${basePath}index.html" class="footer-logo-big" aria-label="Dr. Atul Peters - Home">
         <img src="https://www.atulpeters.com/front/img/logo-04.png" alt="Dr. Atul Peters" class="footer-logo-img"
           onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 60%22%3E%3Ctext x=%22100%22 y=%2240%22 text-anchor=%22middle%22 font-family=%22Georgia%22 font-size=%2230%22 fill=%22%23fff%22%3EDr. Atul Peters%3C/text%3E%3C/svg%3E'">
       </a>
@@ -48,7 +53,7 @@ document.write(`<!-- ============================================
       <div class="footer-col">
         <h4>Bariatric &amp; Metabolic</h4>
         <ul class="footer-links">
-          <li><a href="roux-en-y-gastric-bypass.html"><span class="footer-link-dot"></span>Gastric Bypass</a></li>
+          <li><a href="${basePath}roux-en-y-gastric-bypass.html"><span class="footer-link-dot"></span>Gastric Bypass</a></li>
           <li><a href="#"><span class="footer-link-dot"></span>Sleeve Gastrectomy</a></li>
           <li><a href="#"><span class="footer-link-dot"></span>Mini Gastric Bypass</a></li>
           <li><a href="#"><span class="footer-link-dot"></span>Surgery for Diabetes</a></li>
@@ -68,10 +73,10 @@ document.write(`<!-- ============================================
       <div class="footer-col">
         <h4>Quick Links</h4>
         <ul class="footer-links">
-          <li><a href="about.html"><span class="footer-link-dot"></span>About Dr. Peters</a></li>
-          <li><a href="weight-loss.html#success"><span class="footer-link-dot"></span>Success Stories</a></li>
+          <li><a href="${basePath}about.html"><span class="footer-link-dot"></span>About Dr. Peters</a></li>
+          <li><a href="${basePath}weight-loss.html#success"><span class="footer-link-dot"></span>Success Stories</a></li>
           <li><a href="#"><span class="footer-link-dot"></span>Video Gallery</a></li>
-          <li><a href="weight-loss.html#faq"><span class="footer-link-dot"></span>FAQ</a></li>
+          <li><a href="${basePath}weight-loss.html#faq"><span class="footer-link-dot"></span>FAQ</a></li>
           <li><a href="#appointment"><span class="footer-link-dot"></span>Book Consultation</a></li>
         </ul>
       </div>
