@@ -1,5 +1,5 @@
-let basePath = '';
-if (window.location.pathname.indexOf('/weight-loss-surgery/') !== -1) {
+var basePath = '';
+if (window.location.pathname.indexOf('/weight-loss-surgery/') !== -1 || window.location.pathname.indexOf('/surgery-for-diabetes/') !== -1) {
   basePath = '../';
 }
 
@@ -77,7 +77,7 @@ document.write(`<!-- ============================================
 
       <!-- ==================== WEIGHT LOSS SURGERY ==================== -->
       <li class="nav-item has-mega">
-        <a href="#" class="nav-link" data-page="weight-loss">
+        <a href="${basePath}weight-loss-surgery/overview.html" class="nav-link" data-page="weight-loss">
           Weight Loss Surgery
           <svg class="nav-link-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <polyline points="6 9 12 15 18 9" />
@@ -95,25 +95,32 @@ document.write(`<!-- ============================================
                     <small>Gold-standard bypass with proven long-term results</small>
                   </span>
                 </a>
-                <a href="#" class="mega-menu-item">
+                <a href="${basePath}weight-loss-surgery/sleeve-gastrectomy.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Sleeve Gastrectomy</strong>
                     <small>Most common weight loss procedure worldwide</small>
                   </span>
                 </a>
-                <a href="#" class="mega-menu-item">
+                <a href="${basePath}weight-loss-surgery/mini-gastric-bypass.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Mini Gastric Bypass</strong>
                     <small>Simpler, shorter surgery with similar outcomes</small>
                   </span>
                 </a>
-                <a href="#" class="mega-menu-item">
+                <a href="${basePath}weight-loss-surgery/banded-bariatric-procedures.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Banded Bariatric Procedures</strong>
                     <small>Adjustable band added to other surgeries</small>
+                  </span>
+                </a>
+                <a href="${basePath}weight-loss-surgery/gastric-banding.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-ring"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Gastric Banding (LAGB)</strong>
+                    <small>Reversible adjustable silicone band</small>
                   </span>
                 </a>
                 <a href="${basePath}weight-loss-surgery/intra-gastric-balloon.html" class="mega-menu-item">
@@ -121,6 +128,13 @@ document.write(`<!-- ============================================
                   <span class="mega-menu-item-text">
                     <strong>Intra Gastric Balloon</strong>
                     <small>Non-surgical, temporary weight loss option</small>
+                  </span>
+                </a>
+                <a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-user-md"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>GI &amp; MAS Surgeries</strong>
+                    <small>Hernia, gallbladder &amp; reflux repair</small>
                   </span>
                 </a>
               </div>
@@ -168,7 +182,7 @@ document.write(`<!-- ============================================
 
       <!-- ==================== SURGERY FOR DIABETES ==================== -->
       <li class="nav-item has-mega">
-        <a href="#" class="nav-link">
+        <a href="${basePath}surgery-for-diabetes/overview.html" class="nav-link">
           Surgery for Diabetes
           <svg class="nav-link-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <polyline points="6 9 12 15 18 9" />
@@ -179,28 +193,28 @@ document.write(`<!-- ============================================
             <div class="mega-menu-grid">
               <div class="mega-menu-col">
                 <span class="mega-menu-label">Metabolic Procedures</span>
-                <a href="#" class="mega-menu-item">
+                <a href="${basePath}surgery-for-diabetes/overview.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Overview</strong>
                     <small>How surgery can reverse Type 2 Diabetes</small>
                   </span>
                 </a>
-                <a href="#" class="mega-menu-item">
+                <a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html#procedure" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Laparoscopic Ileal Interposition</strong>
                     <small>Repositioning intestinal segments for hormonal reset</small>
                   </span>
                 </a>
-                <a href="#" class="mega-menu-item">
+                <a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html#procedure" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Duodenojejunal Bypass</strong>
                     <small>Bypass first portion of small intestine</small>
                   </span>
                 </a>
-                <a href="#" class="mega-menu-item">
+                <a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html#procedure" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Sleeve with Proximal Jejunal Bypass</strong>
@@ -211,21 +225,21 @@ document.write(`<!-- ============================================
 
               <div class="mega-menu-col">
                 <span class="mega-menu-label">Patient Resources</span>
-                <a href="#" class="mega-menu-item">
+                <a href="${basePath}weight-loss-surgery/candidate.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-clipboard-check"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Eligibility &amp; Indications</strong>
                     <small>Who qualifies for metabolic surgery</small>
                   </span>
                 </a>
-                <a href="#" class="mega-menu-item">
+                <a href="${basePath}about.html#publications" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-vial"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Outcomes &amp; Research</strong>
                     <small>Long-term diabetes remission data</small>
                   </span>
                 </a>
-                <a href="#" class="mega-menu-item">
+                <a href="${basePath}weight-loss-surgery/faqs.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-question"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>FAQs</strong>
@@ -250,8 +264,8 @@ document.write(`<!-- ============================================
         </div>
       </li>
 
-      <li class="nav-item"><a href="#" class="nav-link">Robotic Surgery</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">GI &amp; MAS</a></li>
+      <li class="nav-item"><a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html" class="nav-link">Robotic Surgery</a></li>
+      <li class="nav-item"><a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html" class="nav-link">GI &amp; MAS</a></li>
 
       <!-- ==================== SMART NUTRITION ==================== -->
       <li class="nav-item has-mega">
@@ -273,7 +287,7 @@ document.write(`<!-- ============================================
                     <small>Personalized diet plans by certified dietitians</small>
                   </span>
                 </a>
-                <a href="#" class="mega-menu-item">
+                <a href="${basePath}nutrition-clinic.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-weight-scale"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Smart Weight Loss</strong>
@@ -291,7 +305,7 @@ document.write(`<!-- ============================================
                     <small>Calculate your body mass index instantly</small>
                   </span>
                 </a>
-                <a href="#" class="mega-menu-item">
+                <a href="${basePath}nutrition-clinic.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-utensils"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Diet Plans</strong>
@@ -325,7 +339,7 @@ document.write(`<!-- ============================================
 
       <!-- ==================== SUCCESS STORIES ==================== -->
       <li class="nav-item has-mega">
-        <a href="#" class="nav-link">
+        <a href="${basePath}weight-loss.html#success" class="nav-link">
           Success Stories
           <svg class="nav-link-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <polyline points="6 9 12 15 18 9" />
@@ -336,14 +350,14 @@ document.write(`<!-- ============================================
             <div class="mega-menu-grid">
               <div class="mega-menu-col">
                 <span class="mega-menu-label">Patient Stories</span>
-                <a href="#" class="mega-menu-item">
+                <a href="${basePath}weight-loss.html#success" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-images"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Before &amp; After Pictures</strong>
                     <small>Real patient transformations gallery</small>
                   </span>
                 </a>
-                <a href="#" class="mega-menu-item">
+                <a href="${basePath}about.html#videos" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-play"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Video Testimonials</strong>
@@ -382,7 +396,7 @@ document.write(`<!-- ============================================
                   <span class="mega-menu-feature-eyebrow">Real Patients</span>
                   <h4>50 kg Lost.<br>Life Regained.</h4>
                   <p>Browse inspiring journeys of patients who transformed their health and confidence.</p>
-                  <a href="#" class="mega-menu-feature-cta">
+                  <a href="${basePath}weight-loss.html#success" class="mega-menu-feature-cta">
                     View All Stories
                     <i class="fa-solid fa-arrow-right"></i>
                   </a>

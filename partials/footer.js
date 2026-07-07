@@ -1,5 +1,5 @@
-let basePath = '';
-if (window.location.pathname.indexOf('/weight-loss-surgery/') !== -1) {
+var basePath = '';
+if (window.location.pathname.indexOf('/weight-loss-surgery/') !== -1 || window.location.pathname.indexOf('/surgery-for-diabetes/') !== -1) {
   basePath = '../';
 }
 
@@ -54,19 +54,19 @@ document.write(`<!-- ============================================
         <h4>Bariatric &amp; Metabolic</h4>
         <ul class="footer-links">
           <li><a href="${basePath}roux-en-y-gastric-bypass.html"><span class="footer-link-dot"></span>Gastric Bypass</a></li>
-          <li><a href="#"><span class="footer-link-dot"></span>Sleeve Gastrectomy</a></li>
-          <li><a href="#"><span class="footer-link-dot"></span>Mini Gastric Bypass</a></li>
-          <li><a href="#"><span class="footer-link-dot"></span>Surgery for Diabetes</a></li>
-          <li><a href="#"><span class="footer-link-dot"></span>Revision Surgery</a></li>
+          <li><a href="${basePath}weight-loss-surgery/sleeve-gastrectomy.html"><span class="footer-link-dot"></span>Sleeve Gastrectomy</a></li>
+          <li><a href="${basePath}weight-loss-surgery/mini-gastric-bypass.html"><span class="footer-link-dot"></span>Mini Gastric Bypass</a></li>
+          <li><a href="${basePath}surgery-for-diabetes/overview.html"><span class="footer-link-dot"></span>Surgery for Diabetes</a></li>
+          <li><a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html"><span class="footer-link-dot"></span>Revision Surgery</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4>General &amp; Robotic</h4>
         <ul class="footer-links">
-          <li><a href="#"><span class="footer-link-dot"></span>Hernia Repair</a></li>
-          <li><a href="#"><span class="footer-link-dot"></span>Gallbladder Surgery</a></li>
-          <li><a href="#"><span class="footer-link-dot"></span>Lap Band Removal</a></li>
+          <li><a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html"><span class="footer-link-dot"></span>Hernia Repair</a></li>
+          <li><a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html"><span class="footer-link-dot"></span>Gallbladder Surgery</a></li>
+          <li><a href="${basePath}weight-loss-surgery/gastric-banding.html"><span class="footer-link-dot"></span>Lap Band Removal</a></li>
         </ul>
       </div>
 
@@ -75,9 +75,9 @@ document.write(`<!-- ============================================
         <ul class="footer-links">
           <li><a href="${basePath}about.html"><span class="footer-link-dot"></span>About Dr. Peters</a></li>
           <li><a href="${basePath}weight-loss.html#success"><span class="footer-link-dot"></span>Success Stories</a></li>
-          <li><a href="#"><span class="footer-link-dot"></span>Video Gallery</a></li>
+          <li><a href="${basePath}about.html#videos"><span class="footer-link-dot"></span>Video Gallery</a></li>
           <li><a href="${basePath}weight-loss.html#faq"><span class="footer-link-dot"></span>FAQ</a></li>
-          <li><a href="#appointment"><span class="footer-link-dot"></span>Book Consultation</a></li>
+          <li><a href="${basePath}contact.html"><span class="footer-link-dot"></span>Book Consultation</a></li>
         </ul>
       </div>
 
@@ -113,9 +113,9 @@ document.write(`<!-- ============================================
     <div class="footer-bottom">
       <p>&copy; 2026 Dr. Atul Peters. All rights reserved.</p>
       <div class="footer-legal">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Sitemap</a>
+        <a href="${basePath}privacy-policy.html">Privacy Policy</a>
+        <a href="${basePath}disclaimer.html">Terms of Service</a>
+        <a href="${basePath}index.html">Sitemap</a>
       </div>
     </div>
   </div>
