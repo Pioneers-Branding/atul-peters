@@ -200,21 +200,21 @@ document.write(`<!-- ============================================
                     <small>How surgery can reverse Type 2 Diabetes</small>
                   </span>
                 </a>
-                <a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html#procedure" class="mega-menu-item">
+                <a href="${basePath}surgery-for-diabetes/laparoscopic-ileal-interposition.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Laparoscopic Ileal Interposition</strong>
                     <small>Repositioning intestinal segments for hormonal reset</small>
                   </span>
                 </a>
-                <a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html#procedure" class="mega-menu-item">
+                <a href="${basePath}surgery-for-diabetes/laparoscopic-duodenojejunal-bypass.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Duodenojejunal Bypass</strong>
                     <small>Bypass first portion of small intestine</small>
                   </span>
                 </a>
-                <a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html#procedure" class="mega-menu-item">
+                <a href="${basePath}surgery-for-diabetes/sleeve-gastrectomy-with-proximal-jejunal-bypass.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Sleeve with Proximal Jejunal Bypass</strong>
@@ -264,8 +264,25 @@ document.write(`<!-- ============================================
         </div>
       </li>
 
-      <li class="nav-item"><a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html" class="nav-link">Robotic Surgery</a></li>
-      <li class="nav-item"><a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html" class="nav-link">GI &amp; MAS</a></li>
+      <li class="nav-item"><a href="${basePath}other-surgeries/robotic-surgery.html" class="nav-link">Robotic Surgery</a></li>
+      <li class="nav-item has-dropdown">
+        <a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html" class="nav-link">
+          GI &amp; MAS
+          <svg class="nav-link-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </a>
+        <div class="dropdown">
+          <a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html" class="dropdown-item">Overview</a>
+          <a href="${basePath}other-surgeries/laparoscopic-cholecystectomy.html" class="dropdown-item">Laparoscopic Cholecystectomy</a>
+          <a href="${basePath}other-surgeries/laparoscopic-hernioplasty-ventral-inguinal.html" class="dropdown-item">Laparoscopic Hernioplasty (eTEP/TAR)</a>
+          <a href="${basePath}other-surgeries/fundoplication-for-gastro-esophageal-reflux-disease.html" class="dropdown-item">Fundoplication for GERD</a>
+          <a href="${basePath}other-surgeries/laparoscopic-appendicectomy.html" class="dropdown-item">Laparoscopic Appendicectomy</a>
+          <a href="${basePath}other-surgeries/laser-fistulectomy.html" class="dropdown-item">Laser Proctology (FiLaC)</a>
+          <a href="${basePath}other-surgeries/piles-hemorrhoids.html" class="dropdown-item">Piles &amp; Hemorrhoids (Laser/MIPH)</a>
+          <a href="${basePath}other-surgeries/rectal-prolapse.html" class="dropdown-item">Laparoscopic Rectal Prolapse</a>
+        </div>
+      </li>
 
       <!-- ==================== SMART NUTRITION ==================== -->
       <li class="nav-item has-mega">
@@ -287,11 +304,18 @@ document.write(`<!-- ============================================
                     <small>Personalized diet plans by certified dietitians</small>
                   </span>
                 </a>
-                <a href="${basePath}nutrition-clinic.html" class="mega-menu-item">
+                <a href="${basePath}smart-weight-loss.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-weight-scale"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Smart Weight Loss</strong>
                     <small>Medically supervised, non-surgical program</small>
+                  </span>
+                </a>
+                <a href="${basePath}fitness-factory.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-dumbbell"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Peter's Fitness Factory</strong>
+                    <small>Bariatric rehab &amp; metabolic strength center</small>
                   </span>
                 </a>
               </div>
@@ -380,6 +404,13 @@ document.write(`<!-- ============================================
                   <span class="mega-menu-item-text">
                     <strong>Events &amp; Workshops</strong>
                     <small>Upcoming seminars and live workshops</small>
+                  </span>
+                </a>
+                <a href="${basePath}workshop-conferences.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-chalkboard-user"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Workshops &amp; Conferences</strong>
+                    <small>Scientific congresses &amp; faculty archive</small>
                   </span>
                 </a>
                 <a href="${basePath}publications.html" class="mega-menu-item">

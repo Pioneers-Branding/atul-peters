@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peter's Fitness Factory | Bariatric &amp; Metabolic Rehab Center | Dr. Atul Peters</title>
+  <meta name="description"
+    content="Peter's Fitness Factory by Dr. Atul Peters offers medically supervised post-bariatric exercise therapy, strength conditioning, latest gym equipment photos, and updated patient workout videos at Max Smart Hospital, Saket.">
+  <meta name="keywords"
+    content="Peter's Fitness Factory, bariatric rehab Delhi, post bariatric exercise, metabolic gym Delhi, Dr Atul Peters fitness, weight loss gym Saket, bariatric strength training, latest equipment photos, workout videos">
+  <link rel="canonical" href="https://www.atulpeters.com/fitness-factory.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="Dr. Atul Peters">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Peter's Fitness Factory | Bariatric &amp; Metabolic Rehab Center">
+  <meta property="og:description"
+    content="Discover India's premier medically supervised post-bariatric and metabolic rehabilitation center. Watch updated patient transformation videos and explore our latest ergonomic equipment.">
+  <meta property="og:image" content="https://www.atulpeters.com/assets/img/focus-area-metabolic-surgery.jpg">
+  <meta property="og:url" content="https://www.atulpeters.com/fitness-factory.html">
+  <meta property="og:site_name" content="Dr. Atul Peters — Bariatric, Minimal Access &amp; Robotic Surgery">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Peter's Fitness Factory | Bariatric &amp; Metabolic Rehab Center">
+  <meta name="twitter:description"
+    content="Discover India's premier medically supervised post-bariatric and metabolic rehabilitation center. Watch updated patient transformation videos and explore our latest ergonomic equipment.">
+  <meta property="og:image" content="https://www.atulpeters.com/assets/img/focus-area-metabolic-surgery.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bellefair&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Clean, Light Medical & Clinic Theme matching nutrition-clinic.html & east-delhi.html -->
+  <style>
+    /* Equipment Cards (Matching exact soft shadows and typography of nc-about-card) */
+    .ff-equip-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2.25rem;
+      margin-top: 3.5rem;
+    }
+    .ff-equip-card {
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 50, 100, 0.08);
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 10px 30px -5px rgba(0, 30, 80, 0.06);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .ff-equip-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 45px -10px rgba(0, 40, 120, 0.12);
+      border-color: #2F6A87;
+    }
+    .ff-equip-thumb {
+      position: relative;
+      aspect-ratio: 16/10;
+      overflow: hidden;
+      background: #F4F7FA;
+    }
+    .ff-equip-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .ff-equip-card:hover .ff-equip-thumb img {
+      transform: scale(1.06);
+    }
+    .ff-equip-tag {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(255, 255, 255, 0.95);
+      color: #1A365D;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.4rem 0.9rem;
+      border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(0, 50, 100, 0.1);
+    }
+    .ff-equip-content {
+      padding: 1.85rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .ff-equip-content h3 {
+      font-family: 'Bellefair', Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      font-synthesis: none;
+      color: #1A365D;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+    .ff-equip-content h3 i {
+      color: #2F6A87;
+      font-size: 1.25rem;
+    }
+    .ff-equip-content p {
+      color: #4A5568;
+      font-size: 0.95rem;
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+      flex: 1;
+    }
+    .ff-equip-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid #EEF2F6;
+    }
+    .ff-pill {
+      background: #F0F4F8;
+      color: #2D3748;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.35rem 0.85rem;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .ff-pill i {
+      color: #2F6A87;
+    }
+
+    /* Video Suite exact matching styling with index.html */
+    .ff-videos-wrap {
+      background: #FFFFFF;
+      border-radius: 2rem;
+      padding: 3rem;
+      box-shadow: 0 15px 40px rgba(0, 30, 80, 0.06);
+      border: 1px solid rgba(0, 50, 100, 0.08);
+      margin-top: 3rem;
+    }
+    @media (max-width: 991px) {
+      .ff-videos-wrap { padding: 1.5rem; }
+    }
+    .ff-main-title-bar {
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid #EEF2F6;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .ff-main-title-bar h3 {
+      font-family: 'Bellefair', Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      font-synthesis: none;
+      color: #1A365D;
+      margin: 0;
+    }
+    .ff-main-badge {
+      background: #EBF8FF;
+      color: #2B6CB0;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.35rem 0.85rem;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  </style>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "HealthClub",
+      "name": "Peter's Fitness Factory",
+      "alternateName": "SMART Bariatric & Metabolic Rehab Center",
+      "description": "India's premier medically supervised post-bariatric exercise therapy, strength conditioning, and metabolic rehabilitation center designed by Dr. Atul Peters.",
+      "url": "https://www.atulpeters.com/fitness-factory.html",
+      "telephone": "+91-7770001900",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Press Enclave, Saket",
+        "addressLocality": "New Delhi",
+        "postalCode": "110017",
+        "addressCountry": "IN"
+      },
+      "parentOrganization": {
+        "@type": "MedicalOrganization",
+        "name": "SMART Cliniqs / Max Smart Super Speciality Hospital"
+      },
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Biomechanically Assisted Strength Machines", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Metabolic Cardio Telemetry Zone", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "InBody 770 Body Composition Lab", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Medically Supervised Bariatric Trainers", "value": true }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.atulpeters.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Smart Nutrition", "item": "https://www.atulpeters.com/nutrition-clinic.html" },
+        { "@type": "ListItem", "position": 3, "name": "Peter's Fitness Factory", "item": "https://www.atulpeters.com/fitness-factory.html" }
+      ]
+    }
+  ]
+  </script>
+</head>
+
+<body class="nutrition-page">
+
+  <!-- Global Header -->
+  <script src="partials/header.js"></script>
+
+  <!-- ===== HERO (Exact Match to nutrition-clinic.html & east-delhi.html) ===== -->
+  <section class="nc-hero">
+    <div class="nc-hero-bg">
+      <div class="nc-hero-pattern"></div>
+      <div class="nc-hero-blob nc-hero-blob--1"></div>
+      <div class="nc-hero-blob nc-hero-blob--2"></div>
+    </div>
+
+    <div class="container">
+      <nav class="nc-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a href="nutrition-clinic.html">Smart Nutrition</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="nc-breadcrumb-current">Peter's Fitness Factory</span>
+      </nav>
+
+      <div class="nc-hero-content">
+        <div class="nc-hero-eyebrow">
+          <span class="nc-pulse-dot"></span>
+          SMART Bariatric &amp; Metabolic Rehab Center · Saket, New Delhi
+        </div>
+        <h1 class="nc-hero-title">
+          Peter's <span class="nc-hero-accent">Fitness Factory</span>
+        </h1>
+        <p class="nc-hero-sub">
+          Exercise after bariatric and metabolic surgery is essential for healthy weight maintenance and lifelong vitality. Designed by <strong>Dr. Atul Peters</strong>, Peter's Fitness Factory provides medically supervised exercise therapy, orthopedic joint-protective machines, and InBody body composition tracking to build lean muscle and accelerate fat burning safely.
+        </p>
+
+        <div class="nc-hero-cta">
+          <a href="#videos-suite" class="nc-btn nc-btn--primary">
+            <span>Watch Video Suite</span>
+            <i class="fa-solid fa-play"></i>
+          </a>
+          <a href="#equipment" class="nc-btn nc-btn--ghost">
+            <i class="fa-solid fa-microchip"></i>
+            <span>Equipment Showcase</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="nc-hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path d="M0 50 Q360 90 720 50 T1440 50 V100 H0 Z" fill="#FBFBF9" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT FITNESS FACTORY (Exact Match to nutrition-clinic.html nc-about) ===== -->
+  <section class="nc-about section">
+    <div class="container">
+      <div class="nc-section-header center">
+        <div class="nc-section-eyebrow">
+          <span class="nc-pulse-dot"></span>
+          About Peter's Fitness Factory
+        </div>
+        <h2 class="nc-section-title">Medically Supervised <span class="text-accent">Rehabilitation</span></h2>
+        <p class="nc-section-sub">
+          Post-bariatric exercise requires a specialised clinical approach — protecting healing abdominal tissue, preventing joint strain, and targeting visceral fat while building lean muscle.
+        </p>
+      </div>
+
+      <div class="nc-about-grid">
+        <div class="nc-about-card">
+          <div class="nc-about-card-icon nc-about-card-icon--blue">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3>Joint-Protective Motion</h3>
+          <p>Our orthopedic recumbent cardio trainers and guided pin-loaded resistance machines ensure zero joint impact on knees, lower back, and hips during your weight loss journey.</p>
+        </div>
+        <div class="nc-about-card">
+          <div class="nc-about-card-icon nc-about-card-icon--teal">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+          </div>
+          <h3>Preserving BMR &amp; Muscle</h3>
+          <p>Rapid weight loss can cause muscle loss if unguided. Progressive strength conditioning keeps your Basal Metabolic Rate (BMR) elevated so you burn fat continuously while preventing loose skin.</p>
+        </div>
+        <div class="nc-about-card">
+          <div class="nc-about-card-icon nc-about-card-icon--gold">
+            <i class="fa-solid fa-chart-pie"></i>
+          </div>
+          <h3>InBody 770 Telemetry</h3>
+          <p>Regular clinical bio-impedance body composition scans track your precise ratio of visceral fat loss versus skeletal muscle gain throughout your bariatric recovery milestones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO SUITE (Clean Layout matching index.html videos-section) ===== -->
+  <section class="videos-section section" id="videos-suite" style="background-color: #F8FAF9;">
+    <div class="container">
+      <div class="nc-section-header center">
+        <div class="nc-section-eyebrow">
+          <span class="nc-pulse-dot"></span>
+          Updated Videos Suite
+        </div>
+        <h2 class="nc-section-title">Patient Transformations &amp; <span class="text-accent">Workouts</span></h2>
+        <p class="nc-section-sub">
+          Watch real patient transformation stories, post-bariatric exercise routines, and guided strength conditioning demonstrations. Click any video card to play instantly in the high-definition player.
+        </p>
+      </div>
+
+      <div class="ff-videos-wrap">
+        <div class="videos-layout">
+          <!-- Main Player -->
+          <div class="videos-main">
+            <iframe id="mainVideo" src="https://www.youtube.com/embed/iOt-tvHLFAg"
+              title="Peter's Fitness Factory Video Player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            
+            <div class="ff-main-title-bar videos-main-info">
+              <div>
+                <span style="font-size: 0.75rem; font-weight: 700; color: #2F6A87; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 0.25rem;">Now Playing</span>
+                <h3 id="mainVideoTitle">Ms. Anisha — Post Bariatric Transformation &amp; Fitness Journey</h3>
+              </div>
+              <span class="ff-main-badge">Patient Story · 4:12</span>
+            </div>
+          </div>
+
+          <!-- Playlist -->
+          <div class="videos-list-wrap">
+            <div class="vt-filters">
+              <div class="vt-playlist-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 8.5V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2.5" />
+                  <path d="M18 2l4 4-4 4" />
+                  <path d="M2 12h16" />
+                </svg>
+                <h3>Featured Videos Playlist</h3>
+              </div>
+              <span class="vt-filter-count">6 videos</span>
+            </div>
+
+            <div class="videos-list">
+              <!-- Video 1 -->
+              <div class="videos-list-item fitness-card active" data-video="iOt-tvHLFAg" data-title="Ms. Anisha — Post Bariatric Transformation &amp; Fitness Journey" data-cat="Patient Story" data-duration="4:12">
+                <div class="vl-num">01</div>
+                <div class="vl-thumb">
+                  <img src="https://img.youtube.com/vi/iOt-tvHLFAg/hqdefault.jpg" alt="Ms. Anisha">
+                  <span class="vl-duration">4:12</span>
+                  <div class="vl-play">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="vl-info">
+                  <div class="vl-info-top">
+                    <h4>Ms. Anisha — Fitness Journey</h4>
+                    <svg class="vl-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </div>
+                  <span class="vl-cat">
+                    <i class="fa-solid fa-user-check"></i> Patient Transformation
+                  </span>
+                </div>
+              </div>
+
+              <!-- Video 2 -->
+              <div class="videos-list-item fitness-card" data-video="IwdeT3LyXNA" data-title="Mr. Satinder Singh — Metabolic Strength &amp; Vitality" data-cat="Patient Story" data-duration="5:48">
+                <div class="vl-num">02</div>
+                <div class="vl-thumb">
+                  <img src="https://img.youtube.com/vi/IwdeT3LyXNA/hqdefault.jpg" alt="Mr. Satinder Singh">
+                  <span class="vl-duration">5:48</span>
+                  <div class="vl-play">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="vl-info">
+                  <div class="vl-info-top">
+                    <h4>Mr. Satinder Singh — Vitality</h4>
+                    <svg class="vl-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </div>
+                  <span class="vl-cat">
+                    <i class="fa-solid fa-medal"></i> Metabolic Success
+                  </span>
+                </div>
+              </div>
+
+              <!-- Video 3 -->
+              <div class="videos-list-item fitness-card" data-video="_Z2Jq1U8z5s" data-title="Gentle Cardio &amp; Joint Mobility Routine (Weeks 2-6)" data-cat="Workout Guide" data-duration="12:30">
+                <div class="vl-num">03</div>
+                <div class="vl-thumb">
+                  <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=400" alt="Cardio Routine">
+                  <span class="vl-duration">12:30</span>
+                  <div class="vl-play">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="vl-info">
+                  <div class="vl-info-top">
+                    <h4>Gentle Cardio &amp; Mobility</h4>
+                    <svg class="vl-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </div>
+                  <span class="vl-cat">
+                    <i class="fa-solid fa-person-walking"></i> Early Stage Rehab
+                  </span>
+                </div>
+              </div>
+
+              <!-- Video 4 -->
+              <div class="videos-list-item fitness-card" data-video="gC_L9qHSOTQ" data-title="Muscle Preservation &amp; Toning Protocol" data-cat="Strength Studio" data-duration="15:45">
+                <div class="vl-num">04</div>
+                <div class="vl-thumb">
+                  <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=400" alt="Strength Training">
+                  <span class="vl-duration">15:45</span>
+                  <div class="vl-play">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="vl-info">
+                  <div class="vl-info-top">
+                    <h4>Muscle Toning Protocol</h4>
+                    <svg class="vl-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </div>
+                  <span class="vl-cat">
+                    <i class="fa-solid fa-dumbbell"></i> Strength Studio
+                  </span>
+                </div>
+              </div>
+
+              <!-- Video 5 -->
+              <div class="videos-list-item fitness-card" data-video="3S9v3v1K2tM" data-title="Core Stabilization &amp; Posture Restoration" data-cat="Rehab Therapy" data-duration="10:15">
+                <div class="vl-num">05</div>
+                <div class="vl-thumb">
+                  <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&q=80&w=400" alt="Core Rehab">
+                  <span class="vl-duration">10:15</span>
+                  <div class="vl-play">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="vl-info">
+                  <div class="vl-info-top">
+                    <h4>Core &amp; Posture Restoration</h4>
+                    <svg class="vl-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </div>
+                  <span class="vl-cat">
+                    <i class="fa-solid fa-child-reaching"></i> Core Stabilization
+                  </span>
+                </div>
+              </div>
+
+              <!-- Video 6 -->
+              <div class="videos-list-item fitness-card" data-video="8p7u6p6K3lE" data-title="Low-Impact Metabolic HIIT Conditioning" data-cat="Metabolic Burn" data-duration="18:00">
+                <div class="vl-num">06</div>
+                <div class="vl-thumb">
+                  <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&q=80&w=400" alt="HIIT Conditioning">
+                  <span class="vl-duration">18:00</span>
+                  <div class="vl-play">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="vl-info">
+                  <div class="vl-info-top">
+                    <h4>Metabolic HIIT Conditioning</h4>
+                    <svg class="vl-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </div>
+                  <span class="vl-cat">
+                    <i class="fa-solid fa-fire"></i> Fat Burn Acceleration
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LATEST EQUIPMENT SHOWCASE (Clean Medical Theme matching nutrition-clinic.html) ===== -->
+  <section class="nc-conditions section" id="equipment">
+    <div class="container">
+      <div class="nc-section-header center">
+        <div class="nc-section-eyebrow">
+          <span class="nc-pulse-dot"></span>
+          Ergonomic Technology
+        </div>
+        <h2 class="nc-section-title">Latest Equipment <span class="text-accent">Showcase</span></h2>
+        <p class="nc-section-sub">
+          Explore our latest gym equipment photos. Every machine at Peter's Fitness Factory is engineered to protect bariatric joints, provide frictionless resistance, and accelerate metabolic recovery safely.
+        </p>
+      </div>
+
+      <div class="ff-equip-grid">
+        
+        <!-- Equipment 1 -->
+        <div class="ff-equip-card">
+          <div class="ff-equip-thumb">
+            <span class="ff-equip-tag">Cardio Telemetry</span>
+            <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&q=80&w=800"
+              alt="Metabolic Cardio Telemetry Zone"
+              onerror="this.onerror=null;this.src='assets/img/focus-area-bariatric-surgery.jpg'">
+          </div>
+          <div class="ff-equip-content">
+            <h3><i class="fa-solid fa-heart-pulse"></i> Metabolic Cardio Suite</h3>
+            <p>Featuring orthopedic treadmills with shock-absorbing decks, recumbent step-through bikes, and low-impact elliptical trainers equipped with real-time heart rate telemetry.</p>
+            <div class="ff-equip-pills">
+              <span class="ff-pill"><i class="fa-solid fa-bolt"></i> Zero Joint Impact</span>
+              <span class="ff-pill"><i class="fa-solid fa-wifi"></i> Telemetry Sync</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 2 -->
+        <div class="ff-equip-card">
+          <div class="ff-equip-thumb">
+            <span class="ff-equip-tag">Strength Matrix</span>
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800"
+              alt="Biomechanical Strength Machines"
+              onerror="this.onerror=null;this.src='assets/img/focus-area-gi-mas-surgery.jpg'">
+          </div>
+          <div class="ff-equip-content">
+            <h3><i class="fa-solid fa-dumbbell"></i> Biomechanical Machines</h3>
+            <p>Pin-loaded ergonomic resistance machines engineered to guide your body through anatomically correct motion paths—building lean muscle while protecting recovering abdominal tissue.</p>
+            <div class="ff-equip-pills">
+              <span class="ff-pill"><i class="fa-solid fa-check-double"></i> Guided Motion Path</span>
+              <span class="ff-pill"><i class="fa-solid fa-shield"></i> Micro-Load Stacks</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 3 -->
+        <div class="ff-equip-card">
+          <div class="ff-equip-thumb">
+            <span class="ff-equip-tag">Functional Tower</span>
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=800"
+              alt="Functional Agility & Core Studio"
+              onerror="this.onerror=null;this.src='assets/img/focus-area-robotic-surgery.jpg'">
+          </div>
+          <div class="ff-equip-content">
+            <h3><i class="fa-solid fa-child-reaching"></i> Functional Agility Studio</h3>
+            <p>Equipped with dual-pulley cable crossover towers, TRX suspension trainers, Swiss stability balls, and resistance bands to improve core balance, flexibility, and spinal posture.</p>
+            <div class="ff-equip-pills">
+              <span class="ff-pill"><i class="fa-solid fa-compass"></i> Core Stabilization</span>
+              <span class="ff-pill"><i class="fa-solid fa-arrows-to-circle"></i> Posture Alignment</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 4 -->
+        <div class="ff-equip-card">
+          <div class="ff-equip-thumb">
+            <span class="ff-equip-tag">Free Weights</span>
+            <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&q=80&w=800"
+              alt="Orthopedic Dumbbell Matrix"
+              onerror="this.onerror=null;this.src='assets/img/surgery-img.jpg'">
+          </div>
+          <div class="ff-equip-content">
+            <h3><i class="fa-solid fa-weight-hanging"></i> Dumbbell Matrix</h3>
+            <p>A complete range of custom rubber-coated dumbbells (1kg to 40kg), neoprene rehab kettlebells, and multi-angle adjustable orthopedic benches for progressive resistance conditioning.</p>
+            <div class="ff-equip-pills">
+              <span class="ff-pill"><i class="fa-solid fa-hand-fist"></i> Rubber-Coated Grip</span>
+              <span class="ff-pill"><i class="fa-solid fa-chair"></i> Orthopedic Benches</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 5 -->
+        <div class="ff-equip-card">
+          <div class="ff-equip-thumb">
+            <span class="ff-equip-tag">Power Conditioning</span>
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=800"
+              alt="Smith Machines & Power Cages"
+              onerror="this.onerror=null;this.src='assets/img/robotic-surgery.webp'">
+          </div>
+          <div class="ff-equip-content">
+            <h3><i class="fa-solid fa-shield-halved"></i> Power Cages &amp; Smith</h3>
+            <p>Linear bearing Smith machines and counter-balanced power cages that allow safe squats, overhead presses, and bone-density building exercises with automatic safety lock mechanisms.</p>
+            <div class="ff-equip-pills">
+              <span class="ff-pill"><i class="fa-solid fa-lock"></i> Built-In Safety Locks</span>
+              <span class="ff-pill"><i class="fa-solid fa-bone"></i> Bone Density Boost</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment 6 -->
+        <div class="ff-equip-card">
+          <div class="ff-equip-thumb">
+            <span class="ff-equip-tag">Diagnostic Lab</span>
+            <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&q=80&w=800"
+              alt="InBody 770 Body Composition Lab"
+              onerror="this.onerror=null;this.src='assets/img/doctor-portrait.webp'">
+          </div>
+          <div class="ff-equip-content">
+            <h3><i class="fa-solid fa-chart-pie"></i> InBody 770 Lab</h3>
+            <p>Advanced multi-frequency bio-impedance scanners that analyze visceral fat, skeletal muscle mass, hydration levels, and segmental BMR—ensuring you lose pure fat while gaining muscle!</p>
+            <div class="ff-equip-pills">
+              <span class="ff-pill"><i class="fa-solid fa-fire"></i> Visceral Fat Tracking</span>
+              <span class="ff-pill"><i class="fa-solid fa-chart-line"></i> Muscle Mass Analysis</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR ASSESSMENT APPROACH (Exact Match to nutrition-clinic.html nc-assessment) ===== -->
+  <section class="nc-assessment section">
+    <div class="container">
+      <div class="nc-assessment-card">
+        <div class="nc-assessment-decor">
+          <div class="nc-assessment-decor-circle nc-assessment-decor-circle--1"></div>
+          <div class="nc-assessment-decor-circle nc-assessment-decor-circle--2"></div>
+        </div>
+
+        <div class="nc-section-header center">
+          <div class="nc-section-eyebrow">
+            <span class="nc-pulse-dot"></span>
+            How We Assess
+          </div>
+          <h2 class="nc-section-title">Our <span class="text-accent">Assessment Approach</span></h2>
+          <p class="nc-section-sub">
+            Before starting any workout routine, our bariatric exercise physiologists evaluate each patient across these critical clinical metrics:
+          </p>
+        </div>
+
+        <div class="nc-assessment-grid">
+          <div class="nc-assessment-item">
+            <i class="fa-solid fa-ruler-vertical"></i>
+            <span>Height &amp; BMI Status</span>
+          </div>
+          <div class="nc-assessment-item">
+            <i class="fa-solid fa-weight-scale"></i>
+            <span>InBody Muscle vs. Fat</span>
+          </div>
+          <div class="nc-assessment-item">
+            <i class="fa-solid fa-user-check"></i>
+            <span>Suture Healing Stage</span>
+          </div>
+          <div class="nc-assessment-item">
+            <i class="fa-solid fa-person-walking"></i>
+            <span>Joint Mobility &amp; Posture</span>
+          </div>
+          <div class="nc-assessment-item">
+            <i class="fa-solid fa-fire"></i>
+            <span>Metabolic BMR Baseline</span>
+          </div>
+          <div class="nc-assessment-item">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <span>Personal Fitness Goals</span>
+          </div>
+        </div>
+
+        <div class="nc-assessment-foot">
+          <i class="fa-solid fa-circle-check"></i>
+          <p>Each bariatric workout plan is then <strong>tailored by our clinical exercise physiologist</strong> — ensuring 100% safety and joint protection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3-PHASE REHAB ROADMAP (Exact Match to nutrition-clinic.html nc-programs) ===== -->
+  <section class="nc-programs section">
+    <div class="container">
+      <div class="nc-section-header center">
+        <div class="nc-section-eyebrow">
+          <span class="nc-pulse-dot"></span>
+          Clinical Progression
+        </div>
+        <h2 class="nc-section-title">The 3-Phase <span class="text-accent">Rehab Protocol</span></h2>
+        <p class="nc-section-sub">
+          Our bariatric trainers collaborate directly with Dr. Atul Peters and your nutritionist to guide you through a medically structured exercise progression.
+        </p>
+      </div>
+
+      <div class="nc-programs-grid">
+        <div class="nc-program-card">
+          <div class="nc-program-card-icon">
+            <i class="fa-solid fa-person-walking"></i>
+          </div>
+          <h3>Phase I — Mobility &amp; Cardio</h3>
+          <p>Focusing on gentle circulation enhancement, diaphragmatic breathing, and low-impact recumbent cycling without putting stress on abdominal core sutures.</p>
+          <span class="nc-program-tag">Weeks 2 to 6 Post-Op</span>
+        </div>
+        <div class="nc-program-card">
+          <div class="nc-program-card-icon nc-program-card-icon--alt">
+            <i class="fa-solid fa-dumbbell"></i>
+          </div>
+          <h3>Phase II — Progressive Strength</h3>
+          <p>Introducing biomechanically guided pin-loaded resistance machines and light dumbbells to tone muscle and protect BMR as your weight drops rapidly.</p>
+          <span class="nc-program-tag">Months 2 to 6 Post-Op</span>
+        </div>
+        <div class="nc-program-card">
+          <div class="nc-program-card-icon nc-program-card-icon--alt2">
+            <i class="fa-solid fa-medal"></i>
+          </div>
+          <h3>Phase III — Metabolic Mastery</h3>
+          <p>Achieving peak physical vitality, full-body functional strength, and permanent weight maintenance with customized athletic conditioning routines.</p>
+          <span class="nc-program-tag">Months 6+ &amp; Lifelong</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VISIT US / CONSULTATION PORTAL (Exact Match to nutrition-clinic.html nc-contact) ===== -->
+  <section class="nc-contact section" id="contact">
+    <div class="container">
+      <div class="nc-section-header center">
+        <div class="nc-section-eyebrow">
+          <span class="nc-pulse-dot"></span>
+          Assessment Portal
+        </div>
+        <h2 class="nc-section-title">Schedule Your <span class="text-accent">Assessment</span></h2>
+        <p class="nc-section-sub">Visit Peter's Fitness Factory at Max Smart Hospital, Saket or connect with our bariatric fitness coordinator to book your complimentary InBody scan.</p>
+      </div>
+
+      <div class="nc-contact-grid">
+        <div class="nc-location-card">
+          <div class="nc-location-icon">
+            <i class="fa-solid fa-hospital"></i>
+          </div>
+          <h3>Max Smart Super Speciality Hospital</h3>
+          <p>Peter's Fitness Factory &amp; Rehab Center, B-8 OPD, Ground Floor, Saket, New Delhi</p>
+          <div class="nc-location-actions">
+            <a href="tel:+911139595119" class="nc-location-btn">
+              <i class="fa-solid fa-phone"></i> +91-11-39595119
+            </a>
+          </div>
+        </div>
+        <div class="nc-location-card">
+          <div class="nc-location-icon">
+            <i class="fa-solid fa-clinic-medical"></i>
+          </div>
+          <h3>SMART Cliniqs Helpline</h3>
+          <p>J-24, Basement, Saket, Delhi-110017 — Direct Coordinator Desk</p>
+          <div class="nc-location-actions">
+            <a href="tel:+917770001900" class="nc-location-btn">
+              <i class="fa-solid fa-phone"></i> +91-7770001900
+            </a>
+            <a href="https://wa.me/917770001900" target="_blank" rel="noopener" class="nc-location-btn">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp Coordinator
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <script src="partials/footer.js"></script>
+
+  <a href="https://wa.me/917770001900" class="whatsapp-float" target="_blank" rel="noopener"
+    aria-label="Chat on WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
+    </svg>
+  </a>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <script src="main.js"></script>
+
+  <script>
+    (function () {
+      var p = 'fitness-factory.html';
+      document.querySelectorAll('.navbar .nav-link').forEach(function (l) {
+        var href = (l.getAttribute('href') || '').split('#')[0];
+        if (href === p || href.indexOf('fitness-factory') !== -1 || href.indexOf('nutrition-clinic') !== -1) l.classList.add('nav-link--active');
+      });
+    })();
+  </script>
+
+</body>
+
+</html>

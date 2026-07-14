@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshops &amp; Conferences | Dr Atul Peters</title>
+  <meta name="description"
+    content="Join Prof. Dr. Atul Peters at top surgical conferences and workshops worldwide. Explore his 50+ roles as Course Director, Invited Faculty, Keynote Speaker, and Research Presenter in bariatric, metabolic, and robotic surgery.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bellefair&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Specific styling for Workshops & Conferences interactive archive */
+    .wc-search-section {
+      background: var(--bg-surface, #FFFFFF);
+      padding: 3rem 0 1.5rem;
+      border-bottom: 1px solid var(--border, #E5E7EB);
+    }
+
+    .wc-search-box {
+      max-width: 680px;
+      margin: 0 auto 2rem;
+      position: relative;
+    }
+
+    .wc-search-input {
+      width: 100%;
+      padding: 1rem 1.5rem 1rem 3.25rem;
+      font-size: 1.05rem;
+      font-family: inherit;
+      border: 2px solid var(--border, #E5E7EB);
+      border-radius: 999px;
+      background: #FAFAFB;
+      color: var(--text-main, #1F2937);
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    }
+
+    .wc-search-input:focus {
+      outline: none;
+      border-color: var(--accent, #1A5276);
+      background: #FFFFFF;
+      box-shadow: 0 6px 20px rgba(26, 82, 118, 0.12);
+    }
+
+    .wc-search-icon {
+      position: absolute;
+      left: 1.25rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted, #6B7280);
+      font-size: 1.15rem;
+      pointer-events: none;
+    }
+
+    .wc-clear-btn {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #E5E7EB;
+      border: none;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      color: #4B5563;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      transition: background 0.2s;
+    }
+
+    .wc-clear-btn:hover {
+      background: #D1D5DB;
+      color: #111827;
+    }
+
+    .wc-filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.65rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .wc-filter-btn {
+      background: transparent;
+      border: 1px solid var(--border, #E5E7EB);
+      padding: 0.55rem 1.15rem;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-muted, #4B5563);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .wc-filter-btn:hover {
+      border-color: var(--accent, #1A5276);
+      color: var(--accent, #1A5276);
+      background: rgba(26, 82, 118, 0.04);
+    }
+
+    .wc-filter-btn.active {
+      background: var(--accent, #1A5276);
+      border-color: var(--accent, #1A5276);
+      color: #FFFFFF;
+      box-shadow: 0 4px 12px rgba(26, 82, 118, 0.2);
+    }
+
+    .wc-filter-count {
+      background: rgba(0, 0, 0, 0.12);
+      padding: 0.1rem 0.5rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+    }
+
+    .wc-filter-btn.active .wc-filter-count {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .wc-results-count {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-muted, #6B7280);
+      margin-top: 1rem;
+    }
+
+    .wc-list-section {
+      padding: 3.5rem 0 5rem;
+      background: #F8FAFC;
+    }
+
+    .wc-grid {
+      display: grid;
+      gap: 1.25rem;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .wc-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border, #E5E7EB);
+      border-radius: 16px;
+      padding: 1.65rem 1.85rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1.75rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .wc-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+      border-color: #CBD5E1;
+    }
+
+    .wc-card-side {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 110px;
+      border-right: 1px solid var(--border, #F1F5F9);
+      padding-right: 1.5rem;
+    }
+
+    .wc-card-year {
+      font-family: 'Bellefair', Georgia, serif;
+      font-size: 2rem;
+      font-weight: 400;
+      font-synthesis: none;
+      -webkit-font-synthesis: none;
+      font-synthesis-weight: none;
+      color: var(--accent, #1A5276);
+      line-height: 1.1;
+      margin-bottom: 0.35rem;
+    }
+
+    .wc-card-badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.3rem 0.65rem;
+      border-radius: 6px;
+      text-align: center;
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    /* Role Badge Colors */
+    .badge-faculty {
+      background: #E0F2FE;
+      color: #0369A1;
+    }
+
+    .badge-director {
+      background: #1A5276;
+      color: #FFFFFF;
+    }
+
+    .badge-keynote {
+      background: #FEF3C7;
+      color: #B45309;
+    }
+
+    .badge-research {
+      background: #EDE9FE;
+      color: #6D28D9;
+    }
+
+    .badge-chair {
+      background: #DCFCE7;
+      color: #15803D;
+    }
+
+    .badge-international {
+      background: #FFE4E6;
+      color: #BE123C;
+    }
+
+    .wc-card-body {
+      flex: 1;
+    }
+
+    .wc-card-title {
+      font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+      font-size: 1.18rem;
+      font-weight: 700;
+      font-synthesis: none;
+      color: var(--text-main, #111827);
+      line-height: 1.45;
+      margin-bottom: 0.6rem;
+    }
+
+    .wc-card-text {
+      font-size: 0.95rem;
+      color: var(--text-muted, #4B5563);
+      line-height: 1.6;
+      margin-bottom: 0.85rem;
+    }
+
+    .wc-card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: 0.85rem;
+      color: var(--text-muted, #64748B);
+      border-top: 1px dashed #E2E8F0;
+      padding-top: 0.75rem;
+    }
+
+    .wc-card-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .wc-card-meta i {
+      color: var(--accent, #1A5276);
+    }
+
+    .wc-no-results {
+      text-align: center;
+      padding: 4.5rem 2rem;
+      background: #FFFFFF;
+      border: 1px dashed #CBD5E1;
+      border-radius: 16px;
+      max-width: 600px;
+      margin: 2rem auto;
+      display: none;
+    }
+
+    .wc-no-results i {
+      font-size: 3rem;
+      color: #94A3B8;
+      margin-bottom: 1rem;
+    }
+
+    .wc-no-results h3 {
+      font-size: 1.35rem;
+      color: #1E293B;
+      margin-bottom: 0.5rem;
+    }
+
+    .wc-no-results p {
+      color: #64748B;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .wc-card {
+        flex-direction: column;
+        gap: 1.1rem;
+        padding: 1.35rem;
+      }
+
+      .wc-card-side {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #F1F5F9;
+        padding-right: 0;
+        padding-bottom: 0.85rem;
+      }
+
+      .wc-card-year {
+        margin-bottom: 0;
+      }
+    }
+  </style>
+</head>
+
+<body class="pub-page">
+
+  <!-- Global Header -->
+  <script src="partials/header.js"></script>
+
+  <!-- ===== HERO ===== -->
+  <section class="pub-hero">
+    <div class="pub-hero-bg">
+      <div class="pub-hero-pattern"></div>
+      <div class="pub-hero-blob pub-hero-blob--1"></div>
+      <div class="pub-hero-blob pub-hero-blob--2"></div>
+      <div class="pub-hero-blob pub-hero-blob--3"></div>
+    </div>
+
+    <div class="container">
+      <nav class="pub-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="pub-breadcrumb-current">Workshops &amp; Conferences</span>
+      </nav>
+
+      <div class="pub-hero-grid">
+        <div class="pub-hero-content">
+          <div class="pub-hero-eyebrow">
+            <span class="pub-pulse-dot"></span>
+            Global Teaching · Surgical Leadership · Academic Faculty
+          </div>
+
+          <h1 class="pub-hero-title">
+            Workshops &amp; <span class="pub-hero-accent">Conferences</span>
+          </h1>
+
+          <p class="pub-hero-sub">
+            A comprehensive scientific archive documenting <strong>Prof. Dr. Atul Peters'</strong> roles as Course Director, Invited Faculty, Keynote Speaker, and Research Presenter across national and international bariatric, metabolic, and robotic congresses worldwide.
+          </p>
+
+          <div class="pub-hero-cta">
+            <a href="#archive" class="pub-btn pub-btn--primary">
+              <span>Explore All 54+ Engagements</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="events.html" class="pub-btn pub-btn--ghost">
+              <i class="fa-regular fa-calendar-check"></i>
+              <span>View Upcoming Live Events</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="pub-hero-stats">
+          <div class="pub-hero-stat pub-hero-stat--large">
+            <div class="pub-hero-stat-num">54+</div>
+            <div class="pub-hero-stat-label">Faculty &amp; Keynote Roles</div>
+            <div class="pub-hero-stat-meta">2007 – Present</div>
+          </div>
+          <div class="pub-hero-stat-row">
+            <div class="pub-hero-stat pub-hero-stat--small">
+              <i class="fa-solid fa-globe-asia"></i>
+              <div>
+                <strong>15+ Countries</strong>
+                <span>Global invited faculty</span>
+              </div>
+            </div>
+            <div class="pub-hero-stat pub-hero-stat--small">
+              <i class="fa-solid fa-chalkboard-user"></i>
+              <div>
+                <strong>Course Director</strong>
+                <span>PACE &amp; Live Workshops</span>
+              </div>
+            </div>
+          </div>
+          <div class="pub-hero-stat pub-hero-stat--book">
+            <i class="fa-solid fa-award"></i>
+            <div>
+              <strong>Executive Leadership</strong>
+              <span>OSSICON, BARICON, FIAGES &amp; IFSO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path d="M0 50 Q360 90 720 50 T1440 50 V100 H0 Z" fill="#FFFFFF" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== INTERACTIVE SEARCH & FILTER SECTION ===== -->
+  <section class="wc-search-section" id="archive">
+    <div class="container">
+      <div class="wc-search-box">
+        <i class="fa-solid fa-magnifying-glass wc-search-icon"></i>
+        <input type="text" id="wcSearchInput" class="wc-search-input"
+          placeholder="Search by conference name, city, topic, or year (e.g. OSSICON, Paris, Course Director, Sleeve Gastrectomy)..."
+          aria-label="Search workshops and conferences">
+        <button type="button" id="wcClearBtn" class="wc-clear-btn" aria-label="Clear search">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="wc-filters" role="tablist">
+        <button class="wc-filter-btn active" data-filter="all">
+          <i class="fa-solid fa-layer-group"></i> All Engagements <span class="wc-filter-count">54</span>
+        </button>
+        <button class="wc-filter-btn" data-filter="recent">
+          <i class="fa-solid fa-calendar-check"></i> Recent (2020–2024) <span class="wc-filter-count">9</span>
+        </button>
+        <button class="wc-filter-btn" data-filter="2018-2019">
+          <i class="fa-regular fa-calendar"></i> 2018–2019 <span class="wc-filter-count">11</span>
+        </button>
+        <button class="wc-filter-btn" data-filter="2015-2017">
+          <i class="fa-regular fa-calendar-days"></i> 2015–2017 <span class="wc-filter-count">20</span>
+        </button>
+        <button class="wc-filter-btn" data-filter="2007-2014">
+          <i class="fa-solid fa-clock-rotate-left"></i> Foundational (2007–2014) <span class="wc-filter-count">14</span>
+        </button>
+        <button class="wc-filter-btn" data-filter="director">
+          <i class="fa-solid fa-chalkboard-user"></i> Course Director <span class="wc-filter-count">5</span>
+        </button>
+        <button class="wc-filter-btn" data-filter="international">
+          <i class="fa-solid fa-plane-departure"></i> International Forums <span class="wc-filter-count">12</span>
+        </button>
+        <button class="wc-filter-btn" data-filter="research">
+          <i class="fa-solid fa-flask"></i> Research Posters <span class="wc-filter-count">5</span>
+        </button>
+      </div>
+
+      <div class="wc-results-count" id="wcResultsCount">Showing all 54 engagements</div>
+    </div>
+  </section>
+
+  <!-- ===== CONFERENCES & WORKSHOPS ARCHIVE LIST ===== -->
+  <section class="wc-list-section">
+    <div class="container">
+      <div class="wc-grid" id="wcGrid">
+
+        <!-- 2024 -->
+        <article class="wc-card" data-year="2024" data-category="recent faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2024</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">OSSICON 2024 — 21st National Conference of Obesity &amp; Metabolic Surgery Society of India</h3>
+            <p class="wc-card-text">Invited Faculty contributing to advanced bariatric and metabolic surgery guidelines, panel discussions, and technical masterclasses at the flagship annual national congress.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Kochi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 7th – 9th February 2024</span>
+              <span><i class="fa-solid fa-building"></i> OSSI National Congress</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2023 -->
+        <article class="wc-card" data-year="2023" data-category="recent faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2023</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">OSSICON 2023 — 20th National Conference of Obesity &amp; Metabolic Surgery Society of India</h3>
+            <p class="wc-card-text">Served as Faculty and panelist addressing innovations in revisional bariatric surgery and robotic surgery applications in high-volume Indian centers.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Mumbai, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 1st – 4th March 2023</span>
+              <span><i class="fa-solid fa-building"></i> OSSI National Congress</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2022 -->
+        <article class="wc-card" data-year="2022" data-category="recent faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2022</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">OSSICON 2022 — 19th National Conference of Obesity &amp; Metabolic Surgery Society of India</h3>
+            <p class="wc-card-text">Delivered expert lectures on metabolic surgery outcomes and post-operative nutritional monitoring for Type 2 Diabetes remission.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Bengaluru, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 21st – 23rd April 2022</span>
+              <span><i class="fa-solid fa-building"></i> OSSI National Congress</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2021 SURGICON -->
+        <article class="wc-card" data-year="2021" data-category="recent faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2021</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">SURGICON 2021 — Annual Conference of Delhi State Chapter, ASI</h3>
+            <p class="wc-card-text">Invited Faculty at the Association of Surgeons of India (ASI) Delhi State Chapter Annual Conference, sharing expertise on complex laparoscopic and GI procedures.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 20th November 2021</span>
+              <span><i class="fa-solid fa-building"></i> Association of Surgeons of India (ASI)</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2021 SN Medical College -->
+        <article class="wc-card" data-year="2021" data-category="recent faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2021</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Workshop on Bariatric Surgery at S. N. Medical College</h3>
+            <p class="wc-card-text">Invited surgical faculty and instructor for live bariatric surgery demonstrations and academic sessions at the Department of Surgery, Sarojini Naidu Medical College.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Agra, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 20th June 2021</span>
+              <span><i class="fa-solid fa-hospital-user"></i> S. N. Medical College</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2020 OSSICON Faculty -->
+        <article class="wc-card" data-year="2020" data-category="recent faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2020</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">OSSICON 2020 — 18th National Conference of Obesity &amp; Metabolic Surgery Society of India</h3>
+            <p class="wc-card-text">Served as Faculty and Session Moderator, steering scientific discussions on metabolic surgery protocols and long-term weight maintenance.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 27th – 29th February 2020</span>
+              <span><i class="fa-solid fa-building"></i> OSSI National Congress</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2020 OSSICON Research Poster 1 -->
+        <article class="wc-card" data-year="2020" data-category="recent research">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2020</div>
+            <span class="wc-card-badge badge-research">Research Poster</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Research Presentation: Short Term (1 Year) Impact of Nutritional Supplementation on Serum Proteins and Micronutrients in Indian Patients Undergoing Laparoscopic Sleeve Gastrectomy</h3>
+            <p class="wc-card-text">Presented original clinical research poster at OSSICON 2020 evaluating the critical impact of structured nutritional protocol on protein and micronutrient status 12 months post-sleeve gastrectomy.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> February 2020</span>
+              <span><i class="fa-solid fa-scroll"></i> OSSICON 2020 Scientific Sessions</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2020 OSSICON Research Poster 2 -->
+        <article class="wc-card" data-year="2020" data-category="recent research">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2020</div>
+            <span class="wc-card-badge badge-research">Research Poster</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Research Presentation: Dietary and Lifestyle Compliance Among Indian Males and Females Post Bariatric Surgery</h3>
+            <p class="wc-card-text">Presented clinical research poster evaluating gender-specific compliance patterns, nutritional follow-up adherence, and long-term behavioral modifications post-bariatric surgery.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> February 2020</span>
+              <span><i class="fa-solid fa-scroll"></i> OSSICON 2020 Scientific Sessions</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2020 SELSICON -->
+        <article class="wc-card" data-year="2020" data-category="recent faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2020</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">SELSICON North Zone 2020 at Government Medical College</h3>
+            <p class="wc-card-text">Faculty member for the Society of Endoscopic and Laparoscopic Surgeons of India (SELSI) North Zone Conference, teaching advanced laparoscopic techniques.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Patiala, Punjab</span>
+              <span><i class="fa-regular fa-calendar"></i> 7th &amp; 8th February 2020</span>
+              <span><i class="fa-solid fa-hospital"></i> Government Medical College, Patiala</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2019 BARICON -->
+        <article class="wc-card" data-year="2019" data-category="2018-2019 international faculty director">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2019</div>
+            <span class="wc-card-badge badge-director">Organizing Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">BARICON 2019 — 2nd International Conference on Bariatric and Metabolic Surgery</h3>
+            <p class="wc-card-text">Invited Faculty and Organizing Leader at the prestigious 2nd International Conference on Bariatric and Metabolic Surgery, featuring global faculty and live operative demonstrations.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 13th – 16th November 2019</span>
+              <span><i class="fa-solid fa-globe"></i> International Surgical Congress</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2019 ADECON Research -->
+        <article class="wc-card" data-year="2019" data-category="2018-2019 research">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2019</div>
+            <span class="wc-card-badge badge-research">Research Poster</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Research Presentation at ADECON 2019: Short Term Impact of LSG on Quality of Life in Indian Obese Patients</h3>
+            <p class="wc-card-text">Presented original research highlighting improvements in physical, psychological, and social quality of life parameters following Laparoscopic Sleeve Gastrectomy in Indian cohorts.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Dwarka, New Delhi</span>
+              <span><i class="fa-regular fa-calendar"></i> November 2019</span>
+              <span><i class="fa-solid fa-award"></i> ADECON Annual Conference</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2019 FALS Teaching Faculty -->
+        <article class="wc-card" data-year="2019" data-category="2018-2019 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2019</div>
+            <span class="wc-card-badge badge-chair">Teaching Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">FALS Fellowship Course — Teaching Faculty: Internal Herniation in Bariatric Patients (Diagnosis &amp; Management)</h3>
+            <p class="wc-card-text">Specialized expert lecture delivered at the Fellowship in Advanced Laparoscopic Surgery (FALS) program, focusing on early identification and surgical management of internal hernias post-gastric bypass.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 27th September 2019</span>
+              <span><i class="fa-solid fa-user-graduate"></i> IAGES / FALS Academic Course</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2019 CME Ludhiana -->
+        <article class="wc-card" data-year="2019" data-category="2018-2019 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2019</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">CME "Current Trends in Surgery" at Christian Medical College (CMC) &amp; IMSA</h3>
+            <p class="wc-card-text">Invited Faculty for advanced CME organized by the Department of General Surgery, Christian Medical College &amp; Hospital (CMC Ludhiana) and International Medical Sciences Academy (IMSA) Punjab Chapter.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab</span>
+              <span><i class="fa-regular fa-calendar"></i> 24th August 2019</span>
+              <span><i class="fa-solid fa-hospital"></i> Christian Medical College &amp; Hospital</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2019 GSVM Kanpur -->
+        <article class="wc-card" data-year="2019" data-category="2018-2019 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2019</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">4th G.S.V.M. Surgery Update 2019 — Workshop on Bariatric Surgery</h3>
+            <p class="wc-card-text">Invited surgical faculty leading hands-on training and lecture modules on bariatric surgery techniques at the Department of Surgery, G.S.V.M. Medical College.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Kanpur, Uttar Pradesh</span>
+              <span><i class="fa-regular fa-calendar"></i> 18th August 2019</span>
+              <span><i class="fa-solid fa-hospital-user"></i> G.S.V.M. Medical College</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2019 OSSICON Research DJB-SG -->
+        <article class="wc-card" data-year="2019" data-category="2018-2019 research">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2019</div>
+            <span class="wc-card-badge badge-research">Research Poster</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Research Presentation: Effectiveness of Duodenojejunal Bypass with Sleeve Gastrectomy (DJB-SG) on Obesity &amp; Type 2 Diabetes</h3>
+            <p class="wc-card-text">Presented landmark clinical outcomes study at OSSICON 2019 demonstrating high rates of glycemic control and diabetes remission following DJB-SG.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Kolkata, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 24th – 26th January 2019</span>
+              <span><i class="fa-solid fa-scroll"></i> OSSICON 2019 Scientific Forum</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2019 OSSICON Research Micronutrients -->
+        <article class="wc-card" data-year="2019" data-category="2018-2019 research">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2019</div>
+            <span class="wc-card-badge badge-research">Research Poster</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Research Presentation: Prevalence of Pre-Operative Micronutrient Deficiencies in Patients Undergoing Bariatric Surgery</h3>
+            <p class="wc-card-text">Original clinical study highlighting widespread baseline deficiencies of Vitamin D, Vitamin B12, iron, and calcium in Indian bariatric candidates requiring proactive pre-op correction.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Kolkata, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 24th – 26th January 2019</span>
+              <span><i class="fa-solid fa-scroll"></i> OSSICON 2019 Scientific Forum</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2019 OSSICON Speaker -->
+        <article class="wc-card" data-year="2019" data-category="2018-2019 keynote faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2019</div>
+            <span class="wc-card-badge badge-keynote">Speaker &amp; Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Speaker &amp; Invited Faculty at OSSICON 2019 National Conference</h3>
+            <p class="wc-card-text">Delivered invited scientific lectures and served on expert panels discussing revisional bariatric challenges and metabolic surgery standardization.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Kolkata, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 24th – 26th January 2019</span>
+              <span><i class="fa-solid fa-building"></i> OSSI National Congress</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2018 IEF Panelist -->
+        <article class="wc-card" data-year="2018" data-category="2018-2019 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2018</div>
+            <span class="wc-card-badge badge-chair">Panelist</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Panelist at 3rd Annual IEF Bariatric &amp; Metabolic Surgery Update</h3>
+            <p class="wc-card-text">Invited expert panelist at the International Excellence Forum (IEF) update, analyzing surgical controversy management and enhanced recovery after surgery (ERAS).</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Mumbai, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 8th – 9th June 2018</span>
+              <span><i class="fa-solid fa-users-rectangle"></i> International Excellence Forum</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2018 APMBSS Japan -->
+        <article class="wc-card" data-year="2018" data-category="2018-2019 keynote international">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2018</div>
+            <span class="wc-card-badge badge-international">International Speaker</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Speaker at APMBSS 2018 — Asia Pacific Metabolic and Bariatric Surgery Society</h3>
+            <p class="wc-card-text">Invited international speaker presenting Indian bariatric outcomes and metabolic surgery protocols at the prestigious Asia Pacific congress in Tokyo.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Tokyo, Japan</span>
+              <span><i class="fa-regular fa-calendar"></i> 29th – 31st March 2018</span>
+              <span><i class="fa-solid fa-earth-asia"></i> APMBSS International Congress</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2018 OSSICON Chennai -->
+        <article class="wc-card" data-year="2018" data-category="2018-2019 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2018</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">OSSICON 2018 — 16th National Conference of OSSI</h3>
+            <p class="wc-card-text">Invited surgical faculty leading operative sessions and clinical discussions on long-term weight loss sustainability.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Chennai, India</span>
+              <span><i class="fa-regular fa-calendar"></i> February 2018</span>
+              <span><i class="fa-solid fa-building"></i> OSSI National Congress</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2017 LAPAROFIT -->
+        <article class="wc-card" data-year="2017" data-category="2015-2017 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2017</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Faculty in LAPAROFIT #8 at Gem Hospital</h3>
+            <p class="wc-card-text">Surgical faculty at the 8th International Laparoscopic &amp; Bariatric Summit, sharing surgical nuances with over 300+ delegate surgeons.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu</span>
+              <span><i class="fa-regular fa-calendar"></i> 16th – 18th November 2017</span>
+              <span><i class="fa-solid fa-hospital"></i> Gem Hospital &amp; Research Centre</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2017 IFSO-APC Diabesity Conclave -->
+        <article class="wc-card" data-year="2017" data-category="2015-2017 faculty international">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2017</div>
+            <span class="wc-card-badge badge-international">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Faculty at IFSO-APC 2017 Diabesity Conclave</h3>
+            <p class="wc-card-text">Invited faculty for the International Federation for the Surgery of Obesity and Metabolic Disorders Asia Pacific Chapter (IFSO-APC) Diabesity Conclave.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Goa, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 21st – 23rd April 2017</span>
+              <span><i class="fa-solid fa-globe"></i> IFSO Asia Pacific Chapter</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2016 BARICON -->
+        <article class="wc-card" data-year="2016" data-category="2015-2017 faculty international">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2016</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">BARICON 2016 — 1st International Conference of FORMS &amp; Live Operative Workshop</h3>
+            <p class="wc-card-text">Faculty member at the inaugural International Conference of Foundation for Obesity &amp; Metabolic Surgery (FORMS), delivering live surgery commentary and lectures.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 1st – 3rd December 2016</span>
+              <span><i class="fa-solid fa-globe"></i> FORMS International Congress</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2016 Bahrain Gulf Obesity -->
+        <article class="wc-card" data-year="2016" data-category="2015-2017 faculty international">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2016</div>
+            <span class="wc-card-badge badge-international">International Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Faculty at 4th Annual Gulf Obesity Surgery Society Meeting (GOSS)</h3>
+            <p class="wc-card-text">Invited international surgical faculty for the 4th Annual Gulf Obesity Surgery Society congress, presenting techniques in revisional metabolic surgery.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Kingdom of Bahrain</span>
+              <span><i class="fa-regular fa-calendar"></i> 30th Nov – 2nd Dec 2016</span>
+              <span><i class="fa-solid fa-globe"></i> Gulf Obesity Surgery Society</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2016 Course Director Workshop Delhi -->
+        <article class="wc-card" data-year="2016" data-category="2015-2017 director">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2016</div>
+            <span class="wc-card-badge badge-director">Course Director</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Course Director — Bariatric &amp; Metabolic Surgery Master Workshop</h3>
+            <p class="wc-card-text">Served as primary Course Director for an intensive 2-day live surgical workshop and training course for surgeons mastering gastric bypass and sleeve gastrectomy.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 22nd – 23rd September 2016</span>
+              <span><i class="fa-solid fa-chalkboard-user"></i> Surgical Mastercourse</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2016 Sri Lanka -->
+        <article class="wc-card" data-year="2016" data-category="2015-2017 faculty international">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2016</div>
+            <span class="wc-card-badge badge-international">Resource Person</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Resource Person — The College of Surgeons of Sri Lanka Annual Academic Sessions</h3>
+            <p class="wc-card-text">Invited international expert and resource person leading the "Live Workshop on Bariatric and Metabolic Surgery" for the College of Surgeons of Sri Lanka.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Colombo, Sri Lanka</span>
+              <span><i class="fa-regular fa-calendar"></i> 4th September 2016</span>
+              <span><i class="fa-solid fa-earth-asia"></i> College of Surgeons of Sri Lanka</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2016 FIAGES Gurgaon -->
+        <article class="wc-card" data-year="2016" data-category="2015-2017 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2016</div>
+            <span class="wc-card-badge badge-faculty">Teaching Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">FIAGES Fellowship Course — Indian Association of Gastrointestinal Endo-Surgeons</h3>
+            <p class="wc-card-text">Teaching Faculty and Examiner for the Fellowship of Indian Association of Gastrointestinal Endo-Surgeons (FIAGES) certification course.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Gurgaon, Haryana</span>
+              <span><i class="fa-regular fa-calendar"></i> 16th – 18th September 2016</span>
+              <span><i class="fa-solid fa-user-graduate"></i> IAGES Fellowship Course</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2016 SGPGI Lucknow -->
+        <article class="wc-card" data-year="2016" data-category="2015-2017 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2016</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">3rd Endocrine Tumor Summit &amp; Annual Meeting of UPISBMR at SGPGI</h3>
+            <p class="wc-card-text">Faculty member addressing metabolic and neuroendocrine surgery considerations at Sanjay Gandhi Postgraduate Institute of Medical Sciences (SGPGI).</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Lucknow, Uttar Pradesh</span>
+              <span><i class="fa-regular fa-calendar"></i> 3rd – 4th September 2016</span>
+              <span><i class="fa-solid fa-hospital"></i> SGPGI Medical Sciences</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2016 ASI Zonal Hyderabad -->
+        <article class="wc-card" data-year="2016" data-category="2015-2017 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2016</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Association of Surgeons of India (ASI) Zonal CME</h3>
+            <p class="wc-card-text">Participated and delivered clinical updates at the Association of Surgeons of India Zonal Continuing Medical Education forum.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Hyderabad, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 30th – 31st July 2016</span>
+              <span><i class="fa-solid fa-building"></i> ASI Zonal Forum</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2016 ACMOMS Summit Chennai -->
+        <article class="wc-card" data-year="2016" data-category="2015-2017 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2016</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">IXth ACMOMS SUMMIT — Asian Consensus Meeting on Metabolic Surgery</h3>
+            <p class="wc-card-text">Invited Faculty for the 9th Asian Consensus Meeting on Metabolic Surgery (ACMOMS), shaping regional diabetes surgical criteria.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Chennai, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 22nd – 23rd July 2016</span>
+              <span><i class="fa-solid fa-users-viewfinder"></i> Asian Consensus Summit</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2016 OSSICON Chandigarh -->
+        <article class="wc-card" data-year="2016" data-category="2015-2017 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2016</div>
+            <span class="wc-card-badge badge-director">Executive Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Executive Faculty at OSSICON 2016 National Conference</h3>
+            <p class="wc-card-text">Served as Executive Faculty and Session Leader at the 14th National Conference of Obesity &amp; Metabolic Surgery Society of India.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Chandigarh, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 12th – 14th February 2016</span>
+              <span><i class="fa-solid fa-building"></i> OSSI National Congress</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2016 UPASICON Allahabad -->
+        <article class="wc-card" data-year="2016" data-category="2015-2017 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2016</div>
+            <span class="wc-card-badge badge-faculty">Delegate &amp; Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">UPASICON 2016 — XLII Annual Conference of UP Chapter of ASI</h3>
+            <p class="wc-card-text">Participated and contributed to academic discussions at the 42nd Annual Conference of Uttar Pradesh Association of Surgeons.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Allahabad (Prayagraj), India</span>
+              <span><i class="fa-regular fa-calendar"></i> 11th – 13th November 2016</span>
+              <span><i class="fa-solid fa-building"></i> UP Chapter ASI</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2016 SELSICON & IHSCON Agra -->
+        <article class="wc-card" data-year="2016" data-category="2015-2017 keynote faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2016</div>
+            <span class="wc-card-badge badge-chair">Chairperson &amp; Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Chairperson &amp; Faculty — 9th SELSICON 2016 &amp; 9th IHSCON 2016</h3>
+            <p class="wc-card-text">Joint Chairperson and Invited Faculty for the 9th Society of Endoscopic and Laparoscopic Surgeons of India Conference &amp; Indian Hernia Society Congress.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Agra, Uttar Pradesh</span>
+              <span><i class="fa-regular fa-calendar"></i> 4th – 6th November 2016</span>
+              <span><i class="fa-solid fa-users"></i> SELSI &amp; Indian Hernia Society</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2015 Midterm OSSICON Hyderabad -->
+        <article class="wc-card" data-year="2015" data-category="2015-2017 keynote faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2015</div>
+            <span class="wc-card-badge badge-keynote">Chairperson &amp; Speaker</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Chairperson &amp; Guest Speaker — Midterm OSSICON 2015</h3>
+            <p class="wc-card-text">Invited Guest Speaker and Session Chairperson at the Midterm National Bariatric Congress, evaluating intermediate metabolic outcomes.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Hyderabad, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 9th – 11th October 2015</span>
+              <span><i class="fa-solid fa-building"></i> OSSI Midterm Summit</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2015 PACE Course Director -->
+        <article class="wc-card" data-year="2015" data-category="2015-2017 director">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2015</div>
+            <span class="wc-card-badge badge-director">Course Director</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Course Director — PACE Bariatric Training Program</h3>
+            <p class="wc-card-text">Designed and directed the PACE Bariatric Surgical Masterclass, mentoring surgeons in standardized laparoscopic sleeve and bypass techniques.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 7th – 8th August 2015</span>
+              <span><i class="fa-solid fa-chalkboard-user"></i> PACE Surgical Academy</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2015 International MGB/OAGB Conclave -->
+        <article class="wc-card" data-year="2015" data-category="2015-2017 faculty international">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2015</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Faculty — International MGB / OAGB Conclave &amp; Operative Workshop</h3>
+            <p class="wc-card-text">Invited Faculty and operative demonstration leader at the International Mini Gastric Bypass (MGB / OAGB) Conclave.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 17th – 18th July 2015</span>
+              <span><i class="fa-solid fa-globe"></i> International MGB Conclave</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2015 MGB Course Coimbatore -->
+        <article class="wc-card" data-year="2015" data-category="2015-2017 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2015</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Faculty — Mini Gastric Bypass Course with Live Workshop</h3>
+            <p class="wc-card-text">Surgical faculty instructing operative steps, loop configuration, and complication management during live MGB surgery course.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu</span>
+              <span><i class="fa-regular fa-calendar"></i> 10th – 11th April 2015</span>
+              <span><i class="fa-solid fa-hospital"></i> Gem Hospital &amp; Research Centre</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2015 ENDOLAP -->
+        <article class="wc-card" data-year="2015" data-category="2015-2017 faculty international">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2015</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Faculty in ENDOLAP 2014 / 2015 — Third Biennial International Conference</h3>
+            <p class="wc-card-text">Invited surgical faculty for the 3rd Biennial International Endoscopic and Laparoscopic Surgery Conference.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 6th – 8th February 2015</span>
+              <span><i class="fa-solid fa-globe"></i> ENDOLAP International Congress</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2015 OSSICON Mumbai -->
+        <article class="wc-card" data-year="2015" data-category="2015-2017 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2015</div>
+            <span class="wc-card-badge badge-faculty">Faculty &amp; Delegate</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">OSSICON 2015 — 13th National Conference of OSSI</h3>
+            <p class="wc-card-text">Invited Faculty presenting clinical trial outcomes and technical strategies at the national bariatric congress.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Mumbai, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 23rd – 25th January 2015</span>
+              <span><i class="fa-solid fa-building"></i> OSSI National Congress</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2015 Vietnam Hernia Workshop -->
+        <article class="wc-card" data-year="2015" data-category="2015-2017 faculty international">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2015</div>
+            <span class="wc-card-badge badge-international">International Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Faculty — International Laparoscopic Hernia Repair Workshop</h3>
+            <p class="wc-card-text">Invited international surgical faculty conducting hands-on training and operative demonstrations in advanced laparoscopic hernia repair.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Ho Chi Minh City / Hanoi, Vietnam</span>
+              <span><i class="fa-regular fa-calendar"></i> 9th January 2015</span>
+              <span><i class="fa-solid fa-globe"></i> Vietnam Surgical Society Forum</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2014 VIIth ACMOMS Summit Udaipur -->
+        <article class="wc-card" data-year="2014" data-category="2007-2014 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2014</div>
+            <span class="wc-card-badge badge-faculty">Participant</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">VIIth ACMOMS SUMMIT — Asian Consensus Meeting on Metabolic Surgery</h3>
+            <p class="wc-card-text">Contributed to clinical criteria definitions for Type 2 Diabetes metabolic surgery intervention across Asian populations.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Udaipur, Rajasthan</span>
+              <span><i class="fa-regular fa-calendar"></i> 21st – 22nd June 2014</span>
+              <span><i class="fa-solid fa-users-viewfinder"></i> Asian Consensus Summit</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2014 OBISURGE Delhi -->
+        <article class="wc-card" data-year="2014" data-category="2007-2014 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2014</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Faculty in OBISURGE 2014</h3>
+            <p class="wc-card-text">Invited faculty for OBISURGE 2014, sharing insights into multidisciplinary bariatric care and long-term complication avoidance.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 15th – 16th April 2014</span>
+              <span><i class="fa-solid fa-building"></i> OBISURGE Scientific Forum</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2014 GI SURGICON Delhi -->
+        <article class="wc-card" data-year="2014" data-category="2007-2014 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2014</div>
+            <span class="wc-card-badge badge-faculty">Faculty &amp; Delegate</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">GI SURGICON 2014</h3>
+            <p class="wc-card-text">Faculty speaker addressing gastrointestinal laparoscopic surgical breakthroughs and bariatric anatomy preservation.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 9th February 2014</span>
+              <span><i class="fa-solid fa-building"></i> GI Surgical Association</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2014 OSSICON Ahmedabad -->
+        <article class="wc-card" data-year="2014" data-category="2007-2014 keynote faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2014</div>
+            <span class="wc-card-badge badge-chair">Chairperson &amp; Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Chairperson &amp; Faculty — OSSICON 2014 National Conference</h3>
+            <p class="wc-card-text">Session Chairperson and Faculty at the 12th National Conference of Obesity &amp; Metabolic Surgery Society of India.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Ahmedabad, Gujarat</span>
+              <span><i class="fa-regular fa-calendar"></i> 30th Jan – 1st Feb 2014</span>
+              <span><i class="fa-solid fa-building"></i> OSSI National Congress</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2013 IFSO APC Taiwan -->
+        <article class="wc-card" data-year="2013" data-category="2007-2014 keynote international research">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2013</div>
+            <span class="wc-card-badge badge-international">Video &amp; Oral Presenter</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">2013 IFSO — Asia Pacific Chapter Meeting (IFSO-APC)</h3>
+            <p class="wc-card-text">Delivered prestigious video and oral presentations demonstrating high-precision laparoscopic bariatric surgery outcomes in Indian cohorts at the IFSO Asia Pacific Congress.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Taipei, Taiwan</span>
+              <span><i class="fa-regular fa-calendar"></i> 10th – 13th April 2013</span>
+              <span><i class="fa-solid fa-earth-asia"></i> IFSO Asia Pacific Congress</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2012 Paris Consensus -->
+        <article class="wc-card" data-year="2012" data-category="2007-2014 faculty international">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2012</div>
+            <span class="wc-card-badge badge-international">International Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Faculty — Mini-Bypass Consensus Conference</h3>
+            <p class="wc-card-text">Invited International Faculty shaping the global consensus guidelines and technical standards for One Anastomosis / Mini Gastric Bypass (OAGB/MGB).</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Paris, France</span>
+              <span><i class="fa-regular fa-calendar"></i> 18th – 19th October 2012</span>
+              <span><i class="fa-solid fa-earth-europe"></i> International Consensus Forum</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2012 Fight VTECON -->
+        <article class="wc-card" data-year="2012" data-category="2007-2014 keynote faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2012</div>
+            <span class="wc-card-badge badge-chair">Chairperson</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Chairperson — Fight VTECON (Venous Thromboembolism Summit)</h3>
+            <p class="wc-card-text">Chaired national summit addressing deep vein thrombosis (DVT) and pulmonary embolism prevention protocols in bariatric surgery patients.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 14th October 2012</span>
+              <span><i class="fa-solid fa-heart-pulse"></i> VTE Prevention Summit</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2012 GASTROCON Delhi -->
+        <article class="wc-card" data-year="2012" data-category="2007-2014 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2012</div>
+            <span class="wc-card-badge badge-faculty">Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Faculty in GASTROCON 2012</h3>
+            <p class="wc-card-text">Surgical faculty evaluating recent advances in GI surgical oncology and benign laparoscopic interventions.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 25th – 26th August 2012</span>
+              <span><i class="fa-solid fa-building"></i> GASTROCON Scientific Sessions</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2012 Vth ACMOMS Summit Delhi -->
+        <article class="wc-card" data-year="2012" data-category="2007-2014 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2012</div>
+            <span class="wc-card-badge badge-faculty">Participant</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Vth ACMOMS SUMMIT — Asian Consensus Meeting on Metabolic Surgery</h3>
+            <p class="wc-card-text">Participated and contributed clinical data at the 5th Asian Consensus Meeting on Metabolic Surgery.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 6th – 7th July 2012</span>
+              <span><i class="fa-solid fa-users-viewfinder"></i> Asian Consensus Summit</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2012 IAGES Fellowship Course Delhi -->
+        <article class="wc-card" data-year="2012" data-category="2007-2014 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2012</div>
+            <span class="wc-card-badge badge-chair">Teaching Faculty</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">XXIII Fellowship Course of IAGES — Teaching Faculty &amp; Contributor</h3>
+            <p class="wc-card-text">Teaching Faculty instructing over 150+ surgeon candidates during the 23rd Fellowship Course of Indian Association of Gastrointestinal Endo-Surgeons.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> New Delhi, India</span>
+              <span><i class="fa-regular fa-calendar"></i> 3rd – 6th May 2012</span>
+              <span><i class="fa-solid fa-user-graduate"></i> IAGES Fellowship Academy</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2011 IVth ACMOMS Summit Amritsar -->
+        <article class="wc-card" data-year="2011" data-category="2007-2014 faculty">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2011</div>
+            <span class="wc-card-badge badge-faculty">Participant</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">IVth ACMOMS SUMMIT — Asian Consensus Meeting on Metabolic Surgery</h3>
+            <p class="wc-card-text">Contributed to early regional consensus building for metabolic surgery indications in Asian Type 2 Diabetic patients.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Amritsar, Punjab</span>
+              <span><i class="fa-regular fa-calendar"></i> 7th – 9th October 2011</span>
+              <span><i class="fa-solid fa-users-viewfinder"></i> Asian Consensus Summit</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2009 APHS Indonesia -->
+        <article class="wc-card" data-year="2009" data-category="2007-2014 international">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2009</div>
+            <span class="wc-card-badge badge-international">International Forum</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">5th International Congress of APHS — Live Surgery &amp; Symposium</h3>
+            <p class="wc-card-text">Participated in international live surgery demonstrations and academic symposium of the Asia Pacific Hernia Society (APHS).</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Bali / Jakarta, Indonesia</span>
+              <span><i class="fa-regular fa-calendar"></i> 15th – 17th October 2009</span>
+              <span><i class="fa-solid fa-globe"></i> Asia Pacific Hernia Society (APHS)</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2009 Cleveland Clinic USA -->
+        <article class="wc-card" data-year="2009" data-category="2007-2014 international">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2009</div>
+            <span class="wc-card-badge badge-international">Visiting Clinical Fellow</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Visiting Clinical Observer — Bariatric &amp; Metabolic Institute, Cleveland Clinic</h3>
+            <p class="wc-card-text">Completed advanced clinical observership under global bariatric surgery pioneers at the world-renowned Cleveland Clinic Bariatric &amp; Metabolic Institute.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Cleveland, Ohio, USA</span>
+              <span><i class="fa-regular fa-calendar"></i> 26th Jan – 5th Feb 2009</span>
+              <span><i class="fa-solid fa-flag-usa"></i> Cleveland Clinic Foundation</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2007 Tyco Clinical Institute -->
+        <article class="wc-card" data-year="2007" data-category="2007-2014 international">
+          <div class="wc-card-side">
+            <div class="wc-card-year">2007</div>
+            <span class="wc-card-badge badge-faculty">Advanced Training</span>
+          </div>
+          <div class="wc-card-body">
+            <h3 class="wc-card-title">Accomplished Advanced Training Course for Laparoscopic Bariatric Surgery — Asia Endosurgery Task Force</h3>
+            <p class="wc-card-text">Successfully accomplished rigorous specialized training in laparoscopic bariatric surgery approved by the Asia Endosurgery Task Force at Tyco Clinical Institute.</p>
+            <div class="wc-card-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Tyco Clinical Institute / Shanghai</span>
+              <span><i class="fa-regular fa-calendar"></i> 12th – 13th January 2007</span>
+              <span><i class="fa-solid fa-certificate"></i> Asia Endosurgery Task Force</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- No Results Placeholder -->
+      <div class="wc-no-results" id="wcNoResults">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <h3>No matching engagements found</h3>
+        <p>Try adjusting your search terms or clicking "All Engagements" to reset the filters.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACADEMIC CONNECT CTA ===== -->
+  <section class="ev-register section" id="contact-academic">
+    <div class="container">
+      <div class="ev-register-card">
+        <div class="ev-register-decor">
+          <div class="ev-register-decor-circle ev-register-decor-circle--1"></div>
+          <div class="ev-register-decor-circle ev-register-decor-circle--2"></div>
+        </div>
+        <div class="ev-register-content">
+          <div class="ev-register-eyebrow">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            Invited Faculty &amp; Keynotes
+          </div>
+          <h2>Invite Dr. Peters for <span class="text-accent">Surgical Workshops</span></h2>
+          <p>For academic keynote invitations, live operative workshop directorship, or surgical fellowship inquiries, connect directly with our scientific coordinators.</p>
+          <a href="contact.html" class="ev-btn ev-btn--white">
+            <span>Contact Academic Team</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <script src="partials/footer.js"></script>
+
+  <a href="https://wa.me/917770001900" class="whatsapp-float" target="_blank" rel="noopener"
+    aria-label="Chat on WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
+    </svg>
+  </a>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <script src="main.js"></script>
+
+  <script>
+    /* Interactive Search and Filter Script for Workshops & Conferences */
+    (function () {
+      const searchInput = document.getElementById('wcSearchInput');
+      const clearBtn = document.getElementById('wcClearBtn');
+      const filterBtns = document.querySelectorAll('.wc-filter-btn');
+      const cards = document.querySelectorAll('.wc-card');
+      const resultsCount = document.getElementById('wcResultsCount');
+      const noResults = document.getElementById('wcNoResults');
+
+      let currentFilter = 'all';
+      let currentQuery = '';
+
+      function updateDisplay() {
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const year = parseInt(card.getAttribute('data-year') || '0', 10);
+          const category = card.getAttribute('data-category') || '';
+          const cardText = card.textContent.toLowerCase();
+
+          // Check filter criteria
+          let matchesFilter = false;
+          if (currentFilter === 'all') {
+            matchesFilter = true;
+          } else if (currentFilter === 'recent') {
+            matchesFilter = (year >= 2020 && year <= 2024);
+          } else if (currentFilter === '2018-2019') {
+            matchesFilter = (year === 2018 || year === 2019);
+          } else if (currentFilter === '2015-2017') {
+            matchesFilter = (year >= 2015 && year <= 2017);
+          } else if (currentFilter === '2007-2014') {
+            matchesFilter = (year >= 2007 && year <= 2014);
+          } else {
+            matchesFilter = category.includes(currentFilter);
+          }
+
+          // Check search query
+          const matchesQuery = !currentQuery || cardText.includes(currentQuery);
+
+          if (matchesFilter && matchesQuery) {
+            card.style.display = 'flex';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Update count text & no results
+        if (visibleCount === 0) {
+          noResults.style.display = 'block';
+          resultsCount.textContent = 'Showing 0 engagements';
+        } else {
+          noResults.style.display = 'none';
+          resultsCount.textContent = `Showing ${visibleCount} engagement${visibleCount === 1 ? '' : 's'}`;
+        }
+
+        // Show/hide clear button
+        if (currentQuery.length > 0) {
+          clearBtn.style.display = 'flex';
+        } else {
+          clearBtn.style.display = 'none';
+        }
+      }
+
+      // Search input event
+      searchInput.addEventListener('input', function (e) {
+        currentQuery = e.target.value.trim().toLowerCase();
+        updateDisplay();
+      });
+
+      // Clear search button
+      clearBtn.addEventListener('click', function () {
+        searchInput.value = '';
+        currentQuery = '';
+        searchInput.focus();
+        updateDisplay();
+      });
+
+      // Filter buttons event
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentFilter = btn.getAttribute('data-filter');
+          updateDisplay();
+        });
+      });
+
+      // Initialize active nav
+      document.querySelectorAll('.navbar .nav-link').forEach(function (l) {
+        var href = (l.getAttribute('href') || '').split('#')[0];
+        if (href === 'workshop-conferences.html' || href === 'events.html') {
+          l.classList.add('nav-link--active');
+        }
+      });
+    })();
+  </script>
+
+</body>
+
+</html>

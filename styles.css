@@ -6,7 +6,7 @@
    =================================== */
 
 /* === Font Imports === */
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Lora:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,300..900;1,9..40,400&display=swap');
 
 /* === Custom Properties === */
 :root {
@@ -54,7 +54,11 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0
+  padding: 0;
+  font-synthesis: none !important;
+  -webkit-font-synthesis: none !important;
+  font-synthesis-weight: none !important;
+  font-synthesis-style: none !important;
 }
 
 html {
@@ -120,10 +124,35 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Bellefair', Georgia, serif;
-  font-weight: 400;
+  font-family: 'Bellefair', 'Lora', Georgia, serif;
+  font-weight: 400 !important;
   line-height: 1.15;
   letter-spacing: 0;
+  font-synthesis: none !important;
+  -webkit-font-synthesis: none !important;
+  font-synthesis-weight: none !important;
+  text-rendering: optimizeLegibility;
+}
+
+/* Global protection against double-line / hollow outline synthetic bolding artifacts on serif fonts across ALL pages */
+h1, h2, h3, h4, h5, h6, [class*="title"], [class*="heading"], [class*="name"], .pub-hero-title, .wc-card-year {
+  font-synthesis: none !important;
+  -webkit-font-synthesis: none !important;
+  font-synthesis-weight: none !important;
+  text-rendering: optimizeLegibility;
+}
+
+/* If any heading, card title, membership card, badge, or table cell explicitly requires bold (font-weight 600/700/800),
+   switch font family to DM Sans or Lora so Windows DirectWrite NEVER creates hollow double-outlines on Bellefair */
+strong, b, th, dt,
+h1[style*="bold"], h2[style*="bold"], h3[style*="bold"], h4[style*="bold"],
+h1[style*="700"], h2[style*="700"], h3[style*="700"], h4[style*="700"],
+[class*="card"] h1, [class*="card"] h2, [class*="card"] h3, [class*="card"] h4, [class*="card"] h5, [class*="card"] h6,
+.wc-card-title, .ev-card-title, .pub-item-title, .about-membership-card h4, .nc-condition-card h4,
+.vt-stat-lbl, .faq-question, .card-title, .section-title--bold {
+  font-family: 'DM Sans', 'Lora', system-ui, -apple-system, sans-serif !important;
+  font-synthesis: none !important;
+  -webkit-font-synthesis: none !important;
 }
 
 /* === Layout === */
@@ -9116,12 +9145,13 @@ h6 {
 
 .about-hero-title {
   font-family: 'Bellefair', serif;
-  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+  font-size: clamp(1.8rem, 3.8vw, 3.8rem);
   font-weight: 400;
   line-height: 1.02;
   color: #fff;
   margin-bottom: 1.25rem;
-  letter-spacing: -0.01em
+  letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 .about-hero-title-accent {
@@ -9131,7 +9161,7 @@ h6 {
   -webkit-text-fill-color: transparent;
   color: transparent;
   font-style: italic;
-  display: inline-block;
+  display: inline;
 }
 
 .about-hero-sub {

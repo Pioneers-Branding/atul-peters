@@ -57,6 +57,7 @@ document.write(`<!-- ============================================
           <li><a href="${basePath}weight-loss-surgery/sleeve-gastrectomy.html"><span class="footer-link-dot"></span>Sleeve Gastrectomy</a></li>
           <li><a href="${basePath}weight-loss-surgery/mini-gastric-bypass.html"><span class="footer-link-dot"></span>Mini Gastric Bypass</a></li>
           <li><a href="${basePath}surgery-for-diabetes/overview.html"><span class="footer-link-dot"></span>Surgery for Diabetes</a></li>
+          <li><a href="${basePath}weight-loss-surgery-in-delhi.html"><span class="footer-link-dot"></span>WLS in Delhi NCR</a></li>
           <li><a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html"><span class="footer-link-dot"></span>Revision Surgery</a></li>
         </ul>
       </div>
@@ -64,9 +65,13 @@ document.write(`<!-- ============================================
       <div class="footer-col">
         <h4>General &amp; Robotic</h4>
         <ul class="footer-links">
-          <li><a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html"><span class="footer-link-dot"></span>Hernia Repair</a></li>
-          <li><a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html"><span class="footer-link-dot"></span>Gallbladder Surgery</a></li>
-          <li><a href="${basePath}weight-loss-surgery/gastric-banding.html"><span class="footer-link-dot"></span>Lap Band Removal</a></li>
+          <li><a href="${basePath}other-surgeries/robotic-surgery.html"><span class="footer-link-dot"></span>Robotic Surgery</a></li>
+          <li><a href="${basePath}other-surgeries/laparoscopic-cholecystectomy.html"><span class="footer-link-dot"></span>Gallbladder Surgery</a></li>
+          <li><a href="${basePath}other-surgeries/laparoscopic-hernioplasty-ventral-inguinal.html"><span class="footer-link-dot"></span>Hernia Repair (eTEP/TAR)</a></li>
+          <li><a href="${basePath}other-surgeries/fundoplication-for-gastro-esophageal-reflux-disease.html"><span class="footer-link-dot"></span>GERD &amp; Reflux Surgery</a></li>
+          <li><a href="${basePath}other-surgeries/laparoscopic-appendicectomy.html"><span class="footer-link-dot"></span>Appendix Surgery</a></li>
+          <li><a href="${basePath}other-surgeries/piles-hemorrhoids.html"><span class="footer-link-dot"></span>Laser Piles Surgery (LHP)</a></li>
+          <li><a href="${basePath}other-surgeries/rectal-prolapse.html"><span class="footer-link-dot"></span>Rectal Prolapse (LVMR)</a></li>
         </ul>
       </div>
 
@@ -74,8 +79,12 @@ document.write(`<!-- ============================================
         <h4>Quick Links</h4>
         <ul class="footer-links">
           <li><a href="${basePath}about.html"><span class="footer-link-dot"></span>About Dr. Peters</a></li>
+          <li><a href="${basePath}workshop-conferences.html"><span class="footer-link-dot"></span>Workshops &amp; Conferences</a></li>
+          <li><a href="${basePath}events.html"><span class="footer-link-dot"></span>Events &amp; Workshops</a></li>
+          <li><a href="${basePath}publications.html"><span class="footer-link-dot"></span>Publications</a></li>
           <li><a href="${basePath}weight-loss.html#success"><span class="footer-link-dot"></span>Success Stories</a></li>
-          <li><a href="${basePath}about.html#videos"><span class="footer-link-dot"></span>Video Gallery</a></li>
+          <li><a href="${basePath}fitness-factory.html"><span class="footer-link-dot"></span>Peter's Fitness Factory</a></li>
+          <li><a href="${basePath}smart-weight-loss.html"><span class="footer-link-dot"></span>Smart Weight Loss</a></li>
           <li><a href="${basePath}weight-loss.html#faq"><span class="footer-link-dot"></span>FAQ</a></li>
           <li><a href="${basePath}contact.html"><span class="footer-link-dot"></span>Book Consultation</a></li>
         </ul>
