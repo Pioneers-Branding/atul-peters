@@ -76,6 +76,19 @@ document.write(`<!-- ============================================
       </div>
 
       <div class="footer-col">
+        <h4>Delhi NCR Services</h4>
+        <ul class="footer-links">
+          <li><a href="${basePath}weight-loss-surgery-in-delhi.html"><span class="footer-link-dot"></span>Weight Loss Surgery</a></li>
+          <li><a href="${basePath}hernia-surgery-in-delhi.html"><span class="footer-link-dot"></span>Hernia Surgery</a></li>
+          <li><a href="${basePath}laparoscopic-surgery-in-delhi.html"><span class="footer-link-dot"></span>Laparoscopic Surgery</a></li>
+          <li><a href="${basePath}robotic-surgery-in-delhi.html"><span class="footer-link-dot"></span>Robotic Surgery</a></li>
+          <li><a href="${basePath}best-appendix-surgery-in-delhi-india.html"><span class="footer-link-dot"></span>Appendix Surgery</a></li>
+          <li><a href="${basePath}best-gallbladder-surgery-in-delhi.html"><span class="footer-link-dot"></span>Gallbladder Surgery</a></li>
+          <li><a href="${basePath}east-delhi.html"><span class="footer-link-dot"></span>East Delhi Clinic</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
         <h4>Quick Links</h4>
         <ul class="footer-links">
           <li><a href="${basePath}about.html"><span class="footer-link-dot"></span>About Dr. Peters</a></li>

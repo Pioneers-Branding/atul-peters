@@ -264,23 +264,94 @@ document.write(`<!-- ============================================
         </div>
       </li>
 
-      <li class="nav-item"><a href="${basePath}other-surgeries/robotic-surgery.html" class="nav-link">Robotic Surgery</a></li>
-      <li class="nav-item has-dropdown">
-        <a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html" class="nav-link">
-          GI &amp; MAS
+      <!-- ==================== GI, MAS & ROBOTIC SURGERY ==================== -->
+      <li class="nav-item has-mega">
+        <a href="${basePath}laparoscopic-surgery-in-delhi.html" class="nav-link">
+          GI, MAS &amp; Robotic
           <svg class="nav-link-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <polyline points="6 9 12 15 18 9" />
           </svg>
         </a>
-        <div class="dropdown">
-          <a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html" class="dropdown-item">Overview</a>
-          <a href="${basePath}other-surgeries/laparoscopic-cholecystectomy.html" class="dropdown-item">Laparoscopic Cholecystectomy</a>
-          <a href="${basePath}other-surgeries/laparoscopic-hernioplasty-ventral-inguinal.html" class="dropdown-item">Laparoscopic Hernioplasty (eTEP/TAR)</a>
-          <a href="${basePath}other-surgeries/fundoplication-for-gastro-esophageal-reflux-disease.html" class="dropdown-item">Fundoplication for GERD</a>
-          <a href="${basePath}other-surgeries/laparoscopic-appendicectomy.html" class="dropdown-item">Laparoscopic Appendicectomy</a>
-          <a href="${basePath}other-surgeries/laser-fistulectomy.html" class="dropdown-item">Laser Proctology (FiLaC)</a>
-          <a href="${basePath}other-surgeries/piles-hemorrhoids.html" class="dropdown-item">Piles &amp; Hemorrhoids (Laser/MIPH)</a>
-          <a href="${basePath}other-surgeries/rectal-prolapse.html" class="dropdown-item">Laparoscopic Rectal Prolapse</a>
+        <div class="mega-menu">
+          <div class="mega-menu-inner">
+            <div class="mega-menu-grid">
+              <div class="mega-menu-col">
+                <span class="mega-menu-label">Advanced Surgeries</span>
+                <a href="${basePath}robotic-surgery-in-delhi.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-robot"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Robotic Surgery</strong>
+                    <small>Next-generation Da Vinci robotic precision</small>
+                  </span>
+                </a>
+                <a href="${basePath}laparoscopic-surgery-in-delhi.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-desktop"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Laparoscopic Surgery</strong>
+                    <small>Minimally invasive keyhole procedures</small>
+                  </span>
+                </a>
+                <a href="${basePath}best-gallbladder-surgery-in-delhi.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Gallbladder Removal</strong>
+                    <small>Gold-standard laparoscopic cholecystectomy</small>
+                  </span>
+                </a>
+                <a href="${basePath}hernia-surgery-in-delhi.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Hernia Repair</strong>
+                    <small>Complex abdominal wall &amp; inguinal hernia (eTEP/TAR)</small>
+                  </span>
+                </a>
+              </div>
+
+              <div class="mega-menu-col">
+                <span class="mega-menu-label">GI &amp; Proctology</span>
+                <a href="${basePath}best-appendix-surgery-in-delhi-india.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Appendix Surgery</strong>
+                    <small>Emergency laparoscopic appendicectomy</small>
+                  </span>
+                </a>
+                <a href="${basePath}other-surgeries/fundoplication-for-gastro-esophageal-reflux-disease.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>GERD / Anti-Reflux</strong>
+                    <small>Fundoplication for severe acid reflux</small>
+                  </span>
+                </a>
+                <a href="${basePath}other-surgeries/laser-fistulectomy.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Laser Proctology (FiLaC)</strong>
+                    <small>Advanced laser fistulectomy</small>
+                  </span>
+                </a>
+                <a href="${basePath}other-surgeries/piles-hemorrhoids.html" class="mega-menu-item">
+                  <span class="mega-menu-item-icon"><i class="fa-solid fa-circle-dot"></i></span>
+                  <span class="mega-menu-item-text">
+                    <strong>Piles &amp; Hemorrhoids</strong>
+                    <small>Laser &amp; MIPH treatments</small>
+                  </span>
+                </a>
+              </div>
+
+              <div class="mega-menu-feature mega-menu-feature--alt2" style="background: linear-gradient(135deg, var(--gold) 0%, #9e7f41 100%);">
+                <div class="mega-menu-feature-inner">
+                  <span class="mega-menu-feature-eyebrow">Rapid Recovery</span>
+                  <h4>Discharge in<br>24 Hours</h4>
+                  <p>Minimally invasive techniques mean less pain, tiny invisible scars, and a faster return to your normal life.</p>
+                  <a href="${basePath}contact.html" class="mega-menu-feature-cta">
+                    Consult Dr. Peters
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </li>
 

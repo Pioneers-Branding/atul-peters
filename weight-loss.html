@@ -2060,6 +2060,17 @@
       });
     })();
   </script>
+  // -- ACTIVE NAV INJECTOR --
+
+<script>
+  (function(){
+    var p = 'weight-loss.html';
+    document.querySelectorAll('.navbar .nav-link').forEach(function(l){
+      var href = (l.getAttribute('href') || '').split('#')[0];
+      if (href === p) l.classList.add('nav-link--active');
+    });
+  })();
+</script>
 </body>
 
 </html>
