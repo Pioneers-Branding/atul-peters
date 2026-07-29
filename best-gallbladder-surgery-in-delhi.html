@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Gallbladder Surgery in Delhi | Laparoscopic &amp; Robotic Cholecystectomy | Dr. Atul Peters</title>
   <meta name="description"
-    content="Seeking the best gallbladder surgery in Delhi? Consult Dr. Atul Peters at Max Super Speciality Hospital, Saket. Gold standard 4K Laparoscopic & Robotic Cholecystectomy with Critical View of Safety (CVS), virtually invisible scars, and 24-hour discharge.">
+    content="Seeking the best gallbladder surgery in Delhi? Consult Dr. Atul Peters at Max Smart Super Speciality Hospital, Saket – New Delhi. Gold standard 4K Laparoscopic & Robotic Cholecystectomy with Critical View of Safety (CVS), virtually invisible scars, and 24-hour discharge.">
   <meta name="keywords"
     content="best gallbladder surgery in Delhi, laparoscopic cholecystectomy Delhi, gallstone removal surgery Delhi NCR, robotic gallbladder surgery India, gallbladder stone treatment cost Delhi, keyhole gallbladder removal, cholelithiasis specialist Delhi, Dr Atul Peters">
   <link rel="canonical" href="https://www.atulpeters.com/best-gallbladder-surgery-in-delhi">
@@ -47,47 +47,64 @@
     .gb-hero {
       position: relative;
       padding: clamp(4rem, 8vw, 6.5rem) 0 clamp(3.5rem, 7vw, 5rem);
-      background: radial-gradient(circle at 75% 50%, #154779 0%, #0A1E30 70%);
+      background: linear-gradient(135deg, #0A1E30 0%, #1a365d 50%, #154779 100%);
+      background-size: 200% 200%;
+      animation: hero-grad-shift 10s ease infinite;
       color: #FFFFFF;
       overflow: hidden;
+    }
+
+    @keyframes hero-grad-shift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     .gb-hero-pattern {
       position: absolute;
       inset: 0;
-      background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
       background-size: 30px 30px;
       pointer-events: none;
     }
 
     .gb-hero-blob {
       position: absolute;
-      width: 600px;
-      height: 600px;
       border-radius: 50%;
-      filter: blur(80px);
+      filter: blur(90px);
       pointer-events: none;
-      opacity: 0.6;
+      opacity: 0.7;
+      animation: blob-float 15s infinite alternate ease-in-out;
+    }
+
+    @keyframes blob-float {
+      0% { transform: translateY(0) scale(1); }
+      100% { transform: translateY(-30px) scale(1.1); }
     }
 
     .gb-hero-blob--1 {
+      width: 600px;
+      height: 600px;
       top: -200px;
       right: -100px;
-      background: radial-gradient(circle, rgba(129, 205, 191, 0.3) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(168, 222, 206, 0.3) 0%, transparent 70%);
     }
 
     .gb-hero-blob--2 {
+      width: 700px;
+      height: 700px;
       bottom: -300px;
       left: -200px;
-      background: radial-gradient(circle, rgba(29, 93, 149, 0.4) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(49, 130, 206, 0.4) 0%, transparent 70%);
+      animation-delay: -5s;
     }
 
     .gb-hero-layout {
       position: relative;
       z-index: 2;
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 3.5rem;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 4rem;
       align-items: center;
     }
 
@@ -106,10 +123,10 @@
     /* Force breadcrumbs to left in this section */
     .gb-hero .nc-breadcrumb {
       justify-content: flex-start;
-      margin-bottom: 1.75rem;
+      margin-bottom: 2rem;
     }
     .gb-hero .nc-breadcrumb a, .gb-hero .nc-breadcrumb span, .gb-hero .nc-breadcrumb i {
-      color: rgba(255,255,255,0.85);
+      color: rgba(255,255,255,0.7);
     }
     .gb-hero .nc-breadcrumb a:hover {
       color: #FFFFFF;
@@ -118,39 +135,40 @@
     .gb-hero-badge {
       display: inline-flex;
       align-items: center;
-      gap: 0.6rem;
-      background: rgba(129, 205, 191, 0.15);
-      border: 1px solid rgba(129, 205, 191, 0.35);
-      color: #81CDBF;
-      padding: 0.55rem 1.25rem;
+      gap: 0.75rem;
+      background: rgba(168, 222, 206, 0.1);
+      border: 1px solid rgba(168, 222, 206, 0.3);
+      color: #A8DECE;
+      padding: 0.6rem 1.25rem;
       border-radius: 50px;
-      font-size: 0.88rem;
+      font-size: 0.9rem;
       font-weight: 600;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.05em;
       margin-bottom: 1.5rem;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
     }
 
     .gb-hero-title {
       font-family: 'Bellefair', Georgia, serif;
-      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-size: clamp(2.5rem, 5vw, 4.2rem);
       font-weight: 400;
-      line-height: 1.15;
+      line-height: 1.1;
       color: #FFFFFF;
-      margin-bottom: 1.25rem;
-      text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      margin-bottom: 1.5rem;
+      text-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
     
     .gb-hero-title span {
-      background: linear-gradient(120deg, #81CDBF 0%, #FFFFFF 100%);
+      background: linear-gradient(to right, #A8DECE, #F6E05E);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      display: inline-block;
     }
 
     .gb-hero-subtitle {
-      font-size: clamp(1.05rem, 1.8vw, 1.2rem);
-      color: #D6E8F5;
+      font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+      color: #E2E8F0;
       line-height: 1.7;
       max-width: 95%;
       margin-bottom: 2.5rem;
@@ -170,24 +188,24 @@
 
     .gb-hero-image-wrapper {
       position: relative;
-      border-radius: 1.5rem;
+      border-radius: 2rem;
       overflow: hidden;
-      border: 1px solid rgba(255,255,255,0.15);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-      transform: perspective(1000px) rotateY(-4deg);
-      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      border: 1px solid rgba(255,255,255,0.2);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.1) inset;
+      transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
+      transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
     }
     
     .gb-hero-image-wrapper:hover {
-      transform: perspective(1000px) rotateY(0deg) scale(1.02);
-      box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+      transform: perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1.03);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.2) inset;
     }
 
     .gb-hero-image-wrapper::after {
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, rgba(10,30,48,0.5) 0%, transparent 50%);
+      background: linear-gradient(to top, rgba(10,30,48,0.7) 0%, transparent 60%);
       pointer-events: none;
     }
 
@@ -202,8 +220,8 @@
     .gb-hero-stats {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 1.25rem;
-      margin-top: 3.5rem;
+      gap: 1.5rem;
+      margin-top: 4rem;
       position: relative;
       z-index: 2;
     }
@@ -221,46 +239,55 @@
     }
 
     .gb-stat-pill {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: 1.25rem;
-      padding: 1.25rem 1.5rem;
-      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
       display: flex;
       align-items: center;
-      gap: 1.1rem;
-      transition: all 0.3s ease;
+      gap: 1.25rem;
+      transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.15);
     }
 
     .gb-stat-pill:hover {
-      background: rgba(255, 255, 255, 0.14);
-      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+      border-color: rgba(255, 255, 255, 0.3);
     }
 
     .gb-stat-icon {
-      width: 46px;
-      height: 46px;
-      border-radius: 12px;
-      background: rgba(129, 205, 191, 0.2);
-      color: #81CDBF;
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(168, 222, 206, 0.3), rgba(168, 222, 206, 0.1));
+      border: 1px solid rgba(168, 222, 206, 0.2);
+      color: #A8DECE;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       flex-shrink: 0;
+      box-shadow: inset 0 2px 4px rgba(255,255,255,0.1);
     }
 
     .gb-stat-info h4 {
       font-family: 'DM Sans', sans-serif;
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-weight: 800;
       color: #FFFFFF;
-      margin: 0 0 0.15rem 0;
+      margin: 0 0 0.2rem 0;
+      letter-spacing: -0.02em;
     }
 
     .gb-stat-info p {
-      font-size: 0.85rem;
-      color: #A8DECE;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
       margin: 0;
       line-height: 1.3;
     }
@@ -312,6 +339,7 @@
     /* Section Utility Styling */
     .gb-section {
       padding: clamp(3.5rem, 7vw, 6rem) 0;
+      scroll-margin-top: 140px;
     }
 
     .gb-section--alt {
@@ -819,6 +847,7 @@
       overflow: hidden;
       text-align: center;
       color: #FFFFFF;
+      scroll-margin-top: 140px;
     }
 
     .gb-cta-box {
@@ -912,80 +941,7 @@
       filter: drop-shadow(0 10px 15px rgba(0,0,0,0.4));
     }
 
-    .gb-info-hotspots {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
 
-    .gb-hotspot-card {
-      background: var(--bg-cream);
-      border: 1px solid var(--border);
-      border-radius: 1.25rem;
-      padding: 1.25rem 1.5rem;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      display: flex;
-      align-items: flex-start;
-      gap: 1.1rem;
-    }
-
-    .gb-hotspot-card:hover,
-    .gb-hotspot-card.active {
-      background: var(--blue-deep);
-      color: #FFFFFF;
-      border-color: var(--blue);
-      transform: translateX(6px);
-      box-shadow: var(--sh-md);
-    }
-
-    .gb-hotspot-card:hover .gb-hotspot-num,
-    .gb-hotspot-card.active .gb-hotspot-num {
-      background: #81CDBF;
-      color: #0A1E30;
-    }
-
-    .gb-hotspot-card:hover p,
-    .gb-hotspot-card.active p {
-      color: #D6E8F5;
-    }
-
-    .gb-hotspot-card:hover h4,
-    .gb-hotspot-card.active h4 {
-      color: #FFFFFF;
-    }
-
-    .gb-hotspot-num {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background: var(--blue);
-      color: #FFFFFF;
-      font-weight: 800;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.95rem;
-      flex-shrink: 0;
-      transition: all 0.3s ease;
-    }
-
-    .gb-hotspot-text h4 {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: var(--text-1);
-      margin: 0 0 0.3rem 0;
-      transition: color 0.3s ease;
-    }
-
-    .gb-hotspot-text p {
-      font-size: 0.88rem;
-      color: var(--text-2);
-      margin: 0;
-      line-height: 1.5;
-      transition: color 0.3s ease;
-    }
 
     /* Infographic 2: Visual CVS Comparison Scorecard */
     .gb-cvs-visual-grid {
@@ -1138,7 +1094,7 @@
       "jobTitle": "Senior Director & Head — Bariatric, Minimal Access & Robotic Surgery",
       "affiliation": {
         "@type": "Hospital",
-        "name": "Max Super Speciality Hospital, Saket",
+        "name": "Max Smart Super Speciality Hospital, Saket – New Delhi",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "1, 2, Press Enclave Road, Mandir Marg, Saket",
@@ -1211,7 +1167,7 @@
           "name": "Is laparoscopic and robotic gallbladder surgery covered by health insurance in India?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Laparoscopic and robotic cholecystectomy for gallstones, cholecystitis, or polyps is a medically indicated procedure covered by 100% of private health insurance policies, corporate mediclaim networks, TPAs, and central health schemes (CGHS/ECHS) in India. Max Super Speciality Hospital, Saket provides complete cashless claim processing."
+            "text": "Yes. Laparoscopic and robotic cholecystectomy for gallstones, cholecystitis, or polyps is a medically indicated procedure covered by 100% of private health insurance policies, corporate mediclaim networks, TPAs, and central health schemes (CGHS/ECHS) in India. Max Smart Super Speciality Hospital, Saket – New Delhi provides complete cashless claim processing."
           }
         }
       ]
@@ -1251,7 +1207,7 @@
           </div>
           <h1 class="gb-hero-title">Best Gallbladder Surgery in <span>Delhi NCR</span></h1>
           <p class="gb-hero-subtitle">
-            Experience painless, gold-standard <strong>Laparoscopic &amp; Robotic Gallbladder Removal (Cholecystectomy)</strong> with Dr. Atul Peters at Max Super Speciality Hospital, Saket. Utilizing 4K Ultra HD visualization, virtually invisible keyhole incisions, and rapid 24-hour hospital discharge.
+            Experience painless, gold-standard <strong>Laparoscopic &amp; Robotic Gallbladder Removal (Cholecystectomy)</strong> with Dr. Atul Peters at Max Smart Super Speciality Hospital, Saket – New Delhi. Utilizing 4K Ultra HD visualization, virtually invisible keyhole incisions, and rapid 24-hour hospital discharge.
           </p>
 
           <div class="gb-cta-actions" style="justify-content: flex-start;">
@@ -1273,7 +1229,7 @@
 
         <div class="gb-hero-visual">
           <div class="gb-hero-image-wrapper">
-            <img src="assets/img/Hernia-Gallbladder-Surgery.webp" alt="Laparoscopic Gallbladder Surgery in Delhi" class="gb-hero-main-img">
+            <img src="assets/img/gallbladder_surgery_hero.png" alt="Laparoscopic Gallbladder Surgery Environment" class="gb-hero-main-img">
           </div>
         </div>
 
@@ -1283,14 +1239,14 @@
         <div class="gb-stat-pill">
           <div class="gb-stat-icon"><i class="fa-solid fa-user-md"></i></div>
           <div class="gb-stat-info">
-            <h4>20+ Years</h4>
+            <h4>25+ Years</h4>
             <p>Surgical Excellence</p>
           </div>
         </div>
         <div class="gb-stat-pill">
           <div class="gb-stat-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
           <div class="gb-stat-info">
-            <h4>24-Hour Stay</h4>
+            <h4>24 - 48 hours</h4>
             <p>Overnight Discharge</p>
           </div>
         </div>
@@ -1304,7 +1260,7 @@
         <div class="gb-stat-pill">
           <div class="gb-stat-icon"><i class="fa-solid fa-file-medical"></i></div>
           <div class="gb-stat-info">
-            <h4>100% Cashless</h4>
+            <h4>Cashless Facility</h4>
             <p>All Major Insurance Networks</p>
           </div>
         </div>
@@ -1342,94 +1298,354 @@
         </p>
       </div>
 
-      <div class="gb-grid-2">
-        <div class="gb-card">
-          <div>
-            <h3><i class="fa-solid fa-triangle-exclamation"></i> Common Symptoms &amp; Warning Signs</h3>
-            <p>
-              Many gallstones remain silent for years. However, when a stone moves and temporarily blocks the cystic duct during digestion, it triggers intense episodes of biliary colic and inflammation (Cholecystitis):
-            </p>
-            <ul class="gb-list">
-              <li><i class="fa-solid fa-check-circle"></i> <strong>Sharp Right Upper Abdominal Pain:</strong> Sudden, cramping pain under the right rib cage that often radiates to the right shoulder blade or upper back.</li>
-              <li><i class="fa-solid fa-check-circle"></i> <strong>Post-Meal Attacks:</strong> Severe discomfort triggered within 30 to 60 minutes after eating oily, fried, or high-fat meals.</li>
-              <li><i class="fa-solid fa-check-circle"></i> <strong>Nausea &amp; Chronic Bloating:</strong> Persistent indigestion, gas, heartburn, and vomiting during painful episodes.</li>
-              <li><i class="fa-solid fa-check-circle"></i> <strong>Fever &amp; Chills:</strong> Indicates acute bacterial infection and inflammation of the gallbladder (Acute Cholecystitis).</li>
-              <li><i class="fa-solid fa-check-circle"></i> <strong>Jaundice (Yellowing of Eyes):</strong> A red-flag sign indicating a stone has slipped out of the gallbladder and obstructed the main common bile duct (CBD).</li>
-            </ul>
-          </div>
-          <div class="gb-highlight-box">
-            <p><i class="fa-solid fa-circle-info"></i> Never ignore repeated abdominal cramps after fatty meals. Early diagnosis prevents emergency biliary attacks.</p>
-          </div>
+<style>
+  .symptoms-creative-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  @media (min-width: 992px) {
+    .symptoms-creative-grid {
+      grid-template-columns: 1.2fr 0.8fr;
+    }
+  }
+  .symptom-item {
+    background: #fff;
+    border: 1px solid var(--border, #e2e8f0);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1.25rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  }
+  .symptom-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    border-color: var(--blue, #3182ce);
+  }
+  .symptom-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #FFF5F5, #FFEBEB);
+    color: #E53E3E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+  }
+  .risk-card {
+    background: linear-gradient(145deg, var(--blue-deep, #0A1E30), #1a365d);
+    color: #fff;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .risk-card::before {
+    content: '';
+    position: absolute;
+    top: -50px; right: -50px;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(168,222,206,0.1) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .risk-content {
+    position: relative;
+    z-index: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .four-f-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  .four-f-item {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .four-f-item:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-3px);
+  }
+  .four-f-letter {
+    font-family: 'Bellefair', serif;
+    font-size: 2.5rem;
+    color: #A8DECE;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+  .four-f-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .diag-box {
+    background: rgba(255,255,255,0.95);
+    color: var(--text-1, #1a202c);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    border-left: 4px solid #A8DECE;
+    margin-top: auto;
+  }
+</style>
+
+      <div class="symptoms-creative-grid">
+        
+        <!-- Symptoms Area -->
+        <div>
+           <h3 style="font-family: 'Bellefair', serif; font-size: 2rem; color: var(--blue-deep); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;"><i class="fa-solid fa-triangle-exclamation" style="color: #E53E3E;"></i> Warning Signs</h3>
+           <p style="color: var(--text-2); font-size: 1.05rem; margin-bottom: 2rem; line-height: 1.6;">Many gallstones remain silent for years. However, when a stone moves and temporarily blocks the cystic duct during digestion, it triggers intense episodes of biliary colic and inflammation.</p>
+           
+           <div style="display: flex; flex-direction: column; gap: 1rem;">
+             <div class="symptom-item">
+               <div class="symptom-icon"><i class="fa-solid fa-bolt"></i></div>
+               <div>
+                 <strong style="color: var(--text-1); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Sharp Right Pain</strong>
+                 <p style="font-size: 0.95rem; margin:0; color: var(--text-2);">Sudden, cramping pain under the right rib cage radiating to the back or right shoulder.</p>
+               </div>
+             </div>
+             
+             <div class="symptom-item">
+               <div class="symptom-icon"><i class="fa-solid fa-utensils"></i></div>
+               <div>
+                 <strong style="color: var(--text-1); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Post-Meal Attacks</strong>
+                 <p style="font-size: 0.95rem; margin:0; color: var(--text-2);">Severe discomfort typically triggered 30-60 mins after eating oily, fried, or high-fat meals.</p>
+               </div>
+             </div>
+             
+             <div class="symptom-item">
+               <div class="symptom-icon"><i class="fa-solid fa-head-side-vomit"></i></div>
+               <div>
+                 <strong style="color: var(--text-1); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Nausea &amp; Bloating</strong>
+                 <p style="font-size: 0.95rem; margin:0; color: var(--text-2);">Persistent indigestion, heavy gas, heartburn, and episodes of vomiting.</p>
+               </div>
+             </div>
+             
+             <div class="symptom-item">
+               <div class="symptom-icon"><i class="fa-solid fa-temperature-arrow-up"></i></div>
+               <div>
+                 <strong style="color: var(--text-1); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Fever &amp; Chills</strong>
+                 <p style="font-size: 0.95rem; margin:0; color: var(--text-2);">Indicates acute bacterial infection and inflammation (Acute Cholecystitis).</p>
+               </div>
+             </div>
+           </div>
+           
+           <div class="gb-highlight-box" style="margin-top: 1.5rem; background: #FFF5F5; border: 1px solid #FED7D7; color: #C53030; display: inline-block;">
+             <p style="margin: 0; font-weight: 500;"><i class="fa-solid fa-circle-info"></i> Never ignore repeated abdominal cramps after fatty meals. Early diagnosis prevents emergency biliary attacks.</p>
+           </div>
         </div>
 
-        <div class="gb-card">
-          <div>
-            <h3><i class="fa-solid fa-stethoscope"></i> High-Risk Factors &amp; Diagnostic Protocol</h3>
-            <p>
-              Gallstone disease is highly prevalent across Delhi NCR and Northern India. While anyone can develop gallstones, clinical research identifies several prominent risk factors (often known as the "Four Fs: Female, Forty, Fertile, Fatty"):
-            </p>
-            <ul class="gb-list">
-              <li><i class="fa-solid fa-check-circle"></i> <strong>Age &amp; Gender:</strong> Women are twice as likely as men to form gallstones due to estrogen surges during pregnancy or hormonal therapy.</li>
-              <li><i class="fa-solid fa-check-circle"></i> <strong>Obesity &amp; Rapid Weight Loss:</strong> Excess body weight increases cholesterol excretion into bile, while crash dieting disrupts normal gallbladder emptying.</li>
-              <li><i class="fa-solid fa-check-circle"></i> <strong>Metabolic Conditions:</strong> Diabetes, high triglycerides, fatty liver disease, and family history strongly predispose to stone formation.</li>
-            </ul>
-            <p style="margin-top: 1.25rem;">
-              <strong>How We Diagnose:</strong> A simple, painless <strong>High-Resolution Abdominal Ultrasound</strong> confirms the exact number, size, and location of gallstones within minutes. Routine Liver Function Tests (LFTs) ensure the main bile duct remains clear.
-            </p>
+        <!-- High-Risk Factors Area -->
+        <div class="risk-card">
+          <div class="risk-content">
+             <h3 style="font-family: 'Bellefair', serif; font-size: 2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;"><i class="fa-solid fa-stethoscope" style="color: #A8DECE;"></i> Risk &amp; Diagnosis</h3>
+             <p style="font-size: 1.05rem; opacity: 0.9; margin-bottom: 1rem; line-height: 1.6;">Gallstone disease is highly prevalent. Medical science often categorizes the primary risk factors under the "Four Fs".</p>
+             
+             <div class="four-f-grid">
+               <div class="four-f-item">
+                 <div class="four-f-letter">F</div>
+                 <div class="four-f-text">Female</div>
+                 <div style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.25rem;">Women are 2x likely</div>
+               </div>
+               <div class="four-f-item">
+                 <div class="four-f-letter">F</div>
+                 <div class="four-f-text">Forty</div>
+                 <div style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.25rem;">Age 40 and above</div>
+               </div>
+               <div class="four-f-item">
+                 <div class="four-f-letter">F</div>
+                 <div class="four-f-text">Fertile</div>
+                 <div style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.25rem;">Pregnancy changes</div>
+               </div>
+               <div class="four-f-item">
+                 <div class="four-f-letter">F</div>
+                 <div class="four-f-text">Fatty</div>
+                 <div style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.25rem;">Obesity &amp; diet</div>
+               </div>
+             </div>
+             
+             <p style="font-size: 0.95rem; opacity: 0.85; margin-bottom: 2rem; text-align: center;">Other triggers include rapid weight loss and metabolic conditions like Diabetes.</p>
+             
+             <div class="diag-box">
+               <i class="fa-solid fa-microscope" style="font-size: 1.5rem; color: #3182ce; margin-top: 0.2rem;"></i>
+               <div>
+                 <h4 style="margin: 0 0 0.25rem 0; font-family: 'DM Sans', sans-serif; font-size: 1.1rem; color: var(--text-1);">How We Diagnose</h4>
+                 <p style="margin: 0; font-size: 0.95rem; color: var(--text-2); line-height: 1.5;">A simple, painless <strong>High-Resolution Abdominal Ultrasound</strong> confirms stones within minutes. LFTs ensure your main bile duct remains clear.</p>
+               </div>
+             </div>
           </div>
         </div>
+        
       </div>
 
       <!-- INFOGRAPHIC 1: BILIARY ANATOMY & GALLSTONE MECHANISM -->
-      <div class="gb-infographic-container">
-        <h3 class="gb-info-title"><i class="fa-solid fa-diagram-project"></i> Interactive Infographic: How Gallstones Trigger Attacks &amp; Complications</h3>
-        <p class="gb-info-desc">
-          Explore the interactive anatomy below to understand how silent gallstones travel through your biliary tract and why early removal prevents emergency complications like Jaundice and Acute Pancreatitis.
+      <div class="gb-infographic-container creative-info-section">
+        <style>
+          .creative-info-section {
+            background: linear-gradient(145deg, #f8fafc 0%, #edf2f7 100%);
+            border-radius: 2.5rem;
+            padding: 4rem 3rem;
+            margin: 4rem 0;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05), inset 0 0 0 2px rgba(255,255,255,0.8);
+            position: relative;
+            overflow: hidden;
+          }
+          @media (max-width: 768px) {
+            .creative-info-section { padding: 3rem 1.5rem; }
+          }
+          .creative-info-section::before {
+            content: '';
+            position: absolute;
+            top: -20%; left: -10%;
+            width: 50%; height: 50%;
+            background: radial-gradient(circle, rgba(129, 205, 191, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            filter: blur(40px);
+          }
+          .gb-info-title {
+            font-family: 'Bellefair', Georgia, serif;
+            font-size: 2.5rem;
+            color: var(--blue-deep);
+            text-align: center;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+          }
+          .gb-info-desc {
+            text-align: center;
+            color: var(--text-2);
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 3.5rem auto;
+            position: relative;
+            z-index: 2;
+          }
+          .gb-info-anatomy-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 3.5rem;
+            align-items: stretch;
+            position: relative;
+            z-index: 2;
+          }
+          @media (max-width: 991px) {
+            .gb-info-anatomy-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+          }
+          .gb-anatomy-svg-box {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .gb-anatomy-svg {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 1.5rem;
+          }
+          .anatomy-hotspot {
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+            transform-origin: center;
+          }
+          .anatomy-hotspot:hover {
+            transform: scale(1.15);
+            filter: brightness(1.3);
+          }
+          .hotspot-pulse {
+            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+          }
+          @keyframes pulse-ring {
+            0% { stroke-width: 4; stroke-opacity: 0.8; }
+            100% { stroke-width: 25; stroke-opacity: 0; }
+          }
+          .gb-info-hotspots {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5rem;
+          }
+          .gb-hotspot-card {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            border-radius: 1.5rem;
+            padding: 1.75rem;
+            display: flex;
+            gap: 1.5rem;
+            transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            cursor: pointer;
+          }
+          .gb-hotspot-card:hover, .gb-hotspot-card.active {
+            background: #ffffff;
+            transform: translateX(12px) translateY(-2px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+            border-left: 6px solid #3182ce;
+          }
+          @media (max-width: 991px) {
+            .gb-hotspot-card:hover, .gb-hotspot-card.active { transform: translateY(-5px); }
+          }
+          .gb-hotspot-card:nth-child(1).active { border-left-color: #D69E2E; }
+          .gb-hotspot-card:nth-child(2).active { border-left-color: #DD6B20; }
+          .gb-hotspot-card:nth-child(3).active { border-left-color: #E53E3E; }
+          
+          .gb-hotspot-num {
+            width: 48px; height: 48px;
+            border-radius: 14px;
+            background: #0A1E30;
+            color: #fff;
+            display: flex; justify-content: center; align-items: center;
+            font-weight: 800; font-size: 1.15rem;
+            flex-shrink: 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+          }
+          .gb-hotspot-card:nth-child(1) .gb-hotspot-num { background: linear-gradient(135deg, #F6E05E, #D69E2E); color: #000; }
+          .gb-hotspot-card:nth-child(2) .gb-hotspot-num { background: linear-gradient(135deg, #ED8936, #DD6B20); }
+          .gb-hotspot-card:nth-child(3) .gb-hotspot-num { background: linear-gradient(135deg, #FC8181, #E53E3E); }
+          
+          .gb-hotspot-text h4 {
+            margin: 0 0 0.5rem 0;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1a202c;
+          }
+          .gb-hotspot-text p {
+            margin: 0;
+            font-size: 0.98rem;
+            color: #4a5568;
+            line-height: 1.6;
+          }
+        </style>
+
+        <h3 class="gb-info-title" style="text-align: center; display: flex; justify-content: center; align-items: center;"><i class="fa-solid fa-diagram-project" style="color: var(--blue); margin-right: 0.5rem;"></i> Gallbladder Anatomy</h3>
+        <p class="gb-info-desc" style="text-align: center;">
+          Explore how silent gallstones travel through your biliary tract and why early removal prevents emergency complications.
         </p>
 
         <div class="gb-info-anatomy-grid">
           <!-- Left: High-Precision SVG Diagram -->
           <div class="gb-anatomy-svg-box">
-            <svg class="gb-anatomy-svg" viewBox="0 0 320 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- Liver Background Contour -->
-              <path d="M40 80 C 40 30, 260 20, 280 90 C 300 160, 200 170, 160 150 C 130 135, 60 160, 40 80 Z" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
-              <text x="160" y="65" fill="#A8DECE" font-size="14" font-family="sans-serif" font-weight="bold" text-anchor="middle">LIVER (Bile Production)</text>
-
-              <!-- Hepatic Ducts -->
-              <path d="M140 120 L 160 160 M 180 120 L 160 160" stroke="#81CDBF" stroke-width="6" stroke-linecap="round"/>
-              
-              <!-- Common Bile Duct (CBD) -->
-              <path d="M160 160 L 160 280" stroke="#81CDBF" stroke-width="8" stroke-linecap="round"/>
-              <text x="180" y="230" fill="#FFFFFF" font-size="12" font-family="sans-serif" font-weight="bold">Common Bile Duct</text>
-
-              <!-- Cystic Duct -->
-              <path d="M110 190 Q 135 180 160 190" stroke="#81CDBF" stroke-width="6" stroke-linecap="round"/>
-
-              <!-- Gallbladder Sack -->
-              <path d="M65 185 C 50 200, 50 250, 85 260 C 115 270, 125 210, 110 190 Z" fill="#2B6CB0" stroke="#81CDBF" stroke-width="3"/>
-              <text x="85" y="235" fill="#FFFFFF" font-size="13" font-family="sans-serif" font-weight="bold" text-anchor="middle">Gallbladder</text>
-
-              <!-- Gallstones Inside Gallbladder (Hotspot 1) -->
-              <circle cx="80" cy="245" r="7" fill="#F6E05E" stroke="#B7791F" stroke-width="1.5"/>
-              <circle cx="95" cy="235" r="5" fill="#F6E05E" stroke="#B7791F" stroke-width="1.5"/>
-              <circle cx="85" cy="220" r="6" fill="#F6E05E" stroke="#B7791F" stroke-width="1.5"/>
-              <circle cx="70" cy="210" r="12" fill="#E2E8F0" stroke="#2B6CB0" stroke-width="2"/>
-              <text x="70" y="214" fill="#0A1E30" font-size="11" font-weight="900" text-anchor="middle">1</text>
-
-              <!-- Stone Blockage in Cystic Duct (Hotspot 2) -->
-              <circle cx="130" cy="186" r="8" fill="#ED8936" stroke="#9C4221" stroke-width="1.5"/>
-              <circle cx="130" cy="162" r="12" fill="#ED8936" stroke="#FFFFFF" stroke-width="2"/>
-              <text x="130" y="166" fill="#FFFFFF" font-size="11" font-weight="900" text-anchor="middle">2</text>
-
-              <!-- Slipped Stone in Common Bile Duct (Hotspot 3) -->
-              <circle cx="160" cy="250" r="9" fill="#E53E3E" stroke="#9B2C2C" stroke-width="1.5"/>
-              <circle cx="205" cy="250" r="12" fill="#E53E3E" stroke="#FFFFFF" stroke-width="2"/>
-              <text x="205" y="254" fill="#FFFFFF" font-size="11" font-weight="900" text-anchor="middle">3</text>
-
-              <!-- Duodenum / Intestine -->
-              <path d="M130 310 C 160 300, 220 300, 250 330 C 260 340, 260 360, 230 365 C 180 370, 140 350, 130 310 Z" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
-              <text x="190" y="345" fill="#A8DECE" font-size="13" font-family="sans-serif" font-weight="bold" text-anchor="middle">Small Intestine (Duodenum)</text>
-            </svg>
+            <img src="assets/img/gallbladder_anatomy.png" class="gb-anatomy-svg" alt="Gallbladder Anatomy" style="width:100%; height:auto; display:block;">
           </div>
 
           <!-- Right: Interactive Explanatory Cards -->
@@ -1437,24 +1653,24 @@
             <div class="gb-hotspot-card active" onclick="this.parentElement.querySelectorAll('.gb-hotspot-card').forEach(el=>el.classList.remove('active')); this.classList.add('active');">
               <div class="gb-hotspot-num">1</div>
               <div class="gb-hotspot-text">
-                <h4>Stones Inside the Gallbladder (Cholelithiasis)</h4>
-                <p>Cholesterol and bile pigments crystallize inside the sack. As long as they float freely without obstructing the exit, symptoms may remain mild or intermittent (indigestion after oily food).</p>
+                <h4>Stones Inside the Gallbladder</h4>
+                <p>Cholesterol and bile pigments crystallize inside the sack. As long as they float freely without obstructing the exit, symptoms may remain mild or intermittent.</p>
               </div>
             </div>
 
             <div class="gb-hotspot-card" onclick="this.parentElement.querySelectorAll('.gb-hotspot-card').forEach(el=>el.classList.remove('active')); this.classList.add('active');">
-              <div class="gb-hotspot-num" style="background: #ED8936;">2</div>
+              <div class="gb-hotspot-num">2</div>
               <div class="gb-hotspot-text">
-                <h4>Cystic Duct Obstruction (Acute Cholecystitis)</h4>
-                <p>When fatty food triggers the gallbladder to squeeze, a stone gets wedged in the narrow cystic duct. This causes intense right upper abdominal colic, swelling, bacterial infection, and fever.</p>
+                <h4>Cystic Duct Obstruction</h4>
+                <p>When fatty food triggers a squeeze, a stone can wedge into the narrow cystic duct causing intense abdominal colic, swelling, and acute cholecystitis.</p>
               </div>
             </div>
 
             <div class="gb-hotspot-card" onclick="this.parentElement.querySelectorAll('.gb-hotspot-card').forEach(el=>el.classList.remove('active')); this.classList.add('active');">
-              <div class="gb-hotspot-num" style="background: #E53E3E;">3</div>
+              <div class="gb-hotspot-num">3</div>
               <div class="gb-hotspot-text">
-                <h4>Slipped Stone in Common Bile Duct (Choledocholithiasis)</h4>
-                <p>If a small stone slips down into the main common bile duct, it blocks bile flow from the liver completely. This is a medical emergency causing Obstructive Jaundice (yellow eyes/skin) and dark urine.</p>
+                <h4>Slipped Stone (Medical Emergency)</h4>
+                <p>If a stone slips into the main common bile duct, it completely blocks liver bile flow. This is a severe emergency causing Obstructive Jaundice and Pancreatitis.</p>
               </div>
             </div>
           </div>
@@ -1476,26 +1692,85 @@
         </p>
       </div>
 
-      <div class="gb-grid-3">
-        <div class="gb-card">
-          <h3><i class="fa-solid fa-rotate-right"></i> The Organ is the Incubator</h3>
-          <p>
-            Stones do not form purely due to diet; they form because the gallbladder wall has become diseased, thickened, or has lost its natural muscular pumping ability (biliary stasis). If only stones were scooped out, the stagnant, diseased gallbladder would rapidly manufacture new stones within months.
-          </p>
+      <style>
+        .science-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2.5rem;
+          margin-top: 3.5rem;
+        }
+        @media (max-width: 991px) {
+          .science-grid { grid-template-columns: 1fr; gap: 2rem; }
+        }
+        .science-card {
+          background: #ffffff;
+          border-radius: 2rem;
+          padding: 3.5rem 2.5rem;
+          box-shadow: 0 15px 35px rgba(0,0,0,0.04);
+          border: 1px solid rgba(0,0,0,0.03);
+          position: relative;
+          overflow: hidden;
+          transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+          z-index: 1;
+        }
+        .science-card::before {
+          content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 6px;
+          background: linear-gradient(90deg, #3182ce, #81CDBF);
+          transform: scaleX(0); transform-origin: left; transition: transform 0.5s ease;
+        }
+        .science-card:hover {
+          transform: translateY(-12px);
+          box-shadow: 0 30px 60px rgba(49, 130, 206, 0.08);
+        }
+        .science-card:hover::before { transform: scaleX(1); }
+        
+        .science-card-bg {
+          position: absolute; right: -15px; bottom: -25px;
+          font-size: 10rem; color: rgba(49, 130, 206, 0.03);
+          z-index: -1; transform: rotate(-15deg);
+          transition: all 0.5s ease;
+        }
+        .science-card:hover .science-card-bg {
+          transform: rotate(0deg) scale(1.1); color: rgba(49, 130, 206, 0.06);
+        }
+        
+        .science-icon-wrap {
+          width: 80px; height: 80px; border-radius: 22px;
+          background: linear-gradient(135deg, #ebf8ff, #e6fffa);
+          display: flex; justify-content: center; align-items: center;
+          font-size: 2.2rem; color: #3182ce; margin-bottom: 2rem;
+          box-shadow: inset 0 2px 5px rgba(255,255,255,1), 0 8px 20px rgba(49, 130, 206, 0.1);
+        }
+        
+        .science-card h3 {
+          font-family: 'DM Sans', sans-serif;
+          font-size: 1.45rem; color: #1a202c; font-weight: 800; margin-bottom: 1.2rem; line-height: 1.3;
+        }
+        .science-card p {
+          color: #4a5568; font-size: 1.05rem; line-height: 1.7; margin: 0;
+        }
+      </style>
+
+      <div class="science-grid">
+        <div class="science-card">
+          <i class="fa-solid fa-rotate-right science-card-bg"></i>
+          <div class="science-icon-wrap"><i class="fa-solid fa-rotate-right"></i></div>
+          <h3>The Organ is the Incubator</h3>
+          <p>Stones do not form purely due to diet; they form because the gallbladder wall has become diseased or has lost its natural muscular pumping ability (biliary stasis). If only stones were scooped out, the stagnant, diseased gallbladder would rapidly manufacture new stones within months.</p>
         </div>
 
-        <div class="gb-card">
-          <h3><i class="fa-solid fa-skull-crossbones"></i> The Danger of Fragment Migration</h3>
-          <p>
-            Alternative attempts to crush stones with shockwaves (lithotripsy) or dissolve them with bile acid pills are medically hazardous. Shattered stone debris easily slips out through the narrow cystic duct, getting wedged in the pancreatic opening and triggering severe, life-threatening <strong>Acute Pancreatitis</strong>.
-          </p>
+        <div class="science-card">
+          <i class="fa-solid fa-skull-crossbones science-card-bg"></i>
+          <div class="science-icon-wrap"><i class="fa-solid fa-skull-crossbones"></i></div>
+          <h3>The Danger of Fragment Migration</h3>
+          <p>Alternative attempts to crush stones (lithotripsy) or dissolve them are medically hazardous. Shattered stone debris easily slips out through the narrow cystic duct, getting wedged in the pancreatic opening and triggering severe, life-threatening <strong>Acute Pancreatitis</strong>.</p>
         </div>
 
-        <div class="gb-card">
-          <h3><i class="fa-solid fa-heart-circle-check"></i> Normal Digestion After Surgery</h3>
-          <p>
-            Your liver produces 800 to 1,000 ml of fresh bile every single day for digestion. Once the diseased gallbladder is removed, bile simply flows directly via the common bile duct into the intestine as you eat. Your body adapts rapidly, leaving no need for lifelong dietary restrictions or medications.
-          </p>
+        <div class="science-card">
+          <i class="fa-solid fa-heart-circle-check science-card-bg"></i>
+          <div class="science-icon-wrap"><i class="fa-solid fa-heart-circle-check"></i></div>
+          <h3>Normal Digestion After Surgery</h3>
+          <p>Your liver produces 800 to 1,000 ml of fresh bile every single day for digestion. Once the diseased gallbladder is removed, bile simply flows directly via the common bile duct into the intestine as you eat. Your body adapts rapidly, leaving no need for lifelong dietary restrictions.</p>
         </div>
       </div>
     </div>
@@ -1510,131 +1785,252 @@
         <span class="gb-section-tag">World-Class Precision</span>
         <h2 class="gb-section-title">4K Laparoscopic &amp; Da Vinci Robotic Cholecystectomy</h2>
         <p class="gb-section-desc">
-          At Max Super Speciality Hospital, Saket, Dr. Atul Peters performs advanced minimal access gallbladder removal utilizing state-of-the-art 4K Ultra HD vision systems and strict international safety protocols.
+          At Max Smart Super Speciality Hospital, Saket – New Delhi, Dr. Atul Peters performs advanced minimal access gallbladder removal utilizing state-of-the-art 4K Ultra HD vision systems and strict international safety protocols.
         </p>
       </div>
 
-      <div class="gb-grid-2" style="margin-bottom: 3.5rem;">
-        <div class="gb-technique-card featured">
-          <div class="gb-technique-header">
-            <div class="gb-technique-icon"><i class="fa-solid fa-video"></i></div>
-            <div class="gb-technique-title">
-              <h3>4K HD Laparoscopic Cholecystectomy</h3>
-              <span>Gold Standard Treatment &bull; 3-4 Keyholes</span>
-            </div>
-          </div>
-          <p style="color: var(--text-2); line-height: 1.65; margin-bottom: 1.25rem;">
-            Through 4 tiny incisions measuring between 5mm and 10mm (less than half an inch), a high-definition 4K camera and specialized micro-instruments are introduced. The surgeon carefully dissects the gallbladder away from the liver bed, seals the cystic duct and artery using biocompatible titanium clips, and extracts the organ safely inside a protective retrieval bag.
-          </p>
-          <ul class="gb-list">
-            <li><i class="fa-solid fa-check"></i> Virtually invisible post-operative scars</li>
-            <li><i class="fa-solid fa-check"></i> Minimal tissue trauma and zero muscle division</li>
-            <li><i class="fa-solid fa-check"></i> Stand up and walk within 4 hours of surgery</li>
-            <li><i class="fa-solid fa-check"></i> Routine discharge within 24 hours (overnight stay)</li>
+      <style>
+        .tech-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 2.5rem;
+          margin-bottom: 4rem;
+        }
+        @media (max-width: 991px) {
+          .tech-grid { grid-template-columns: 1fr; gap: 2rem; }
+        }
+        .tech-card {
+          border-radius: 2rem;
+          padding: 3.5rem;
+          position: relative;
+          overflow: hidden;
+          transition: all 0.5s ease;
+          display: flex;
+          flex-direction: column;
+        }
+        @media (max-width: 768px) {
+          .tech-card { padding: 2.5rem; }
+        }
+        .tech-card:hover {
+          transform: translateY(-8px);
+        }
+        .tech-laparoscopic {
+          background: #ffffff;
+          box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+          border: 1px solid rgba(49, 130, 206, 0.1);
+        }
+        .tech-robotic {
+          background: linear-gradient(145deg, #0f172a 0%, #1e293b 100%);
+          box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+          color: #f8fafc;
+          border: 1px solid rgba(255,255,255,0.1);
+        }
+        .tech-robotic::before {
+          content: ''; position: absolute; inset: 0;
+          background: radial-gradient(circle at 100% 0%, rgba(246, 224, 94, 0.15) 0%, transparent 60%);
+          pointer-events: none;
+        }
+        .tech-badge {
+          position: absolute; top: 2.5rem; right: 2.5rem;
+          font-size: 0.75rem; font-weight: 800; padding: 0.5rem 1.25rem; border-radius: 50px;
+          text-transform: uppercase; letter-spacing: 0.1em;
+        }
+        @media (max-width: 768px) {
+          .tech-badge { position: relative; top: 0; right: 0; align-self: flex-start; margin-bottom: 1.5rem; }
+        }
+        .tech-laparoscopic .tech-badge { background: rgba(49, 130, 206, 0.1); color: #3182ce; }
+        .tech-robotic .tech-badge { background: rgba(246, 224, 94, 0.15); color: #F6E05E; }
+        
+        .tech-icon {
+          width: 70px; height: 70px; border-radius: 20px;
+          display: flex; justify-content: center; align-items: center;
+          font-size: 2rem; margin-bottom: 2rem;
+        }
+        .tech-laparoscopic .tech-icon { background: linear-gradient(135deg, #ebf8ff, #bee3f8); color: #2b6cb0; box-shadow: 0 8px 15px rgba(49,130,206,0.15); }
+        .tech-robotic .tech-icon { background: rgba(255,255,255,0.05); color: #F6E05E; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+        
+        .tech-title {
+          font-family: 'Bellefair', Georgia, serif;
+          font-size: 2rem; margin-bottom: 1rem; line-height: 1.2;
+        }
+        .tech-laparoscopic .tech-title { color: #1a202c; }
+        .tech-robotic .tech-title { color: #ffffff; }
+        
+        .tech-desc {
+          font-size: 1.05rem; line-height: 1.7; margin-bottom: 2.5rem;
+        }
+        .tech-laparoscopic .tech-desc { color: #4a5568; }
+        .tech-robotic .tech-desc { color: #cbd5e1; }
+        
+        .tech-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.25rem; }
+        .tech-list li { display: flex; align-items: flex-start; gap: 1rem; font-size: 1.05rem; line-height: 1.5; }
+        .tech-list i { margin-top: 0.2rem; font-size: 1.1rem; }
+        .tech-laparoscopic .tech-list li { color: #2d3748; }
+        .tech-laparoscopic .tech-list i { color: #3182ce; }
+        .tech-robotic .tech-list li { color: #e2e8f0; }
+        .tech-robotic .tech-list i { color: #F6E05E; }
+      </style>
+
+      <div class="tech-grid">
+        <!-- 4K Laparoscopic -->
+        <div class="tech-card tech-laparoscopic">
+          <div class="tech-badge">Gold Standard</div>
+          <div class="tech-icon"><i class="fa-solid fa-video"></i></div>
+          <img src="assets/img/laparoscopic_tower.png" alt="4K Laparoscopic Tower" style="width: 100%; height: 200px; border-radius: 1rem; margin-bottom: 1.5rem; object-fit: cover; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+          <h3 class="tech-title">4K HD Laparoscopic Cholecystectomy</h3>
+          <p class="tech-desc">Through 4 tiny keyholes (less than half an inch), a high-definition 4K camera and specialized micro-instruments are introduced. The gallbladder is delicately dissected and extracted safely inside a protective retrieval bag.</p>
+          <ul class="tech-list">
+            <li><i class="fa-solid fa-check-circle"></i> Virtually invisible post-operative scars</li>
+            <li><i class="fa-solid fa-check-circle"></i> Minimal tissue trauma and zero muscle division</li>
+            <li><i class="fa-solid fa-check-circle"></i> Stand up and walk within 4 hours of surgery</li>
+            <li><i class="fa-solid fa-check-circle"></i> Routine discharge within 24 hours (overnight stay)</li>
           </ul>
         </div>
 
-        <div class="gb-technique-card">
-          <div class="gb-technique-header">
-            <div class="gb-technique-icon"><i class="fa-solid fa-robot"></i></div>
-            <div class="gb-technique-title">
-              <h3>Da Vinci Robotic Cholecystectomy</h3>
-              <span>Next-Generation Surgical Mastery</span>
-            </div>
-          </div>
-          <p style="color: var(--text-2); line-height: 1.65; margin-bottom: 1.25rem;">
-            For complex anatomical situations—such as severe acute cholecystitis, dense previous abdominal surgical adhesions, or morbid obesity—Dr. Peters utilizes the advanced <strong>Da Vinci Xi Robotic Surgical System</strong>. The robotic arms provide 3D high-definition magnified optics and 360-degree wristed articulation that far exceeds the rotation of the human hand.
-          </p>
-          <ul class="gb-list">
-            <li><i class="fa-solid fa-check"></i> Unmatched 10x 3D stereoscopic depth perception</li>
-            <li><i class="fa-solid fa-check"></i> Micro-wristed instrumentation eliminates all tremor</li>
-            <li><i class="fa-solid fa-check"></i> Ideal for difficult anatomies and acute inflammation</li>
-            <li><i class="fa-solid fa-check"></i> Maximum preservation of delicate bile duct structures</li>
+        <!-- Da Vinci Robotic -->
+        <div class="tech-card tech-robotic">
+          <div class="tech-badge">Next-Gen Mastery</div>
+          <div class="tech-icon"><i class="fa-solid fa-robot"></i></div>
+          <img src="assets/img/robotic_console.png" alt="Da Vinci Robotic Console" style="width: 100%; height: 200px; border-radius: 1rem; margin-bottom: 1.5rem; object-fit: cover; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <h3 class="tech-title">Da Vinci Robotic Cholecystectomy</h3>
+          <p class="tech-desc">For complex anatomical situations—such as severe acute cholecystitis or morbid obesity—the advanced Da Vinci Xi Robotic System provides 3D high-definition magnified optics and 360-degree wristed articulation.</p>
+          <ul class="tech-list">
+            <li><i class="fa-solid fa-check-circle"></i> Unmatched 10x 3D stereoscopic depth perception</li>
+            <li><i class="fa-solid fa-check-circle"></i> Micro-wristed instrumentation eliminates all tremor</li>
+            <li><i class="fa-solid fa-check-circle"></i> Ideal for difficult anatomies and acute inflammation</li>
+            <li><i class="fa-solid fa-check-circle"></i> Maximum preservation of delicate bile duct structures</li>
           </ul>
         </div>
       </div>
 
       <!-- Critical View of Safety Feature Box -->
-      <div class="gb-cvs-box">
-        <div>
-          <span style="display: inline-block; background: rgba(129, 205, 191, 0.2); color: #81CDBF; padding: 0.4rem 1rem; border-radius: 50px; font-weight: 700; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem;">Zero Complication Protocol</span>
-          <h3 style="font-family: 'Bellefair', Georgia, serif; font-size: clamp(1.85rem, 3.5vw, 2.5rem); color: #FFFFFF; line-height: 1.2; margin-bottom: 1rem;">The Critical View of Safety (CVS) Protocol</h3>
-          <p style="color: #D6E8F5; font-size: 1.02rem; line-height: 1.7;">
-            The single most feared complication in gallbladder surgery is accidental injury to the main common bile duct (CBD) or right hepatic artery due to anatomical variations or inflammatory swelling. To ensure <strong>100% patient safety</strong>, Dr. Atul Peters strictly enforces the international <strong>Critical View of Safety (CVS)</strong> criteria before clipping any anatomical structure:
-          </p>
-          <div class="gb-cvs-list">
-            <div class="gb-cvs-item">
-              <div class="gb-cvs-num">1</div>
-              <div class="gb-cvs-text">
-                <h4>Complete Hepatocystic Triangle Clearance</h4>
-                <p>All fat and fibrous connective tissue inside the hepatocystic triangle is completely dissected away until the liver surface is clearly visible between structures.</p>
-              </div>
-            </div>
-            <div class="gb-cvs-item">
-              <div class="gb-cvs-num">2</div>
-              <div class="gb-cvs-text">
-                <h4>Separation of Lower Gallbladder Bed</h4>
-                <p>The lower one-third of the gallbladder is cleanly separated and lifted off the liver bed to prevent any misidentification of aberrant ducts.</p>
-              </div>
-            </div>
-            <div class="gb-cvs-item">
-              <div class="gb-cvs-num">3</div>
-              <div class="gb-cvs-text">
-                <h4>Unambiguous Two-Structure Rule</h4>
-                <p>Before any clip is applied, the surgeon verifies with absolute certainty that only exactly two structures (the cystic duct and cystic artery) enter the gallbladder.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="text-align: center;">
-          <div style="background: rgba(255, 255, 255, 0.08); padding: 2.5rem; border-radius: 1.5rem; border: 1px solid rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px);">
-            <i class="fa-solid fa-award" style="font-size: 4rem; color: #81CDBF; margin-bottom: 1.5rem;"></i>
-            <h4 style="font-family: 'DM Sans', sans-serif; font-size: 1.4rem; color: #FFFFFF; margin-bottom: 0.75rem;">Uncompromising Clinical Excellence</h4>
-            <p style="color: #A8DECE; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
-              With over 20 years of advanced laparoscopic experience and thousands of successful cholecystectomies, Dr. Peters' adherence to CVS protocols ensures an exceptional safety record with zero biliary duct injuries.
-            </p>
-            <a href="#consult" class="btn btn-gold" onclick="showBookAnApptmForm(); return false;" style="width: 100%;">Get Expert Opinion Today</a>
-          </div>
-        </div>
-      </div>
+      <!-- Critical View of Safety Feature Box -->
+      <style>
+        .cvs-suite {
+          background: linear-gradient(135deg, #0A1E30 0%, #1a365d 100%);
+          border-radius: 2.5rem;
+          padding: 4rem;
+          color: #FFFFFF;
+          box-shadow: 0 30px 60px rgba(0,0,0,0.2), inset 0 0 0 1px rgba(255,255,255,0.1);
+          margin-bottom: 4rem;
+          position: relative;
+          overflow: hidden;
+        }
+        @media (max-width: 991px) {
+          .cvs-suite { padding: 2.5rem; }
+        }
+        .cvs-suite::before {
+          content: ''; position: absolute; top: -50%; left: -50%; width: 100%; height: 100%;
+          background: radial-gradient(circle, rgba(129, 205, 191, 0.1) 0%, transparent 60%);
+        }
+        .cvs-suite-layout {
+          display: grid;
+          grid-template-columns: 1.1fr 0.9fr;
+          gap: 4rem;
+          position: relative;
+          z-index: 2;
+        }
+        @media (max-width: 1024px) {
+          .cvs-suite-layout { grid-template-columns: 1fr; gap: 3rem; }
+        }
+        .cvs-list { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+        .cvs-item {
+          display: flex; gap: 1.25rem;
+          background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+          padding: 1.5rem; border-radius: 1.5rem; backdrop-filter: blur(10px);
+          transition: transform 0.3s ease;
+        }
+        .cvs-item:hover { transform: translateX(10px); background: rgba(255,255,255,0.08); }
+        .cvs-num {
+          width: 44px; height: 44px; border-radius: 50%;
+          background: linear-gradient(135deg, #81CDBF, #4fd1c5); color: #0A1E30;
+          display: flex; justify-content: center; align-items: center;
+          font-weight: 800; font-size: 1.2rem; flex-shrink: 0;
+        }
+        .cvs-text h4 { font-family: 'DM Sans', sans-serif; font-size: 1.15rem; color: #fff; margin: 0 0 0.4rem 0; }
+        .cvs-text p { font-size: 0.95rem; color: #cbd5e1; margin: 0; line-height: 1.6; }
+        
+        .cvs-scorecard-wrap {
+          display: flex; flex-direction: column; gap: 1.5rem;
+        }
+        .cvs-compare {
+          border-radius: 1.5rem; padding: 2rem;
+          display: flex; flex-direction: column; gap: 1rem;
+        }
+        .cvs-danger {
+          background: rgba(155, 44, 44, 0.1); border: 1px solid rgba(229, 62, 62, 0.3);
+        }
+        .cvs-safe {
+          background: rgba(34, 84, 61, 0.2); border: 1px solid rgba(72, 187, 120, 0.4);
+        }
+        .cvs-compare h4 { font-family: 'Bellefair', serif; font-size: 1.6rem; margin: 0; display: flex; align-items: center; gap: 0.75rem; }
+        .cvs-danger h4 { color: #FC8181; }
+        .cvs-safe h4 { color: #9AE6B4; }
+        .cvs-compare p { font-size: 0.95rem; line-height: 1.6; margin: 0; }
+        .cvs-danger p { color: #FEB2B2; }
+        .cvs-safe p { color: #C6F6D5; }
+        .cvs-compare ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem; }
+        .cvs-danger ul { color: #FFF5F5; }
+        .cvs-safe ul { color: #F0FFF4; }
+      </style>
 
-      <!-- INFOGRAPHIC 2: VISUAL CVS SAFETY SCORECARD -->
-      <div class="gb-cvs-visual-grid">
-        <!-- Danger Card: Blind Dissection -->
-        <div class="gb-cvs-compare-card danger">
+      <div class="cvs-suite">
+        <div class="cvs-suite-layout">
           <div>
-            <span class="gb-cvs-tag"><i class="fa-solid fa-triangle-exclamation"></i> High Hazard / Non-Standard</span>
-            <h3 style="font-family: 'Bellefair', Georgia, serif; font-size: 1.5rem; color: #9B2C2C; margin: 0 0 0.75rem 0;">Traditional / Blind Dissection</h3>
-            <p style="color: var(--text-2); font-size: 0.94rem; line-height: 1.6; margin-bottom: 1.5rem;">
-              Without clearing the hepatocystic triangle completely, inflamed fat and swollen lymph nodes can pull or distort the main common bile duct, causing it to mimic the cystic duct. Clamping blindly here risks catastrophic permanent bile duct injury.
+            <span style="display: inline-block; background: rgba(129, 205, 191, 0.15); color: #81CDBF; padding: 0.5rem 1.25rem; border-radius: 50px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.25rem; border: 1px solid rgba(129,205,191,0.3);">Zero Complication Protocol</span>
+            <h3 style="font-family: 'Bellefair', Georgia, serif; font-size: clamp(2rem, 4vw, 2.8rem); color: #FFFFFF; line-height: 1.15; margin-bottom: 1.25rem;">The Critical View of Safety (CVS)</h3>
+            <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.7;">
+              To ensure <strong>100% patient safety</strong>, Dr. Atul Peters strictly enforces the international CVS criteria before clipping any anatomical structure, completely avoiding the risk of bile duct injury.
             </p>
+            <div class="cvs-list">
+              <div class="cvs-item">
+                <div class="cvs-num">1</div>
+                <div class="cvs-text">
+                  <h4>Complete Hepatocystic Triangle Clearance</h4>
+                  <p>All fat and fibrous connective tissue inside the hepatocystic triangle is completely dissected away until the liver surface is clearly visible between structures.</p>
+                </div>
+              </div>
+              <div class="cvs-item">
+                <div class="cvs-num">2</div>
+                <div class="cvs-text">
+                  <h4>Separation of Lower Gallbladder Bed</h4>
+                  <p>The lower one-third of the gallbladder is cleanly separated and lifted off the liver bed to prevent any misidentification of aberrant ducts.</p>
+                </div>
+              </div>
+              <div class="cvs-item">
+                <div class="cvs-num">3</div>
+                <div class="cvs-text">
+                  <h4>Unambiguous Two-Structure Rule</h4>
+                  <p>Before any clip is applied, the surgeon verifies with absolute certainty that only exactly two structures (the cystic duct and cystic artery) enter the gallbladder.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div style="background: #FFF5F5; border-radius: 1rem; padding: 1.25rem; border: 1px solid #FEB2B2;">
-            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.88rem; color: #742A2A;">
-              <li><i class="fa-solid fa-xmark" style="color: #E53E3E; margin-right: 0.5rem;"></i> Incomplete clearance of triangle tissue</li>
-              <li><i class="fa-solid fa-xmark" style="color: #E53E3E; margin-right: 0.5rem;"></i> Gallbladder remains tethered to liver bed</li>
-              <li><i class="fa-solid fa-xmark" style="color: #E53E3E; margin-right: 0.5rem;"></i> Misidentification of right hepatic artery</li>
-              <li><i class="fa-solid fa-xmark" style="color: #E53E3E; margin-right: 0.5rem;"></i> <strong>Bile Duct Complication Risk: Up to 1-2%</strong></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Gold Standard Card: Critical View of Safety -->
-        <div class="gb-cvs-compare-card safe">
-          <div>
-            <span class="gb-cvs-tag"><i class="fa-solid fa-shield-check"></i> Gold Standard / Dr. Peters' Protocol</span>
-            <h3 style="font-family: 'Bellefair', Georgia, serif; font-size: 1.5rem; color: #22543D; margin: 0 0 0.75rem 0;">Critical View of Safety (CVS)</h3>
-            <p style="color: var(--text-2); font-size: 0.94rem; line-height: 1.6; margin-bottom: 1.5rem;">
-              By rigorously stripping all connective tissue, dissecting the lower third off the liver, and isolating only exactly two structures (Cystic Duct &amp; Artery) with 360-degree visibility before clipping, anatomical confusion is 100% eliminated.
-            </p>
-          </div>
-          <div style="background: #F0FFF4; border-radius: 1rem; padding: 1.25rem; border: 1px solid #9AE6B4;">
-            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.88rem; color: #22543D;">
-              <li><i class="fa-solid fa-check" style="color: #38A169; margin-right: 0.5rem;"></i> 100% Fat-free hepatocystic window</li>
-              <li><i class="fa-solid fa-check" style="color: #38A169; margin-right: 0.5rem;"></i> Clear separation from liver parenchyma</li>
-              <li><i class="fa-solid fa-check" style="color: #38A169; margin-right: 0.5rem;"></i> Unambiguous two-structure confirmation</li>
-              <li><i class="fa-solid fa-check" style="color: #38A169; margin-right: 0.5rem;"></i> <strong>Bile Duct Complication Rate: ~ 0.00%</strong></li>
-            </ul>
+          
+          <div class="cvs-scorecard-wrap">
+            <div class="cvs-compare cvs-danger">
+              <h4><i class="fa-solid fa-triangle-exclamation"></i> Blind Dissection</h4>
+              <p>Clamping blindly in inflamed tissue risks catastrophic permanent bile duct injury.</p>
+              <ul>
+                <li><i class="fa-solid fa-xmark" style="color: #FC8181; width: 20px;"></i> Incomplete clearance of triangle tissue</li>
+                <li><i class="fa-solid fa-xmark" style="color: #FC8181; width: 20px;"></i> Gallbladder tethered to liver bed</li>
+                <li><i class="fa-solid fa-xmark" style="color: #FC8181; width: 20px;"></i> Misidentification of right hepatic artery</li>
+                <li><i class="fa-solid fa-skull" style="color: #FC8181; width: 20px;"></i> <strong>Bile Duct Complication Risk: Up to 2%</strong></li>
+              </ul>
+            </div>
+            
+            <div class="cvs-compare cvs-safe">
+              <h4><i class="fa-solid fa-shield-check"></i> Dr. Peters' CVS Protocol</h4>
+              <p>Anatomical confusion is 100% eliminated by isolating only two structures with 360-degree visibility.</p>
+              <ul>
+                <li><i class="fa-solid fa-check" style="color: #68D391; width: 20px;"></i> 100% Fat-free hepatocystic window</li>
+                <li><i class="fa-solid fa-check" style="color: #68D391; width: 20px;"></i> Clear separation from liver parenchyma</li>
+                <li><i class="fa-solid fa-check" style="color: #68D391; width: 20px;"></i> Unambiguous two-structure confirmation</li>
+                <li><i class="fa-solid fa-award" style="color: #68D391; width: 20px;"></i> <strong>Bile Duct Complication Rate: ~ 0.00%</strong></li>
+              </ul>
+            </div>
+            
+            <a href="#consult" class="btn btn-gold" onclick="showBookAnApptmForm(); return false;" style="margin-top: 1rem; width: 100%; font-size: 1.1rem; padding: 1.2rem;">Get Expert Opinion Today</a>
           </div>
         </div>
       </div>
@@ -1654,94 +2050,99 @@
         </p>
       </div>
 
-      <div class="gb-grid-3">
-        <div class="gb-step-card">
-          <div class="gb-step-num">Step 01 &bull; Morning Admission</div>
+      <style>
+        .gb-journey-timeline {
+          position: relative;
+          max-width: 900px;
+          margin: 4rem auto;
+          padding-left: 3rem;
+        }
+        @media (max-width: 768px) {
+          .gb-journey-timeline { padding-left: 2rem; margin: 3rem auto; }
+        }
+        .gb-journey-timeline::before {
+          content: ''; position: absolute; top: 0; left: 0;
+          width: 4px; height: 100%;
+          background: linear-gradient(180deg, #3182ce 0%, #81CDBF 50%, rgba(129, 205, 191, 0.1) 100%);
+          border-radius: 4px;
+        }
+        .gb-journey-step {
+          position: relative;
+          margin-bottom: 3.5rem;
+          background: #ffffff;
+          border-radius: 2rem;
+          padding: 3rem;
+          box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+          border: 1px solid rgba(0,0,0,0.03);
+          transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+        @media (max-width: 768px) {
+          .gb-journey-step { padding: 2rem; }
+        }
+        .gb-journey-step:last-child { margin-bottom: 0; }
+        .gb-journey-step:hover {
+          transform: translateX(12px);
+          box-shadow: 0 20px 50px rgba(49, 130, 206, 0.08);
+        }
+        .gb-journey-step::before {
+          content: ''; position: absolute;
+          top: 3.5rem; left: -3.15rem; width: 24px; height: 24px;
+          background: #ffffff; border: 5px solid #3182ce;
+          border-radius: 50%; box-shadow: 0 0 0 6px rgba(49, 130, 206, 0.15);
+          transform: translateY(-50%); z-index: 2;
+          transition: all 0.4s ease;
+        }
+        @media (max-width: 768px) {
+          .gb-journey-step::before { left: -2.35rem; width: 20px; height: 20px; border-width: 4px; box-shadow: 0 0 0 4px rgba(49, 130, 206, 0.15); top: 2.5rem; }
+        }
+        .gb-journey-step:hover::before {
+          background: #3182ce; border-color: #ffffff; box-shadow: 0 0 20px rgba(49, 130, 206, 0.6);
+        }
+        .gb-journey-time-badge {
+          display: inline-block; padding: 0.6rem 1.4rem;
+          background: linear-gradient(135deg, #ebf8ff, #bee3f8);
+          color: #2b6cb0; font-weight: 800; font-size: 0.85rem;
+          border-radius: 50px; text-transform: uppercase; letter-spacing: 0.1em;
+          margin-bottom: 1.25rem; box-shadow: 0 4px 10px rgba(49, 130, 206, 0.1);
+        }
+        .gb-journey-step h3 {
+          font-family: 'Bellefair', serif; font-size: 2.2rem; color: #1a202c;
+          margin-bottom: 1rem; line-height: 1.2;
+        }
+        .gb-journey-step p {
+          color: #4a5568; font-size: 1.1rem; line-height: 1.7; margin: 0;
+        }
+      </style>
+
+      <div class="gb-journey-timeline">
+        <div class="gb-journey-step">
+          <div class="gb-journey-time-badge">00 Hours &bull; Morning Admission</div>
           <h3>Pre-Op Evaluation &amp; Admission</h3>
-          <p>
-            You get admitted to Max Hospital, Saket on the morning of surgery. Our surgical team reviews your ultrasound and blood reports, conducts a brief pre-anesthesia checkup, and initiates ERAS hydration protocols without prolonged, uncomfortable fasting.
-          </p>
+          <p>Admitted to Max Hospital, Saket. Our surgical team reviews reports, conducts a brief pre-anesthesia checkup, and initiates ERAS hydration protocols without prolonged, uncomfortable fasting.</p>
         </div>
 
-        <div class="gb-step-card">
-          <div class="gb-step-num">Step 02 &bull; Keyhole Procedure</div>
+        <div class="gb-journey-step">
+          <div class="gb-journey-time-badge">+02 Hours &bull; Keyhole Procedure</div>
           <h3>30-Minute Precision Surgery</h3>
-          <p>
-            Under general anesthesia, Dr. Peters performs the 4K laparoscopic or robotic cholecystectomy in approximately 30 to 45 minutes. The incisions are closed with absorbable sub-cuticular sutures and waterproof biological glues—requiring no painful stitch removal.
-          </p>
+          <p>Under general anesthesia, Dr. Peters performs the 4K laparoscopic or robotic cholecystectomy in 30 to 45 minutes. Incisions are closed with waterproof biological glues—no painful stitch removal.</p>
         </div>
 
-        <div class="gb-step-card">
-          <div class="gb-step-num">Step 03 &bull; Same Evening</div>
+        <div class="gb-journey-step">
+          <div class="gb-journey-time-badge">+04 Hours &bull; Same Evening</div>
           <h3>Early Mobilization &amp; Oral Diet</h3>
-          <p>
-            Within 3 to 4 hours of surgery, our specialized physical therapy team assists you to stand up and walk around the private suite. You start sipping warm liquids and soft foods the same evening, experiencing minimal discomfort.
-          </p>
+          <p>Within 4 hours, our physical therapy team assists you to stand and walk. You start sipping warm liquids and enjoy a light, nutritious evening meal with minimal discomfort.</p>
         </div>
 
-        <div class="gb-step-card">
-          <div class="gb-step-num">Step 04 &bull; Next Morning</div>
-          <h3>Overnight Discharge (24 Hours)</h3>
-          <p>
-            Following a comfortable overnight stay and a morning clinical assessment by Dr. Peters, you are discharged within 24 hours of admission. You walk out of the hospital comfortably with clear oral medications and waterproof dressings.
-          </p>
+        <div class="gb-journey-step">
+          <div class="gb-journey-time-badge">+24 Hours &bull; Next Morning</div>
+          <h3>Overnight Discharge</h3>
+          <p>Following a comfortable overnight stay and a morning clinical assessment by Dr. Peters, you walk out of the hospital comfortably with clear oral medications and waterproof dressings.</p>
         </div>
 
-        <div class="gb-step-card">
-          <div class="gb-step-num">Step 05 &bull; Days 3 to 5</div>
+        <div class="gb-journey-step">
+          <div class="gb-journey-time-badge" style="background: linear-gradient(135deg, #e6fffa, #b2f5ea); color: #234e52; box-shadow: 0 4px 10px rgba(129, 205, 191, 0.15);">+05 Days &bull; Recovery</div>
           <h3>Return to Routine &amp; Work</h3>
-          <p>
-            You can comfortably shower and resume driving, climbing stairs, and routine desk job activities within 3 to 5 days. Virtually invisible abdominal incisions heal smoothly within two weeks without any scarring.
-          </p>
-        </div>
-
-        <div class="gb-step-card">
-          <div class="gb-step-num">Step 06 &bull; Day 7 Follow-Up</div>
-          <h3>1-Week Clinical Review</h3>
-          <p>
-            A simple 10-minute follow-up visit or video consultation at 1 week ensures your incisions have healed completely. Our chief dietician provides customized guidance on transitioning smoothly to your normal family diet.
-          </p>
-        </div>
-      </div>
-
-      <!-- INFOGRAPHIC 3: VISUAL 24-HOUR RECOVERY METER -->
-      <div class="gb-timeline-infographic">
-        <span style="display: inline-block; background: rgba(129, 205, 191, 0.2); color: #81CDBF; padding: 0.4rem 1rem; border-radius: 50px; font-weight: 700; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem;">Interactive Milestone Meter</span>
-        <h3 style="font-family: 'Bellefair', Georgia, serif; font-size: clamp(1.75rem, 3.5vw, 2.35rem); color: #FFFFFF; margin: 0 0 0.5rem 0;">From Admission to Normal Life: Your Fast-Track Recovery</h3>
-        <p style="color: #D6E8F5; font-size: 0.98rem; max-width: 800px;">
-          Explore the exact time-bound clinical recovery trajectory following Dr. Atul Peters' minimally invasive keyhole gallbladder removal.
-        </p>
-
-        <div class="gb-timeline-track">
-          <div class="gb-timeline-node">
-            <div class="gb-timeline-badge">00 Hours</div>
-            <h4>30-Min Keyhole Surgery</h4>
-            <p>Performed under general anesthesia with 4K optics. No cutting of abdominal muscle fibers.</p>
-          </div>
-
-          <div class="gb-timeline-node">
-            <div class="gb-timeline-badge">+04 Hours</div>
-            <h4>First Steps &amp; Sips</h4>
-            <p>ERAS nursing team helps you walk around your room and begin sipping clear warm fluids.</p>
-          </div>
-
-          <div class="gb-timeline-node">
-            <div class="gb-timeline-badge">+12 Hours</div>
-            <h4>Normal Evening Meal</h4>
-            <p>No liquid diet restriction needed! You comfortably enjoy a nutritious, light evening meal.</p>
-          </div>
-
-          <div class="gb-timeline-node">
-            <div class="gb-timeline-badge">+24 Hours</div>
-            <h4>Overnight Discharge</h4>
-            <p>Walk out of the hospital comfortably within 24 hours with oral pain medications and waterproof dressings.</p>
-          </div>
-
-          <div class="gb-timeline-node">
-            <div class="gb-timeline-badge">+05 Days</div>
-            <h4>Back to Desk Work</h4>
-            <p>Drive, climb stairs comfortably, and resume routine office work or household activities without pain.</p>
-          </div>
+          <p>Comfortably shower, resume driving, climb stairs, and return to routine desk job activities within 3 to 5 days. Abdominal incisions heal smoothly within two weeks without noticeable scarring.</p>
         </div>
       </div>
     </div>
@@ -1754,67 +2155,165 @@
     <div class="container">
       <div class="gb-section-header">
         <span class="gb-section-tag">Transparent Care</span>
-        <h2 class="gb-section-title">Cost &amp; 100% Cashless Insurance Coverage</h2>
+        <h2 class="gb-section-title">Cost &amp; Insurance Coverage</h2>
         <p class="gb-section-desc">
-          Laparoscopic and robotic gallbladder surgery is a medically necessary procedure covered by all health insurance companies across India. Max Super Speciality Hospital, Saket offers complete, hassle-free cashless claim assistance.
+          Laparoscopic and robotic gallbladder surgery is a medically necessary procedure covered by all health insurance companies across India. Max Smart Super Speciality Hospital, Saket – New Delhi offers complete, hassle-free cashless claim assistance.
         </p>
       </div>
 
-      <div class="gb-grid-2">
-        <div class="gb-cost-box">
-          <h3>Factors Influencing Surgery Package Cost</h3>
-          <div class="gb-cost-list">
-            <div class="gb-cost-item">
-              <div class="gb-cost-icon"><i class="fa-solid fa-hospital-user"></i></div>
-              <div class="gb-cost-details">
-                <h4>Room Category &amp; Hospital Stay Duration</h4>
-                <p>Pricing packages vary based on your choice of hospital room (Twin Sharing, Single Private Room, or Deluxe Suite). Standard packages include a 24-hour stay.</p>
-              </div>
-            </div>
+      <style>
+        .finance-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 3rem;
+          margin-top: 3.5rem;
+        }
+        @media (max-width: 991px) {
+          .finance-grid { grid-template-columns: 1fr; gap: 2rem; }
+        }
+        .finance-card {
+          border-radius: 2rem;
+          padding: 3rem;
+          position: relative;
+          overflow: hidden;
+          transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        @media (max-width: 768px) {
+          .finance-card { padding: 2rem; }
+        }
+        .finance-card:hover {
+          transform: translateY(-8px);
+        }
+        
+        .cost-card {
+          background: #ffffff;
+          border: 1px solid rgba(0,0,0,0.05);
+          box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+        }
+        .cost-card:hover { box-shadow: 0 25px 50px rgba(49, 130, 206, 0.1); }
+        .cost-card::before {
+          content: ''; position: absolute; top: 0; left: 0; width: 6px; height: 100%;
+          background: linear-gradient(180deg, #3182ce, #63b3ed);
+        }
+        .finance-icon {
+          width: 64px; height: 64px; border-radius: 18px;
+          display: flex; justify-content: center; align-items: center;
+          font-size: 1.8rem; margin-bottom: 2rem;
+        }
+        .cost-card .finance-icon { background: linear-gradient(135deg, #ebf8ff, #bee3f8); color: #2b6cb0; }
+        
+        .ins-card {
+          background: linear-gradient(135deg, #22543D 0%, #276749 100%);
+          color: #ffffff;
+          box-shadow: 0 15px 40px rgba(34, 84, 61, 0.2);
+        }
+        .ins-card:hover { box-shadow: 0 25px 50px rgba(34, 84, 61, 0.3); }
+        .ins-card::before {
+          content: ''; position: absolute; inset: 0;
+          background: url('data:image/svg+xml;utf8,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><path d="M0 100 L100 0" stroke="rgba(255,255,255,0.05)" stroke-width="2"/></svg>') repeat;
+          opacity: 0.5; pointer-events: none;
+        }
+        .ins-card .finance-icon { background: rgba(255,255,255,0.1); color: #9AE6B4; backdrop-filter: blur(5px); }
+        
+        .finance-title {
+          font-family: 'Bellefair', serif; font-size: 2rem; margin-bottom: 1.5rem; line-height: 1.2;
+        }
+        .cost-card .finance-title { color: #1a202c; }
+        .ins-card .finance-title { color: #ffffff; }
+        
+        .finance-item {
+          display: flex; gap: 1rem; margin-bottom: 1.5rem;
+        }
+        .finance-item-icon {
+          font-size: 1.25rem; margin-top: 0.2rem;
+        }
+        .cost-card .finance-item-icon { color: #3182ce; }
+        .ins-card .finance-item-icon { color: #68D391; }
+        
+        .finance-item-text h4 {
+          font-family: 'DM Sans', sans-serif; font-size: 1.1rem; margin: 0 0 0.3rem 0; font-weight: 700;
+        }
+        .cost-card .finance-item-text h4 { color: #2d3748; }
+        .ins-card .finance-item-text h4 { color: #f0fff4; }
+        
+        .finance-item-text p {
+          font-size: 0.95rem; line-height: 1.6; margin: 0;
+        }
+        .cost-card .finance-item-text p { color: #4a5568; }
+        .ins-card .finance-item-text p { color: #c6f6d5; }
+        
+        .finance-action {
+          margin-top: 2rem; padding: 1.5rem; border-radius: 1rem; position: relative; z-index: 2;
+        }
+        .cost-action { background: #f7fafc; border: 1px solid #e2e8f0; }
+        .ins-action { background: rgba(0,0,0,0.15); border: 1px solid rgba(255,255,255,0.1); }
+      </style>
 
-            <div class="gb-cost-item">
-              <div class="gb-cost-icon"><i class="fa-solid fa-microscope"></i></div>
-              <div class="gb-cost-details">
-                <h4>Surgical Modality (4K Laparoscopic vs. Robotic)</h4>
-                <p>While 4K laparoscopic cholecystectomy is highly economical and standard, Da Vinci Xi robotic surgery utilizes specialized robotic cartridges that incur modest additional equipment costs.</p>
-              </div>
-            </div>
-
-            <div class="gb-cost-item">
-              <div class="gb-cost-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-              <div class="gb-cost-details">
-                <h4>Complexity &amp; Acute Inflammation</h4>
-                <p>Routine planned surgeries have standardized package pricing. Patients presenting with acute empyema, gangrenous cholecystitis, or common bile duct (CBD) stones requiring concurrent ERCP may require extended clinical monitoring.</p>
-              </div>
+      <div class="finance-grid">
+        <div class="finance-card cost-card">
+          <div class="finance-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+          <h3 class="finance-title">Factors Influencing Surgery Package Cost</h3>
+          
+          <div class="finance-item">
+            <div class="finance-item-icon"><i class="fa-solid fa-hospital-user"></i></div>
+            <div class="finance-item-text">
+              <h4>Room Category &amp; Stay Duration</h4>
+              <p>Pricing packages vary based on your choice of hospital room (Twin Sharing, Single Private Room, or Deluxe Suite). Standard packages include a 24-hour stay.</p>
             </div>
           </div>
-          <div style="margin-top: 2rem; padding: 1.25rem; background: var(--bg-cream); border-radius: 1rem; border: 1px solid var(--border);">
-            <p style="margin: 0; font-size: 0.92rem; color: var(--text-1);">
-              <strong>Transparent Estimate:</strong> For an exact all-inclusive cost estimate tailored to your room preference and insurance policy, speak directly with our dedicated billing counselor today.
+          <div class="finance-item">
+            <div class="finance-item-icon"><i class="fa-solid fa-microscope"></i></div>
+            <div class="finance-item-text">
+              <h4>Surgical Modality (4K vs Robotic)</h4>
+              <p>While 4K laparoscopic is standard and economical, Da Vinci Xi robotic surgery utilizes specialized cartridges that incur modest additional equipment costs.</p>
+            </div>
+          </div>
+          <div class="finance-item">
+            <div class="finance-item-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            <div class="finance-item-text">
+              <h4>Complexity &amp; Acute Inflammation</h4>
+              <p>Routine surgeries have standardized pricing. Cases like acute empyema or CBD stones requiring concurrent ERCP may alter the package.</p>
+            </div>
+          </div>
+          
+          <div class="finance-action cost-action">
+            <p style="margin: 0; font-size: 0.95rem; color: #4a5568; line-height: 1.5;">
+              <strong style="color: #2d3748;">Transparent Estimate:</strong> For an exact all-inclusive cost estimate tailored to your room preference, speak with our billing counselor.
             </p>
           </div>
         </div>
 
-        <div class="gb-insurance-box">
-          <div>
-            <h3><i class="fa-solid fa-shield-heart"></i> Complete Insurance Assistance</h3>
-            <p>
-              Max Super Speciality Hospital is an accredited tertiary healthcare institution empanelled with all major private and government health insurance networks. Our dedicated insurance desk handles all documentation, pre-authorizations, and billing paperwork on your behalf.
-            </p>
-
-            <div class="gb-insurance-pills">
-              <div class="gb-ins-pill"><i class="fa-solid fa-check-circle" style="color: #81CDBF;"></i> 100% Cashless for All Private Mediclaim &amp; TPAs</div>
-              <div class="gb-ins-pill"><i class="fa-solid fa-check-circle" style="color: #81CDBF;"></i> Empanelled with Corporate Group Insurance Plans</div>
-              <div class="gb-ins-pill"><i class="fa-solid fa-check-circle" style="color: #81CDBF;"></i> CGHS, ECHS, DGHS &amp; Public Sector Undertakings</div>
-              <div class="gb-ins-pill"><i class="fa-solid fa-check-circle" style="color: #81CDBF;"></i> Rapid Same-Day Insurance Approval Processing</div>
+        <div class="finance-card ins-card">
+          <div class="finance-icon"><i class="fa-solid fa-shield-heart"></i></div>
+          <h3 class="finance-title">Complete Insurance Assistance</h3>
+          
+          <div class="finance-item">
+            <div class="finance-item-icon"><i class="fa-solid fa-check-circle"></i></div>
+            <div class="finance-item-text">
+              <h4>Cashless for All Private Mediclaim</h4>
+              <p>Max Hospital is empanelled with all major private and government health insurance networks and TPAs.</p>
             </div>
           </div>
-
-          <div style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(255, 255, 255, 0.2);">
-            <h4 style="font-family: 'DM Sans', sans-serif; font-size: 1.1rem; margin: 0 0 0.5rem 0; color: #FFFFFF;">Have Insurance Queries?</h4>
-            <p style="font-size: 0.88rem; color: #D6E8F5; margin: 0 0 1rem 0;">Share your TPA card or insurance policy details with our team via WhatsApp for instant eligibility verification and pre-authorization support.</p>
-            <a href="https://wa.me/917770001900" target="_blank" rel="noopener" class="btn" style="background: #25D366; color: #fff; width: 100%; border: none; font-weight: 700;">
-              <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Verify Insurance Cashless Status
+          <div class="finance-item">
+            <div class="finance-item-icon"><i class="fa-solid fa-check-circle"></i></div>
+            <div class="finance-item-text">
+              <h4>Corporate Group Insurance Plans</h4>
+              <p>Seamless cashless processing for employer-sponsored corporate health coverage.</p>
+            </div>
+          </div>
+          <div class="finance-item">
+            <div class="finance-item-icon"><i class="fa-solid fa-check-circle"></i></div>
+            <div class="finance-item-text">
+              <h4>Government Schemes</h4>
+              <p>Approved coverage for CGHS, ECHS, DGHS, and various Public Sector Undertakings.</p>
+            </div>
+          </div>
+          
+          <div class="finance-action ins-action">
+            <h4 style="font-family: 'DM Sans', sans-serif; font-size: 1.15rem; margin: 0 0 0.5rem 0; color: #ffffff;">Have Insurance Queries?</h4>
+            <p style="font-size: 0.95rem; color: #c6f6d5; margin: 0 0 1.25rem 0;">Share your TPA card details with our team via WhatsApp for instant eligibility verification.</p>
+            <a href="https://wa.me/917770001900" target="_blank" rel="noopener" class="btn" style="background: #25D366; color: #fff; width: 100%; border: none; font-weight: 700; font-size: 1.05rem; box-shadow: 0 4px 15px rgba(37,211,102,0.3);">
+              <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem; margin-right: 0.5rem;"></i> Verify Cashless Status
             </a>
           </div>
         </div>
@@ -1835,43 +2334,122 @@
         </p>
       </div>
 
-      <div class="gb-grid-3">
-        <div class="gb-card">
-          <h3><i class="fa-solid fa-mug-hot"></i> First 48 Hours (Recovery Phase)</h3>
-          <p>
-            During the first two days at home, stick to easily digestible, light meals. Because your digestive system is waking up from anesthesia and adapting to continuous bile flow, frequent small meals are best.
-          </p>
-          <ul class="gb-list">
-            <li><i class="fa-solid fa-check"></i> Warm clear soups, dal water, coconut water, and broths</li>
-            <li><i class="fa-solid fa-check"></i> Soft khichdi, porridge, oats, idli, and curd rice</li>
-            <li><i class="fa-solid fa-check"></i> Steamed vegetables and fresh ripe fruits (banana, apple)</li>
-            <li><i class="fa-solid fa-check"></i> Drink at least 2.5 to 3 liters of water daily</li>
+      <style>
+        .diet-hero-image {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          border-radius: 2rem;
+          margin-bottom: 3rem;
+          box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .diet-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2.5rem;
+        }
+        @media (max-width: 991px) {
+          .diet-grid { grid-template-columns: 1fr; gap: 2rem; }
+        }
+        .diet-card {
+          background: #ffffff;
+          border-radius: 2rem;
+          padding: 3rem 2.5rem;
+          box-shadow: 0 15px 35px rgba(0,0,0,0.04);
+          border: 1px solid rgba(0,0,0,0.03);
+          position: relative;
+          transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+          overflow: hidden;
+          z-index: 1;
+        }
+        .diet-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 30px 60px rgba(49, 130, 206, 0.1);
+        }
+        .diet-phase-num {
+          position: absolute; right: -15px; top: -30px;
+          font-family: 'Bellefair', serif; font-size: 12rem;
+          color: rgba(49, 130, 206, 0.04); font-weight: 700;
+          z-index: -1; line-height: 1; transition: all 0.5s ease;
+          pointer-events: none;
+        }
+        .diet-card:hover .diet-phase-num { transform: scale(1.05) translateX(-10px); color: rgba(49, 130, 206, 0.08); }
+        .diet-icon {
+          width: 70px; height: 70px; border-radius: 20px;
+          background: linear-gradient(135deg, #ebf8ff, #bee3f8);
+          display: flex; justify-content: center; align-items: center;
+          font-size: 2rem; color: #2b6cb0; margin-bottom: 2rem;
+          box-shadow: inset 0 2px 5px rgba(255,255,255,1), 0 8px 15px rgba(49, 130, 206, 0.15);
+        }
+        .diet-card h3 {
+          font-family: 'DM Sans', sans-serif; font-size: 1.45rem; color: #1a202c;
+          font-weight: 800; margin-bottom: 1.25rem; line-height: 1.3;
+        }
+        .diet-card p {
+          color: #4a5568; font-size: 1.05rem; line-height: 1.7; margin-bottom: 2rem;
+        }
+        .diet-list {
+          list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem;
+        }
+        .diet-list li {
+          display: flex; align-items: flex-start; gap: 0.75rem;
+          color: #2d3748; font-size: 0.98rem; line-height: 1.5;
+        }
+        .diet-list i { color: #38A169; margin-top: 0.2rem; font-size: 1.1rem; }
+      </style>
+
+      <img src="assets/img/healthy_diet.png" alt="Healthy Post-Op Diet" class="diet-hero-image">
+
+      <div class="diet-grid">
+        <div class="diet-card">
+          <div class="diet-phase-num">1</div>
+          <div class="diet-icon"><i class="fa-solid fa-droplet"></i></div>
+          <h3>Phase I<br><span style="font-size: 1.1rem; color: #4a5568; font-weight: 500;">Clear Liquid Diet</span></h3>
+          <p>Begins 12 hours after surgery in the hospital.</p>
+          <ul class="diet-list">
+            <li><i class="fa-solid fa-check-circle"></i> Sip slowly throughout the day to stay hydrated</li>
+            <li><i class="fa-solid fa-check-circle"></i> Start with 30-60ml at a time</li>
+            <li><i class="fa-solid fa-check-circle"></i> Stop drinking if you feel fullness or discomfort</li>
+            <li><i class="fa-solid fa-times-circle" style="color: #E53E3E;"></i> Avoid sweetened beverages</li>
           </ul>
         </div>
 
-        <div class="gb-card">
-          <h3><i class="fa-solid fa-utensils"></i> Weeks 1 to 4 (Gradual Transition)</h3>
-          <p>
-            As your bile duct naturally dilates slightly to hold bile between meals, you can gradually reintroduce normal family dishes. Introduce healthy fats slowly to allow your digestive enzymes to adjust without bloating.
-          </p>
-          <ul class="gb-list">
-            <li><i class="fa-solid fa-check"></i> Home-cooked rotis, dals, sabzis with moderate olive/mustard oil</li>
-            <li><i class="fa-solid fa-check"></i> Lean proteins including grilled chicken, fish, paneer, and eggs</li>
-            <li><i class="fa-solid fa-check"></i> Soluble fiber from lentils, beans, and whole grains</li>
-            <li><i class="fa-solid fa-check"></i> Avoid heavy deep-fried pakoras, heavy ghee, or rich creamy gravies</li>
+        <div class="diet-card">
+          <div class="diet-phase-num">2</div>
+          <div class="diet-icon"><i class="fa-solid fa-mug-hot"></i></div>
+          <h3>Phase II – 2 Weeks<br><span style="font-size: 1.1rem; color: #4a5568; font-weight: 500;">Full Liquid Diet</span></h3>
+          <p>Begins at hospital discharge. Build on Phase I with more substantial liquids.</p>
+          <ul class="diet-list">
+            <li><i class="fa-solid fa-check-circle"></i> Drink slowly and consume protein foods first</li>
+            <li><i class="fa-solid fa-check-circle"></i> Avoid meal skipping — eat at regular intervals</li>
+            <li><i class="fa-solid fa-check-circle"></i> Follow regular scheduled meals with small portions</li>
+            <li><i class="fa-solid fa-times-circle" style="color: #E53E3E;"></i> Avoid added sugars, straws, and high fat foods</li>
           </ul>
         </div>
 
-        <div class="gb-card">
-          <h3><i class="fa-solid fa-apple-whole"></i> 1 Month &amp; Beyond (Normal Life)</h3>
-          <p>
-            By the end of the first month, more than 98% of patients have completely normal digestion and can eat almost any food they enjoyed before developing gallstones—without experiencing any pain or cramping.
-          </p>
-          <ul class="gb-list">
-            <li><i class="fa-solid fa-check"></i> Return to your regular, well-balanced family diet</li>
-            <li><i class="fa-solid fa-check"></i> Enjoy restaurant meals and social gatherings without fear</li>
-            <li><i class="fa-solid fa-check"></i> Maintain a healthy weight and stay physically active</li>
-            <li><i class="fa-solid fa-check"></i> No lifelong vitamins or enzymes are required</li>
+        <div class="diet-card">
+          <div class="diet-phase-num">3</div>
+          <div class="diet-icon"><i class="fa-solid fa-blender"></i></div>
+          <h3>Phase III – 2-4 Weeks<br><span style="font-size: 1.1rem; color: #4a5568; font-weight: 500;">Puree Diet</span></h3>
+          <p>Progression to soft/pureed foods. A hand blender is recommended.</p>
+          <ul class="diet-list">
+            <li><i class="fa-solid fa-check-circle"></i> Pureed meats, pulses, vegetables and fruits form the core</li>
+            <li><i class="fa-solid fa-check-circle"></i> Chew slowly and thoroughly — even pureed foods</li>
+            <li><i class="fa-solid fa-check-circle"></i> Gradually increase meal size to 150 - 200ml per sitting</li>
+            <li><i class="fa-solid fa-check-circle"></i> Prioritize protein-rich foods at every meal</li>
+          </ul>
+        </div>
+
+        <div class="diet-card">
+          <div class="diet-phase-num">4</div>
+          <div class="diet-icon"><i class="fa-solid fa-utensils"></i></div>
+          <h3>Phase IV – Long Term<br><span style="font-size: 1.1rem; color: #4a5568; font-weight: 500;">Soft to Normal Diet</span></h3>
+          <p>Gradual increment from soft diet to a normal, sustainable eating pattern.</p>
+          <ul class="diet-list">
+            <li><i class="fa-solid fa-check-circle"></i> Eat only at regular intervals — three small meals + two small snacks</li>
+            <li><i class="fa-solid fa-check-circle"></i> Chew well and eat slowly — chew to liquid consistency</li>
+            <li><i class="fa-solid fa-times-circle" style="color: #E53E3E;"></i> Avoid drinking liquids 30 minutes before and after meals</li>
+            <li><i class="fa-solid fa-check-circle"></i> Listen to your body and avoid overeating</li>
           </ul>
         </div>
       </div>
@@ -1891,76 +2469,164 @@
         </p>
       </div>
 
-      <div class="gb-faq-list">
-        <div class="gb-faq-item">
-          <button class="gb-faq-question">
+      <style>
+        .gb-faq-container {
+          max-width: 900px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          gap: 1.25rem;
+        }
+        .gb-faq-item {
+          background: #ffffff;
+          border-radius: 1.5rem;
+          border: 1px solid rgba(49, 130, 206, 0.1);
+          box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+          overflow: hidden;
+          transition: all 0.3s ease;
+        }
+        .gb-faq-item:hover {
+          box-shadow: 0 15px 35px rgba(49, 130, 206, 0.08);
+          border-color: rgba(49, 130, 206, 0.3);
+        }
+        .gb-faq-question {
+          width: 100%;
+          text-align: left;
+          padding: 1.5rem 2rem;
+          background: transparent;
+          border: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+          font-family: 'DM Sans', sans-serif;
+          font-size: 1.15rem;
+          font-weight: 700;
+          color: #1a202c;
+          transition: color 0.3s ease;
+        }
+        .gb-faq-item:hover .gb-faq-question { color: #2b6cb0; }
+        .gb-faq-icon {
+          width: 36px; height: 36px; border-radius: 50%;
+          background: #ebf8ff; color: #3182ce;
+          display: flex; justify-content: center; align-items: center;
+          font-size: 1rem; transition: transform 0.4s ease, background 0.3s ease;
+          flex-shrink: 0; margin-left: 1rem;
+        }
+        .gb-faq-item.active .gb-faq-icon {
+          transform: rotate(135deg);
+          background: #3182ce; color: #ffffff;
+        }
+        .gb-faq-answer {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+        .gb-faq-answer-inner {
+          padding: 0 2rem 1.75rem 2rem;
+          color: #4a5568; font-size: 1.05rem; line-height: 1.7;
+          border-top: 1px solid transparent;
+        }
+        .gb-faq-item.active .gb-faq-answer-inner { border-top-color: rgba(49, 130, 206, 0.1); padding-top: 1.25rem; }
+      </style>
+
+      <script>
+        function toggleFAQ(element) {
+          const item = element.parentElement;
+          const answer = item.querySelector('.gb-faq-answer');
+          const allItems = document.querySelectorAll('.gb-faq-item');
+          
+          if (item.classList.contains('active')) {
+            item.classList.remove('active');
+            answer.style.maxHeight = null;
+          } else {
+            allItems.forEach(i => {
+              i.classList.remove('active');
+              const ans = i.querySelector('.gb-faq-answer');
+              if(ans) ans.style.maxHeight = null;
+            });
+            item.classList.add('active');
+            answer.style.maxHeight = answer.scrollHeight + "px";
+          }
+        }
+      </script>
+
+      <div class="gb-faq-container">
+        <!-- FAQ 1 -->
+        <div class="gb-faq-item active">
+          <button class="gb-faq-question" onclick="toggleFAQ(this)">
             <span>Can my gallstones be flushed out with apple cider vinegar, Ayurveda, or olive oil cleanses?</span>
-            <i class="fa-solid fa-chevron-down"></i>
+            <div class="gb-faq-icon"><i class="fa-solid fa-plus"></i></div>
           </button>
-          <div class="gb-faq-answer">
-            <p>
-              No. Popular home remedies like "gallbladder flushes" using olive oil, lemon juice, or herbs do not dissolve or eliminate gallstones. The greenish lumps passed in stool after such flushes are actually soap-like curdles formed by the interaction of swallowed oil and stomach acid—not gallstones. Delaying surgery and attempting home cleanses frequently causes stones to migrate into the common bile duct, triggering life-threatening Jaundice or Pancreatitis.
-            </p>
+          <div class="gb-faq-answer" style="max-height: 500px;">
+            <div class="gb-faq-answer-inner">
+              <p style="margin: 0;">No. Popular home remedies like "gallbladder flushes" using olive oil, lemon juice, or herbs do not dissolve or eliminate gallstones. The greenish lumps passed in stool after such flushes are actually soap-like curdles formed by the interaction of swallowed oil and stomach acid—not gallstones. Delaying surgery and attempting home cleanses frequently causes stones to migrate into the common bile duct, triggering life-threatening Jaundice or Pancreatitis.</p>
+            </div>
           </div>
         </div>
 
+        <!-- FAQ 2 -->
         <div class="gb-faq-item">
-          <button class="gb-faq-question">
+          <button class="gb-faq-question" onclick="toggleFAQ(this)">
             <span>Will I experience weight gain or weight loss after my gallbladder is removed?</span>
-            <i class="fa-solid fa-chevron-down"></i>
+            <div class="gb-faq-icon"><i class="fa-solid fa-plus"></i></div>
           </button>
           <div class="gb-faq-answer">
-            <p>
-              Gallbladder removal surgery itself does NOT cause weight gain or weight loss. Your metabolism and caloric burning rate remain entirely unchanged. However, many patients who were previously skipping meals or eating poorly out of fear of gallstone pain suddenly find they can enjoy food comfortably after surgery. Maintaining a balanced diet and regular exercise ensures healthy weight management.
-            </p>
+            <div class="gb-faq-answer-inner">
+              <p style="margin: 0;">Gallbladder removal surgery itself does NOT cause weight gain or weight loss. Your metabolism and caloric burning rate remain entirely unchanged. However, many patients who were previously skipping meals or eating poorly out of fear of gallstone pain suddenly find they can enjoy food comfortably after surgery. Maintaining a balanced diet and regular exercise ensures healthy weight management.</p>
+            </div>
           </div>
         </div>
 
+        <!-- FAQ 3 -->
         <div class="gb-faq-item">
-          <button class="gb-faq-question">
+          <button class="gb-faq-question" onclick="toggleFAQ(this)">
             <span>What happens if I have asymptomatic (silent) gallstones discovered on a routine checkup?</span>
-            <i class="fa-solid fa-chevron-down"></i>
+            <div class="gb-faq-icon"><i class="fa-solid fa-plus"></i></div>
           </button>
           <div class="gb-faq-answer">
-            <p>
-              If your gallstones are truly asymptomatic and under 1 cm, immediate surgery is not mandatory for everyone. However, prophylactic (preventive) laparoscopic cholecystectomy is strongly recommended if: (1) you have large stones exceeding 2 to 3 cm (high risk of chronic inflammation and gallbladder cancer over decades), (2) you have small multiple stones under 3 mm (high risk of slipping into the bile duct and causing pancreatitis), (3) you have diabetes or hemolytic anemia, or (4) your gallbladder wall is thickened or calcified (Porcelain Gallbladder).
-            </p>
+            <div class="gb-faq-answer-inner">
+              <p style="margin: 0;">If your gallstones are truly asymptomatic and under 1 cm, immediate surgery is not mandatory for everyone. However, prophylactic (preventive) laparoscopic cholecystectomy is strongly recommended if: (1) you have large stones exceeding 2 to 3 cm, (2) you have small multiple stones under 3 mm (high risk of slipping), (3) you have diabetes, or (4) your gallbladder wall is thickened or calcified (Porcelain Gallbladder).</p>
+            </div>
           </div>
         </div>
 
+        <!-- FAQ 4 -->
         <div class="gb-faq-item">
-          <button class="gb-faq-question">
+          <button class="gb-faq-question" onclick="toggleFAQ(this)">
             <span>How long do the keyhole incisions take to heal, and will I have visible scars?</span>
-            <i class="fa-solid fa-chevron-down"></i>
+            <div class="gb-faq-icon"><i class="fa-solid fa-plus"></i></div>
           </button>
           <div class="gb-faq-answer">
-            <p>
-              Our 4K laparoscopic and robotic techniques utilize tiny incisions measuring just 5mm to 10mm. We close these incisions using internal absorbable sutures and surgical tissue glue, eliminating the need for outer skin stitches. Within 10 to 14 days, the skin closes completely. Over several months, these tiny marks fade into virtually imperceptible hairline creases that are barely visible.
-            </p>
+            <div class="gb-faq-answer-inner">
+              <p style="margin: 0;">Our 4K laparoscopic and robotic techniques utilize tiny incisions measuring just 5mm to 10mm. We close these incisions using internal absorbable sutures and surgical tissue glue, eliminating the need for outer skin stitches. Within 10 to 14 days, the skin closes completely. Over several months, these tiny marks fade into virtually imperceptible hairline creases that are barely visible.</p>
+            </div>
           </div>
         </div>
 
+        <!-- FAQ 5 -->
         <div class="gb-faq-item">
-          <button class="gb-faq-question">
+          <button class="gb-faq-question" onclick="toggleFAQ(this)">
             <span>Can gallstones form again after my gallbladder is surgically removed?</span>
-            <i class="fa-solid fa-chevron-down"></i>
+            <div class="gb-faq-icon"><i class="fa-solid fa-plus"></i></div>
           </button>
           <div class="gb-faq-answer">
-            <p>
-              Once your gallbladder is completely removed by laparoscopic cholecystectomy, gallstones cannot form in the gallbladder again because the organ itself is gone. In extremely rare instances (less than 0.5% of cases over a lifetime), a small stone may form inside the bile ducts (primary CBD stones) due to slow bile transit, but this is completely separate from gallbladder disease and is easily managed via endoscopy (ERCP) without surgery.
-            </p>
+            <div class="gb-faq-answer-inner">
+              <p style="margin: 0;">Once your gallbladder is completely removed by laparoscopic cholecystectomy, gallstones cannot form in the gallbladder again because the organ itself is gone. In extremely rare instances (less than 0.5% of cases), a small stone may form inside the bile ducts (primary CBD stones) due to slow bile transit, which is easily managed via endoscopy (ERCP) without surgery.</p>
+            </div>
           </div>
         </div>
 
+        <!-- FAQ 6 -->
         <div class="gb-faq-item">
-          <button class="gb-faq-question">
+          <button class="gb-faq-question" onclick="toggleFAQ(this)">
             <span>Why choose Dr. Atul Peters at Max Hospital, Saket for gallbladder surgery?</span>
-            <i class="fa-solid fa-chevron-down"></i>
+            <div class="gb-faq-icon"><i class="fa-solid fa-plus"></i></div>
           </button>
           <div class="gb-faq-answer">
-            <p>
-              Dr. Atul Peters is a globally recognized Senior Director &amp; Head of Minimal Access and Robotic Surgery with over 20+ years of surgical mastery and thousands of successful keyhole procedures. Operating at Max Super Speciality Hospital, Saket—one of India's premier JCI and NABH accredited hospitals—he combines ultra-precise 4K / Da Vinci robotic technology with strict Critical View of Safety (CVS) protocols to guarantee maximum safety, zero bile duct complications, and rapid 24-hour discharge.
-            </p>
+            <div class="gb-faq-answer-inner">
+              <p style="margin: 0;">Dr. Atul Peters is a globally recognized Senior Director &amp; Head of Minimal Access and Robotic Surgery with over 20+ years of surgical mastery. Operating at Max Smart Super Speciality Hospital, Saket, he combines ultra-precise 4K / Da Vinci robotic technology with strict Critical View of Safety (CVS) protocols to guarantee maximum safety, zero bile duct complications, and rapid 24-hour discharge.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -1975,7 +2641,7 @@
       <div class="gb-cta-box">
         <h2>Experiencing Gallstone Pain? Don't Delay Your Care</h2>
         <p>
-          Take the first step toward permanent relief and complete biliary safety. Schedule an expert clinical consultation or second opinion with Dr. Atul Peters at Max Super Speciality Hospital, Saket today.
+          Take the first step toward permanent relief and complete biliary safety. Schedule an expert clinical consultation or second opinion with Dr. Atul Peters at Max Smart Super Speciality Hospital, Saket – New Delhi today.
         </p>
         <div class="gb-cta-actions">
           <a href="javascript:void(0)" onclick="showBookAnApptmForm(); return false;" class="btn btn-gold btn-lg">
@@ -2023,18 +2689,26 @@
       const faqItems = document.querySelectorAll('.gb-faq-item');
       faqItems.forEach(function (item) {
         const question = item.querySelector('.gb-faq-question');
-        question.addEventListener('click', function () {
-          const isActive = item.classList.contains('active');
-          faqItems.forEach(function (el) {
-            el.classList.remove('active');
-            el.querySelector('.gb-faq-answer').style.maxHeight = null;
+        // Ensure question exists because there might be other elements with .gb-faq-item on the page
+        if (question) {
+          question.addEventListener('click', function () {
+            const isActive = item.classList.contains('active');
+            faqItems.forEach(function (el) {
+              el.classList.remove('active');
+              const ans = el.querySelector('.gb-faq-answer');
+              if (ans) {
+                ans.style.maxHeight = null;
+              }
+            });
+            if (!isActive) {
+              item.classList.add('active');
+              const answer = item.querySelector('.gb-faq-answer');
+              if (answer) {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+              }
+            }
           });
-          if (!isActive) {
-            item.classList.add('active');
-            const answer = item.querySelector('.gb-faq-answer');
-            answer.style.maxHeight = answer.scrollHeight + "px";
-          }
-        });
+        }
       });
 
       // Active Section Highlighting in Sticky Quick Nav

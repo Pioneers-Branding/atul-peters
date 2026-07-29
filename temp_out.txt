@@ -1,0 +1,217 @@
+RAPID:
+18: <meta content="A streamlined single-anastomosis gastric bypass delivering ~75-85% excess weight loss and rapid diabetes remission with shorter surgical time and excellent long-term durability." property="og:description" />
+393: When food rapidly bypasses 150–200 cm of the upper intestine and enters the distal bowel, specialized L-cells release a massive surge of <strong>GLP-1 and PYY</strong> hormones. This natural incretin boost dramatically enhances pancreatic insulin secretion and reverses insulin resistance, putting Type 2 Diabetes into rapid remission.
+461: <p>The single connection is thoroughly tested for complete seal integrity using methylene blue dye or air pressure under direct vision. Skin incisions are closed cleanly with medical glue, allowing rapid ambulation within hours.</p>
+521: <p>Patients seeking rapid, hormone-driven remission of blood sugar levels and freedom from daily insulin injections.</p>
+575: <strong>Rapid Type 2 Diabetes Remission</strong>
+
+ROUX-EN-Y (RYGB):
+9: <meta content="mini gastric bypass Delhi, one anastomosis gastric bypass India, OAGB bariatric surgery, MGB vs RYGB, revision bariatric surgery Delhi, conversion sleeve to mini bypass, Dr Atul Peters bariatric surgeon" name="keywords" />
+91: "name": "How does Mini Gastric Bypass differ from standard Roux-en-Y Gastric Bypass?",
+94: "text": "While standard Roux-en-Y Gastric Bypass requires two surgical connections (anastomoses) and divides the small bowel into a Y-shape, Mini Gastric Bypass requires only ONE connection between the stomach pouch and an intact loop of intestine. This single-anastomosis design reduces surgical operating time by 30-40 minutes, minimizes anesthesia exposure, and significantly lowers the long-term risk of internal hernias."
+102: "text": "In his peer-reviewed research published in Obesity Surgery (2014) titled 'MGB vs RYGB: 1 Year Outcomes in Super Obese', Dr. Peters demonstrated that Mini Gastric Bypass achieved superior weight loss velocity and equally high comorbidity remission rates compared to Roux-en-Y in super obese cohorts (BMI ≥ 50), with significantly shorter operative time and hospital length of stay."
+167: <body class="rygb-page">
+174: <section class="rygb-hero">
+175: <div class="rygb-hero-bg">
+176: <div class="rygb-hero-pattern"></div>
+179: <div class="rygb-breadcrumb">
+184: <span class="rygb-breadcrumb-current">Mini Gastric Bypass</span>
+186: <div class="rygb-hero-grid">
+187: <div class="rygb-hero-content">
+192: <h1 class="rygb-hero-title">
+196: <p class="rygb-hero-sub">
+199: <div class="rygb-hero-stats">
+200: <div class="rygb-hero-stat">
+201: <span class="rygb-hero-stat-num">~80%</span>
+202: <span class="rygb-hero-stat-label">Excess Weight Loss</span>
+204: <div class="rygb-hero-stat-divider"></div>
+205: <div class="rygb-hero-stat">
+206: <span class="rygb-hero-stat-num">1 Only</span>
+207: <span class="rygb-hero-stat-label">Surgical Connection</span>
+209: <div class="rygb-hero-stat-divider"></div>
+210: <div class="rygb-hero-stat">
+211: <span class="rygb-hero-stat-num">~85%</span>
+212: <span class="rygb-hero-stat-label">Diabetes Remission</span>
+215: <div class="rygb-hero-cta">
+216: <a class="btn-rygb-primary" href="#appointment">
+222: <a class="btn-rygb-ghost" href="#procedure">
+228: <div class="rygb-hero-visual">
+229: <div class="rygb-hero-image-wrap">
+230: <div class="rygb-hero-image-frame">
+240: <section class="rygb-overview about-section section" id="overview">
+242: <div class="rygb-overview-grid">
+243: <div class="rygb-overview-content">
+251: <p class="rygb-overview-lead">
+264: <aside class="rygb-overview-sidebar">
+265: <div class="rygb-sidebar-card">
+267: <ul class="rygb-sidebar-list">
+269: <span class="rygb-sidebar-label">Procedure Type</span>
+270: <span class="rygb-sidebar-value">Restrictive + Malabsorptive</span>
+273: <span class="rygb-sidebar-label">Technique</span>
+274: <span class="rygb-sidebar-value">Robotic / Laparoscopic</span>
+277: <span class="rygb-sidebar-label">Surgery Time</span>
+278: <span class="rygb-sidebar-value">Approx. 45–50 minutes</span>
+281: <span class="rygb-sidebar-label">Hospital Stay</span>
+282: <span class="rygb-sidebar-value">1–2 nights</span>
+285: <span class="rygb-sidebar-label">Recovery</span>
+286: <span class="rygb-sidebar-value">Within 1–2 weeks</span>
+289: <span class="rygb-sidebar-label">Anastomoses</span>
+290: <span class="rygb-sidebar-value">1 Only (Single Loop)</span>
+293: <span class="rygb-sidebar-label">Intestinal Bypass</span>
+294: <span class="rygb-sidebar-value">Approx. 150–200 cm</span>
+297: <span class="rygb-sidebar-label">Excess Weight Loss</span>
+298: <span class="rygb-sidebar-value rygb-sidebar-value--accent">~75–85%</span>
+301: <span class="rygb-sidebar-label">Diabetes Remission</span>
+302: <span class="rygb-sidebar-value rygb-sidebar-value--accent">~80–85%</span>
+305: <span class="rygb-sidebar-label">Super Obesity Success</span>
+306: <span class="rygb-sidebar-value rygb-sidebar-value--accent">Proven Superior Velocity</span>
+309: <span class="rygb-sidebar-label">Reversibility</span>
+310: <span class="rygb-sidebar-value">Reversible &amp; Modifiable</span>
+314: <a class="rygb-sidebar-cta" href="#appointment">
+329: <section class="rygb-section rygb-section--prose section" id="rygb-longform">
+331: <div class="rygb-prose-wrapper">
+332: <div class="rygb-prose-header center">
+337: <p class="rygb-prose-lead">
+341: <div class="rygb-prose-grid">
+342: <article class="rygb-prose-card">
+351: Every surgical connection (anastomosis) carries a small inherent risk of leak or stricture. By eliminating the second intestinal connection required in traditional Roux-en-Y bypass, Mini Gastric Bypass reduces operative time by 30–40 minutes, shortens anesthesia exposure, and virtually eliminates the long-term risk of internal bowel herniation.
+355: <article class="rygb-prose-card">
+365: In 2014, Dr. Atul Peters authored a landmark clinical study in <em>Obesity Surgery</em> titled <strong>"MGB vs RYGB: 1 Year Outcomes in Super Obese."</strong> His research proved that in patients with BMI ≥ 50, Mini Gastric Bypass achieved significantly faster weight loss velocity and superior comorbidity resolution compared to traditional bypass.
+369: <article class="rygb-prose-card">
+382: <article class="rygb-prose-card">
+398: <div class="rygb-prose-footer">
+399: <a class="btn-rygb-primary" href="#appointment">
+408: <section class="rygb-procedure section" id="procedure">
+420: <div class="rygb-procedure-layout">
+421: <div class="rygb-procedure-steps">
+422: <div class="rygb-procedure-step" style="--i:0">
+423: <div class="rygb-procedure-num">01</div>
+424: <div class="rygb-procedure-content">
+429: <div class="rygb-procedure-step" style="--i:1">
+430: <div class="rygb-procedure-num">02</div>
+431: <div class="rygb-procedure-content">
+436: <div class="rygb-procedure-step" style="--i:2">
+437: <div class="rygb-procedure-num">03</div>
+438: <div class="rygb-procedure-content">
+443: <div class="rygb-procedure-step" style="--i:3">
+444: <div class="rygb-procedure-num">04</div>
+445: <div class="rygb-procedure-content">
+450: <div class="rygb-procedure-step" style="--i:4">
+451: <div class="rygb-procedure-num">05</div>
+452: <div class="rygb-procedure-content">
+457: <div class="rygb-procedure-step" style="--i:5">
+458: <div class="rygb-procedure-num">06</div>
+459: <div class="rygb-procedure-content">
+465: <div class="rygb-mechanism-image-container">
+466: <div class="rygb-mechanism-image">
+475: <section class="rygb-section rygb-candidate section rygb-bg-alt" id="rygb-candidate">
+484: <div class="rygb-mechanism-grid">
+485: <article class="rygb-mechanism-card">
+486: <div class="rygb-mechanism-icon">
+494: <article class="rygb-mechanism-card">
+495: <div class="rygb-mechanism-icon">
+504: <article class="rygb-mechanism-card">
+505: <div class="rygb-mechanism-icon">
+514: <article class="rygb-mechanism-card">
+515: <div class="rygb-mechanism-icon">
+523: <article class="rygb-mechanism-card">
+524: <div class="rygb-mechanism-icon">
+533: <article class="rygb-mechanism-card">
+534: <div class="rygb-mechanism-icon">
+548: <section class="rygb-benefits section">
+560: <div class="rygb-benefits-grid">
+561: <div class="rygb-benefit-big">
+562: <div class="rygb-benefit-big-icon">
+567: <div class="rygb-benefit-big-num">~80%</div>
+568: <div class="rygb-benefit-big-label">Excess Weight Loss</div>
+571: <div class="rygb-benefits-list">
+572: <div class="rygb-benefit-item">
+573: <span class="rygb-benefit-check">✓</span>
+579: <div class="rygb-benefit-item">
+580: <span class="rygb-benefit-check">✓</span>
+586: <div class="rygb-benefit-item">
+587: <span class="rygb-benefit-check">✓</span>
+593: <div class="rygb-benefit-item">
+594: <span class="rygb-benefit-check">✓</span>
+600: <div class="rygb-benefit-item">
+601: <span class="rygb-benefit-check">✓</span>
+607: <div class="rygb-benefit-item">
+608: <span class="rygb-benefit-check">✓</span>
+614: <div class="rygb-benefit-item">
+615: <span class="rygb-benefit-check">✓</span>
+621: <div class="rygb-benefit-item">
+622: <span class="rygb-benefit-check">✓</span>
+634: <section class="rygb-diet section">
+646: <div class="rygb-diet-grid">
+647: <div class="rygb-diet-do">
+657: <div class="rygb-diet-dont">
+668: <div class="rygb-diet-timeline">
+669: <div class="rygb-diet-phase">
+670: <div class="rygb-diet-phase-icon">
+677: <div class="rygb-diet-phase-week">Week 1-2</div>
+678: <div class="rygb-diet-phase-content">
+683: <div class="rygb-diet-phase-arrow">→</div>
+684: <div class="rygb-diet-phase">
+685: <div class="rygb-diet-phase-icon">
+693: <div class="rygb-diet-phase-week">Week 3-4</div>
+694: <div class="rygb-diet-phase-content">
+699: <div class="rygb-diet-phase-arrow">→</div>
+700: <div class="rygb-diet-phase">
+701: <div class="rygb-diet-phase-icon">
+709: <div class="rygb-diet-phase-week">Month 2-3</div>
+710: <div class="rygb-diet-phase-content">
+715: <div class="rygb-diet-phase-arrow">→</div>
+716: <div class="rygb-diet-phase">
+717: <div class="rygb-diet-phase-icon rygb-diet-phase-icon--final">
+724: <div class="rygb-diet-phase-week">Month 4+</div>
+725: <div class="rygb-diet-phase-content">
+735: <section class="rygb-section rygb-cost section rygb-bg-alt" id="rygb-cost">
+744: <div class="rygb-cost-grid">
+745: <div class="rygb-sidebar-card">
+747: <ul class="rygb-sidebar-list">
+749: <span class="rygb-sidebar-label">Pre-op work-up &amp; clearances</span>
+750: <span class="rygb-sidebar-value rygb-sidebar-value--accent">Included</span>
+753: <span class="rygb-sidebar-label">Surgeon + Anaesthesia fee</span>
+754: <span class="rygb-sidebar-value rygb-sidebar-value--accent">Included</span>
+757: <span class="rygb-sidebar-label">Advanced staplers &amp; anastomosis cartridges</span>
+758: <span class="rygb-sidebar-value rygb-sidebar-value--accent">Included</span>
+761: <span class="rygb-sidebar-label">OT charges &amp; 1–2 nights private stay</span>
+762: <span class="rygb-sidebar-value rygb-sidebar-value--accent">Included</span>
+765: <span class="rygb-sidebar-label">1-year dietitian &amp; clinical follow-up</span>
+766: <span class="rygb-sidebar-value rygb-sidebar-value--accent">Included</span>
+769: <span class="rygb-sidebar-label">Robotic da Vinci precision upgrade</span>
+770: <span class="rygb-sidebar-value">Optional Add-on</span>
+774: <div class="rygb-sidebar-card">
+776: <ul class="rygb-sidebar-list">
+778: <span class="rygb-sidebar-label">IRDA-approved bariatric cover</span>
+779: <span class="rygb-sidebar-value rygb-sidebar-value--accent">Yes (Eligible BMI)</span>
+782: <span class="rygb-sidebar-label">Cashless network TPAs</span>
+783: <span class="rygb-sidebar-value">Max · MediAssist · MDIndia</span>
+786: <span class="rygb-sidebar-label">EMI financing options</span>
+787: <span class="rygb-sidebar-value">0% interest on select cards</span>
+790: <span class="rygb-sidebar-label">Approx. self-pay package range</span>
+791: <span class="rygb-sidebar-value rygb-sidebar-value--accent">INR 4.5L – 6.5L</span>
+794: <p class="rygb-cost-disclaimer">*Indicative pricing; exact quote provided after evaluation. Insurance reimbursement depends on policy terms, BMI criteria (≥ 35 or ≥ 32.5 with comorbidities), and medical history.</p>
+801: <section class="rygb-section rygb-results section" id="rygb-results">
+833: <div class="rygb-ba-images" style="display: flex; gap: 2.5rem; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 3.5rem;">
+904: Dr. Peters is an internationally acknowledged authority and published researcher on Mini Gastric Bypass (OAGB), having authored landmark studies such as <em>"MGB vs RYGB: 1 Year Outcomes in Super Obese"</em> and <em>"Conversion of LSG to MGB for Weight Regain"</em> in <strong>Obesity Surgery</strong> (2014). He is certified as a CENTRE OF EXCELLENCE for Bariatric and Metabolic Surgery by OSSI and for Robotic Surgery by ARIS.
+923: <section class="rygb-section section" id="rygb-faq">
+946: <span>How does Mini Gastric Bypass differ from standard Roux-en-Y Gastric Bypass?</span>
+952: <p>While standard Roux-en-Y Gastric Bypass requires two surgical connections (anastomoses) and divides the small bowel into a Y-shape, Mini Gastric Bypass requires only ONE connection between the stomach pouch and an intact loop of intestine. This single-anastomosis design reduces surgical operating time by 30-40 minutes, minimizes anesthesia exposure, and significantly lowers the long-term risk of internal hernias.</p>
+963: <p>In his peer-reviewed research published in <em>Obesity Surgery</em> (2014) titled <em>"MGB vs RYGB: 1 Year Outcomes in Super Obese"</em>, Dr. Peters demonstrated that Mini Gastric Bypass achieved superior weight loss velocity and equally high comorbidity remission rates compared to Roux-en-Y in super obese cohorts (BMI ≥ 50), with significantly shorter operative time and hospital length of stay.</p>
+1048: <section class="rygb-section rygb-related section rygb-bg-alt" id="rygb-related">
+1057: <div class="rygb-mechanism-grid">
+1058: <a class="rygb-mechanism-card" href="../roux-en-y-gastric-bypass.html">
+1059: <div class="rygb-mechanism-icon">
+1064: <h3>Roux-en-Y Gastric Bypass</h3>
+1067: <a class="rygb-mechanism-card" href="sleeve-gastrectomy.html">
+1068: <div class="rygb-mechanism-icon">
+1077: <a class="rygb-mechanism-card" href="banded-bariatric-procedures.html">
+1078: <div class="rygb-mechanism-icon">
+1086: <a class="rygb-mechanism-card" href="../weight-loss.html">
+1087: <div class="rygb-mechanism-icon">
+1095: <a class="rygb-mechanism-card" href="other-laparoscopic-procedures.html">
+1096: <div class="rygb-mechanism-icon">
+1105: <a class="rygb-mechanism-card" href="other-laparoscopic-procedures.html">
+1106: <div class="rygb-mechanism-icon">
+1256: <option value="rygb">Roux-en-Y Gastric Bypass</option>
