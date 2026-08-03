@@ -407,7 +407,7 @@ document.write(`<!-- ============================================
                     <small>Pre-op and post-op meal plans</small>
                   </span>
                 </a>
-                <a href="${basePath}blog.html" class="mega-menu-item">
+                <a href="${basePath}blog/index.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-newspaper"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>Nutrition Blog</strong>
@@ -463,7 +463,7 @@ document.write(`<!-- ============================================
 
               <div class="mega-menu-col">
                 <span class="mega-menu-label">Resources</span>
-                <a href="${basePath}blog.html" class="mega-menu-item">
+                <a href="${basePath}blog/index.html" class="mega-menu-item">
                   <span class="mega-menu-item-icon"><i class="fa-solid fa-newspaper"></i></span>
                   <span class="mega-menu-item-text">
                     <strong>News &amp; Articles</strong>

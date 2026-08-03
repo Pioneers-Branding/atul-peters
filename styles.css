@@ -25819,9 +25819,9 @@ h1[style*="700"], h2[style*="700"], h3[style*="700"], h4[style*="700"],
 
 .bp-hero-title {
   font-family: 'Bellefair', serif;
-  font-size: clamp(2.5rem, 5.5vw, 4.25rem);
-  line-height: 1.05;
-  font-weight: 400;
+  font-size: clamp(3rem, 6.5vw, 5rem);
+  line-height: 1.1;
+  font-weight: 500;
   margin: 1rem 0 1.5rem;
   color: var(--dark);
   letter-spacing: -0.02em;
@@ -25836,21 +25836,27 @@ h1[style*="700"], h2[style*="700"], h3[style*="700"], h4[style*="700"],
 }
 
 .bp-hero-sub {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.75;
-  color: var(--text-2);
-  margin: 0 0 2rem;
+  color: var(--text-1);
+  opacity: 0.85;
+  margin: 0 0 2.5rem;
   max-width: 580px;
 }
 
 .bp-hero-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.75rem;
-  max-width: 500px;
+  gap: 1.5rem;
+  max-width: 550px;
   margin: 2rem 0 0;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border-light);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 15px 35px rgba(29, 93, 149, 0.05);
 }
 
 .bp-hero-stat {
@@ -25881,11 +25887,13 @@ h1[style*="700"], h2[style*="700"], h3[style*="700"], h4[style*="700"],
 
 .bp-hero-visual-card {
   position: relative;
-  background: var(--bg-white);
-  border: 1px solid var(--border-light);
-  border-radius: 24px;
-  padding: 2.5rem 2rem;
-  box-shadow: var(--sh-xl);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 25px 50px rgba(29, 93, 149, 0.1);
   isolation: isolate;
 }
 
@@ -25933,18 +25941,20 @@ h1[style*="700"], h2[style*="700"], h3[style*="700"], h4[style*="700"],
 .bp-hero-visual-list li {
   display: flex;
   align-items: center;
-  gap: 0.85rem;
-  padding: 0.85rem 1rem;
-  background: var(--bg-cream);
-  border: 1px solid var(--border-light);
-  border-radius: 12px;
-  transition: all var(--dur) var(--ease);
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bp-hero-visual-list li:hover {
-  background: var(--teal-pale);
+  background: #ffffff;
   border-color: var(--teal);
-  transform: translateX(4px);
+  transform: translateY(-4px) translateX(4px);
+  box-shadow: 0 12px 24px rgba(29, 93, 149, 0.08);
 }
 
 .bp-hero-visual-list i {
@@ -26213,7 +26223,7 @@ h1[style*="700"], h2[style*="700"], h3[style*="700"], h4[style*="700"],
 
 .bp-layout {
   display: grid;
-  grid-template-columns: 1fr 320px;
+  grid-template-columns: 1fr;
   gap: 2.5rem;
   max-width: 1280px;
   margin: 0 auto;
@@ -26222,14 +26232,14 @@ h1[style*="700"], h2[style*="700"], h3[style*="700"], h4[style*="700"],
 
 /* Posts grid */
 .bp-posts {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
 .bp-post-card {
-  display: grid;
-  grid-template-columns: 280px 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 0;
   background: var(--bg-white);
   border: 1px solid var(--border-light);
@@ -26296,6 +26306,7 @@ h1[style*="700"], h2[style*="700"], h3[style*="700"], h4[style*="700"],
   padding: 1.5rem 1.75rem 1.5rem 1.5rem;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .bp-post-meta {
@@ -26936,6 +26947,10 @@ h1[style*="700"], h2[style*="700"], h3[style*="700"], h4[style*="700"],
     grid-template-columns: 1fr;
   }
 
+  .bp-posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .bp-sidebar {
     position: static;
   }
@@ -26969,6 +26984,11 @@ h1[style*="700"], h2[style*="700"], h3[style*="700"], h4[style*="700"],
   }
 
   .bp-post-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bp-posts {
     grid-template-columns: 1fr;
   }
 
