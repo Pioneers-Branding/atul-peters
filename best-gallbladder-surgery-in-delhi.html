@@ -17,7 +17,7 @@
   <meta content="Dr. Atul Peters" name="author" />
   <!-- Open Graph -->
   <meta content="website" property="og:type" />
-  <meta content="Best Gallbladder Surgery in Delhi | Dr. Atul Peters — Max Hospital, Saket" property="og:title" />
+  <meta content="Best Gallbladder Surgery in Delhi | Dr. Atul Peters — Max Smart Super Speciality Hospital, Saket" property="og:title" />
   <meta
     content="Experience safe, painless, gold-standard keyhole gallbladder removal in Delhi with Dr. Atul Peters. 4K Ultra HD visualization, Critical View of Safety protocols, and overnight recovery."
     property="og:description" />
@@ -168,12 +168,20 @@
 
     .gb-hero-title {
       font-family: 'Bellefair', Georgia, serif;
-      font-size: clamp(2.5rem, 5vw, 4.2rem);
+      font-size: clamp(1.8rem, 3vw, 3rem);
       font-weight: 400;
       line-height: 1.1;
       color: #FFFFFF;
       margin-bottom: 1.5rem;
       text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 991px) {
+      .gb-hero-title {
+        white-space: normal;
+        font-size: clamp(1.8rem, 5vw, 2.8rem);
+      }
     }
 
     .gb-hero-title span {
@@ -1377,9 +1385,9 @@
       <div class="gb-quick-nav-list">
         <div class="gb-quick-nav-item"><a class="active" href="#symptoms">Symptoms &amp; Gallstones</a></div>
         <div class="gb-quick-nav-item"><a href="#technique">Techniques &amp; Safety</a></div>
+        <div class="gb-quick-nav-item"><a href="#about">About Dr. Peters</a></div>
         <div class="gb-quick-nav-item"><a href="#journey">Treatment Step-by-Step</a></div>
         <div class="gb-quick-nav-item"><a href="#diet">Post-Op Diet &amp; Care</a></div>
-        <div class="gb-quick-nav-item"><a href="#about">About Dr. Peters</a></div>
         <div class="gb-quick-nav-item"><a href="#cost">Cost &amp; Insurance</a></div>
         <div class="gb-quick-nav-item"><a href="#faqs">FAQs</a></div>
       </div>
@@ -1643,7 +1651,7 @@
             background: linear-gradient(145deg, #f8fafc 0%, #edf2f7 100%);
             border-radius: 2.5rem;
             padding: 4rem 3rem;
-            margin: 4rem 0;
+            margin: 4rem 0 0;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05), inset 0 0 0 2px rgba(255, 255, 255, 0.8);
             position: relative;
             overflow: hidden;
@@ -1780,16 +1788,10 @@
             }
           }
 
-          .gb-hotspot-card:nth-child(1).active {
-            border-left-color: #D69E2E;
-          }
-
-          .gb-hotspot-card:nth-child(2).active {
-            border-left-color: #DD6B20;
-          }
-
+          .gb-hotspot-card:nth-child(1).active,
+          .gb-hotspot-card:nth-child(2).active,
           .gb-hotspot-card:nth-child(3).active {
-            border-left-color: #E53E3E;
+            border-left-color: #2A7AB5;
           }
 
           .gb-hotspot-num {
@@ -1807,17 +1809,11 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
           }
 
-          .gb-hotspot-card:nth-child(1) .gb-hotspot-num {
-            background: linear-gradient(135deg, #F6E05E, #D69E2E);
-            color: #000;
-          }
-
-          .gb-hotspot-card:nth-child(2) .gb-hotspot-num {
-            background: linear-gradient(135deg, #ED8936, #DD6B20);
-          }
-
+          .gb-hotspot-card:nth-child(1) .gb-hotspot-num,
+          .gb-hotspot-card:nth-child(2) .gb-hotspot-num,
           .gb-hotspot-card:nth-child(3) .gb-hotspot-num {
-            background: linear-gradient(135deg, #FC8181, #E53E3E);
+            background: linear-gradient(135deg, #2A7AB5, #154779);
+            color: #fff;
           }
 
           .gb-hotspot-text h4 {
@@ -1904,7 +1900,6 @@
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 2.5rem;
-          margin-bottom: 4rem;
         }
 
         @media (max-width: 991px) {
@@ -2345,6 +2340,91 @@
       </div> -->
     </div>
   </section>
+  <section class="about-section section" id="about" style="scroll-margin-top: 140px;">
+    <div aria-hidden="true" class="about-bg-grid"></div>
+    <div aria-hidden="true" class="about-bg-blob about-bg-blob--1"></div>
+    <div aria-hidden="true" class="about-bg-blob about-bg-blob--2"></div>
+    <span aria-hidden="true" class="about-watermark">Dr. Atul Peters</span>
+    <div class="container">
+      <div class="about-grid">
+        <!-- Visual Column -->
+        <div class="about-visual">
+          <div class="about-photo-stack">
+            <div aria-hidden="true" class="about-photo-bg"></div>
+            <div aria-hidden="true" class="about-photo-dots"></div>
+            <div class="about-photo-frame">
+              <img alt="Dr. Atul Peters" src="https://www.atulpeters.com/front/img/latest-atul-peter-img.webp" />
+              <div aria-hidden="true" class="about-photo-shine"></div>
+            </div>
+            <!-- Vertical Stat Ribbon -->
+            <div class="about-ribbon">
+              <div class="about-ribbon-item">
+                <span class="about-ribbon-num">25<sup>+</sup></span>
+                <span class="about-ribbon-lbl">Years</span>
+              </div>
+              <div class="about-ribbon-divider"></div>
+              <div class="about-ribbon-item">
+                <span class="about-ribbon-num">1500<small>+</small></span>
+                <span class="about-ribbon-lbl">Cases/Year</span>
+              </div>
+              <div class="about-ribbon-divider"></div>
+              <div class="about-ribbon-item">
+                <span class="about-ribbon-lbl">Surgeon of Excellence</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content Column -->
+        <div class="about-content">
+          <div class="section-eyebrow">
+            <svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            About The Surgeon
+          </div>
+          <h2 class="section-title about-title">
+            Meet <span class="about-title-accent">Dr. (Prof.) Atul Peters</span>
+          </h2>
+          <div class="about-meta">
+            <span class="about-meta-role">Vice Chairman, Dept. of Bariatric, Minimal Access &amp; Robotic Surgery</span>
+            <span class="about-meta-dept">Dept. of Bariatric, Minimal Access &amp; Robotic Surgery</span>
+            <span class="about-meta-place">Max Smart Super Speciality Hospital, Saket – New Delhi, New Delhi</span>
+            <span class="about-meta-place">New Delhi</span>
+          </div>
+          <!-- Editorial Pull Quote -->
+          <blockquote class="about-quote">
+            <svg class="about-quote-mark" fill="currentColor" height="40" viewbox="0 0 24 24" width="40">
+              <path
+                d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 .991 0 1 0 1 1v1c0 1-1 2-2 2-.991 0-1 .008-1 1.031V20c0 1 0 1 1 1z">
+              </path>
+            </svg>
+            <p>Behind every brilliant performance there were countless hours of practice and preparation.</p>
+            <cite>— Prof. (Dr.) Atul N.C. Peters</cite>
+          </blockquote>
+          <p class="about-text">Prof. (Dr.) Atul N.C. Peters is Vice Chairman, Dept. of Bariatric, Minimal Access &amp;
+            Robotic Surgery of the Dept. of Bariatric, Minimal Access
+            &amp; Robotic Surgery at Max Smart Super Speciality Hospital, Saket – New Delhi. With close to <strong>three
+              decades of surgical experience</strong>, his comprehensive practice encompasses advanced gastrointestinal
+            (GI) surgery, complex abdominal wall reconstructions and hernia repairs, hepatobiliary procedures, and
+            revision surgeries, as well as pioneering Bariatric &amp; Metabolic Surgery for diabetes, performing over
+            <strong>1,500 cases annually</strong>.
+          </p>
+          <p class="about-text">Dr. Peters is a DHA Certified, Specialist Bariatric and Robotic Surgeon at New Modern
+            Hospital, Dubai and consultant Bariatric Surgeon at NMC, Muscat. He has been awarded as SURGEON OF
+            EXCELLENCE
+            for Bariatric and Metabolic Surgery by OSSI and SURGEON OF EXCELLENCE for Robotic and Innovative Surgery by
+            ARIS. He is also a 'Proctor' in Robotic surgery providing real-time guidance to trainee surgeons.</p>
+          <!-- Signature Line + CTAs -->
+          <div class="about-footer">
+            <div class="about-ctas">
+              <a class="btn btn-outline" href="#appointment">Book Consultation →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="gb-section gb-section--alt" id="journey">
 
     <div class="container">
@@ -2639,97 +2719,6 @@
           <p>Staying adequately hydrated and choosing nutrient-dense foods can further support healing and a smoother
             return to normal activities. Dietary advice may be individualised based on the patient’s medical condition,
             dietary preferences, tolerance, and the type of surgery performed.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="about-section section" id="about">
-    <div aria-hidden="true" class="about-bg-grid"></div>
-    <div aria-hidden="true" class="about-bg-blob about-bg-blob--1"></div>
-    <div aria-hidden="true" class="about-bg-blob about-bg-blob--2"></div>
-    <span aria-hidden="true" class="about-watermark">Dr. Atul Peters</span>
-    <div class="container">
-      <div class="about-grid">
-        <!-- Visual Column -->
-        <div class="about-visual">
-          <div class="about-photo-stack">
-            <div aria-hidden="true" class="about-photo-bg"></div>
-            <div aria-hidden="true" class="about-photo-dots"></div>
-            <div class="about-photo-frame">
-              <img alt="Dr. Atul Peters" src="https://www.atulpeters.com/front/img/latest-atul-peter-img.webp" />
-              <div aria-hidden="true" class="about-photo-shine"></div>
-            </div>
-            <!-- Vertical Stat Ribbon -->
-            <div class="about-ribbon">
-              <div class="about-ribbon-item">
-                <span class="about-ribbon-num">25<sup>+</sup></span>
-                <span class="about-ribbon-lbl">Years</span>
-              </div>
-              <div class="about-ribbon-divider"></div>
-              <div class="about-ribbon-item">
-                <span class="about-ribbon-num">1500<small>+</small></span>
-                <span class="about-ribbon-lbl">Cases/Year</span>
-              </div>
-              <div class="about-ribbon-divider"></div>
-              <div class="about-ribbon-item">
-                <span class="about-ribbon-lbl">Surgeon of Excellence</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Content Column -->
-        <div class="about-content">
-          <div class="section-eyebrow">
-            <svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-              <polyline points="22 4 12 14.01 9 11.01"></polyline>
-            </svg>
-            About The Surgeon
-          </div>
-          <h2 class="section-title about-title">
-            Meet <span class="about-title-accent">Dr. (Prof.) Atul Peters</span>
-          </h2>
-          <div class="about-meta">
-            <span class="about-meta-role">Vice Chairman, Dept. of Bariatric, Minimal Access &amp; Robotic Surgery</span>
-            <span class="about-meta-dept">Dept. of Bariatric, Minimal Access &amp; Robotic Surgery</span>
-            <span class="about-meta-place">Max Smart Super Speciality Hospital, Saket – New Delhi, New Delhi</span>
-            <span class="about-meta-place">New Delhi</span>
-          </div>
-          <!-- Editorial Pull Quote -->
-          <blockquote class="about-quote">
-            <svg class="about-quote-mark" fill="currentColor" height="40" viewbox="0 0 24 24" width="40">
-              <path
-                d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 .991 0 1 0 1 1v1c0 1-1 2-2 2-.991 0-1 .008-1 1.031V20c0 1 0 1 1 1z">
-              </path>
-            </svg>
-            <p>Behind every brilliant performance there were countless hours of practice and preparation.</p>
-            <cite>— Prof. (Dr.) Atul N.C. Peters</cite>
-          </blockquote>
-          <p class="about-text">Prof. (Dr.) Atul N.C. Peters is Vice Chairman, Dept. of Bariatric, Minimal Access &amp;
-            Robotic Surgery of the Dept. of Bariatric, Minimal Access
-            &amp; Robotic Surgery at Max Smart Super Speciality Hospital, Saket – New Delhi. With close to <strong>three
-              decades of surgical experience</strong>, his comprehensive practice encompasses advanced gastrointestinal
-            (GI) surgery, complex abdominal wall reconstructions and hernia repairs, hepatobiliary procedures, and
-            revision surgeries, as well as pioneering Bariatric &amp; Metabolic Surgery for diabetes, performing over
-            <strong>1,500 cases annually</strong>.
-          </p>
-          <p class="about-text">Dr. Peters is a DHA Certified, Specialist Bariatric and Robotic Surgeon at New Modern
-            Hospital, Dubai and consultant Bariatric Surgeon at NMC, Muscat. He has been awarded as SURGEON OF
-            EXCELLENCE
-            for Bariatric and Metabolic Surgery by OSSI and SURGEON OF EXCELLENCE for Robotic and Innovative Surgery by
-            ARIS. He is also a 'Proctor' in Robotic surgery providing real-time guidance to trainee surgeons.</p>
-          <!-- Signature Line + CTAs -->
-          <div class="about-footer">
-            <div class="about-ctas">
-              <a class="btn btn-gold" href="#videos">
-                <svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
-                Watch Introduction
-              </a>
-              <a class="btn btn-outline" href="#appointment">Book Consultation →</a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -3072,7 +3061,7 @@
         </details>
         <details class="service-faq-item">
           <summary>
-            <span>Why choose Dr. Atul Peters at Max Hospital, Saket for gallbladder surgery?</span>
+            <span>Why choose Dr. Atul Peters at Max Smart Super Speciality Hospital, Saket for gallbladder surgery?</span>
             <svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="20">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
@@ -3157,7 +3146,7 @@
               </div>
               <div class="appt-opt-text">
                 <span class="appt-opt-label">Visit Us</span>
-                <span class="appt-opt-value">Max Hospital, Saket · New Delhi</span>
+                <span class="appt-opt-value">Max Smart Super Speciality Hospital, Saket · New Delhi</span>
               </div>
               <svg class="appt-opt-arrow" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
                 <line x1="5" x2="19" y1="12" y2="12"></line>
@@ -3313,7 +3302,7 @@
 
       // Active Section Highlighting in Sticky Quick Nav
       const navLinks = document.querySelectorAll('.gb-quick-nav-item a');
-      const sections = document.querySelectorAll('.gb-section, .gb-cta-section');
+      const sections = document.querySelectorAll('.gb-section, .gb-cta-section, .about-section');
 
       window.addEventListener('scroll', function () {
         let current = '';
