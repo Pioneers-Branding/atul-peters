@@ -72,7 +72,7 @@ const blogs = [
 
       <h3>3. Support Gut Microbiome Diversity with Probiotics</h3>
       <p>
-        A healthy balance of intestinal microflora prevents chronic gut mucosal inflammation and reduces lymphoid tissue swelling. Incorporate natural probiotic foods such as fresh homemade dahi (curd), buttermilk (chaas), kefir, and fermented foods into your daily meals. For specialized nutritional guidance, visit our <a href="../nutrition-clinic.html">Smart Nutrition Clinic</a>.
+        A healthy balance of intestinal microflora prevents chronic gut mucosal inflammation and reduces lymphoid tissue swelling. Incorporate natural probiotic foods such as fresh homemade dahi (curd), buttermilk (chaas), kefir, and fermented foods into your daily meals. For specialized nutritional guidance, visit our Smart Nutrition Clinic.
       </p>
 
       <h3>4. Avoid Chronic Straining & Never Suppress Bowel Urges</h3>
@@ -231,7 +231,7 @@ const blogs = [
         Severe obesity is a chronic, progressive metabolic disease that impairs physical health, hormonal balance, joint mobility, and emotional well-being across every decade of adult life. When individuals struggle for years with diet cycles, yo-yo weight regain, and metabolic diseases, one of the most frequent questions they ask Dr. Atul Peters is: <em>"Am I at the right age to undergo bariatric surgery? Am I too young, or have I waited too long?"</em>
       </p>
       <p>
-        According to clinical guidelines published by the International Federation for the Surgery of Obesity (IFSO) on <a href="https://en.wikipedia.org/wiki/Bariatric_surgery" target="_blank" rel="noopener">bariatric surgery</a>, <strong>there is no single "magic" age</strong>. Instead, expert bariatric surgeons evaluate a patient\'s overall biological health, body mass index (BMI), organ function, and severity of obesity-related comorbidities. For a full analysis on surgical risks across age groups, consult our article on whether <a href="is-bariatric-surgery-safe.html">bariatric surgery is safe</a>.
+        According to clinical guidelines published by the International Federation for the Surgery of Obesity (IFSO) on <a href="https://en.wikipedia.org/wiki/Bariatric_surgery" target="_blank" rel="noopener">bariatric surgery</a>, <strong>there is no single "magic" age</strong>. Instead, expert <a href="../index.html">bariatric surgeons in Delhi</a> evaluate a patient\'s overall biological health, body mass index (BMI), organ function, and severity of obesity-related comorbidities. For a full analysis on surgical risks across age groups, consult our article on whether <a href="is-bariatric-surgery-safe.html">bariatric surgery is safe</a>.
       </p>
       <p>
         Whether you are a 22-year-old struggling with PCOS and insulin resistance or a 68-year-old suffering from severe knee osteoarthritis and Type 2 Diabetes, modern minimally invasive surgery can be tailored to transform your health profile safely.
@@ -365,7 +365,7 @@ const blogs = [
 
       <h2>When Is Robotic-Assisted Hysterectomy Recommended?</h2>
       <p>
-        For patients with very large fibroids (weighing over 1 kg), extensive pelvic scar tissue from previous surgeries, or severe deep infiltrating endometriosis, Dr. Atul Peters utilizes <a href="../robotic-surgery-in-delhi.html">Da Vinci robotic surgery in Delhi</a>. Robotic 3D high-definition optics and wrist-articulated instruments provide 360-degree maneuverability in tight pelvic spaces.
+        For patients with very large fibroids (weighing over 1 kg), extensive pelvic scar tissue from previous surgeries, or severe deep infiltrating endometriosis, <a href="../index.html">Dr. Atul Peters</a> utilizes <a href="../robotic-surgery-in-delhi.html">Da Vinci robotic surgery in Delhi</a>. Robotic 3D high-definition optics and wrist-articulated instruments provide 360-degree maneuverability in tight pelvic spaces.
       </p>
       <p>
         Learn more about keyhole techniques across all abdominal procedures under our <a href="../laparoscopic-surgery-in-delhi.html">Laparoscopic Surgical Services</a>.
@@ -413,7 +413,7 @@ const blogs = [
         Because back pain is so commonly attributed to muscle strain, poor sitting posture, or spinal disc issues, many patients spend weeks taking painkillers or visiting physiotherapists without relief—unaware that the true culprit is a gallbladder filled with gallstones! If you wonder about post-surgical weight changes after treatment, read our guide on whether <a href="do-you-lose-weight-after-gallbladder-removal.html">you lose weight after gallbladder removal</a>.
       </p>
       <p>
-        In this clinical guide, Dr. Atul Peters explains why gallstones cause back pain, how referred nerve signals work, and how keyhole surgery provides permanent relief.
+        In this clinical guide, <a href="../index.html">Dr. Atul Peters</a> explains why gallstones cause back pain, how referred nerve signals work, and how keyhole surgery provides permanent relief.
       </p>
 
       <h2>The Science of "Referred Pain" in Gallbladder Disease</h2>
@@ -474,7 +474,7 @@ const blogs = [
         Following laparoscopic gallbladder removal, your body adapts quickly to direct bile secretion from the liver into the duodenum. For the first few weeks, adopting a light, low-fat diet helps prevent temporary digestive discomfort. Over time, patients resume enjoying normal meals without fear of gallbladder pain attacks.
       </p>
       <p>
-        If you experience persistent post-prandial discomfort or acid symptoms, our clinical dietitians at the <a href="../nutrition-clinic.html">Smart Nutrition Clinic</a> provide custom dietary guidance.
+        If you experience persistent post-prandial discomfort or acid symptoms, our clinical dietitians at the Smart Nutrition Clinic provide custom dietary guidance.
       </p>
 
       <h2>Definitive Treatment for Symptomatic Gallstones</h2>
@@ -622,7 +622,7 @@ const blogs = [
       </p>
       <ul>
         <li><strong>Mortality Rate:</strong> Approximately 0.08% to 0.1%—a safety record equivalent to or better than common gallbladder removal (cholecystectomy) or total knee replacement surgery.</li>
-        <li><strong>Major Complication Rate:</strong> Less than 3% in accredited centers of excellence led by high-volume bariatric surgeons.</li>
+        <li><strong>Major Complication Rate:</strong> Less than 3% in accredited centers of excellence led by high-volume <a href="../index.html">bariatric surgeons in Delhi</a>.</li>
         <li><strong>Long-Term Survival Dividends:</strong> Studies following bariatric patients over 10 to 20 years show a <strong>40% overall reduction in all-cause mortality</strong> compared to non-operated individuals with severe obesity.</li>
       </ul>
 
@@ -659,21 +659,21 @@ const blogs = [
 
       <h2>Standardized Safety Protocols at Our Center</h2>
       <p>
-        At <a href="../weight-loss-surgery-in-delhi.html">Dr. Atul Peters\' Bariatric Center in Delhi</a>, patient safety is maximized through a multi-layered clinical protocol. Post-operative dietary success relies on essential guidelines such as <a href="what-is-the-30-rule-for-bariatric-surgery.html">the 30 rule for bariatric surgery</a>:
+        At Dr. Atul Peters\' Bariatric Center in Delhi, patient safety is maximized through a multi-layered clinical protocol. Post-operative dietary success relies on essential guidelines such as <a href="what-is-the-30-rule-for-bariatric-surgery.html">the 30 rule for bariatric surgery</a>:
       </p>
       <ol>
         <li><strong>Comprehensive Pre-Op Evaluation:</strong> 2D Echocardiogram, pulmonary function testing, liver ultrasound, and complete endocrine blood panels before clearance.</li>
         <li><strong>High-Volume Surgical Expertise:</strong> Over 5,000+ bariatric procedures performed by a Limca Book Record holding surgeon.</li>
         <li><strong>Advanced Keyhole & Robotic Precision:</strong> Utilizing 4K high-definition laparoscopy and Da Vinci robotic systems for leak-proof staple line reinforcement.</li>
-        <li><strong>Lifelong Nutritional Follow-Up:</strong> Regular post-op monitoring under our <a href="../nutrition-clinic.html">Smart Nutrition Clinic</a> to prevent vitamin or mineral deficiencies.</li>
+        <li><strong>Lifelong Nutritional Follow-Up:</strong> Regular post-op monitoring under our Smart Nutrition Clinic to prevent vitamin or mineral deficiencies.</li>
       </ol>
 
       <h2>Comprehensive Post-Operative Recovery & Long-Term Follow-Up</h2>
       <p>
-        Bariatric surgical safety extends into the post-operative recovery phase. Patients participate in structured clinical follow-up at 1 week, 1 month, 3 months, 6 months, and 12 months post-surgery. Routine blood monitoring under our <a href="../nutrition-clinic.html">Smart Nutrition Clinic</a> ensures optimal iron, vitamin B12, vitamin D, and protein levels. Patients wondering about post-op cosmetic body changes can read our guide on <a href="is-sagging-skin-after-bariatric-surgery-normal.html">managing sagging skin after bariatric surgery</a>.
+        Bariatric surgical safety extends into the post-operative recovery phase. Patients participate in structured clinical follow-up at 1 week, 1 month, 3 months, 6 months, and 12 months post-surgery. Routine blood monitoring under our Smart Nutrition Clinic ensures optimal iron, vitamin B12, vitamin D, and protein levels. Patients wondering about post-op cosmetic body changes can read our guide on <a href="is-sagging-skin-after-bariatric-surgery-normal.html">managing sagging skin after bariatric surgery</a>.
       </p>
       <p>
-        Combined with joint-safe physical conditioning at <a href="../fitness-factory.html">Peter\'s Fitness Factory</a>, patients safely achieve maximum body composition transformation while safeguarding their long-term health and vitality.
+        Combined with joint-safe physical conditioning at Peter\'s Fitness Factory, patients safely achieve maximum body composition transformation while safeguarding their long-term health and vitality.
       </p>
     `,
     faqs: [
@@ -714,7 +714,7 @@ const blogs = [
         In bariatric and metabolic medicine, the number <strong>"30"</strong> holds special clinical significance. When prospective patients search for <em>"What is the 30 rule for bariatric surgery?"</em>, they are usually discovering four fundamental clinical guidelines that govern candidate eligibility, eating habits, and long-term success.
       </p>
       <p>
-        In this comprehensive guide, Dr. Atul Peters breaks down each of these four 30-rules so you can navigate your weight loss journey with clarity. For broader safety statistics and procedure options, read our evidence-based overview on whether <a href="is-bariatric-surgery-safe.html">bariatric surgery is safe</a>.
+        In this comprehensive guide, <a href="../index.html">Dr. Atul Peters</a> breaks down each of these four 30-rules so you can navigate your weight loss journey with clarity. For broader safety statistics and procedure options, read our evidence-based overview on whether <a href="is-bariatric-surgery-safe.html">bariatric surgery is safe</a>.
       </p>
 
       <h2>Rule #1: The BMI 30 Threshold for Metabolic Surgery</h2>
@@ -750,12 +750,12 @@ const blogs = [
 
       <h2>Rule #4: 30 Minutes of Daily Physical Activity</h2>
       <p>
-        Engaging in 30 minutes of moderate aerobic exercise (brisk walking, cycling, or swimming) daily maintains lean muscle mass, boosts resting metabolic rate, and ensures steady long-term weight maintenance under programs like <a href="../fitness-factory.html">Peter\'s Fitness Factory</a>. Exercise and adequate protein also help manage <a href="is-sagging-skin-after-bariatric-surgery-normal.html">loose skin after bariatric weight loss</a>.
+        Engaging in 30 minutes of moderate aerobic exercise (brisk walking, cycling, or swimming) daily maintains lean muscle mass, boosts resting metabolic rate, and ensures steady long-term weight maintenance under programs like Peter\'s Fitness Factory. Exercise and adequate protein also help manage <a href="is-sagging-skin-after-bariatric-surgery-normal.html">loose skin after bariatric weight loss</a>.
       </p>
 
       <h2>Long-Term Success Strategies After Bariatric Surgery</h2>
       <p>
-        Mastering the four 30-rules forms the foundation of lifelong bariatric success. Combine these rules with regular clinical follow-ups, adequate daily protein intake, and metabolic monitoring under our <a href="../nutrition-clinic.html">Smart Nutrition Clinic</a> for optimal health and sustainable weight loss. For age-specific outcomes, see our guide on <a href="what-is-the-best-age-for-bariatric-surgery.html">the best age for bariatric surgery</a>.
+        Mastering the four 30-rules forms the foundation of lifelong bariatric success. Combine these rules with regular clinical follow-ups, adequate daily protein intake, and metabolic monitoring under our Smart Nutrition Clinic for optimal health and sustainable weight loss. For age-specific outcomes, see our guide on <a href="what-is-the-best-age-for-bariatric-surgery.html">the best age for bariatric surgery</a>.
       </p>
     `,
     faqs: [
@@ -849,7 +849,7 @@ const blogs = [
       { q: '5. Is an inguinal hernia more common in men than women?', a: 'Yes. Inguinal hernias are 8 to 10 times more common in men due to the anatomical passage of the spermatic cord through the inguinal canal.' },
       { q: '6. What happens during laparoscopic hernia mesh repair?', a: 'Through 3 tiny keyholes, the surgeon gently pulls the herniated tissue back inside and places a high-strength mesh behind the muscle wall, reinforcing the entire weak area without tension.' },
       { q: '7. How long is recovery after keyhole hernia repair?', a: 'Patients go home within 24 hours, walk pain-free the next day, and return to desk work in 5 to 7 days.' },
-      { q: '8. Can a hernia return after surgery?', a: 'With modern laparoscopic eTEP/TAR mesh placement performed by expert hernia surgeons, recurrence rates are extremely low (< 1%).' }
+      { q: '8. Can a hernia return after surgery?', a: 'With modern laparoscopic eTEP/TAR mesh placement performed by expert <a href="../index.html">hernia surgeons in Delhi</a>, recurrence rates are extremely low (< 1%).' }
     ]
   },
 
@@ -867,7 +867,7 @@ const blogs = [
       '<strong>Bile Flow Adaptation:</strong> Without a storage sac, the liver continuously secretes lighter bile directly into the small intestine.',
       '<strong>Metabolism Remains Unchanged:</strong> Gallbladder removal itself does NOT slow down resting metabolic rate.',
       '<strong>Risk of Weight Regain:</strong> Returning to high-fat, high-calorie foods once pain resolves can cause weight gain.',
-      '<strong>Dietary Guidance:</strong> Work with our <a href="../nutrition-clinic.html">Smart Nutrition Clinic</a> for optimal post-op digestive health.'
+      '<strong>Dietary Guidance:</strong> Work with our Smart Nutrition Clinic for optimal post-op digestive health.'
     ],
     relatedArticles: [
       { slug: 'can-gallbladder-stones-cause-back-pain.html', title: 'Can Gallbladder Stones Cause Back Pain?' },
@@ -912,7 +912,7 @@ const blogs = [
         <li><strong>Hydration & Smaller Meals:</strong> Eating 4 to 5 smaller meals instead of 2 large heavy meals prevents digestive overload.</li>
       </ul>
       <p>
-        Our team at the <a href="../nutrition-clinic.html">Smart Nutrition Clinic</a> offers structured post-surgical dietary counseling to help you thrive and maintain optimal gastrointestinal comfort.
+        Our team at the Smart Nutrition Clinic offers structured post-surgical dietary counseling to help you thrive and maintain optimal gastrointestinal comfort.
       </p>
     `,
     faqs: [
@@ -1069,8 +1069,8 @@ const blogs = [
 
       <h2>5 Non-Surgical Strategies to Improve Skin Tone</h2>
       <ol>
-        <li><strong>Resistance Training & Muscle Building:</strong> Building underlying lean muscle mass fills out loose skin folds naturally. Work with our trainers at <a href="../fitness-factory.html">Peter\'s Fitness Factory</a>.</li>
-        <li><strong>High Protein & Amino Acid Intake:</strong> Consuming adequate daily protein supports natural collagen synthesis. Consult our dietitians at the <a href="../nutrition-clinic.html">Smart Nutrition Clinic</a>.</li>
+        <li><strong>Resistance Training & Muscle Building:</strong> Building underlying lean muscle mass fills out loose skin folds naturally. Work with our trainers at Peter\'s Fitness Factory.</li>
+        <li><strong>High Protein & Amino Acid Intake:</strong> Consuming adequate daily protein supports natural collagen synthesis. Consult our dietitians at the Smart Nutrition Clinic.</li>
         <li><strong>Hydration & Skin Moisture:</strong> Drinking 2.5 to 3 liters of water daily keeps dermal cells plump and elastic.</li>
         <li><strong>Following Post-Op Nutrition Rules:</strong> Adhering to eating protocols such as <a href="what-is-the-30-rule-for-bariatric-surgery.html">the 30 rule for bariatric surgery</a> optimizes nutrient absorption.</li>
         <li><strong>Nonsurgical Options Comparison:</strong> Patients evaluating non-surgical medical alternatives can read our clinical comparison of <a href="what-is-better-ozempic-or-bariatric-surgery.html">Ozempic vs bariatric surgery</a>.</li>
@@ -1248,7 +1248,7 @@ function generateHtml(blog) {
         ${blog.contentSections}
 
         <section style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 16px; padding: 1.75rem 2rem; margin: 2.5rem 0;">
-          <h2 style="font-size: 1.5rem; color: #0F2B45; margin-top: 0; border-bottom: none;">Clinical Expert Conclusion by Dr. Atul Peters</h2>
+          <h2 style="font-size: 1.5rem; color: #0F2B45; margin-top: 0; border-bottom: none;">Clinical Expert Conclusion by <a href="../index.html">Dr. Atul Peters</a></h2>
           <p style="margin-bottom: 0;">
             Navigating gastrointestinal and metabolic health choices requires accurate clinical guidance, evidence-based surgical expertise, and personalized post-treatment support. Whether you are seeking minimal access keyhole solutions for hernia or gallbladder issues, or exploring life-transforming metabolic weight loss procedures, our multidisciplinary surgical care team at Max Smart Super Speciality Hospital, Saket, is dedicated to delivering world-class, safe, and compassionate clinical care. Schedule a comprehensive consultation with Dr. Atul Peters today to take the first proactive step toward a healthier, more vibrant life.
           </p>
@@ -1269,7 +1269,7 @@ function generateHtml(blog) {
         <div style="background: linear-gradient(135deg, #0F2B45 0%, #167D6B 100%); border-radius: 20px; padding: 2.5rem; color: #ffffff; margin-top: 3rem; text-align: center;">
           <h3 style="color: #ffffff; font-size: 1.6rem; margin-top: 0; margin-bottom: 0.75rem;">Have Personal Health Questions?</h3>
           <p style="color: rgba(255,255,255,0.9); font-size: 1.05rem; max-width: 600px; margin: 0 auto 1.5rem;">
-            Consult with Dr. Atul Peters and our expert multidisciplinary team at Max Smart Super Speciality Hospital, Saket, New Delhi.
+            Consult with <a href="../index.html">Dr. Atul Peters</a> and our expert multidisciplinary team at Max Smart Super Speciality Hospital, Saket, New Delhi.
           </p>
           <a href="../contact.html" style="display: inline-block; background: #B8975A; color: #ffffff !important; padding: 0.9rem 2rem; border-radius: 50px; font-weight: 700; text-decoration: none !important;">
             Book Your Consultation <i class="fa-solid fa-arrow-right" style="margin-left: 0.5rem;"></i>
