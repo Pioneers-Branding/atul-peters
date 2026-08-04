@@ -1,5 +1,5 @@
 var basePath = '';
-if (window.location.pathname.indexOf('/weight-loss-surgery/') !== -1 || window.location.pathname.indexOf('/surgery-for-diabetes/') !== -1) {
+if (window.location.pathname.indexOf('/weight-loss-surgery/') !== -1 || window.location.pathname.indexOf('/surgery-for-diabetes/') !== -1 || window.location.pathname.indexOf('/blog/') !== -1) {
   basePath = '../';
 }
 
