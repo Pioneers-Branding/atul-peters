@@ -1,0 +1,30 @@
+<div class="tech-grid">
+        <!-- 4K Laparoscopic -->
+        <div class="tech-card tech-laparoscopic">
+          <img alt="4K Laparoscopic Tower" src="assets/img/4K-HD-Laparoscopic.webp"
+            style="width: 100%; height: 250px; border-radius: 1rem; margin-bottom: 2rem; object-fit: cover; box-shadow: 0 15px 35px rgba(0,0,0,0.1);" />
+          <h3 class="tech-title">4K HD Laparoscopic eTEP</h3>
+          <p class="tech-desc">Through 4 tiny keyholes (less than half an inch), a high-definition 4K camera and
+            specialized micro-instruments are introduced. The defect is closed and a large mesh is placed extraperitoneally.</p>
+          <ul class="tech-list">
+            <li><i class="fa-solid fa-check-circle"></i> Virtually invisible post-operative scars</li>
+            <li><i class="fa-solid fa-check-circle"></i> Minimal tissue trauma and zero muscle division</li>
+            <li><i class="fa-solid fa-check-circle"></i> Stand up and walk within 4 hours of surgery</li>
+            <li><i class="fa-solid fa-check-circle"></i> Routine discharge within 24 hours (overnight stay)</li>
+          </ul>
+        </div>
+        <!-- Da Vinci Robotic -->
+        <div class="tech-card tech-robotic">
+          <img alt="Da Vinci Robotic Console" src="assets/img/Da-Vinci-Robotic.webp"
+            style="width: 100%; height: 250px; border-radius: 1rem; margin-bottom: 2rem; object-fit: cover; box-shadow: 0 20px 40px rgba(0,0,0,0.4);" />
+          <h3 class="tech-title">Da Vinci Robotic TAR</h3>
+          <p class="tech-desc">For complex anatomical situations—such as massive incisional hernias or loss of domain—the advanced Da Vinci Xi Robotic System provides 3D high-definition magnified optics and 360-degree
+            wristed articulation.</p>
+          <ul class="tech-list">
+            <li><i class="fa-solid fa-check-circle"></i> Unmatched 10x 3D stereoscopic depth perception</li>
+            <li><i class="fa-solid fa-check-circle"></i> Micro-wristed instrumentation eliminates all tremor</li>
+            <li><i class="fa-solid fa-check-circle"></i> Ideal for difficult anatomies and acute inflammation</li>
+            <li><i class="fa-solid fa-check-circle"></i> Unparalleled precision for transversus abdominis release (TAR)</li>
+          </ul>
+        </div>
+      </div>

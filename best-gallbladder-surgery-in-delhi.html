@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en">
 
@@ -1143,42 +1143,60 @@
       background-repeat: no-repeat;
       background-size: contain;
       mix-blend-mode: multiply;
-      filter: hue-rotate(170deg) saturate(1.5);
-      /* Ensures the white background of the sketches turns transparent */
-    }
+      opacity: 0.6; filter: sepia(1) hue-rotate(180deg) saturate(4);
+      
+      /* Ensures the white background of the sketches turns transparent */    }
 
-    /* Floating Cards adjustment for contrast */
-    .gb-card,
-    .symptom-item,
-    .gb-cvs-compare-card,
-    .gb-step-card,
-    .gb-cost-box {
-      background: rgba(255, 255, 255, 0.95) !important;
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.8) !important;
-      box-shadow: 0 15px 35px rgba(10, 30, 48, 0.06) !important;
-    }
-
-    /* Sketch Doodles Animation */
-    .sketch-doodle {
-      pointer-events: none;
-      animation: float-doodle 6s ease-in-out infinite alternate;
-      z-index: 10;
-    }
-
-    @keyframes float-doodle {
-      0% {
-        transform: translateY(0) rotate(0deg);
-      }
-
-      50% {
-        transform: translateY(-8px) rotate(2deg);
-      }
-
-      100% {
-        transform: translateY(0) rotate(0deg);
+    @media (max-width: 991px) {
+      .gb-sketch-watermark {
+        opacity: 0.15 !important;
+        width: 300px !important;
+        height: 300px !important;
+        top: 5% !important;
+        left: -10% !important;
       }
     }
+    
+    @media (max-width: 768px) {
+      .gb-sketch-watermark {
+        opacity: 0.4 !important;
+        width: 160px !important;
+        height: 160px !important;
+        /* Allow inline styles to determine left/right corner placement creatively */
+      }
+    }
+  
+    /* --- MOBILE PADDING FIXES --- */
+      .risk-card { padding: 1.5rem 1.25rem !important; }
+      .four-f-item { padding: 1rem !important; }
+    @media (max-width: 768px) {
+      .diag-box {
+        padding: 2rem 1.25rem !important;
+      }
+      .tech-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .finance-card {
+        padding: 1.75rem 1.25rem !important;
+        border-radius: 1.5rem !important;
+      }
+      .creative-info-section {
+        padding: 2rem 1.25rem !important;
+      }
+      .gb-section {
+        padding: 2.5rem 0 !important;
+      }
+      .gb-journey-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+      .diet-modern-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .gb-hotspot-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+    }
+    
   </style>
   <!-- JSON-LD Structured Data for Pillar Medical Service Page -->
   <script type="application/ld+json">
@@ -1217,7 +1235,7 @@
       "image": "https://www.atulpeters.com/assets/img/doctor-portrait.webp",
       "telephone": "+91-7770001900",
       "medicalSpecialty": ["Gastrointestinal Surgery", "Minimal Access Surgery", "Robotic Surgery", "General Surgery"],
-      "priceRange": "INR ₹₹₹"
+      "priceRange": "INR â‚¹â‚¹â‚¹"
     },
     {
       "@context": "https://schema.org",
@@ -1234,7 +1252,7 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Why do gallstones form and can they be dissolved with medications or lasers?",
+          "name": "Why do gallstones form and can they be dissolved with medications or lasers–,
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Gallstones form when bile stored inside the gallbladder contains excess cholesterol or bilirubin, or lacks sufficient bile salts, causing it to crystallize into solid stones. Medications, homeopathy, or lasers cannot dissolve gallstones permanently. Attempting to flush or dissolve stones often causes tiny stone fragments to slip into the common bile duct or pancreatic duct, triggering life-threatening complications like Obstructive Jaundice or Acute Pancreatitis."
@@ -1242,7 +1260,7 @@
         },
         {
           "@type": "Question",
-          "name": "Why is it necessary to remove the entire gallbladder instead of just removing the gallstones?",
+          "name": "Why is it necessary to remove the entire gallbladder instead of just removing the gallstones–,
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "The gallbladder itself is the diseased organ; once it loses its healthy contractile function, it acts as an incubator for stone formation. If only the stones were removed while leaving the gallbladder inside, new stones would form rapidly within months. Removing the entire gallbladder (cholecystectomy) is the only permanent, internationally recognized gold standard cure."
@@ -1250,7 +1268,7 @@
         },
         {
           "@type": "Question",
-          "name": "How will my body digest food normally after my gallbladder is removed?",
+          "name": "How will my body digest food normally after my gallbladder is removed–,
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Your gallbladder does NOT manufacture bile; your liver produces bile continuously to break down fats. The gallbladder merely acts as a temporary storage bag. Once it is removed, bile flows directly and continuously from your liver through the common bile duct into your small intestine. Your digestive tract adapts rapidly, allowing you to enjoy a normal, nutritious diet without lifelong dietary restrictions."
@@ -1258,7 +1276,7 @@
         },
         {
           "@type": "Question",
-          "name": "What is the Critical View of Safety (CVS) protocol in laparoscopic gallbladder removal?",
+          "name": "What is the Critical View of Safety (CVS) protocol in laparoscopic gallbladder removal–,
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "The Critical View of Safety (CVS) is a rigorous international surgical protocol practiced by Dr. Atul Peters. Before clipping or dividing any structures, the surgeon completely clears all fat and fibrous tissue around the gallbladder neck and separates the lower third of the gallbladder from the liver bed to unambiguously identify only two structures: the cystic duct and cystic artery. This eliminates anatomical confusion and ensures 100% safety against accidental injury to the main bile duct."
@@ -1266,7 +1284,7 @@
         },
         {
           "@type": "Question",
-          "name": "How soon can I walk, eat, and return to work after gallbladder surgery in Delhi?",
+          "name": "How soon can I walk, eat, and return to work after gallbladder surgery in Delhi–,
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "With our advanced 4K keyhole and ERAS (Enhanced Recovery After Surgery) protocols, patients stand and walk within 3 to 4 hours of surgery, begin taking fluids and a light diet the same evening, and are discharged within 24 hours (overnight hospital stay). Most patients return to driving and routine desk jobs within 3 to 5 days."
@@ -1274,7 +1292,7 @@
         },
         {
           "@type": "Question",
-          "name": "Is laparoscopic and robotic gallbladder surgery covered by health insurance in India?",
+          "name": "Is laparoscopic and robotic gallbladder surgery covered by health insurance in India–,
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. Laparoscopic and robotic cholecystectomy for gallstones, cholecystitis, or polyps is a medically indicated procedure covered by 100% of private health insurance policies, corporate mediclaim networks, TPAs, and central health schemes (CGHS/ECHS) in India. Max Smart Super Speciality Hospital, Saket – New Delhi provides complete cashless claim processing."
@@ -1284,6 +1302,56 @@
     }
   ]
   </script>
+
+<style>
+/* ABOUT SECTION MOBILE HOTFIX - INJECTED */
+@media (max-width: 991px) {
+  .about-photo-stack {
+    padding-left: 0 !important;
+    padding-bottom: 2rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .about-photo-bg {
+    display: none !important; /* Hide the background block entirely on mobile to prevent overlapping */
+  }
+  .about-photo-frame {
+    margin: 0 auto 15px auto !important;
+    width: 100% !important;
+    max-width: 400px !important;
+    z-index: 2 !important;
+  }
+  .about-ribbon {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    max-width: 400px !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    margin: 0 auto !important;
+    padding: 15px !important;
+    z-index: 99 !important; /* Force to top */
+    border-radius: 8px !important;
+    background: var(--blue-deep) !important;
+  }
+  .about-ribbon::before {
+    display: none !important;
+  }
+  .about-ribbon-divider {
+    width: 1px !important;
+    height: auto !important;
+    background: rgba(255,255,255,0.2) !important;
+    margin: 0 10px !important;
+  }
+  .about-ribbon-item {
+    flex: 1 !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+}
+</style>
 </head>
 
 <body class="gb-pillar-page">
@@ -1534,7 +1602,39 @@
           border-left: 4px solid #A8DECE;
           margin-top: auto;
         }
-      </style>
+      
+    /* --- MOBILE PADDING FIXES --- */
+      .risk-card { padding: 1.5rem 1.25rem !important; }
+      .four-f-item { padding: 1rem !important; }
+    @media (max-width: 768px) {
+      .diag-box {
+        padding: 2rem 1.25rem !important;
+      }
+      .tech-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .finance-card {
+        padding: 1.75rem 1.25rem !important;
+        border-radius: 1.5rem !important;
+      }
+      .creative-info-section {
+        padding: 2rem 1.25rem !important;
+      }
+      .gb-section {
+        padding: 2.5rem 0 !important;
+      }
+      .gb-journey-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+      .diet-modern-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .gb-hotspot-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+    }
+    
+  </style>
       <div class="symptoms-creative-grid">
         <!-- Symptoms Area -->
         <div style="position: relative;">
@@ -1827,7 +1927,39 @@
             color: #4a5568;
             line-height: 1.6;
           }
-        </style>
+        
+    /* --- MOBILE PADDING FIXES --- */
+      .risk-card { padding: 1.5rem 1.25rem !important; }
+      .four-f-item { padding: 1rem !important; }
+    @media (max-width: 768px) {
+      .diag-box {
+        padding: 2rem 1.25rem !important;
+      }
+      .tech-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .finance-card {
+        padding: 1.75rem 1.25rem !important;
+        border-radius: 1.5rem !important;
+      }
+      .creative-info-section {
+        padding: 2rem 1.25rem !important;
+      }
+      .gb-section {
+        padding: 2.5rem 0 !important;
+      }
+      .gb-journey-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+      .diet-modern-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .gb-hotspot-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+    }
+    
+  </style>
         <div style="position: relative; display: inline-block; width: 100%; text-align: center;">
           <h3 class="gb-info-title"
             style="text-align: center; display: flex; justify-content: center; align-items: center;"><i
@@ -2073,7 +2205,39 @@
         .tech-robotic .tech-list i {
           color: #F6E05E;
         }
-      </style>
+      
+    /* --- MOBILE PADDING FIXES --- */
+      .risk-card { padding: 1.5rem 1.25rem !important; }
+      .four-f-item { padding: 1rem !important; }
+    @media (max-width: 768px) {
+      .diag-box {
+        padding: 2rem 1.25rem !important;
+      }
+      .tech-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .finance-card {
+        padding: 1.75rem 1.25rem !important;
+        border-radius: 1.5rem !important;
+      }
+      .creative-info-section {
+        padding: 2rem 1.25rem !important;
+      }
+      .gb-section {
+        padding: 2.5rem 0 !important;
+      }
+      .gb-journey-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+      .diet-modern-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .gb-hotspot-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+    }
+    
+  </style>
       <div class="tech-grid">
         <!-- 4K Laparoscopic -->
         <div class="tech-card tech-laparoscopic">
@@ -2274,7 +2438,39 @@
         .cvs-safe ul {
           color: #F0FFF4;
         }
-      </style>
+      
+    /* --- MOBILE PADDING FIXES --- */
+      .risk-card { padding: 1.5rem 1.25rem !important; }
+      .four-f-item { padding: 1rem !important; }
+    @media (max-width: 768px) {
+      .diag-box {
+        padding: 2rem 1.25rem !important;
+      }
+      .tech-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .finance-card {
+        padding: 1.75rem 1.25rem !important;
+        border-radius: 1.5rem !important;
+      }
+      .creative-info-section {
+        padding: 2rem 1.25rem !important;
+      }
+      .gb-section {
+        padding: 2.5rem 0 !important;
+      }
+      .gb-journey-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+      .diet-modern-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .gb-hotspot-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+    }
+    
+  </style>
       <!-- <div class="cvs-suite">
         <div class="cvs-suite-layout">
           <div>
@@ -2415,7 +2611,7 @@
           <!-- Signature Line + CTAs -->
           <div class="about-footer">
             <div class="about-ctas">
-              <a class="btn btn-outline" href="#appointment">Book Consultation →</a>
+              <a class="btn btn-outline" href="#appointment">Book Consultation â†’</a>
             </div>
           </div>
         </div>
@@ -2554,7 +2750,39 @@
             z-index: 3;
           }
         }
-      </style>
+      
+    /* --- MOBILE PADDING FIXES --- */
+      .risk-card { padding: 1.5rem 1.25rem !important; }
+      .four-f-item { padding: 1rem !important; }
+    @media (max-width: 768px) {
+      .diag-box {
+        padding: 2rem 1.25rem !important;
+      }
+      .tech-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .finance-card {
+        padding: 1.75rem 1.25rem !important;
+        border-radius: 1.5rem !important;
+      }
+      .creative-info-section {
+        padding: 2rem 1.25rem !important;
+      }
+      .gb-section {
+        padding: 2.5rem 0 !important;
+      }
+      .gb-journey-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+      .diet-modern-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .gb-hotspot-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+    }
+    
+  </style>
       <div class="gb-journey-grid">
         <div class="gb-journey-card">
           <div class="gb-j-icon"><i class="fa-solid fa-hospital-user"></i></div>
@@ -2667,7 +2895,39 @@
             grid-template-columns: 1fr;
           }
         }
-      </style>
+      
+    /* --- MOBILE PADDING FIXES --- */
+      .risk-card { padding: 1.5rem 1.25rem !important; }
+      .four-f-item { padding: 1rem !important; }
+    @media (max-width: 768px) {
+      .diag-box {
+        padding: 2rem 1.25rem !important;
+      }
+      .tech-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .finance-card {
+        padding: 1.75rem 1.25rem !important;
+        border-radius: 1.5rem !important;
+      }
+      .creative-info-section {
+        padding: 2rem 1.25rem !important;
+      }
+      .gb-section {
+        padding: 2.5rem 0 !important;
+      }
+      .gb-journey-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+      .diet-modern-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .gb-hotspot-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+    }
+    
+  </style>
 
       <div class="diet-modern-grid">
         <div class="diet-modern-card">
@@ -2910,7 +3170,39 @@
           background: rgba(0, 0, 0, 0.15);
           border: 1px solid rgba(255, 255, 255, 0.1);
         }
-      </style>
+      
+    /* --- MOBILE PADDING FIXES --- */
+      .risk-card { padding: 1.5rem 1.25rem !important; }
+      .four-f-item { padding: 1rem !important; }
+    @media (max-width: 768px) {
+      .diag-box {
+        padding: 2rem 1.25rem !important;
+      }
+      .tech-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .finance-card {
+        padding: 1.75rem 1.25rem !important;
+        border-radius: 1.5rem !important;
+      }
+      .creative-info-section {
+        padding: 2rem 1.25rem !important;
+      }
+      .gb-section {
+        padding: 2.5rem 0 !important;
+      }
+      .gb-journey-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+      .diet-modern-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .gb-hotspot-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+    }
+    
+  </style>
       <div class="finance-grid">
         <div class="finance-card cost-card">
           <div class="finance-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
@@ -2971,7 +3263,8 @@
   </section>
   <section class="gb-section" id="faqs" style="background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);">
     <div class="gb-sketch-watermark"
-      style="background-image: url('assets/img/sketch_person_thinking_gold_1785489153300.png'); width: 450px; height: 450px; top: 15%; left: 5%; right: auto; mix-blend-mode: multiply; transform: rotate(-5deg); opacity: 0.8;">
+      style="background-image: url('assets/img/sketch_person_thinking_gold_1785489153300.png'); width: 450px; height: 450px; top: 15%; left: 5%; right: auto; mix-blend-mode: multiply;
+      opacity: 0.6; filter: sepia(1) hue-rotate(180deg) saturate(4); transform: rotate(-5deg); opacity: 0.8;">
     </div>
     <div class="container">
       <div class="gb-section-header">
@@ -3225,7 +3518,7 @@
               </div>
               <div class="appt-field">
                 <label for="gb-message">Message</label>
-                <textarea id="gb-message" name="message" placeholder="How can we help you?" rows="4"></textarea>
+                <textarea id="gb-message" name="message" placeholder="How can we help you– rows="4"></textarea>
               </div>
               <button class="appt-submit" type="submit">
                 <span>Request Expert Consultation</span>
@@ -3302,6 +3595,7 @@
       const navLinks = document.querySelectorAll('.gb-quick-nav-item a');
       const sections = document.querySelectorAll('.gb-section, .gb-cta-section, .about-section');
 
+      let lastActive = '';
       window.addEventListener('scroll', function () {
         let current = '';
         sections.forEach(function (section) {
@@ -3311,15 +3605,26 @@
           }
         });
 
-        navLinks.forEach(function (link) {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === '#' + current) {
-            link.classList.add('active');
-          }
-        });
+        if (current !== lastActive) {
+          lastActive = current;
+          navLinks.forEach(function (link) {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+              link.classList.add('active');
+              if (slider) {
+                link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+              }
+            }
+          });
+        }
       });
     });
   </script>
 </body>
 
 </html>
+
+
+
+
+

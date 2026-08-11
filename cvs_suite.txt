@@ -1,0 +1,31 @@
+<div class="cvs-suite">
+        <div class="cvs-suite-layout">
+          <div>
+            <span style="display: inline-block; background: rgba(129, 205, 191, 0.15); color: #81CDBF; padding: 0.5rem 1.25rem; border-radius: 50px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.25rem; border: 1px solid rgba(129,205,191,0.3);">Zero Adhesion Protocol</span>
+            <h3 style="font-family: 'Bellefair', Georgia, serif; font-size: clamp(2rem, 4vw, 2.8rem); color: #FFFFFF; line-height: 1.15; margin-bottom: 1.25rem;">Extraperitoneal Mesh Placement</h3>
+            <p style="color: #cbd5e1; font-size: 1.1rem; line-height: 1.7;">
+              To ensure <strong>100% patient safety</strong>, Dr. Atul Peters strictly places the prosthetic mesh in the retro-rectus or pre-peritoneal space, ensuring it never touches your delicate intestines.
+            </p>
+            <div class="cvs-list">
+              <div class="cvs-item">
+                <div class="cvs-num">1</div>
+                <div class="cvs-text">
+                  <h4>Defect Closure Under Tension-Free State</h4>
+                  <p>The muscular gap is primarily closed using strong sutures before any mesh is placed, restoring natural abdominal wall function and core strength.</p>
+                </div>
+              </div>
+              <div class="cvs-item">
+                <div class="cvs-num">2</div>
+                <div class="cvs-text">
+                  <h4>Sub-Lay Mesh Positioning</h4>
+                  <p>A large, lightweight macroporous mesh is laid flat between the muscle layers, acting as a permanent reinforcement shield behind the defect.</p>
+                </div>
+              </div>
+              <div class="cvs-item">
+                <div class="cvs-num">3</div>
+                <div class="cvs-text">
+                  <h4>Zero Bowel Contact Guarantee</h4>
+                  <p>Because the mesh is sealed behind the peritoneum, there is absolutely zero risk of it fusing with your intestines or causing chronic adhesions.</p>
+                </div>
+              </div>
+            </div>

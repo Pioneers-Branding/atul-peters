@@ -1,0 +1,302 @@
+/* ============================================================
+   MENTORSHIP & PROCTOR
+   ============================================================ */
+.about-mentorship {
+  background: linear-gradient(135deg, #f8fafc, #eff6ff);
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 0;
+}
+
+.about-mentorship::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(29, 93, 149, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.mentorship-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+
+@media (min-width: 992px) {
+  .mentorship-grid {
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+  }
+}
+
+.mentorship-title {
+  font-family: 'Bellefair', serif;
+  font-size: 2rem;
+  color: var(--teal-dark);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mentorship-title span {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: var(--text-3);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  background: #fff;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  border: 1px solid var(--border);
+}
+
+.proctor-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .proctor-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.proctor-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  border: 1px solid rgba(29, 93, 149, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.proctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(29, 93, 149, 0.08);
+  border-color: var(--teal-pale);
+}
+
+.proctor-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--teal);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.4s ease;
+}
+
+.proctor-card:hover::before {
+  transform: scaleY(1);
+}
+
+.proctor-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--bg-cream);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--teal);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.proctor-card p {
+  color: var(--text-2);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 500;
+}
+
+.faculty-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.faculty-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  transition: all 0.2s ease;
+}
+
+.faculty-list li:hover {
+  background: #fcfdfd;
+  border-color: var(--teal-pale);
+  transform: translateX(4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+}
+
+.faculty-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  background: var(--teal-pale);
+  color: var(--teal-dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.faculty-icon i {
+  font-size: 0.85rem;
+}
+
+.faculty-list span {
+  color: var(--text-1);
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* ============================================================
+   AUTHORSHIP & PHILANTHROPY
+   ============================================================ */
+.about-author-philanthropy {
+  background: #ffffff;
+  padding: 5rem 0;
+  position: relative;
+}
+
+.ap-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  .ap-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.ap-card {
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.ap-card-author {
+  background: linear-gradient(145deg, #f8f9fa, #ffffff);
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.ap-card-author:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+  border-color: var(--teal-pale);
+}
+
+.ap-card-philanthropy {
+  background: linear-gradient(135deg, var(--teal-dark), #154779);
+  color: #fff;
+  box-shadow: 0 15px 35px rgba(29, 93, 149, 0.2);
+}
+
+.ap-card-philanthropy:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(29, 93, 149, 0.3);
+}
+
+.ap-card-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.ap-card-author .ap-card-icon {
+  background: var(--bg-cream);
+  color: var(--teal);
+}
+
+.ap-card-philanthropy .ap-card-icon {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  backdrop-filter: blur(5px);
+}
+
+.ap-card-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.ap-card-author .ap-card-label {
+  color: var(--teal);
+}
+
+.ap-card-philanthropy .ap-card-label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ap-card h3 {
+  font-family: 'Bellefair', serif;
+  font-size: 1.85rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.ap-card-author h3 {
+  color: var(--text-1);
+}
+
+.ap-card-philanthropy h3 {
+  color: #fff;
+}
+
+.ap-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ap-card-author p {
+  color: var(--text-2);
+}
+
+.ap-card-philanthropy p {
+  color: rgba(255, 255, 255, 0.85);
+}

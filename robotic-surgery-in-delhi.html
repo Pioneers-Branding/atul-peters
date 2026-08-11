@@ -40,115 +40,153 @@
 
   <style>
     /* ==========================================================================
-       Specific Styling for Robotic Surgery Pillar Page
+       Specific Styling for Gallbladder Surgery Pillar Page
        ========================================================================== */
-    .rs-hero {
+    .gb-hero {
       position: relative;
       padding: clamp(4rem, 8vw, 6.5rem) 0 clamp(3.5rem, 7vw, 5rem);
-      background: radial-gradient(circle at 75% 50%, #154779 0%, #0A1E30 70%);
+      background: linear-gradient(135deg, #0A1E30 0%, #1a365d 50%, #154779 100%);
+      background: linear-gradient(135deg, #0A1E30 0%, #1a365d 50%, #154779 100%);
       color: #FFFFFF;
       overflow: hidden;
     }
 
-    .rs-hero-pattern {
-      position: absolute;
-      inset: 0;
-      background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
-      background-size: 30px 30px;
-      pointer-events: none;
+    @keyframes hero-grad-shift {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
-    .rs-hero-blob {
+    .gb-hero-pattern {
+      display: none;
+    }
+
+    .gb-hero-blob {
       position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      pointer-events: none;
+      opacity: 0.7;
+      animation: blob-float 15s infinite alternate ease-in-out;
+    }
+
+    @keyframes blob-float {
+      0% {
+        transform: translateY(0) scale(1);
+      }
+
+      100% {
+        transform: translateY(-30px) scale(1.1);
+      }
+    }
+
+    .gb-hero-blob--1 {
       width: 600px;
       height: 600px;
-      border-radius: 50%;
-      filter: blur(80px);
-      pointer-events: none;
-      opacity: 0.6;
-    }
-
-    .rs-hero-blob--1 {
       top: -200px;
       right: -100px;
-      background: radial-gradient(circle, rgba(129, 205, 191, 0.3) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(168, 222, 206, 0.3) 0%, transparent 70%);
     }
 
-    .rs-hero-blob--2 {
+    .gb-hero-blob--2 {
+      width: 700px;
+      height: 700px;
       bottom: -300px;
       left: -200px;
-      background: radial-gradient(circle, rgba(29, 93, 149, 0.4) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(49, 130, 206, 0.4) 0%, transparent 70%);
+      animation-delay: -5s;
     }
 
-    .rs-hero-layout {
+    .gb-hero-layout {
       position: relative;
       z-index: 2;
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 3.5rem;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 2rem;
       align-items: center;
     }
 
     @media (max-width: 991px) {
-      .rs-hero-layout {
+      .gb-hero-layout {
         grid-template-columns: 1fr;
         gap: 3rem;
       }
     }
 
-    .rs-hero-content {
+    .gb-hero-content {
       position: relative;
       z-index: 2;
     }
 
     /* Force breadcrumbs to left in this section */
-    .rs-hero .nc-breadcrumb {
+    .gb-hero .nc-breadcrumb {
       justify-content: flex-start;
-      margin-bottom: 1.75rem;
+      margin-bottom: 2rem;
     }
-    .rs-hero .nc-breadcrumb a, .rs-hero .nc-breadcrumb span, .rs-hero .nc-breadcrumb i {
-      color: rgba(255,255,255,0.85);
+
+    .gb-hero .nc-breadcrumb a,
+    .gb-hero .nc-breadcrumb span,
+    .gb-hero .nc-breadcrumb i {
+      color: rgba(255, 255, 255, 0.7);
     }
-    .rs-hero .nc-breadcrumb a:hover {
+
+    .gb-hero .nc-breadcrumb a:hover {
       color: #FFFFFF;
     }
 
-    .rs-hero-badge {
+    .gb-hero-badge {
       display: inline-flex;
       align-items: center;
-      gap: 0.6rem;
-      background: rgba(129, 205, 191, 0.15);
-      border: 1px solid rgba(129, 205, 191, 0.35);
-      color: #81CDBF;
-      padding: 0.55rem 1.25rem;
+      gap: 0.75rem;
+      background: rgba(168, 222, 206, 0.1);
+      border: 1px solid rgba(168, 222, 206, 0.3);
+      color: #A8DECE;
+      padding: 0.6rem 1.25rem;
       border-radius: 50px;
-      font-size: 0.88rem;
+      font-size: 0.9rem;
       font-weight: 600;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.05em;
       margin-bottom: 1.5rem;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     }
 
-    .rs-hero-title {
+    .gb-hero-title {
       font-family: 'Bellefair', Georgia, serif;
-      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-size: clamp(1.8rem, 3vw, 3rem);
       font-weight: 400;
-      line-height: 1.15;
+      line-height: 1.1;
       color: #FFFFFF;
-      margin-bottom: 1.25rem;
-      text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      margin-bottom: 1.5rem;
+      text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      white-space: nowrap;
     }
-    
-    .rs-hero-title span {
-      background: linear-gradient(120deg, #81CDBF 0%, #FFFFFF 100%);
+
+    @media (max-width: 991px) {
+      .gb-hero-title {
+        white-space: normal;
+        font-size: clamp(1.8rem, 5vw, 2.8rem);
+      }
+    }
+
+    .gb-hero-title span {
+      background: linear-gradient(to right, #A8DECE, #F6E05E);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      display: inline-block;
     }
 
-    .rs-hero-subtitle {
-      font-size: clamp(1.05rem, 1.8vw, 1.2rem);
-      color: #D6E8F5;
+    .gb-hero-subtitle {
+      font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+      color: #E2E8F0;
       line-height: 1.7;
       max-width: 95%;
       margin-bottom: 2.5rem;
@@ -156,115 +194,125 @@
     }
 
     @media (max-width: 991px) {
-      .rs-hero-subtitle {
+      .gb-hero-subtitle {
         max-width: 100%;
       }
     }
 
-    .rs-hero-visual {
+    .gb-hero-visual {
       position: relative;
       z-index: 2;
     }
 
-    .rs-hero-image-wrapper {
+    .gb-hero-image-wrapper {
       position: relative;
-      border-radius: 1.5rem;
+      border-radius: 2rem;
       overflow: hidden;
-      border: 1px solid rgba(255,255,255,0.15);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-      transform: perspective(1000px) rotateY(-4deg);
-      transition: transform 0.5s ease, box-shadow 0.5s ease;
-    }
-    
-    .rs-hero-image-wrapper:hover {
-      transform: perspective(1000px) rotateY(0deg) scale(1.02);
-      box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+      transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
+      transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
     }
 
-    .rs-hero-image-wrapper::after {
+    .gb-hero-image-wrapper:hover {
+      transform: perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1.03);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+    }
+
+    .gb-hero-image-wrapper::after {
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, rgba(10,30,48,0.5) 0%, transparent 50%);
+      background: linear-gradient(to top, rgba(10, 30, 48, 0.7) 0%, transparent 60%);
       pointer-events: none;
     }
 
-    .rs-hero-main-img {
+    .gb-hero-main-img {
       width: 100%;
       height: auto;
       display: block;
       object-fit: cover;
-      aspect-ratio: 4/3;
+      aspect-ratio: 16/10;
+      min-height: 400px;
     }
 
-    .rs-hero-stats {
+    .gb-hero-stats {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 1.25rem;
-      margin-top: 3.5rem;
+      gap: 1.5rem;
+      margin-top: 4rem;
       position: relative;
       z-index: 2;
     }
-    
+
     @media (max-width: 1200px) {
-      .rs-hero-stats {
+      .gb-hero-stats {
         grid-template-columns: repeat(2, 1fr);
       }
     }
-    
+
     @media (max-width: 575px) {
-      .rs-hero-stats {
+      .gb-hero-stats {
         grid-template-columns: 1fr;
       }
     }
 
-    .rs-stat-pill {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: 1.25rem;
-      padding: 1.25rem 1.5rem;
-      backdrop-filter: blur(10px);
+    .gb-stat-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
       display: flex;
       align-items: center;
-      gap: 1.1rem;
-      transition: all 0.3s ease;
+      gap: 1.25rem;
+      transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     }
 
-    .rs-stat-pill:hover {
-      background: rgba(255, 255, 255, 0.14);
-      transform: translateY(-3px);
+    .gb-stat-pill:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+      border-color: rgba(255, 255, 255, 0.3);
     }
 
-    .rs-stat-icon {
-      width: 46px;
-      height: 46px;
-      border-radius: 12px;
-      background: rgba(129, 205, 191, 0.2);
-      color: #81CDBF;
+    .gb-stat-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(168, 222, 206, 0.3), rgba(168, 222, 206, 0.1));
+      border: 1px solid rgba(168, 222, 206, 0.2);
+      color: #A8DECE;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       flex-shrink: 0;
+      box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.1);
     }
 
-    .rs-stat-info h4 {
+    .gb-stat-info h4 {
       font-family: 'DM Sans', sans-serif;
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-weight: 800;
       color: #FFFFFF;
-      margin: 0 0 0.15rem 0;
+      margin: 0 0 0.2rem 0;
+      letter-spacing: -0.02em;
     }
 
-    .rs-stat-info p {
-      font-size: 0.85rem;
-      color: #A8DECE;
+    .gb-stat-info p {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.7);
       margin: 0;
       line-height: 1.3;
     }
 
     /* Sticky Sub-Navigation Bar */
-    .rs-quick-nav {
+    .gb-quick-nav {
       position: sticky;
       top: 68px;
       z-index: 100;
@@ -275,20 +323,23 @@
       padding: 0.75rem 0;
     }
 
-    .rs-quick-nav-list {
+    .gb-quick-nav-list {
       display: flex;
       align-items: center;
+      justify-content: flex-start;
+      margin: 0;
+      padding-left: 0;
       gap: 0.5rem;
       overflow-x: auto;
       scrollbar-width: none;
       padding: 0.25rem 0;
     }
 
-    .rs-quick-nav-list::-webkit-scrollbar {
+    .gb-quick-nav-list::-webkit-scrollbar {
       display: none;
     }
 
-    .rs-quick-nav-item a {
+    .gb-quick-nav-item a {
       display: inline-block;
       padding: 0.55rem 1.15rem;
       border-radius: 50px;
@@ -300,29 +351,37 @@
       white-space: nowrap;
     }
 
-    .rs-quick-nav-item a:hover,
-    .rs-quick-nav-item a.active {
+    .gb-quick-nav-item a:hover,
+    .gb-quick-nav-item a.active {
       background: var(--blue-deep);
       color: #FFFFFF;
       box-shadow: 0 4px 12px rgba(21, 71, 121, 0.2);
     }
 
     /* Section Utility Styling */
-    .rs-section {
+    .gb-section {
       padding: clamp(3.5rem, 7vw, 6rem) 0;
+      scroll-margin-top: 140px;
+      position: relative;
+      overflow: hidden;
     }
 
-    .rs-section--alt {
+    .gb-section--alt {
       background: var(--bg-cream);
     }
 
-    .rs-section-header {
+    .gb-section--dark {
+      background: #0A1E30;
+      color: #FFFFFF;
+    }
+
+    .gb-section-header {
       max-width: 800px;
       margin: 0 auto 3.5rem;
       text-align: center;
     }
 
-    .rs-section-tag {
+    .gb-section-tag {
       display: inline-block;
       font-size: 0.82rem;
       font-weight: 700;
@@ -335,7 +394,12 @@
       margin-bottom: 1rem;
     }
 
-    .rs-section-title {
+    .gb-section--dark .gb-section-tag {
+      background: rgba(129, 205, 191, 0.18);
+      color: #81CDBF;
+    }
+
+    .gb-section-title {
       font-family: 'Bellefair', Georgia, serif;
       font-size: clamp(1.85rem, 3.8vw, 2.75rem);
       font-weight: 400;
@@ -344,14 +408,22 @@
       margin-bottom: 1rem;
     }
 
-    .rs-section-desc {
+    .gb-section--dark .gb-section-title {
+      color: #FFFFFF;
+    }
+
+    .gb-section-desc {
       font-size: clamp(1rem, 1.5vw, 1.15rem);
       color: var(--text-2);
       line-height: 1.65;
     }
 
+    .gb-section--dark .gb-section-desc {
+      color: #A8DECE;
+    }
+
     /* Cards & Grids */
-    .rs-grid-2 {
+    .gb-grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2.5rem;
@@ -359,24 +431,24 @@
     }
 
     @media (max-width: 991px) {
-      .rs-grid-2 {
+      .gb-grid-2 {
         grid-template-columns: 1fr;
       }
     }
-    
-    .rs-grid-3 {
+
+    .gb-grid-3 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
     }
 
     @media (max-width: 991px) {
-      .rs-grid-3 {
+      .gb-grid-3 {
         grid-template-columns: 1fr;
       }
     }
 
-    .rs-card {
+    .gb-card {
       background: #FFFFFF;
       border-radius: 1.5rem;
       padding: 2.5rem;
@@ -384,16 +456,114 @@
       border: 1px solid var(--border);
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: space-between;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .rs-card:hover {
+    .gb-card:hover {
       transform: translateY(-5px);
       box-shadow: var(--sh-lg);
     }
 
-    .rs-card-icon {
+    .gb-card h3 {
+      font-family: 'Bellefair', Georgia, serif;
+      font-size: 1.65rem;
+      color: var(--blue-deep);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .gb-card p {
+      color: var(--text-2);
+      font-size: 1.02rem;
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+
+    .gb-highlight-box {
+      background: var(--blue-pale);
+      border-left: 4px solid var(--blue);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .gb-highlight-box p {
+      margin: 0;
+      color: var(--blue-deep);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .gb-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .gb-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.98rem;
+      color: var(--text-1);
+      line-height: 1.5;
+    }
+
+    .gb-list i {
+      color: var(--blue);
+      margin-top: 0.25rem;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+
+    /* Technique Comparison & Safety Protocol Section */
+    .gb-technique-card {
+      background: #FFFFFF;
+      border-radius: 1.5rem;
+      padding: 2.25rem;
+      border: 1px solid var(--border);
+      box-shadow: var(--sh-sm);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gb-technique-card.featured {
+      border: 2px solid var(--blue);
+      box-shadow: var(--sh-lg);
+    }
+
+    .gb-technique-card.featured::before {
+      content: 'GOLD STANDARD';
+      position: absolute;
+      top: 15px;
+      right: -30px;
+      background: var(--blue-deep);
+      color: #fff;
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 0.3rem 2.5rem;
+      transform: rotate(45deg);
+      letter-spacing: 0.08em;
+    }
+
+    .gb-technique-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .gb-technique-icon {
       width: 56px;
       height: 56px;
       border-radius: 14px;
@@ -403,26 +573,236 @@
       align-items: center;
       justify-content: center;
       font-size: 1.5rem;
-      margin-bottom: 1.25rem;
+      flex-shrink: 0;
     }
 
-    .rs-card h3 {
+    .gb-technique-title h3 {
       font-family: 'DM Sans', sans-serif;
       font-size: 1.35rem;
       font-weight: 800;
       color: var(--text-1);
-      margin-bottom: 1rem;
+      margin: 0 0 0.2rem 0;
     }
 
-    .rs-card p {
+    .gb-technique-title span {
+      font-size: 0.85rem;
+      color: var(--blue);
+      font-weight: 600;
+    }
+
+    /* Critical View of Safety (CVS) Feature Box */
+    .gb-cvs-box {
+      background: linear-gradient(135deg, #0A1E30 0%, #154779 100%);
+      border-radius: 2rem;
+      padding: clamp(2.5rem, 5vw, 4.5rem);
+      color: #FFFFFF;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3.5rem;
+      align-items: center;
+      box-shadow: var(--sh-xl);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    @media (max-width: 991px) {
+      .gb-cvs-box {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    .gb-cvs-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin-top: 1.75rem;
+    }
+
+    .gb-cvs-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 1.25rem;
+      border-radius: 1.25rem;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .gb-cvs-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #81CDBF;
+      color: #0A1E30;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .gb-cvs-text h4 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.08rem;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+
+    .gb-cvs-text p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #D6E8F5;
+      line-height: 1.5;
+    }
+
+    /* Journey Steps */
+    .gb-step-card {
+      background: #FFFFFF;
+      border-radius: 1.5rem;
+      padding: 2rem;
+      border: 1px solid var(--border);
+      position: relative;
+    }
+
+    .gb-step-num {
+      position: absolute;
+      top: -18px;
+      left: 2rem;
+      background: var(--blue-deep);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 800;
+      padding: 0.35rem 1rem;
+      border-radius: 50px;
+    }
+
+    .gb-step-card h3 {
+      font-family: 'Bellefair', Georgia, serif;
+      font-size: 1.45rem;
+      color: var(--text-1);
+      margin: 1rem 0 0.75rem 0;
+    }
+
+    .gb-step-card p {
       color: var(--text-2);
-      font-size: 1.02rem;
-      line-height: 1.7;
+      font-size: 0.96rem;
+      line-height: 1.6;
       margin: 0;
     }
 
+    /* Cost & Insurance Grid */
+    .gb-cost-box {
+      background: #FFFFFF;
+      border-radius: 1.5rem;
+      padding: 2.5rem;
+      box-shadow: var(--sh-md);
+      border: 1px solid var(--border);
+    }
+
+    .gb-cost-box h3 {
+      font-family: 'Bellefair', Georgia, serif;
+      font-size: 1.75rem;
+      color: var(--text-1);
+      margin-bottom: 1.5rem;
+    }
+
+    .gb-cost-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .gb-cost-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .gb-cost-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .gb-cost-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--blue-pale);
+      color: var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .gb-cost-details h4 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--text-1);
+      margin: 0 0 0.25rem 0;
+    }
+
+    .gb-cost-details p {
+      font-size: 0.9rem;
+      color: var(--text-2);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .gb-insurance-box {
+      background: linear-gradient(135deg, var(--blue-deep) 0%, var(--blue) 100%);
+      border-radius: 1.5rem;
+      padding: 2.5rem;
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--sh-lg);
+    }
+
+    .gb-insurance-box h3 {
+      font-family: 'Bellefair', Georgia, serif;
+      font-size: 1.75rem;
+      color: #FFFFFF;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .gb-insurance-box p {
+      color: #D6E8F5;
+      font-size: 0.96rem;
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+    }
+
+    .gb-insurance-pills {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .gb-ins-pill {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 0.75rem 1.15rem;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
     /* FAQs Accordion */
-    .rs-faq-list {
+    .gb-faq-list {
       max-width: 850px;
       margin: 0 auto;
       display: flex;
@@ -430,7 +810,7 @@
       gap: 1rem;
     }
 
-    .rs-faq-item {
+    .gb-faq-item {
       background: #FFFFFF;
       border-radius: 1.25rem;
       border: 1px solid var(--border);
@@ -438,12 +818,12 @@
       transition: box-shadow 0.3s ease, border-color 0.3s ease;
     }
 
-    .rs-faq-item.active {
+    .gb-faq-item.active {
       box-shadow: var(--sh-md);
       border-color: var(--blue-light);
     }
 
-    .rs-faq-question {
+    .gb-faq-question {
       width: 100%;
       text-align: left;
       padding: 1.35rem 1.75rem;
@@ -460,22 +840,22 @@
       cursor: pointer;
     }
 
-    .rs-faq-question i {
+    .gb-faq-question i {
       color: var(--blue);
       transition: transform 0.3s ease;
     }
 
-    .rs-faq-item.active .rs-faq-question i {
+    .gb-faq-item.active .gb-faq-question i {
       transform: rotate(180deg);
     }
 
-    .rs-faq-answer {
+    .gb-faq-answer {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .rs-faq-answer p {
+    .gb-faq-answer p {
       padding: 0 1.75rem 1.5rem;
       margin: 0;
       color: var(--text-2);
@@ -484,43 +864,336 @@
     }
 
     /* Consultation CTA Section */
-    .rs-cta-section {
+    .gb-cta-section {
       padding: clamp(4rem, 8vw, 6rem) 0;
       background: linear-gradient(135deg, #0A1E30 0%, #154779 100%);
       position: relative;
       overflow: hidden;
       text-align: center;
       color: #FFFFFF;
+      scroll-margin-top: 140px;
     }
 
-    .rs-cta-box {
+    .gb-cta-box {
       max-width: 760px;
       margin: 0 auto;
       position: relative;
       z-index: 2;
     }
 
-    .rs-cta-box h2 {
+    .gb-cta-box h2 {
       font-family: 'Bellefair', Georgia, serif;
       font-size: clamp(2rem, 4vw, 3rem);
       color: #FFFFFF;
       margin-bottom: 1.25rem;
     }
 
-    .rs-cta-box p {
+    .gb-cta-box p {
       font-size: clamp(1rem, 1.6vw, 1.18rem);
       color: #D6E8F5;
       line-height: 1.7;
       margin-bottom: 2.5rem;
     }
 
-    .rs-cta-actions {
+    .gb-cta-actions {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 1.25rem;
       flex-wrap: wrap;
     }
+
+    /* ==========================================================================
+       STUNNING INTERACTIVE INFOGRAPHICS STYLING
+       ========================================================================== */
+    /* Infographic 1: Biliary Anatomy & Mechanism Diagram */
+    .gb-infographic-container {
+      background: #FFFFFF;
+      border-radius: 1.75rem;
+      padding: 2.5rem;
+      border: 1px solid var(--border);
+      box-shadow: var(--sh-md);
+      margin: 3.5rem 0;
+      overflow: hidden;
+    }
+
+    .gb-info-title {
+      font-family: 'Bellefair', Georgia, serif;
+      font-size: 1.85rem;
+      color: var(--blue-deep);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .gb-info-desc {
+      color: var(--text-2);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .gb-info-anatomy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    @media (max-width: 991px) {
+      .gb-info-anatomy-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .gb-anatomy-svg-box {
+      background: linear-gradient(135deg, #0A1E30 0%, #154779 100%);
+      border-radius: 1.5rem;
+      padding: 2rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 0 2px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .gb-anatomy-svg {
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+      filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+    }
+
+
+
+    /* Infographic 2: Visual CVS Comparison Scorecard */
+    .gb-cvs-visual-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+
+    @media (max-width: 767px) {
+      .gb-cvs-visual-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .gb-cvs-compare-card {
+      background: #FFFFFF;
+      border-radius: 1.5rem;
+      padding: 2rem;
+      border: 2px solid var(--border);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .gb-cvs-compare-card.danger {
+      border-color: #E53E3E;
+      background: linear-gradient(180deg, #FFF5F5 0%, #FFFFFF 100%);
+    }
+
+    .gb-cvs-compare-card.safe {
+      border-color: #38A169;
+      background: linear-gradient(180deg, #F0FFF4 0%, #FFFFFF 100%);
+      box-shadow: var(--sh-md);
+    }
+
+    .gb-cvs-tag {
+      display: inline-block;
+      padding: 0.35rem 0.9rem;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1.25rem;
+      align-self: flex-start;
+    }
+
+    .gb-cvs-compare-card.danger .gb-cvs-tag {
+      background: #FED7D7;
+      color: #9B2C2C;
+    }
+
+    .gb-cvs-compare-card.safe .gb-cvs-tag {
+      background: #C6F6D5;
+      color: #22543D;
+    }
+
+    /* Infographic 3: 24-Hour Timeline Visual Meter */
+    .gb-timeline-infographic {
+      background: linear-gradient(135deg, #0A1E30 0%, #154779 100%);
+      border-radius: 2rem;
+      padding: 3rem 2.5rem;
+      color: #FFFFFF;
+      margin: 3.5rem 0;
+      position: relative;
+      box-shadow: var(--sh-xl);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .gb-timeline-track {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.25rem;
+      position: relative;
+      margin-top: 2.5rem;
+    }
+
+    @media (max-width: 991px) {
+      .gb-timeline-track {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .gb-timeline-node {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 1.25rem;
+      padding: 1.5rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      backdrop-filter: blur(8px);
+      transition: all 0.3s ease;
+    }
+
+    .gb-timeline-node:hover {
+      background: rgba(255, 255, 255, 0.16);
+      transform: translateY(-5px);
+    }
+
+    .gb-timeline-badge {
+      background: #81CDBF;
+      color: #0A1E30;
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 0.25rem 0.75rem;
+      border-radius: 50px;
+      align-self: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .gb-timeline-node h4 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin: 0 0 0.5rem 0;
+    }
+
+    .gb-timeline-node p {
+      font-size: 0.85rem;
+      color: #D6E8F5;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* ==========================================================================
+       CREATIVE BACKGROUND TEXTURE & SKETCHES (Client Request)
+       ========================================================================== */
+    body.gb-pillar-page {
+      background-color: #F8F9FA !important;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E") !important;
+      position: relative;
+    }
+
+    /* Soft Radial Gradient Orbs */
+    body.gb-pillar-page::before,
+    body.gb-pillar-page::after {
+      content: '';
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(120px);
+      z-index: -1;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    body.gb-pillar-page::before {
+      top: -10%;
+      left: -10%;
+      width: 50vw;
+      height: 50vw;
+      background: radial-gradient(circle, rgba(168, 222, 206, 0.4) 0%, transparent 70%);
+    }
+
+    body.gb-pillar-page::after {
+      bottom: -10%;
+      right: -10%;
+      width: 60vw;
+      height: 60vw;
+      background: radial-gradient(circle, rgba(49, 130, 206, 0.2) 0%, transparent 70%);
+    }
+
+    /* Medical Sketch Watermarks */
+    .gb-sketch-watermark {
+      position: absolute;
+      z-index: 0;
+      opacity: 0.6;
+      /* Increased opacity to make the sketches visible like in the reference */
+      pointer-events: none;
+      background-repeat: no-repeat;
+      background-size: contain;
+      mix-blend-mode: multiply;
+      opacity: 0.6; filter: sepia(1) hue-rotate(180deg) saturate(4);
+      
+      /* Ensures the white background of the sketches turns transparent */    }
+
+    @media (max-width: 991px) {
+      .gb-sketch-watermark {
+        opacity: 0.15 !important;
+        width: 300px !important;
+        height: 300px !important;
+        top: 5% !important;
+        left: -10% !important;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .gb-sketch-watermark {
+        opacity: 0.4 !important;
+        width: 160px !important;
+        height: 160px !important;
+        /* Allow inline styles to determine left/right corner placement creatively */
+      }
+    }
+  
+    /* --- MOBILE PADDING FIXES --- */
+      .risk-card { padding: 1.5rem 1.25rem !important; }
+      .four-f-item { padding: 1rem !important; }
+    @media (max-width: 768px) {
+      .diag-box {
+        padding: 2rem 1.25rem !important;
+      }
+      .tech-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .finance-card {
+        padding: 1.75rem 1.25rem !important;
+        border-radius: 1.5rem !important;
+      }
+      .creative-info-section {
+        padding: 2rem 1.25rem !important;
+      }
+      .gb-section {
+        padding: 2.5rem 0 !important;
+      }
+      .gb-journey-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+      .diet-modern-card {
+        padding: 1.75rem 1.25rem !important;
+      }
+      .gb-hotspot-card {
+        padding: 1.5rem 1.25rem !important;
+      }
+    }
+    
   </style>
 
   <!-- JSON-LD Structured Data for Pillar Medical Service Page -->
@@ -542,7 +1215,7 @@
   </script>
 </head>
 
-<body class="rs-pillar-page">
+<body class="gb-pillar-page">
 
   <!-- Global Header -->
   <script src="partials/header.js"></script>
@@ -550,31 +1223,31 @@
   <!-- ==========================================================================
        HERO SECTION
        ========================================================================== -->
-  <section class="rs-hero">
-    <div class="rs-hero-pattern"></div>
-    <div class="rs-hero-blob rs-hero-blob--1"></div>
-    <div class="rs-hero-blob rs-hero-blob--2"></div>
+  <section class="gb-hero">
+    <div class="gb-hero-pattern"></div>
+    <div class="gb-hero-blob gb-hero-blob--1"></div>
+    <div class="gb-hero-blob gb-hero-blob--2"></div>
 
     <div class="container relative z-10">
-      <div class="rs-hero-layout">
+      <div class="gb-hero-layout">
         
-        <div class="rs-hero-content">
+        <div class="gb-hero-content">
           <nav class="nc-breadcrumb" aria-label="Breadcrumb">
             <a href="index.html">Home</a>
             <i class="fa-solid fa-chevron-right"></i>
             <span class="nc-breadcrumb-current">Robotic Surgery in Delhi</span>
           </nav>
 
-          <div class="rs-hero-badge">
+          <div class="gb-hero-badge">
             <i class="fa-solid fa-robot"></i>
             Da Vinci Surgical System &bull; Maximum Precision
           </div>
-          <h1 class="rs-hero-title">Best Robotic Surgery in <span>Delhi NCR</span></h1>
-          <p class="rs-hero-subtitle">
+          <h1 class="gb-hero-title">Best Robotic Surgery in <span>Delhi NCR</span></h1>
+          <p class="gb-hero-subtitle">
             Experience the future of healthcare with Dr. Atul Peters at Max Smart Super Speciality Hospital, Saket – New Delhi. Leveraging the highly advanced <strong>Da Vinci Robotic System</strong> for unparalleled surgical precision, less pain, and significantly faster recovery times across Hernia, Bariatric, and GI procedures.
           </p>
 
-          <div class="rs-cta-actions" style="justify-content: flex-start;">
+          <div class="gb-cta-actions" style="justify-content: flex-start;">
             <a href="#consult" class="btn btn-gold btn-lg" onclick="showBookAnApptmForm(); return false;">
               <span>Book Consultation</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -591,39 +1264,39 @@
           </div>
         </div>
 
-        <div class="rs-hero-visual">
-          <div class="rs-hero-image-wrapper">
-            <img src="assets/img/robotic-surgery.webp" alt="Da Vinci Robotic Surgery in Delhi" class="rs-hero-main-img">
+        <div class="gb-hero-visual">
+          <div class="gb-hero-image-wrapper">
+            <img src="assets/img/robotic-surgery.webp" alt="Da Vinci Robotic Surgery in Delhi" class="gb-hero-main-img">
           </div>
         </div>
 
       </div>
 
-      <div class="rs-hero-stats">
-        <div class="rs-stat-pill">
-          <div class="rs-stat-icon"><i class="fa-solid fa-microscope"></i></div>
-          <div class="rs-stat-info">
+      <div class="gb-hero-stats">
+        <div class="gb-stat-pill">
+          <div class="gb-stat-icon"><i class="fa-solid fa-microscope"></i></div>
+          <div class="gb-stat-info">
             <h4>3D HD Vision</h4>
             <p>Unmatched Clarity</p>
           </div>
         </div>
-        <div class="rs-stat-pill">
-          <div class="rs-stat-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
-          <div class="rs-stat-info">
+        <div class="gb-stat-pill">
+          <div class="gb-stat-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
+          <div class="gb-stat-info">
             <h4>7 Degrees</h4>
             <p>Wrist Articulation</p>
           </div>
         </div>
-        <div class="rs-stat-pill">
-          <div class="rs-stat-icon"><i class="fa-solid fa-bed-pulse"></i></div>
-          <div class="rs-stat-info">
+        <div class="gb-stat-pill">
+          <div class="gb-stat-icon"><i class="fa-solid fa-bed-pulse"></i></div>
+          <div class="gb-stat-info">
             <h4>Faster Recovery</h4>
             <p>Minimal Tissue Trauma</p>
           </div>
         </div>
-        <div class="rs-stat-pill">
-          <div class="rs-stat-icon"><i class="fa-solid fa-file-medical-alt"></i></div>
-          <div class="rs-stat-info">
+        <div class="gb-stat-pill">
+          <div class="gb-stat-icon"><i class="fa-solid fa-file-medical-alt"></i></div>
+          <div class="gb-stat-info">
             <h4>100% Cashless</h4>
             <p>All Major Insurance</p>
           </div>
@@ -635,16 +1308,19 @@
   <!-- ==========================================================================
        STICKY QUICK NAVIGATION BAR
        ========================================================================== -->
-  <nav class="rs-quick-nav" aria-label="Page Sections">
+  <nav class="gb-quick-nav" aria-label="Page Sections">
     <div class="container">
-      <div class="rs-quick-nav-list">
-        <div class="rs-quick-nav-item"><a href="#overview" class="active">Understanding Robotic Surgery</a></div>
-        <div class="rs-quick-nav-item"><a href="#how-it-works">How It Works</a></div>
-        <div class="rs-quick-nav-item"><a href="#benefits">Key Benefits</a></div>
-        <div class="rs-quick-nav-item"><a href="#procedures">Procedures Performed</a></div>
-        <div class="rs-quick-nav-item"><a href="#recovery">Recovery Timeline</a></div>
-        <div class="rs-quick-nav-item"><a href="#dr-peters">Why Dr. Peters</a></div>
-        <div class="rs-quick-nav-item"><a href="#faqs">FAQs</a></div>
+      <div class="gb-quick-nav-list">
+        <div class="gb-quick-nav-item"><a href="#overview" class="active">Understanding</a></div>
+        <div class="gb-quick-nav-item"><a href="#how-it-works">How It Works</a></div>
+        <div class="gb-quick-nav-item"><a href="#benefits">Benefits</a></div>
+        <div class="gb-quick-nav-item"><a href="#comparison">Comparison</a></div>
+        <div class="gb-quick-nav-item"><a href="#procedures">Procedures</a></div>
+        <div class="gb-quick-nav-item"><a href="#procedure-steps">Steps</a></div>
+        <div class="gb-quick-nav-item"><a href="#right-for-you">Right For You</a></div>
+        <div class="gb-quick-nav-item"><a href="#recovery">Recovery</a></div>
+        <div class="gb-quick-nav-item"><a href="#dr-peters">Why Dr. Peters</a></div>
+        <div class="gb-quick-nav-item"><a href="#faqs">FAQs</a></div>
       </div>
     </div>
   </nav>
@@ -652,29 +1328,30 @@
   <!-- ==========================================================================
        SECTION 1: OVERVIEW
        ========================================================================== -->
-  <section class="rs-section" id="overview">
+  <section class="gb-section" id="overview">
     <div class="container">
-      <div class="rs-section-header">
-        <span class="rs-section-tag">Next-Gen Technology</span>
-        <h2 class="rs-section-title">What is Robotic-Assisted Surgery?</h2>
-        <p class="rs-section-desc">
+      <div class="gb-section-header">
+        <span class="gb-section-tag">Next-Gen Technology</span>
+        <h2 class="gb-section-title">What is Robotic-Assisted Surgery?</h2>
+        <p class="gb-section-desc">
           Robotic surgery is the most advanced form of minimally invasive (keyhole) surgery available today. It is important to note that the robot does not perform the surgery autonomously; instead, it is directly controlled by an expert surgeon.
         </p>
       </div>
 
-      <div class="rs-grid-2">
-        <div class="rs-card">
-          <div class="rs-card-icon"><i class="fa-solid fa-gamepad"></i></div>
-          <h3>Surgeon Control</h3>
+      <div class="gb-grid-2">
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-gamepad" style="color: var(--blue);"></i> Unmatched Precision</h3>
           <p>
-            The surgeon sits at a specialized console, viewing a highly magnified, 3D high-definition image of the surgical site. The system translates the surgeon's exact hand, wrist, and finger movements into precise, micro-movements of the instruments inside the patient's body in real-time.
+            Robotic surgery is one of the most advanced and precise forms of minimally invasive surgery available today. In this technique, the surgeon performs the operation using a specialized robotic system, which allows for exceptional accuracy, enhanced vision, and better control. Unlike open surgery that requires large incisions, robotic surgery involves making tiny cuts through which surgical instruments and a high-definition camera are inserted.
+          </p>
+          <p style="margin-top: 1rem;">
+            Robotic surgery has transformed the way complex operations are performed, especially in areas that are difficult to access with traditional techniques. In procedures involving the abdomen, pelvis, or chest — such as bariatric surgery, gallbladder surgery, hernia repairs, and anti-reflux surgery — robotic assistance allows the surgeon to work with unmatched precision and care.
           </p>
         </div>
-        <div class="rs-card">
-          <div class="rs-card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-          <h3>Unmatched Precision</h3>
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-user-doctor" style="color: var(--blue);"></i> Leading Expertise</h3>
           <p>
-            The Da Vinci robotic arms feature EndoWrist technology, providing a range of motion greater than the human hand, complete with tremor filtration. This allows for unparalleled precision, especially in complex surgeries or tight anatomical spaces deep within the pelvis or abdomen.
+            <strong>Dr. Atul Peters</strong> is recognized as a leading <strong>Robotic Surgeon in Delhi</strong>. He has performed numerous successful procedures with the help of robotic technology, setting new benchmarks in patient care and recovery.
           </p>
         </div>
       </div>
@@ -684,34 +1361,31 @@
   <!-- ==========================================================================
        SECTION 1.5: HOW IT WORKS
        ========================================================================== -->
-  <section class="rs-section rs-section--alt" id="how-it-works">
+  <section class="gb-section gb-section--alt" id="how-it-works">
     <div class="container">
-      <div class="rs-section-header">
-        <span class="rs-section-tag">Step-by-Step</span>
-        <h2 class="rs-section-title">How Da Vinci Robotic Surgery Works</h2>
-        <p class="rs-section-desc">
+      <div class="gb-section-header">
+        <span class="gb-section-tag">Step-by-Step</span>
+        <h2 class="gb-section-title">How Da Vinci Robotic Surgery Works</h2>
+        <p class="gb-section-desc">
           Understanding the three core components of the Da Vinci Surgical System.
         </p>
       </div>
 
-      <div class="rs-grid-3">
-        <div class="rs-card">
-          <div class="rs-card-icon"><i class="fa-solid fa-desktop"></i></div>
-          <h3>1. The Surgeon Console</h3>
+      <div class="gb-grid-3">
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-desktop" style="color: var(--blue);"></i> 1. The Surgeon Console</h3>
           <p>
             This is where Dr. Peters sits during the operation. He views a high-definition 3D image of the surgical site that is magnified up to 10 times. His hand, wrist, and finger movements at the console are translated in real-time to the robotic instruments.
           </p>
         </div>
-        <div class="rs-card">
-          <div class="rs-card-icon"><i class="fa-solid fa-robot"></i></div>
-          <h3>2. The Patient Cart</h3>
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-robot" style="color: var(--blue);"></i> 2. The Patient Cart</h3>
           <p>
             Positioned near the patient, the cart holds the camera and the surgical instruments. These highly advanced robotic arms mimic the surgeon's movements but with greater range of motion, allowing for extreme dexterity in tight spaces.
           </p>
         </div>
-        <div class="rs-card">
-          <div class="rs-card-icon"><i class="fa-solid fa-tv"></i></div>
-          <h3>3. The Vision Cart</h3>
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-tv" style="color: var(--blue);"></i> 3. The Vision Cart</h3>
           <p>
             This cart makes communication between the components possible and supports the 3D high-definition vision system. It also provides a widescreen view of the surgery for the rest of the assisting operating room team.
           </p>
@@ -723,36 +1397,33 @@
   <!-- ==========================================================================
        SECTION 2: BENEFITS
        ========================================================================== -->
-  <section class="rs-section" id="benefits">
+  <section class="gb-section" id="benefits">
     <div class="container">
-      <div class="rs-section-header">
-        <span class="rs-section-tag">Why Choose Robotic</span>
-        <h2 class="rs-section-title">The Da Vinci Advantage</h2>
-        <p class="rs-section-desc">
+      <div class="gb-section-header">
+        <span class="gb-section-tag">Why Choose Robotic</span>
+        <h2 class="gb-section-title">The Da Vinci Advantage</h2>
+        <p class="gb-section-desc">
           For many complex procedures, robotic surgery offers significant benefits over traditional open surgery and standard laparoscopy.
         </p>
       </div>
 
-      <div class="rs-grid-3">
-        <div class="rs-card">
-          <div class="rs-card-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-          <h3>Enhanced Visualization</h3>
+      <div class="gb-grid-3">
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-magnifying-glass-plus" style="color: var(--blue);"></i> Enhanced Visualization</h3>
           <p>
             The 3D HD camera provides a highly magnified, true depth-of-field view, allowing the surgeon to see tiny blood vessels and nerves with absolute clarity, ensuring safer dissections.
           </p>
         </div>
-        <div class="rs-card">
-          <div class="rs-card-icon"><i class="fa-solid fa-person-walking"></i></div>
-          <h3>Quicker Return to Life</h3>
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-person-walking" style="color: var(--blue);"></i> Quicker Return to Life</h3>
           <p>
             Because incisions are tiny and tissue manipulation is highly precise, patients experience significantly less post-operative pain, leading to a faster return to normal daily activities.
           </p>
         </div>
-        <div class="rs-card">
-          <div class="rs-card-icon"><i class="fa-solid fa-droplet-slash"></i></div>
-          <h3>Reduced Complications</h3>
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-droplet-slash" style="color: var(--blue);"></i> Less Blood Loss</h3>
           <p>
-            The minimally invasive nature of robotic surgery translates to reduced blood loss, lower risk of surgical site infections, and minimized scarring compared to open surgical methods.
+            Enhanced precision reduces surgical bleeding.
           </p>
         </div>
       </div>
@@ -760,38 +1431,87 @@
   </section>
 
   <!-- ==========================================================================
+       SECTION 2.5: COMPARISON
+       ========================================================================== -->
+  <section class="gb-section gb-section--alt" id="comparison">
+    <div class="container">
+      <div class="gb-section-header">
+        <span class="gb-section-tag">Comparison</span>
+        <h2 class="gb-section-title">Robotic vs Traditional Open Surgery</h2>
+      </div>
+
+      <div style="overflow-x: auto; max-width: 900px; margin: 0 auto; background: #FFFFFF; border-radius: 1.5rem; box-shadow: var(--sh-md);">
+        <table style="width: 100%; border-collapse: collapse; text-align: left;">
+          <thead>
+            <tr style="background: var(--blue-pale); color: var(--blue);">
+              <th style="padding: 1.5rem; font-family: 'DM Sans', sans-serif; font-size: 1.15rem;">Robotic Surgery</th>
+              <th style="padding: 1.5rem; font-family: 'DM Sans', sans-serif; font-size: 1.15rem;">Traditional Open Surgery</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 1.25rem 1.5rem; color: var(--text-2);">Minimally invasive with small incisions</td>
+              <td style="padding: 1.25rem 1.5rem; color: var(--text-2);">Large incisions required</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 1.25rem 1.5rem; color: var(--text-2);">Less post-operative pain and discomfort</td>
+              <td style="padding: 1.25rem 1.5rem; color: var(--text-2);">More pain and longer healing time</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 1.25rem 1.5rem; color: var(--text-2);">Lower risk of infection and complications</td>
+              <td style="padding: 1.25rem 1.5rem; color: var(--text-2);">Higher risk of wound-related complications</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 1.25rem 1.5rem; color: var(--text-2);">Faster recovery and shorter hospital stay</td>
+              <td style="padding: 1.25rem 1.5rem; color: var(--text-2);">Longer hospital stay and recovery period</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: 1.25rem 1.5rem; color: var(--text-2);">Enhanced precision and 3D visualization</td>
+              <td style="padding: 1.25rem 1.5rem; color: var(--text-2);">Limited visibility and flexibility during surgery</td>
+            </tr>
+            <tr>
+              <td style="padding: 1.25rem 1.5rem; color: var(--text-2);">Minimal scarring and better cosmetic results</td>
+              <td style="padding: 1.25rem 1.5rem; color: var(--text-2);">Larger, visible scars</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
        SECTION 3: PROCEDURES
        ========================================================================== -->
-  <section class="rs-section rs-section--alt" id="procedures">
+  <section class="gb-section" id="procedures">
     <div class="container">
-      <div class="rs-section-header">
-        <span class="rs-section-tag">Surgical Applications</span>
-        <h2 class="rs-section-title">Common Robotic Procedures</h2>
-        <p class="rs-section-desc">
+      <div class="gb-section-header">
+        <span class="gb-section-tag">Surgical Applications</span>
+        <h2 class="gb-section-title">Common Robotic Procedures</h2>
+        <p class="gb-section-desc">
           Dr. Atul Peters utilizes the Da Vinci system for a wide range of complex gastrointestinal and bariatric conditions.
         </p>
       </div>
 
-      <div class="rs-grid-2">
-        <div class="rs-card">
+      <div class="gb-grid-2">
+        <div class="gb-card">
           <h3><i class="fa-solid fa-weight-scale" style="color: var(--blue);"></i> Robotic Bariatric Surgery</h3>
           <p>
             Ideal for highly obese individuals or those requiring complex revision bariatric surgeries. The robot offers superior ergonomics and precision when navigating thick abdominal walls, making procedures like Gastric Bypass and Sleeve Gastrectomy safer and more effective.
           </p>
         </div>
-        <div class="rs-card">
+        <div class="gb-card">
           <h3><i class="fa-solid fa-person-running" style="color: var(--blue);"></i> Robotic Hernia Repair (eTEP/TAR)</h3>
           <p>
             For complex abdominal wall reconstructions and large ventral hernias, robotic surgery allows for precise layer-by-layer dissection and suturing of mesh in the extraperitoneal space, ensuring a robust repair with minimal recurrence risk.
           </p>
         </div>
-        <div class="rs-card">
+        <div class="gb-card">
           <h3><i class="fa-solid fa-disease" style="color: var(--blue);"></i> Complex Gallbladder & GI Surgery</h3>
           <p>
             When dealing with severe inflammation, dense adhesions from previous surgeries, or complex biliary anatomy, the Da Vinci robot's 3D HD visualization and articulating instruments provide the critical precision needed for safe cholecystectomy or GI resection.
           </p>
         </div>
-        <div class="rs-card">
+        <div class="gb-card">
           <h3><i class="fa-solid fa-scissors" style="color: var(--blue);"></i> Hiatal Hernia & Anti-Reflux Surgery</h3>
           <p>
             Operating near the diaphragm requires immense precision. Robotic-assisted Nissen Fundoplication for GERD and hiatal hernias ensures delicate handling of the esophagus and stomach, leading to excellent functional outcomes and rapid recovery.
@@ -802,36 +1522,105 @@
   </section>
 
   <!-- ==========================================================================
+       SECTION 3.2: PROCEDURE STEPS
+       ========================================================================== -->
+  <section class="gb-section gb-section--alt" id="procedure-steps">
+    <div class="container">
+      <div class="gb-section-header">
+        <span class="gb-section-tag">Step-by-Step</span>
+        <h2 class="gb-section-title">Procedure of Robotic Surgery</h2>
+        <p class="gb-section-desc">
+          The robotic surgery process typically follows these steps. Throughout the procedure, the surgeon is in complete control. The robot does not act independently; it amplifies the surgeon's capabilities.
+        </p>
+      </div>
+      <div class="gb-grid-3">
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-bed" style="color: var(--blue);"></i> 1. Preparation</h3>
+          <p>The patient is put under general anesthesia.</p>
+        </div>
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-syringe" style="color: var(--blue);"></i> 2. Insertion of Instruments</h3>
+          <p>Small incisions are made, and robotic arms are inserted.</p>
+        </div>
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-display" style="color: var(--blue);"></i> 3. Console Operation</h3>
+          <p>The surgeon controls the robotic arms via a console, guiding tools and camera precisely.</p>
+        </div>
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-scalpel" style="color: var(--blue);"></i> 4. Surgical Task</h3>
+          <p>The procedure is performed using enhanced visualization and steady robotic hands.</p>
+        </div>
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-band-aid" style="color: var(--blue);"></i> 5. Closure & Recovery</h3>
+          <p>Incisions are closed, and the patient is moved to recovery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3.3: RIGHT FOR YOU
+       ========================================================================== -->
+  <section class="gb-section" id="right-for-you">
+    <div class="container">
+      <div class="gb-section-header">
+        <span class="gb-section-tag">Eligibility</span>
+        <h2 class="gb-section-title">Is Robotic Surgery Right for You?</h2>
+        <p class="gb-section-desc">
+          Robotic surgery is ideal for patients seeking:
+        </p>
+      </div>
+
+      <div class="gb-grid-3">
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-check" style="color: var(--blue);"></i> Minimally Invasive</h3>
+          <p>A minimally invasive option.</p>
+        </div>
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-check" style="color: var(--blue);"></i> Faster Recovery</h3>
+          <p>Faster recovery with fewer complications.</p>
+        </div>
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-check" style="color: var(--blue);"></i> Modern Alternative</h3>
+          <p>A modern alternative to open or conventional laparoscopic surgery.</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <p class="gb-section-desc">
+          However, not all patients qualify. Factors like the type of condition, medical history, and BMI are assessed by the surgeon.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
        SECTION 3.5: RECOVERY & WHY DR PETERS
        ========================================================================== -->
-  <section class="rs-section" id="recovery">
+  <section class="gb-section gb-section--alt" id="recovery">
     <div class="container">
-      <div class="rs-section-header">
-        <span class="rs-section-tag">Post-Op Experience</span>
-        <h2 class="rs-section-title">What to Expect During Recovery</h2>
-        <p class="rs-section-desc">
+      <div class="gb-section-header">
+        <span class="gb-section-tag">Post-Op Experience</span>
+        <h2 class="gb-section-title">What to Expect During Recovery</h2>
+        <p class="gb-section-desc">
           Robotic surgery dramatically reduces the physical toll of surgery, allowing for a much faster return to your daily life.
         </p>
       </div>
 
-      <div class="rs-grid-3">
-        <div class="rs-card">
-          <div class="rs-card-icon"><i class="fa-solid fa-hospital"></i></div>
-          <h3>0-24 Hours (Hospital)</h3>
+      <div class="gb-grid-3">
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-hospital" style="color: var(--blue);"></i> 0-24 Hours (Hospital)</h3>
           <p>
             Most patients are out of bed and walking within a few hours of surgery. Due to the minimal incisions, pain is well-controlled. Depending on the complexity of the procedure (like bariatric or complex hernia), discharge often occurs within 24 to 48 hours.
           </p>
         </div>
-        <div class="rs-card">
-          <div class="rs-card-icon"><i class="fa-solid fa-house-chimney-medical"></i></div>
-          <h3>Days 1-7 (Home)</h3>
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-house-chimney-medical" style="color: var(--blue);"></i> Days 1-7 (Home)</h3>
           <p>
             You will likely experience only mild soreness. Patients are encouraged to take light walks to promote circulation. Most people can comfortably return to desk work, driving, and normal daily routines within a week.
           </p>
         </div>
-        <div class="rs-card">
-          <div class="rs-card-icon"><i class="fa-solid fa-dumbbell"></i></div>
-          <h3>Weeks 2-6 (Full Activity)</h3>
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-dumbbell" style="color: var(--blue);"></i> Weeks 2-6 (Full Activity)</h3>
           <p>
             The tiny 8mm incisions heal rapidly, leaving virtually invisible scars. By week 4 to 6, patients can typically resume all strenuous activities, including heavy lifting and intense exercise, without restriction.
           </p>
@@ -840,16 +1629,58 @@
     </div>
   </section>
 
-  <section class="rs-section rs-section--alt" id="dr-peters">
+  <!-- ==========================================================================
+       SECTION 3.6: POST-CARE
+       ========================================================================== -->
+  <section class="gb-section" id="post-care">
     <div class="container">
-      <div class="rs-grid-2" style="align-items: center;">
+      <div class="gb-section-header">
+        <span class="gb-section-tag">Aftercare</span>
+        <h2 class="gb-section-title">Post-Care after Robotic Surgery</h2>
+        <p class="gb-section-desc">
+          Recovery after robotic surgery is generally smoother and quicker than traditional open surgery. Proper post-operative care is crucial for optimal healing.
+        </p>
+      </div>
+      
+      <div class="gb-grid-2">
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-pills" style="color: var(--blue);"></i> Pain Management & Wound Care</h3>
+          <p>
+            Pain is usually mild and well-controlled with oral medications. Incisions are closed with dissolvable sutures or skin adhesive. Keep the area clean and dry.
+          </p>
+        </div>
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-person-walking" style="color: var(--blue);"></i> Mobility and Activity</h3>
+          <p>
+            Light movement such as walking is encouraged within a few hours after surgery to improve blood circulation and reduce the risk of blood clots.
+          </p>
+        </div>
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-utensils" style="color: var(--blue);"></i> Dietary Instructions</h3>
+          <p>
+            Depending on the procedure, dietary modifications may be advised. For bariatric or abdominal surgeries, a soft or liquid diet might be recommended initially.
+          </p>
+        </div>
+        <div class="gb-card">
+          <h3><i class="fa-solid fa-calendar-check" style="color: var(--blue);"></i> Follow-Up Appointments</h3>
+          <p>
+            Regular follow-up visits are scheduled to monitor healing and review test results. Dr. Peters’ team also provides emotional and lifestyle counseling.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gb-section gb-section--alt" id="dr-peters">
+    <div class="container">
+      <div class="gb-grid-2" style="align-items: center;">
         <div>
           <img src="assets/img/robotic-surgery.webp" alt="Dr. Atul Peters Robotic Surgeon" style="width: 100%; border-radius: 1.5rem; box-shadow: 0 20px 40px rgba(0,0,0,0.15);">
         </div>
         <div>
-          <span class="rs-section-tag">Expert Leadership</span>
-          <h2 class="rs-section-title">Why Choose Dr. Atul Peters?</h2>
-          <p class="rs-section-desc" style="margin-bottom: 1.5rem;">
+          <span class="gb-section-tag">Expert Leadership</span>
+          <h2 class="gb-section-title">Why Choose Dr. Atul Peters?</h2>
+          <p class="gb-section-desc" style="margin-bottom: 1.5rem;">
             Dr. Atul Peters is the Senior Director & Head of Bariatric, Minimal Access & Robotic Surgery at Max Smart Super Speciality Hospital, Saket – New Delhi.
           </p>
           <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem;">
@@ -883,68 +1714,116 @@
   <!-- ==========================================================================
        SECTION 4: FAQS
        ========================================================================== -->
-  <section class="rs-section" id="faqs">
+  <section class="gb-section" id="faqs">
     <div class="container">
-      <div class="rs-section-header">
-        <span class="rs-section-tag">Common Questions</span>
-        <h2 class="rs-section-title">Frequently Asked Questions</h2>
+      <div class="gb-section-header">
+        <span class="gb-section-tag">Common Questions</span>
+        <h2 class="gb-section-title">Frequently Asked Questions</h2>
       </div>
 
-      <div class="rs-faq-list">
-        <div class="rs-faq-item">
-          <button class="rs-faq-question">
-            <span>Will the robot perform my surgery on its own?</span>
+      <div class="gb-faq-list">
+        <div class="gb-faq-item">
+          <button class="gb-faq-question">
+            <span>Is Robotic Surgery safe?</span>
             <i class="fa-solid fa-chevron-down"></i>
           </button>
-          <div class="rs-faq-answer">
+          <div class="gb-faq-answer">
             <p>
-              No. The Da Vinci system is not autonomous. It is a highly advanced surgical tool that is 100% controlled by your surgeon at all times. Every movement the robot makes is directly guided by the surgeon seated at the console in the same operating room.
+              Yes, robotic surgery is extremely safe when performed by a trained and experienced surgeon like Dr. Atul Peters. The robot enhances precision, control, and visualization, reducing the chances of complications.
             </p>
           </div>
         </div>
 
-        <div class="rs-faq-item">
-          <button class="rs-faq-question">
-            <span>Is robotic surgery safe?</span>
+        <div class="gb-faq-item">
+          <button class="gb-faq-question">
+            <span>Does the Robot perform the surgery on its own?</span>
             <i class="fa-solid fa-chevron-down"></i>
           </button>
-          <div class="rs-faq-answer">
+          <div class="gb-faq-answer">
             <p>
-              Yes, robotic surgery is extremely safe when performed by an experienced and trained surgeon. It actually enhances safety by providing better visualization (3D HD), tremor filtration, and precise instrument control, often resulting in fewer complications than traditional open surgery.
+              No, the robot does not act independently. The surgeon is in full control throughout the procedure, guiding the robotic arms through a specialized console.
             </p>
           </div>
         </div>
 
-        <div class="rs-faq-item">
-          <button class="rs-faq-question">
-            <span>Is robotic surgery covered by health insurance?</span>
+        <div class="gb-faq-item">
+          <button class="gb-faq-question">
+            <span>What are the main Advantages of Robotic Surgery?</span>
             <i class="fa-solid fa-chevron-down"></i>
           </button>
-          <div class="rs-faq-answer">
+          <div class="gb-faq-answer">
             <p>
-              Yes, in India, robotic surgeries for medically necessary procedures (like complex hernia repair or indicated bariatric surgery) are widely covered by major health insurance networks and TPAs following IRDAI guidelines, though specific coverage limits may depend on your individual policy. Max Hospital provides comprehensive cashless claim processing assistance.
+              Robotic surgery offers several benefits including smaller incisions, less pain, reduced blood loss, faster recovery, minimal scarring, and shorter hospital stays.
             </p>
           </div>
         </div>
 
-        <div class="rs-faq-item">
-          <button class="rs-faq-question">
+        <div class="gb-faq-item">
+          <button class="gb-faq-question">
+            <span>How long is the Recovery after Robotic Surgery?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="gb-faq-answer">
+            <p>
+              Most patients recover faster than with traditional surgery. Many return to normal activities within 1–2 weeks, depending on the type of procedure and individual health status.
+            </p>
+          </div>
+        </div>
+
+        <div class="gb-faq-item">
+          <button class="gb-faq-question">
+            <span>Is Robotic Surgery more expensive than regular surgery?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="gb-faq-answer">
+            <p>
+              While the upfront cost of robotic surgery may be higher due to advanced equipment, the reduced hospital stay and faster recovery often make it cost-effective in the long run.
+            </p>
+          </div>
+        </div>
+
+        <div class="gb-faq-item">
+          <button class="gb-faq-question">
+            <span>Am I a suitable candidate for Robotic Surgery?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="gb-faq-answer">
+            <p>
+              Not everyone qualifies for robotic surgery. Your eligibility depends on factors like the type of condition, overall health, body weight, and prior surgeries. A consultation with Dr. Atul Peters will help determine your suitability.
+            </p>
+          </div>
+        </div>
+
+        <div class="gb-faq-item">
+          <button class="gb-faq-question">
+            <span>Are there any risks associated with Robotic Surgery?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="gb-faq-answer">
+            <p>
+              Like any surgery, robotic procedures carry some risk, though they are generally lower than open surgery. Risks may include infection, bleeding, or reaction to anesthesia, but these are rare under expert care.
+            </p>
+          </div>
+        </div>
+
+        <div class="gb-faq-item">
+          <button class="gb-faq-question">
             <span>Will I have large scars after robotic surgery?</span>
             <i class="fa-solid fa-chevron-down"></i>
           </button>
-          <div class="rs-faq-answer">
+          <div class="gb-faq-answer">
             <p>
               No. Robotic surgery is minimally invasive. It uses several small incisions (usually 8mm) rather than one large incision. These small incisions are closed with surgical glue or absorbable sutures and heal into tiny, almost invisible hairline scars.
             </p>
           </div>
         </div>
 
-        <div class="rs-faq-item">
-          <button class="rs-faq-question">
+        <div class="gb-faq-item">
+          <button class="gb-faq-question">
             <span>Is robotic surgery more painful than traditional surgery?</span>
             <i class="fa-solid fa-chevron-down"></i>
           </button>
-          <div class="rs-faq-answer">
+          <div class="gb-faq-answer">
             <p>
               Actually, the opposite is true. Because the robotic instruments cause less trauma to surrounding tissue and the incisions are so small, patients consistently report significantly less pain after robotic surgery compared to open procedures, resulting in less need for pain medication.
             </p>
@@ -957,14 +1836,14 @@
   <!-- ==========================================================================
        FINAL CONSULTATION CTA SECTION
        ========================================================================== -->
-  <section class="rs-cta-section" id="consult">
+  <section class="gb-cta-section" id="consult">
     <div class="container">
-      <div class="rs-cta-box">
+      <div class="gb-cta-box">
         <h2>Experience the Future of Surgical Care</h2>
         <p>
           Schedule a consultation with Dr. Atul Peters to discover if you are a candidate for minimally invasive Da Vinci Robotic Surgery.
         </p>
-        <div class="rs-cta-actions">
+        <div class="gb-cta-actions">
           <a href="javascript:void(0)" onclick="showBookAnApptmForm(); return false;" class="btn btn-gold btn-lg">
             <span>Book Consultation Now</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -1007,26 +1886,26 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       // FAQ Accordions
-      const faqItems = document.querySelectorAll('.rs-faq-item');
+      const faqItems = document.querySelectorAll('.gb-faq-item');
       faqItems.forEach(function (item) {
-        const question = item.querySelector('.rs-faq-question');
+        const question = item.querySelector('.gb-faq-question');
         question.addEventListener('click', function () {
           const isActive = item.classList.contains('active');
           faqItems.forEach(function (el) {
             el.classList.remove('active');
-            el.querySelector('.rs-faq-answer').style.maxHeight = null;
+            el.querySelector('.gb-faq-answer').style.maxHeight = null;
           });
           if (!isActive) {
             item.classList.add('active');
-            const answer = item.querySelector('.rs-faq-answer');
+            const answer = item.querySelector('.gb-faq-answer');
             answer.style.maxHeight = answer.scrollHeight + "px";
           }
         });
       });
 
       // Active Section Highlighting in Sticky Quick Nav
-      const navLinks = document.querySelectorAll('.rs-quick-nav-item a');
-      const sections = document.querySelectorAll('.rs-section, .rs-cta-section');
+      const navLinks = document.querySelectorAll('.gb-quick-nav-item a');
+      const sections = document.querySelectorAll('.gb-section, .gb-cta-section');
 
       window.addEventListener('scroll', function () {
         let current = '';

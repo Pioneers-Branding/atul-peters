@@ -16,6 +16,7 @@
 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="mentorship.css">
 </head>
 
 <body class="about-page">
@@ -32,11 +33,16 @@
 
 
   <!-- ===== Page Hero (split asymmetric) ===== -->
-  <section class="about-hero">
+  <section class="about-hero" style="position: relative;">
+
     <div class="about-hero-bg" aria-hidden="true"></div>
     <div class="about-hero-grid" aria-hidden="true"></div>
     <div class="about-hero-glow about-hero-glow--1" aria-hidden="true"></div>
     <div class="about-hero-glow about-hero-glow--2" aria-hidden="true"></div>
+    
+    <!-- Decorative Sketch Watermark -->
+    <div class="about-sketch-watermark" style="position: absolute; background-image: url('assets/img/sketch_stethoscope.png'); background-size: contain; background-repeat: no-repeat; width: 450px; height: 450px; top: 10%; left: 10%; opacity: 0.15; mix-blend-mode: multiply; transform: rotate(-10deg); pointer-events: none; z-index: 0;"></div>
+
 
 
     <div class="container about-hero-inner">
@@ -200,8 +206,12 @@
   </section>
 
   <!-- ===== Bio Section ===== -->
-  <section class="about-bio section" id="bio">
-    <div class="container">
+  <section class="about-bio section" id="bio" style="position: relative; overflow: hidden;">
+    <!-- Grid Background -->
+    <div style="position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: 1; background-size: 50px 50px; background-image: linear-gradient(to right, rgba(29, 93, 149, 0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(29, 93, 149, 0.08) 1px, transparent 1px); mask-image: linear-gradient(to bottom, #000 30%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, #000 30%, transparent 100%);"></div>
+    <!-- Decorative Sketch Watermark -->
+    <div class="about-sketch-watermark" style="position: absolute; background-image: url('assets/img/sketch_robotic_surgery.png'); background-size: contain; background-repeat: no-repeat; width: 600px; height: 600px; bottom: 10%; right: -5%; opacity: 0.12; mix-blend-mode: multiply; transform: rotate(15deg); pointer-events: none; z-index: 0;"></div>
+    <div class="container" style="position: relative; z-index: 1;">
       <div class="about-bio-grid">
         <!-- Photo + signature card (layered frame) -->
         <div class="about-bio-photo-wrap">
@@ -331,8 +341,8 @@
 
 
 
-  <!-- ===== Teaching Faculty & Proctor ===== -->
-  <section class="about-achievements section">
+  <!-- ===== Mentorship: Teaching Faculty & Proctor ===== -->
+  <section class="about-mentorship section">
     <div class="container">
       <div class="section-header center">
         <div class="section-eyebrow">
@@ -346,40 +356,91 @@
           para-medical professionals.</p>
       </div>
 
-      <div class="about-ach-grid">
-        <div class="about-ach-card about-ach-card--feature" style="grid-column: 1 / -1;">
-          <h3>Teaching Faculty</h3>
-          <ul
-            style="color: var(--text-2); font-size: 1.05rem; line-height: 1.8; margin-top: 1rem; padding-left: 1.5rem;">
-            <li>National Board of Examination, Examination Centre – Max Smart Super Speciality Hospital, Saket, Delhi
-            </li>
-            <li>Dept. of General Surgery, S.N. Medical College, Agra, U.P.</li>
-            <li>Dept. of General Surgery, GSVM Medical College, Kanpur, U.P.</li>
-            <li>Visiting Professor: IRCAD (Research Institute against Digestive Cancers), a worldwide reference training
-              centre in minimally invasive surgery in Strasbourg's University Hospital, France & Taiwan.</li>
-            <li>EISE - Ethicon Institute of Surgical Excellence.</li>
-            <li>PACE- Medtronic – Professional Affairs Clinical Education, as a teaching faculty for Bariatric & Solid
-              Organ Surgery.</li>
-            <li>OSSI Examiner for "Centre of Excellence" inspection.</li>
-            <li>Fellowship programs for Advanced Laparoscopic Skills and Bariatric Surgery at Fortis Hospital, Shalimar
-              Bagh (earlier).</li>
-            <li>Resource Person- The College of Surgeons of Sri Lanka in association with The Royal College of Surgeons
-              of Edinburgh for Advanced Laparoscopic Bariatric Surgery Training.</li>
-            <li>Research Guide for Ph. D Program, University of Delhi, Lady Irwin College, Department of food and
-              Nutrition.</li>
-            <li>Research guide for MS Students at GSVM Medical College, Kanpur.</li>
-          </ul>
+      <div class="mentorship-grid">
+        <!-- PROCTOR SECTION -->
+        <div class="mentorship-proctor">
+          <h3 class="mentorship-title">Proctor <span>(Robotic &amp; Bariatric)</span></h3>
+          <div class="proctor-cards">
+            <div class="proctor-card">
+              <div class="proctor-icon">
+                <i class="fa-solid fa-user-doctor"></i>
+              </div>
+              <p>1 year clinical fellowship program in Metabolic &amp; Bariatric Surgery (FMBS).</p>
+            </div>
+            <div class="proctor-card">
+              <div class="proctor-icon">
+                <i class="fa-solid fa-apple-whole"></i>
+              </div>
+              <p>3 months fellowship program in Bariatric &amp; Metabolic Nutrition.</p>
+            </div>
+            <div class="proctor-card">
+              <div class="proctor-icon">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <p>1 year fellowship in robotic surgery by ARIS as a Centre of excellence in Robotic and Innovative Surgery.</p>
+            </div>
+            <div class="proctor-card">
+              <div class="proctor-icon">
+                <i class="fa-solid fa-microscope"></i>
+              </div>
+              <p>Robotic Surgery by Intuitive, DaVinci Robotic platform (as a high volume centre).</p>
+            </div>
+          </div>
+          
+          <!-- Decorative Sketch Watermark -->
+          <div class="proctor-sketch-watermark" style="position: sticky; top: 140px; margin-top: 6rem; text-align: center; opacity: 0.7; pointer-events: none; z-index: 0;">
+            <img src="assets/img/sketch_mentorship_transparent.png" alt="" style="max-width: 400px; width: 100%; height: auto; transform: rotate(-5deg);">
+          </div>
         </div>
 
-        <div class="about-ach-card about-ach-card--feature" style="grid-column: 1 / -1; background: var(--bg-cream);">
-          <h3>Proctor</h3>
-          <ul
-            style="color: var(--text-2); font-size: 1.05rem; line-height: 1.8; margin-top: 1rem; padding-left: 1.5rem;">
-            <li>1 year clinical fellowship program in Metabolic & Bariatric Surgery (FMBS).</li>
-            <li>3 months fellowship program in Bariatric & Metabolic Nutrition.</li>
-            <li>1 year fellowship in robotic surgery by ARIS as a Centre of excellence in Robotic and Innovative
-              Surgery.</li>
-            <li>Robotic Surgery by Intuitive, DaVinci Robotic platform (as a high volume centre).</li>
+        <!-- TEACHING FACULTY SECTION -->
+        <div class="mentorship-faculty">
+          <h3 class="mentorship-title">Teaching Faculty <span>Global Reach</span></h3>
+          <ul class="faculty-list">
+            <li>
+              <div class="faculty-icon"><i class="fa-solid fa-check"></i></div>
+              <span>National Board of Examination, Examination Centre – Max Smart Super Speciality Hospital, Saket, Delhi</span>
+            </li>
+            <li>
+              <div class="faculty-icon"><i class="fa-solid fa-check"></i></div>
+              <span>Dept. of General Surgery, S.N. Medical College, Agra, U.P.</span>
+            </li>
+            <li>
+              <div class="faculty-icon"><i class="fa-solid fa-check"></i></div>
+              <span>Dept. of General Surgery, GSVM Medical College, Kanpur, U.P.</span>
+            </li>
+            <li>
+              <div class="faculty-icon"><i class="fa-solid fa-globe"></i></div>
+              <span>Visiting Professor: IRCAD (Research Institute against Digestive Cancers), a worldwide reference training centre in minimally invasive surgery in Strasbourg's University Hospital, France &amp; Taiwan.</span>
+            </li>
+            <li>
+              <div class="faculty-icon"><i class="fa-solid fa-check"></i></div>
+              <span>EISE - Ethicon Institute of Surgical Excellence.</span>
+            </li>
+            <li>
+              <div class="faculty-icon"><i class="fa-solid fa-check"></i></div>
+              <span>PACE- Medtronic – Professional Affairs Clinical Education, as a teaching faculty for Bariatric &amp; Solid Organ Surgery.</span>
+            </li>
+            <li>
+              <div class="faculty-icon"><i class="fa-solid fa-check"></i></div>
+              <span>OSSI Examiner for "Centre of Excellence" inspection.</span>
+            </li>
+            <li>
+              <div class="faculty-icon"><i class="fa-solid fa-check"></i></div>
+              <span>Fellowship programs for Advanced Laparoscopic Skills and Bariatric Surgery at Fortis Hospital, Shalimar Bagh (earlier).</span>
+            </li>
+            <li>
+              <div class="faculty-icon"><i class="fa-solid fa-globe"></i></div>
+              <span>Resource Person- The College of Surgeons of Sri Lanka in association with The Royal College of Surgeons of Edinburgh for Advanced Laparoscopic Bariatric Surgery Training.</span>
+            </li>
+            <li>
+              <div class="faculty-icon"><i class="fa-solid fa-book-open"></i></div>
+              <span>Research Guide for Ph. D Program, University of Delhi, Lady Irwin College, Department of food and Nutrition.</span>
+            </li>
+            <li>
+              <div class="faculty-icon"><i class="fa-solid fa-book-open"></i></div>
+              <span>Research guide for MS Students at GSVM Medical College, Kanpur.</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -762,8 +823,8 @@
     </div>
   </section>
 
-  <!-- ===== Teaching, Authorship & Philanthropy ===== -->
-  <section class="about-teaching section" id="teaching" style="background-color: var(--bg-alt);">
+  <!-- ===== Authorship & Philanthropy ===== -->
+  <section class="about-author-philanthropy section" id="philanthropy">
     <div class="container">
       <div class="section-header center">
         <div class="section-eyebrow">
@@ -771,163 +832,34 @@
             <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
             <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
           </svg>
-          Academic Leadership
+          Beyond Surgery
         </div>
-        <h2 class="section-title">Teaching, Authorship & <span class="text-accent">Philanthropy</span></h2>
-        <p class="section-sub">Mentoring the next generation of surgeons and contributing to the community.</p>
+        <h2 class="section-title">Authorship &amp; <span class="text-accent">Philanthropy</span></h2>
+        <p class="section-sub">Contributing to medical literature and giving back to the community.</p>
       </div>
 
-      <div class="as-grid-2" style="gap: 2rem;">
-        <!-- Teaching Faculty -->
-        <div
-          style="background: #FFFFFF; border-radius: 1.5rem; padding: 2.5rem; border: 1px solid var(--border); box-shadow: var(--sh-md);">
-          <h3
-            style="font-family: 'Bellefair', Georgia, serif; font-size: 1.75rem; color: var(--blue-deep); margin-bottom: 1.5rem;">
-            <i class="fa-solid fa-chalkboard-user" style="color: var(--gold); margin-right: 0.5rem;"></i> Teaching
-            Faculty
-          </h3>
-          <ul
-            style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem; color: var(--text-2); font-size: 0.95rem;">
-            <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-check"
-                style="color: var(--blue); margin-top: 0.25rem;"></i> National Board of Examination, Examination Centre
-              – Max Smart Super Speciality Hospital, Saket – New Delhi</li>
-            <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-check"
-                style="color: var(--blue); margin-top: 0.25rem;"></i> Dept. of General Surgery, S.N. Medical College,
-              Agra & GSVM Medical College, Kanpur</li>
-            <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-check"
-                style="color: var(--blue); margin-top: 0.25rem;"></i> Visiting Professor: IRCAD (Strasbourg, France &
-              Taiwan)</li>
-            <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-check"
-                style="color: var(--blue); margin-top: 0.25rem;"></i> EISE - Ethicon Institute of Surgical Excellence
-            </li>
-            <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-check"
-                style="color: var(--blue); margin-top: 0.25rem;"></i> PACE - Medtronic for Bariatric & Solid Organ
-              Surgery</li>
-            <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-check"
-                style="color: var(--blue); margin-top: 0.25rem;"></i> OSSI Examiner for "Centre of Excellence"
-              inspection</li>
-            <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-check"
-                style="color: var(--blue); margin-top: 0.25rem;"></i> The College of Surgeons of Sri Lanka & Royal
-              College of Surgeons of Edinburgh</li>
-            <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-check"
-                style="color: var(--blue); margin-top: 0.25rem;"></i> Research Guide for Ph.D Program (Univ. of Delhi) &
-              MS Students (GSVM Kanpur)</li>
-          </ul>
-        </div>
-
-        <div style="display: flex; flex-direction: column; gap: 2rem;">
-          <!-- Proctor -->
-          <div
-            style="background: #FFFFFF; border-radius: 1.5rem; padding: 2rem; border: 1px solid var(--border); box-shadow: var(--sh-md);">
-            <h3
-              style="font-family: 'Bellefair', Georgia, serif; font-size: 1.5rem; color: var(--blue-deep); margin-bottom: 1rem;">
-              <i class="fa-solid fa-user-doctor" style="color: var(--gold); margin-right: 0.5rem;"></i> Proctorships &
-              Fellowships
-            </h3>
-            <ul
-              style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; color: var(--text-2); font-size: 0.95rem;">
-              <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-circle-dot"
-                  style="color: var(--blue); font-size: 0.5rem; margin-top: 0.4rem;"></i> 1-year clinical fellowship in
-                Metabolic & Bariatric Surgery (FMBS)</li>
-              <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-circle-dot"
-                  style="color: var(--blue); font-size: 0.5rem; margin-top: 0.4rem;"></i> 3-month fellowship in
-                Bariatric & Metabolic Nutrition</li>
-              <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-circle-dot"
-                  style="color: var(--blue); font-size: 0.5rem; margin-top: 0.4rem;"></i> 1-year fellowship in robotic
-                surgery by ARIS</li>
-              <li style="display: flex; gap: 0.75rem;"><i class="fa-solid fa-circle-dot"
-                  style="color: var(--blue); font-size: 0.5rem; margin-top: 0.4rem;"></i> Proctor for Robotic Surgery by
-                Intuitive (DaVinci platform)</li>
-            </ul>
+      <div class="ap-grid">
+        <!-- Author Card -->
+        <div class="ap-card ap-card-author">
+          <div class="ap-card-icon">
+            <i class="fa-solid fa-book-medical"></i>
           </div>
-
-          <!-- Author & Philanthropy -->
-          <div
-            style="background: #FFFFFF; border-radius: 1.5rem; padding: 2rem; border: 1px solid var(--border); box-shadow: var(--sh-md);">
-            <h3
-              style="font-family: 'Bellefair', Georgia, serif; font-size: 1.5rem; color: var(--blue-deep); margin-bottom: 1rem;">
-              <i class="fa-solid fa-book-open" style="color: var(--gold); margin-right: 0.5rem;"></i> Author &
-              Philanthropist
-            </h3>
-            <div style="margin-bottom: 1rem;">
-              <strong style="color: var(--text-1); font-size: 1rem;">Textbook Author</strong>
-              <p style="color: var(--text-2); font-size: 0.9rem; margin-top: 0.25rem;">Lead author of "Bariatric Surgery
-                - A Ready Reckoner" (ISBN: 978-81-940274-9-2), published by Salubris Medical Publishers.</p>
-            </div>
-            <div>
-              <strong style="color: var(--text-1); font-size: 1rem;">Founder, Mera Vada Foundation</strong>
-              <p style="color: var(--text-2); font-size: 0.9rem; margin-top: 0.25rem;">A non-profit organization focused
-                on enhancing surgical education, empowering future medical professionals, and encouraging
-                underprivileged girl children to reach their full potential.</p>
-            </div>
+          <div class="ap-card-content">
+            <span class="ap-card-label">Academic Contribution</span>
+            <h3>Textbook Author</h3>
+            <p>Lead author of <strong>"Bariatric Surgery - A Ready Reckoner"</strong> (ISBN: 978-81-940274-9-2), published by Salubris Medical Publishers. An essential guide for aspiring and practicing bariatric surgeons.</p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ===== International Credentials ===== -->
-  <section class="about-creds section">
-    <div class="container">
-      <div class="section-header center">
-        <div class="section-eyebrow">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="8" r="6" />
-            <path d="M15.5 13.5L17 22l-5-3-5 3 1.5-8.5" />
-          </svg>
-          Qualifications
-        </div>
-        <h2 class="section-title">International <span class="text-accent">Credentials</span></h2>
-        <p class="section-sub">Six international fellowships spanning five countries.</p>
-      </div>
-
-      <div class="about-creds-marquee" aria-label="Credentials">
-        <div class="about-creds-track">
-          <div class="about-cred-pill" title="Fellow of American College of Surgeons">
-            <span class="about-cred-pill-abbr">FACS</span>
-            <span class="about-cred-pill-full">American College of Surgeons</span>
+        <!-- Philanthropy Card -->
+        <div class="ap-card ap-card-philanthropy">
+          <div class="ap-card-icon">
+            <i class="fa-solid fa-hand-holding-heart"></i>
           </div>
-          <div class="about-cred-pill" title="Fellowship in Minimal Access Surgery">
-            <span class="about-cred-pill-abbr">FMAS</span>
-            <span class="about-cred-pill-full">Minimal Access</span>
-          </div>
-          <div class="about-cred-pill" title="Fellowship of Indian Association of GI Endo Surgeons">
-            <span class="about-cred-pill-abbr">FIAGES</span>
-            <span class="about-cred-pill-full">GI Endo-Surgery</span>
-          </div>
-          <div class="about-cred-pill" title="Fellow of American Society for Metabolic & Bariatric Surgery">
-            <span class="about-cred-pill-abbr">FASMBS</span>
-            <span class="about-cred-pill-full">Metabolic &amp; Bariatric</span>
-          </div>
-          <div class="about-cred-pill" title="Fellowship in Advanced Laparoscopic Surgery">
-            <span class="about-cred-pill-abbr">FALS</span>
-            <span class="about-cred-pill-full">Advanced Laparoscopic</span>
-          </div>
-          <!-- duplicated for seamless loop -->
-          <div class="about-cred-pill" title="Diplomate of National Board" aria-hidden="true">
-            <span class="about-cred-pill-abbr">DNB</span>
-            <span class="about-cred-pill-full">National Board</span>
-          </div>
-          <div class="about-cred-pill" title="Fellow of American College of Surgeons" aria-hidden="true">
-            <span class="about-cred-pill-abbr">FACS</span>
-            <span class="about-cred-pill-full">American College of Surgeons</span>
-          </div>
-          <div class="about-cred-pill" title="Fellowship in Minimal Access Surgery" aria-hidden="true">
-            <span class="about-cred-pill-abbr">FMAS</span>
-            <span class="about-cred-pill-full">Minimal Access</span>
-          </div>
-          <div class="about-cred-pill" title="Fellowship of Indian Association of GI Endo Surgeons" aria-hidden="true">
-            <span class="about-cred-pill-abbr">FIAGES</span>
-            <span class="about-cred-pill-full">GI Endo-Surgery</span>
-          </div>
-          <div class="about-cred-pill" title="Fellow of American Society for Metabolic & Bariatric Surgery"
-            aria-hidden="true">
-            <span class="about-cred-pill-abbr">FASMBS</span>
-            <span class="about-cred-pill-full">Metabolic &amp; Bariatric</span>
-          </div>
-          <div class="about-cred-pill" title="Fellowship in Advanced Laparoscopic Surgery" aria-hidden="true">
-            <span class="about-cred-pill-abbr">FALS</span>
-            <span class="about-cred-pill-full">Advanced Laparoscopic</span>
+          <div class="ap-card-content">
+            <span class="ap-card-label">Giving Back</span>
+            <h3>Founder, Mera Vada Foundation</h3>
+            <p>A non-profit organization focused on enhancing surgical education, empowering future medical professionals, and encouraging underprivileged girl children to reach their full potential.</p>
           </div>
         </div>
       </div>
@@ -1774,8 +1706,8 @@
   </section>
 
   <!-- ===== A Life of Discipline & Art ===== -->
-  <section class="about-beyond section">
-    <div class="container">
+  <section class="about-beyond section" style="position: relative; overflow: hidden;">
+    <div class="container" style="position: relative; z-index: 1;">
       <div class="section-header center">
         <div class="section-eyebrow">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1789,7 +1721,15 @@
           surgeon.</p>
       </div>
 
-      <div class="about-beyond-grid">
+      <style>
+        @media (min-width: 992px) {
+          .about-beyond-grid.beyond-2-col {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+          }
+        }
+      </style>
+      <div class="about-beyond-grid beyond-2-col">
         <article class="about-beyond-card">
           <div class="about-beyond-head">
             <span class="about-beyond-num">01</span>
@@ -1846,6 +1786,11 @@
             <span class="about-beyond-rule"></span>
           </div>
         </article>
+
+        <!-- Decorative Doctor Sketch fully visible in 4th slot -->
+        <div class="beyond-sketch-container" style="display: flex; align-items: flex-end; justify-content: center; opacity: 1; padding-top: 2rem;">
+          <img src="assets/img/sketch_atul_peters_transparent.png" alt="Dr. Atul Peters Sketch" style="max-height: 450px; width: auto; object-fit: contain;">
+        </div>
       </div>
     </div>
   </section>
