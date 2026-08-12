@@ -1,0 +1,230 @@
+.gb-info-anatomy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    @media (max-width: 991px) {
+      .gb-info-anatomy-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .gb-anatomy-svg-box {
+      background: linear-gradient(135deg, #0A1E30 0%, #154779 100%);
+      border-radius: 1.5rem;
+      padding: 2rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 0 2px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .gb-anatomy-svg {
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+      filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+    }
+
+
+
+    /* Infographic 2: Visual CVS Comparison Scorecard */
+    .gb-cvs-visual-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+
+    @media (max-width: 767px) {
+      .gb-cvs-visual-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .gb-cvs-compare-card {
+      background: #FFFFFF;
+      border-radius: 1.5rem;
+      padding: 2rem;
+      border: 2px solid var(--border);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .gb-cvs-compare-card.danger {
+      border-color: #E53E3E;
+      background: linear-gradient(180deg, #FFF5F5 0%, #FFFFFF 100%);
+    }
+
+    .gb-cvs-compare-card.safe {
+      border-color: #38A169;
+      background: linear-gradient(180deg, #F0FFF4 0%, #FFFFFF 100%);
+      box-shadow: var(--sh-md);
+    }
+
+    .gb-cvs-tag {
+      display: inline-block;
+      padding: 0.35rem 0.9rem;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1.25rem;
+      align-self: flex-start;
+    }
+
+    .gb-cvs-compare-card.danger .gb-cvs-tag {
+      background: #FED7D7;
+      color: #9B2C2C;
+    }
+
+    .gb-cvs-compare-card.safe .gb-cvs-tag {
+      background: #C6F6D5;
+      color: #22543D;
+    }
+
+    /* Infographic 3: 24-Hour Timeline Visual Meter */
+    .gb-timeline-infographic {
+      background: linear-gradient(135deg, #0A1E30 0%, #154779 100%);
+      border-radius: 2rem;
+      padding: 3rem 2.5rem;
+      color: #FFFFFF;
+      margin: 3.5rem 0;
+      position: relative;
+      box-shadow: var(--sh-xl);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .gb-timeline-track {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.25rem;
+      position: relative;
+      margin-top: 2.5rem;
+    }
+
+    @media (max-width: 991px) {
+      .gb-timeline-track {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .gb-timeline-node {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 1.25rem;
+      padding: 1.5rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      backdrop-filter: blur(8px);
+      transition: all 0.3s ease;
+    }
+
+    .gb-timeline-node:hover {
+      background: rgba(255, 255, 255, 0.16);
+      transform: translateY(-5px);
+    }
+
+    .gb-timeline-badge {
+      background: #81CDBF;
+      color: #0A1E30;
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 0.25rem 0.75rem;
+      border-radius: 50px;
+      align-self: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .gb-timeline-node h4 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin: 0 0 0.5rem 0;
+    }
+
+    .gb-timeline-node p {
+      font-size: 0.85rem;
+      color: #D6E8F5;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* ==========================================================================
+       CREATIVE BACKGROUND TEXTURE & SKETCHES (Client Request)
+       ========================================================================== */
+    body.gb-pillar-page {
+      background-color: #F8F9FA !important;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E") !important;
+      position: relative;
+    }
+
+    /* Soft Radial Gradient Orbs */
+    body.gb-pillar-page::before,
+    body.gb-pillar-page::after {
+      content: '';
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(120px);
+      z-index: -1;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    body.gb-pillar-page::before {
+      top: -10%;
+      left: -10%;
+      width: 50vw;
+      height: 50vw;
+      background: radial-gradient(circle, rgba(168, 222, 206, 0.4) 0%, transparent 70%);
+    }
+
+    body.gb-pillar-page::after {
+      bottom: -10%;
+      right: -10%;
+      width: 60vw;
+      height: 60vw;
+      background: radial-gradient(circle, rgba(49, 130, 206, 0.2) 0%, transparent 70%);
+    }
+
+    /* Medical Sketch Watermarks */
+    .gb-sketch-watermark {
+      position: absolute;
+      z-index: 0;
+      opacity: 0.6;
+      /* Increased opacity to make the sketches visible like in the reference */
+      pointer-events: none;
+      background-repeat: no-repeat;
+      background-size: contain;
+      mix-blend-mode: multiply;
+      opacity: 0.6; filter: sepia(1) hue-rotate(180deg) saturate(4);
+      
+      /* Ensures the white background of the sketches turns transparent */    }
+
+    @media (max-width: 991px) {
+      .gb-sketch-watermark {
+        opacity: 0.15 !important;
+        width: 300px !important;
+        height: 300px !important;
+        top: 5% !important;
+        left: -10% !important;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .gb-sketch-watermark {
+        opacity: 0.4 !important;
+        width: 160px !important;
+        height: 160px !important;
+        /* Allow inline styles to determine left/right corner placement creatively */
+      }
+    }
+  
+    

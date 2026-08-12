@@ -1,0 +1,81 @@
+.gb-info-hotspots {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5rem;
+          }
+
+          .gb-hotspot-card {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            border-radius: 1.5rem;
+            padding: 1.75rem;
+            display: flex;
+            gap: 1.5rem;
+            transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            cursor: pointer;
+          }
+
+          .gb-hotspot-card:hover,
+          .gb-hotspot-card.active {
+            background: #ffffff;
+            transform: translateX(12px) translateY(-2px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+            border-left: 6px solid #3182ce;
+          }
+
+          @media (max-width: 991px) {
+
+            .gb-hotspot-card:hover,
+            .gb-hotspot-card.active {
+              transform: translateY(-5px);
+            }
+          }
+
+          .gb-hotspot-card:nth-child(1).active,
+          .gb-hotspot-card:nth-child(2).active,
+          .gb-hotspot-card:nth-child(3).active {
+            border-left-color: #2A7AB5;
+          }
+
+          .gb-hotspot-num {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: #0A1E30;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800;
+            font-size: 1.15rem;
+            flex-shrink: 0;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+          }
+
+          .gb-hotspot-card:nth-child(1) .gb-hotspot-num,
+          .gb-hotspot-card:nth-child(2) .gb-hotspot-num,
+          .gb-hotspot-card:nth-child(3) .gb-hotspot-num {
+            background: linear-gradient(135deg, #2A7AB5, #154779);
+            color: #fff;
+          }
+
+          .gb-hotspot-text h4 {
+            margin: 0 0 0.5rem 0;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1a202c;
+          }
+
+          .gb-hotspot-text p {
+            margin: 0;
+            font-size: 0.98rem;
+            color: #4a5568;
+            line-height: 1.6;
+          }
+        
+    

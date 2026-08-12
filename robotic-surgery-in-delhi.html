@@ -65,9 +65,7 @@
       }
     }
 
-    .gb-hero-pattern {
-      display: none;
-    }
+    
 
     .gb-hero-blob {
       position: absolute;
@@ -1131,36 +1129,14 @@
     }
 
     /* Medical Sketch Watermarks */
-    .gb-sketch-watermark {
-      position: absolute;
-      z-index: 0;
-      opacity: 0.6;
-      /* Increased opacity to make the sketches visible like in the reference */
-      pointer-events: none;
-      background-repeat: no-repeat;
-      background-size: contain;
-      mix-blend-mode: multiply;
-      opacity: 0.6; filter: sepia(1) hue-rotate(180deg) saturate(4);
-      
-      /* Ensures the white background of the sketches turns transparent */    }
+    
 
     @media (max-width: 991px) {
-      .gb-sketch-watermark {
-        opacity: 0.15 !important;
-        width: 300px !important;
-        height: 300px !important;
-        top: 5% !important;
-        left: -10% !important;
-      }
+      
     }
     
     @media (max-width: 768px) {
-      .gb-sketch-watermark {
-        opacity: 0.4 !important;
-        width: 160px !important;
-        height: 160px !important;
-        /* Allow inline styles to determine left/right corner placement creatively */
-      }
+      
     }
   
     /* --- MOBILE PADDING FIXES --- */
@@ -1361,8 +1337,9 @@
   <!-- ==========================================================================
        SECTION 1.5: HOW IT WORKS
        ========================================================================== -->
-  <section class="gb-section gb-section--alt" id="how-it-works">
-    <div class="container">
+  <section class="gb-section gb-section--alt" id="how-it-works" style="position: relative; overflow: hidden;">
+    <div class="gb-sketch-watermark" style="background-image: url(\'assets/img/da-vinci-surgeon-console.png\'); width: 450px; height: 450px; top: 10%; right: -5%; transform: rotate(5deg); opacity: 0.8;"></div></div>
+    <div class="container relative z-10">
       <div class="gb-section-header">
         <span class="gb-section-tag">Step-by-Step</span>
         <h2 class="gb-section-title">How Da Vinci Robotic Surgery Works</h2>
@@ -1397,8 +1374,9 @@
   <!-- ==========================================================================
        SECTION 2: BENEFITS
        ========================================================================== -->
-  <section class="gb-section" id="benefits">
-    <div class="container">
+  <section class="gb-section" id="benefits" style="position: relative; overflow: hidden;">
+    <div class="gb-sketch-watermark" style="background-image: url(\'assets/img/da-vinci-patient-cart.png\'); width: 450px; height: 450px; bottom: 5%; left: -5%; transform: rotate(-5deg); opacity: 0.8;"></div></div>
+    <div class="container relative z-10">
       <div class="gb-section-header">
         <span class="gb-section-tag">Why Choose Robotic</span>
         <h2 class="gb-section-title">The Da Vinci Advantage</h2>
@@ -1482,8 +1460,9 @@
   <!-- ==========================================================================
        SECTION 3: PROCEDURES
        ========================================================================== -->
-  <section class="gb-section" id="procedures">
-    <div class="container">
+  <section class="gb-section" id="procedures" style="position: relative; overflow: hidden; background-color: #f0f7ff;">
+    <div class="gb-sketch-watermark" style="background-image: url(\'assets/img/sketch_robotic_surgery_1786011760417.png\'); width: 500px; height: 500px; top: 20%; left: -5%; transform: rotate(3deg) scaleX(-1); opacity: 0.8;"></div></div>
+    <div class="container relative z-10">
       <div class="gb-section-header">
         <span class="gb-section-tag">Surgical Applications</span>
         <h2 class="gb-section-title">Common Robotic Procedures</h2>
@@ -1671,8 +1650,9 @@
     </div>
   </section>
 
-  <section class="gb-section gb-section--alt" id="dr-peters">
-    <div class="container">
+  <section class="gb-section gb-section--alt" id="dr-peters" style="position: relative; overflow: hidden;">
+    <div class="gb-sketch-watermark" style="background-image: url(\'assets/img/sketch_atul_peters_transparent.png\'); width: 400px; height: 400px; bottom: 0; right: -5%; transform: rotate(-5deg); opacity: 0.8;"></div></div>
+    <div class="container relative z-10">
       <div class="gb-grid-2" style="align-items: center;">
         <div>
           <img src="assets/img/robotic-surgery.webp" alt="Dr. Atul Peters Robotic Surgeon" style="width: 100%; border-radius: 1.5rem; box-shadow: 0 20px 40px rgba(0,0,0,0.15);">

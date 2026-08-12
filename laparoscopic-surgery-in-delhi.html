@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en">
 
@@ -937,36 +937,17 @@
       line-height: 1.6;
     }
 
-    .gb-info-anatomy-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.15fr;
-      gap: 2.5rem;
-      align-items: center;
-    }
 
-    @media (max-width: 991px) {
-      .gb-info-anatomy-grid {
-        grid-template-columns: 1fr;
-      }
-    }
 
-    .gb-anatomy-svg-box {
-      background: linear-gradient(135deg, #0A1E30 0%, #154779 100%);
-      border-radius: 1.5rem;
-      padding: 2rem;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: inset 0 2px 20px rgba(0, 0, 0, 0.3);
-    }
+    @media (max-width: 991px) {}
 
-    .gb-anatomy-svg {
-      width: 100%;
-      max-width: 360px;
-      height: auto;
-      filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
-    }
+
+
+
+
+
+
+
 
 
 
@@ -1143,9 +1124,11 @@
       background-repeat: no-repeat;
       background-size: contain;
       mix-blend-mode: multiply;
-      opacity: 0.6; filter: sepia(1) hue-rotate(180deg) saturate(4);
-      
-      /* Ensures the white background of the sketches turns transparent */    }
+      opacity: 0.6;
+      filter: sepia(1) hue-rotate(180deg) saturate(4);
+
+      /* Ensures the white background of the sketches turns transparent */
+    }
 
     @media (max-width: 991px) {
       .gb-sketch-watermark {
@@ -1156,7 +1139,7 @@
         left: -10% !important;
       }
     }
-    
+
     @media (max-width: 768px) {
       .gb-sketch-watermark {
         opacity: 0.4 !important;
@@ -1165,38 +1148,47 @@
         /* Allow inline styles to determine left/right corner placement creatively */
       }
     }
-  
+
     /* --- MOBILE PADDING FIXES --- */
-      .risk-card { padding: 1.5rem 1.25rem !important; }
-      .four-f-item { padding: 1rem !important; }
+    .risk-card {
+      padding: 1.5rem 1.25rem !important;
+    }
+
+    .four-f-item {
+      padding: 1rem !important;
+    }
+
     @media (max-width: 768px) {
       .diag-box {
         padding: 2rem 1.25rem !important;
       }
+
       .tech-card {
         padding: 1.75rem 1.25rem !important;
       }
+
       .finance-card {
         padding: 1.75rem 1.25rem !important;
         border-radius: 1.5rem !important;
       }
+
       .creative-info-section {
         padding: 2rem 1.25rem !important;
       }
+
       .gb-section {
         padding: 2.5rem 0 !important;
       }
+
       .gb-journey-card {
         padding: 1.5rem 1.25rem !important;
       }
+
       .diet-modern-card {
         padding: 1.75rem 1.25rem !important;
       }
-      .gb-hotspot-card {
-        padding: 1.5rem 1.25rem !important;
-      }
+
     }
-    
   </style>
   <!-- JSON-LD Structured Data for Pillar Medical Service Page -->
   <script type="application/ld+json">
@@ -1262,55 +1254,63 @@
   ]
   </script>
 
-<style>
-/* ABOUT SECTION MOBILE HOTFIX - INJECTED */
-@media (max-width: 991px) {
-  .about-photo-stack {
-    padding-left: 0 !important;
-    padding-bottom: 2rem !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-  .about-photo-bg {
-    display: none !important; /* Hide the background block entirely on mobile to prevent overlapping */
-  }
-  .about-photo-frame {
-    margin: 0 auto 15px auto !important;
-    width: 100% !important;
-    max-width: 400px !important;
-    z-index: 2 !important;
-  }
-  .about-ribbon {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    width: 100% !important;
-    max-width: 400px !important;
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    margin: 0 auto !important;
-    padding: 15px !important;
-    z-index: 99 !important; /* Force to top */
-    border-radius: 8px !important;
-    background: var(--blue-deep) !important;
-  }
-  .about-ribbon::before {
-    display: none !important;
-  }
-  .about-ribbon-divider {
-    width: 1px !important;
-    height: auto !important;
-    background: rgba(255,255,255,0.2) !important;
-    margin: 0 10px !important;
-  }
-  .about-ribbon-item {
-    flex: 1 !important;
-    align-items: center !important;
-    text-align: center !important;
-  }
-}
-</style>
+  <style>
+    /* ABOUT SECTION MOBILE HOTFIX - INJECTED */
+    @media (max-width: 991px) {
+      .about-photo-stack {
+        padding-left: 0 !important;
+        padding-bottom: 2rem !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+      }
+
+      .about-photo-bg {
+        display: none !important;
+        /* Hide the background block entirely on mobile to prevent overlapping */
+      }
+
+      .about-photo-frame {
+        margin: 0 auto 15px auto !important;
+        width: 100% !important;
+        max-width: 400px !important;
+        z-index: 2 !important;
+      }
+
+      .about-ribbon {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: 100% !important;
+        max-width: 400px !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        margin: 0 auto !important;
+        padding: 15px !important;
+        z-index: 99 !important;
+        /* Force to top */
+        border-radius: 8px !important;
+        background: var(--blue-deep) !important;
+      }
+
+      .about-ribbon::before {
+        display: none !important;
+      }
+
+      .about-ribbon-divider {
+        width: 1px !important;
+        height: auto !important;
+        background: rgba(255, 255, 255, 0.2) !important;
+        margin: 0 10px !important;
+      }
+
+      .about-ribbon-item {
+        flex: 1 !important;
+        align-items: center !important;
+        text-align: center !important;
+      }
+    }
+  </style>
 </head>
 
 <body class="gb-pillar-page">
@@ -1319,7 +1319,9 @@
 
   <!-- WhatsApp Float Button -->
   <section class="gb-hero" style="position: relative; overflow: hidden;">
-    <div class="gb-sketch-watermark" style="background-image: url('assets/img/sketch_laparoscopic_surgeon_1786011726844.png'); width: 500px; height: 500px; top: 15%; left: -5%; transform: rotate(3deg) scaleX(-1);"></div>
+    <div class="gb-sketch-watermark"
+      style="background-image: url('assets/img/sketch_laparoscopic_surgeon_1786011726844.png'); width: 500px; height: 500px; top: 15%; left: -5%; transform: rotate(3deg) scaleX(-1);">
+    </div>
     <div class="gb-hero-pattern"></div>
     <div class="gb-hero-blob gb-hero-blob--1"></div>
     <div class="gb-hero-blob gb-hero-blob--2"></div>
@@ -1335,69 +1337,68 @@
           </nav>
           <div class="gb-hero-badge">
             <i class="fa-solid fa-shield-halved"></i>
-            Advanced Extraperitoneal Mesh • < 1% Recurrence
+            Advanced Extraperitoneal Mesh • < 1% Recurrence </div>
+              <h1 class="gb-hero-title">Best Laparoscopic Surgery in <span>Delhi NCR</span></h1>
+              <p class="gb-hero-subtitle">
+                Experience painless, gold-standard <strong>Laparoscopic &amp; Robotic Surgery</strong> with Dr. Atul
+                Peters at Max Smart Super Speciality Hospital, Saket – New Delhi.
+                Utilizing 4K Ultra HD visualization, virtually invisible keyhole incisions, and rapid 24-hour hospital
+                discharge.
+              </p>
+              <div class="gb-cta-actions" style="justify-content: flex-start;">
+                <a class="btn btn-gold btn-lg" href="#consult">
+                  <span>Book Consultation</span>
+                  <svg fill="none" height="16" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="16">
+                    <line x1="5" x2="19" y1="12" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <a class="btn btn-outline btn-lg" href="#technique"
+                  style="color: #fff; border-color: rgba(255,255,255,0.45);">
+                  <svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                  <span>Our Surgical Technique</span>
+                </a>
+              </div>
           </div>
-          <h1 class="gb-hero-title">Best Laparoscopic Surgery in <span>Delhi NCR</span></h1>
-          <p class="gb-hero-subtitle">
-            Experience painless, gold-standard <strong>Laparoscopic &amp; Robotic Surgery</strong> with Dr. Atul Peters at Max Smart Super Speciality Hospital, Saket – New Delhi.
-            Utilizing 4K Ultra HD visualization, virtually invisible keyhole incisions, and rapid 24-hour hospital
-            discharge.
-          </p>
-          <div class="gb-cta-actions" style="justify-content: flex-start;">
-            <a class="btn btn-gold btn-lg" href="#consult" onclick="showBookAnApptmForm(); return false;">
-              <span>Book Consultation</span>
-              <svg fill="none" height="16" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="16">
-                <line x1="5" x2="19" y1="12" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </a>
-            <a class="btn btn-outline btn-lg" href="#technique"
-              style="color: #fff; border-color: rgba(255,255,255,0.45);">
-              <svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16">
-                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-              </svg>
-              <span>Our Surgical Technique</span>
-            </a>
+          <div class="gb-hero-visual">
+            <div class="gb-hero-image-wrapper">
+              <img alt="Laparoscopic Surgery Environment" class="gb-hero-main-img" src="assets/img/surgery-img.jpg" />
+            </div>
           </div>
         </div>
-        <div class="gb-hero-visual">
-          <div class="gb-hero-image-wrapper">
-            <img alt="Laparoscopic Surgery Environment" class="gb-hero-main-img"
-              src="assets/img/surgery-img.jpg" />
+        <div class="gb-hero-stats">
+          <div class="gb-stat-pill">
+            <div class="gb-stat-icon"><i class="fa-solid fa-user-md"></i></div>
+            <div class="gb-stat-info">
+              <h4>25+ Years</h4>
+              <p>Surgical Excellence</p>
+            </div>
+          </div>
+          <div class="gb-stat-pill">
+            <div class="gb-stat-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            <div class="gb-stat-info">
+              <h4>24 - 48 hours</h4>
+              <p>Overnight Discharge</p>
+            </div>
+          </div>
+          <div class="gb-stat-pill">
+            <div class="gb-stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="gb-stat-info">
+              <h4>Critical View</h4>
+              <p>Sub-lay Mesh Placement</p>
+            </div>
+          </div>
+          <div class="gb-stat-pill">
+            <div class="gb-stat-icon"><i class="fa-solid fa-file-medical"></i></div>
+            <div class="gb-stat-info">
+              <h4>Cashless Facility</h4>
+              <p>All Major Insurance Networks</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="gb-hero-stats">
-        <div class="gb-stat-pill">
-          <div class="gb-stat-icon"><i class="fa-solid fa-user-md"></i></div>
-          <div class="gb-stat-info">
-            <h4>25+ Years</h4>
-            <p>Surgical Excellence</p>
-          </div>
-        </div>
-        <div class="gb-stat-pill">
-          <div class="gb-stat-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
-          <div class="gb-stat-info">
-            <h4>24 - 48 hours</h4>
-            <p>Overnight Discharge</p>
-          </div>
-        </div>
-        <div class="gb-stat-pill">
-          <div class="gb-stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <div class="gb-stat-info">
-            <h4>Critical View</h4>
-            <p>Sub-lay Mesh Placement</p>
-          </div>
-        </div>
-        <div class="gb-stat-pill">
-          <div class="gb-stat-icon"><i class="fa-solid fa-file-medical"></i></div>
-          <div class="gb-stat-info">
-            <h4>Cashless Facility</h4>
-            <p>All Major Insurance Networks</p>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
   <!-- ==========================================================================
        STICKY QUICK NAVIGATION BAR
@@ -1559,88 +1560,113 @@
           border-left: 4px solid #A8DECE;
           margin-top: auto;
         }
-      
-    /* --- MOBILE PADDING FIXES --- */
-      .risk-card { padding: 1.5rem 1.25rem !important; }
-      .four-f-item { padding: 1rem !important; }
-    @media (max-width: 768px) {
-      .diag-box {
-        padding: 2rem 1.25rem !important;
-      }
-      .tech-card {
-        padding: 1.75rem 1.25rem !important;
-      }
-      .finance-card {
-        padding: 1.75rem 1.25rem !important;
-        border-radius: 1.5rem !important;
-      }
-      .creative-info-section {
-        padding: 2rem 1.25rem !important;
-      }
-      .gb-section {
-        padding: 2.5rem 0 !important;
-      }
-      .gb-journey-card {
-        padding: 1.5rem 1.25rem !important;
-      }
-      .diet-modern-card {
-        padding: 1.75rem 1.25rem !important;
-      }
-      .gb-hotspot-card {
-        padding: 1.5rem 1.25rem !important;
-      }
-    }
-    
-  </style>
+
+        /* --- MOBILE PADDING FIXES --- */
+        .risk-card {
+          padding: 1.5rem 1.25rem !important;
+        }
+
+        .four-f-item {
+          padding: 1rem !important;
+        }
+
+        @media (max-width: 768px) {
+          .diag-box {
+            padding: 2rem 1.25rem !important;
+          }
+
+          .tech-card {
+            padding: 1.75rem 1.25rem !important;
+          }
+
+          .finance-card {
+            padding: 1.75rem 1.25rem !important;
+            border-radius: 1.5rem !important;
+          }
+
+          .creative-info-section {
+            padding: 2rem 1.25rem !important;
+          }
+
+          .gb-section {
+            padding: 2.5rem 0 !important;
+          }
+
+          .gb-journey-card {
+            padding: 1.5rem 1.25rem !important;
+          }
+
+          .diet-modern-card {
+            padding: 1.75rem 1.25rem !important;
+          }
+
+        }
+      </style>
       <div class="symptoms-creative-grid">
         <!-- Symptoms Area -->
         <div style="position: relative;">
-          <h3 style="font-family: 'Bellefair', serif; font-size: 2rem; color: var(--blue-deep); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+          <h3
+            style="font-family: 'Bellefair', serif; font-size: 2rem; color: var(--blue-deep); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
             <i class="fa-solid fa-leaf" style="color: #38A169;"></i> The Minimally Invasive Solution
           </h3>
-          <p style="color: var(--text-2); font-size: 1.05rem; margin-bottom: 2rem; line-height: 1.6;">Laparoscopic surgery innovatively enables doctors to diagnose and treat diseases within the abdomen or pelvis without large incisions. The tip of the laparoscope is equipped with a high-definition camera to ensure real-time monitoring and unprecedented precision.</p>
+          <p style="color: var(--text-2); font-size: 1.05rem; margin-bottom: 2rem; line-height: 1.6;">Laparoscopic
+            surgery innovatively enables doctors to diagnose and treat diseases within the abdomen or pelvis without
+            large incisions. The tip of the laparoscope is equipped with a high-definition camera to ensure real-time
+            monitoring and unprecedented precision.</p>
           <div style="display: flex; flex-direction: column; gap: 1rem;">
             <div class="symptom-item">
               <div class="symptom-icon"><i class="fa-solid fa-compress-arrows-alt"></i></div>
               <div>
-                <strong style="color: var(--text-1); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Less Tissue Damage</strong>
-                <p style="font-size: 0.95rem; margin:0; color: var(--text-2);">Significantly reduced trauma within your abdominal cavity compared to open surgeries.</p>
+                <strong style="color: var(--text-1); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Less
+                  Tissue Damage</strong>
+                <p style="font-size: 0.95rem; margin:0; color: var(--text-2);">Significantly reduced trauma within your
+                  abdominal cavity compared to open surgeries.</p>
               </div>
             </div>
             <div class="symptom-item">
               <div class="symptom-icon"><i class="fa-solid fa-droplet-slash"></i></div>
               <div>
-                <strong style="color: var(--text-1); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Minimal Blood Loss</strong>
-                <p style="font-size: 0.95rem; margin:0; color: var(--text-2);">Precise instrumentation ensures reduced risk of hemorrhage and bleeding.</p>
+                <strong style="color: var(--text-1); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Minimal
+                  Blood Loss</strong>
+                <p style="font-size: 0.95rem; margin:0; color: var(--text-2);">Precise instrumentation ensures reduced
+                  risk of hemorrhage and bleeding.</p>
               </div>
             </div>
             <div class="symptom-item">
               <div class="symptom-icon"><i class="fa-solid fa-shield-virus"></i></div>
               <div>
-                <strong style="color: var(--text-1); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Fewer Risks of Infection</strong>
-                <p style="font-size: 0.95rem; margin:0; color: var(--text-2);">Smaller incisions naturally decrease the likelihood of postoperative infections and scarring.</p>
+                <strong style="color: var(--text-1); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Fewer
+                  Risks of Infection</strong>
+                <p style="font-size: 0.95rem; margin:0; color: var(--text-2);">Smaller incisions naturally decrease the
+                  likelihood of postoperative infections and scarring.</p>
               </div>
             </div>
             <div class="symptom-item">
               <div class="symptom-icon"><i class="fa-solid fa-person-running"></i></div>
               <div>
-                <strong style="color: var(--text-1); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Faster Recovery</strong>
-                <p style="font-size: 0.95rem; margin:0; color: var(--text-2);">Less time in the hospital translates to faster return to life with a normal schedule.</p>
+                <strong style="color: var(--text-1); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">Faster
+                  Recovery</strong>
+                <p style="font-size: 0.95rem; margin:0; color: var(--text-2);">Less time in the hospital translates to
+                  faster return to life with a normal schedule.</p>
               </div>
             </div>
           </div>
-          <div class="gb-highlight-box" style="margin-top: 1.5rem; background: #F0FFF4; border: 1px solid #C6F6D5; color: #276749; display: inline-block; padding: 1rem; border-radius: 0.5rem;">
-            <p style="margin: 0; font-weight: 500;"><i class="fa-solid fa-circle-check"></i> Choose Laparoscopy: A modern approach leaning towards faster recovery, fewer dissections, and minimal complications.</p>
+          <div class="gb-highlight-box"
+            style="margin-top: 1.5rem; background: #F0FFF4; border: 1px solid #C6F6D5; color: #276749; display: inline-block; padding: 1rem; border-radius: 0.5rem;">
+            <p style="margin: 0; font-weight: 500;"><i class="fa-solid fa-circle-check"></i> Choose Laparoscopy: A
+              modern approach leaning towards faster recovery, fewer dissections, and minimal complications.</p>
           </div>
         </div>
         <!-- High-Risk Factors Area -->
         <div class="risk-card">
           <div class="risk-content">
-            <h3 style="font-family: 'Bellefair', serif; font-size: 2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+            <h3
+              style="font-family: 'Bellefair', serif; font-size: 2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
               <i class="fa-solid fa-briefcase-medical" style="color: #A8DECE;"></i> Common Procedures
             </h3>
             <p style="font-size: 1.05rem; opacity: 0.9; margin-bottom: 1rem; line-height: 1.6; position: relative;">
-              Delhi is a global destination for patients seeking specialized minimally invasive procedures. Dr. Peters specializes in:
+              Delhi is a global destination for patients seeking specialized minimally invasive procedures. Dr. Peters
+              specializes in:
             </p>
             <div class="four-f-grid">
               <div class="four-f-item" style="position: relative;">
@@ -1664,13 +1690,17 @@
                 <div style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.25rem;">Weight Loss Surgeries</div>
               </div>
             </div>
-            <p style="font-size: 0.95rem; opacity: 0.85; margin-bottom: 2rem; text-align: center;">Advancements and high success rates make Delhi a surgical capital.</p>
+            <p style="font-size: 0.95rem; opacity: 0.85; margin-bottom: 2rem; text-align: center;">Advancements and high
+              success rates make Delhi a surgical capital.</p>
             <div class="diag-box">
               <i class="fa-solid fa-shield-halved" style="font-size: 1.5rem; color: #3182ce; margin-top: 0.2rem;"></i>
               <div>
-                <h4 style="margin: 0 0 0.25rem 0; font-family: 'DM Sans', sans-serif; font-size: 1.1rem; color: var(--text-1);">
+                <h4
+                  style="margin: 0 0 0.25rem 0; font-family: 'DM Sans', sans-serif; font-size: 1.1rem; color: var(--text-1);">
                   Safe &amp; Effective</h4>
-                <p style="margin: 0; font-size: 0.95rem; color: var(--text-2); line-height: 1.5;">Laparoscopy is generally a very safe technique. Risks are minimal as the surgeon is visually aided by real-time 4K monitoring and precise operative measures.
+                <p style="margin: 0; font-size: 0.95rem; color: var(--text-2); line-height: 1.5;">Laparoscopy is
+                  generally a very safe technique. Risks are minimal as the surgeon is visually aided by real-time 4K
+                  monitoring and precise operative measures.
                 </p>
               </div>
             </div>
@@ -1680,108 +1710,63 @@
       <!-- INFOGRAPHIC 1: BILIARY ANATOMY & GALLSTONE MECHANISM -->
       <div class="gb-infographic-container creative-info-section">
         <style>
-          .creative-info-section {
-            background: linear-gradient(145deg, #f8fafc 0%, #edf2f7 100%);
-            border-radius: 2.5rem;
-            padding: 4rem 3rem;
-            margin: 4rem 0 0;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05), inset 0 0 0 2px rgba(255, 255, 255, 0.8);
-            position: relative;
+          /* Infographic 1: Biliary Anatomy & Mechanism Diagram */
+          .gb-infographic-container {
+            background: #FFFFFF;
+            border-radius: 1.75rem;
+            padding: 2.5rem;
+            border: 1px solid var(--border);
+            box-shadow: var(--sh-md);
+            margin: 3.5rem 0;
             overflow: hidden;
-          }
-
-          @media (max-width: 768px) {
-            .creative-info-section {
-              padding: 3rem 1.5rem;
-            }
-          }
-
-          .creative-info-section::before {
-            content: '';
-            position: absolute;
-            top: -20%;
-            left: -10%;
-            width: 50%;
-            height: 50%;
-            background: radial-gradient(circle, rgba(129, 205, 191, 0.2) 0%, transparent 70%);
-            border-radius: 50%;
-            filter: blur(40px);
           }
 
           .gb-info-title {
             font-family: 'Bellefair', Georgia, serif;
-            font-size: 2.5rem;
+            font-size: 1.85rem;
             color: var(--blue-deep);
-            text-align: center;
-            margin-bottom: 1rem;
-            position: relative;
-            z-index: 2;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
           }
 
           .gb-info-desc {
-            text-align: center;
             color: var(--text-2);
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto 3.5rem auto;
-            position: relative;
-            z-index: 2;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
           }
 
           .gb-info-anatomy-grid {
             display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 3.5rem;
-            align-items: stretch;
-            position: relative;
-            z-index: 2;
+            grid-template-columns: 1fr 1.15fr;
+            gap: 2.5rem;
+            align-items: center;
           }
 
           @media (max-width: 991px) {
             .gb-info-anatomy-grid {
               grid-template-columns: 1fr;
-              gap: 2.5rem;
             }
           }
 
           .gb-anatomy-svg-box {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e2e8f0 100%);
+            border-radius: 1.5rem;
+            padding: 2rem;
             position: relative;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            box-shadow: inset 0 2px 20px rgba(0, 0, 0, 0.3);
           }
 
           .gb-anatomy-svg {
             width: 100%;
-            max-width: 100%;
-            border-radius: 1.5rem;
-          }
-
-          .anatomy-hotspot {
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
-            transform-origin: center;
-          }
-
-          .anatomy-hotspot:hover {
-            transform: scale(1.15);
-            filter: brightness(1.3);
-          }
-
-          .hotspot-pulse {
-            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-          }
-
-          @keyframes pulse-ring {
-            0% {
-              stroke-width: 4;
-              stroke-opacity: 0.8;
-            }
-
-            100% {
-              stroke-width: 25;
-              stroke-opacity: 0;
-            }
+            max-width: 360px;
+            height: auto;
+            filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
           }
 
           .gb-info-hotspots {
@@ -1863,39 +1848,402 @@
             color: #4a5568;
             line-height: 1.6;
           }
-        
-    /* --- MOBILE PADDING FIXES --- */
-      .risk-card { padding: 1.5rem 1.25rem !important; }
-      .four-f-item { padding: 1rem !important; }
-    @media (max-width: 768px) {
-      .diag-box {
-        padding: 2rem 1.25rem !important;
-      }
-      .tech-card {
-        padding: 1.75rem 1.25rem !important;
-      }
-      .finance-card {
-        padding: 1.75rem 1.25rem !important;
-        border-radius: 1.5rem !important;
-      }
-      .creative-info-section {
-        padding: 2rem 1.25rem !important;
-      }
-      .gb-section {
-        padding: 2.5rem 0 !important;
-      }
-      .gb-journey-card {
-        padding: 1.5rem 1.25rem !important;
-      }
-      .diet-modern-card {
-        padding: 1.75rem 1.25rem !important;
-      }
-      .gb-hotspot-card {
-        padding: 1.5rem 1.25rem !important;
-      }
-    }
-    
-  </style>
+
+
+
+
+          /* Infographic 2: Visual CVS Comparison Scorecard */
+          .gb-cvs-visual-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2.5rem;
+          }
+
+          @media (max-width: 767px) {
+            .gb-cvs-visual-grid {
+              grid-template-columns: 1fr;
+            }
+          }
+
+          .gb-cvs-compare-card {
+            background: #FFFFFF;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            border: 2px solid var(--border);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+
+          .gb-cvs-compare-card.danger {
+            border-color: #E53E3E;
+            background: linear-gradient(180deg, #FFF5F5 0%, #FFFFFF 100%);
+          }
+
+          .gb-cvs-compare-card.safe {
+            border-color: #38A169;
+            background: linear-gradient(180deg, #F0FFF4 0%, #FFFFFF 100%);
+            box-shadow: var(--sh-md);
+          }
+
+          .gb-cvs-tag {
+            display: inline-block;
+            padding: 0.35rem 0.9rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 1.25rem;
+            align-self: flex-start;
+          }
+
+          .gb-cvs-compare-card.danger .gb-cvs-tag {
+            background: #FED7D7;
+            color: #9B2C2C;
+          }
+
+          .gb-cvs-compare-card.safe .gb-cvs-tag {
+            background: #C6F6D5;
+            color: #22543D;
+          }
+
+          /* Infographic 3: 24-Hour Timeline Visual Meter */
+          .gb-timeline-infographic {
+            background: linear-gradient(135deg, #0A1E30 0%, #154779 100%);
+            border-radius: 2rem;
+            padding: 3rem 2.5rem;
+            color: #FFFFFF;
+            margin: 3.5rem 0;
+            position: relative;
+            box-shadow: var(--sh-xl);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+          }
+
+          .gb-timeline-track {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1.25rem;
+            position: relative;
+            margin-top: 2.5rem;
+          }
+
+          @media (max-width: 991px) {
+            .gb-timeline-track {
+              grid-template-columns: 1fr;
+            }
+          }
+
+          .gb-timeline-node {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            border-radius: 1.25rem;
+            padding: 1.5rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(8px);
+            transition: all 0.3s ease;
+          }
+
+          .gb-timeline-node:hover {
+            background: rgba(255, 255, 255, 0.16);
+            transform: translateY(-5px);
+          }
+
+          .gb-timeline-badge {
+            background: #81CDBF;
+            color: #0A1E30;
+            font-size: 0.78rem;
+            font-weight: 800;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            align-self: flex-start;
+            margin-bottom: 1rem;
+          }
+
+          .gb-timeline-node h4 {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #FFFFFF;
+            margin: 0 0 0.5rem 0;
+          }
+
+          .gb-timeline-node p {
+            font-size: 0.85rem;
+            color: #D6E8F5;
+            line-height: 1.5;
+            margin: 0;
+          }
+
+          /* ==========================================================================
+       CREATIVE BACKGROUND TEXTURE & SKETCHES (Client Request)
+       ========================================================================== */
+          body.gb-pillar-page {
+            background-color: #F8F9FA !important;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E") !important;
+            position: relative;
+          }
+
+          /* Soft Radial Gradient Orbs */
+          body.gb-pillar-page::before,
+          body.gb-pillar-page::after {
+            content: '';
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(120px);
+            z-index: -1;
+            opacity: 0.5;
+            pointer-events: none;
+          }
+
+          body.gb-pillar-page::before {
+            top: -10%;
+            left: -10%;
+            width: 50vw;
+            height: 50vw;
+            background: radial-gradient(circle, rgba(168, 222, 206, 0.4) 0%, transparent 70%);
+          }
+
+          body.gb-pillar-page::after {
+            bottom: -10%;
+            right: -10%;
+            width: 60vw;
+            height: 60vw;
+            background: radial-gradient(circle, rgba(49, 130, 206, 0.2) 0%, transparent 70%);
+          }
+
+          /* Medical Sketch Watermarks */
+          .gb-sketch-watermark {
+            position: absolute;
+            z-index: 0;
+            opacity: 0.6;
+            /* Increased opacity to make the sketches visible like in the reference */
+            pointer-events: none;
+            background-repeat: no-repeat;
+            background-size: contain;
+            mix-blend-mode: multiply;
+            opacity: 0.6;
+            filter: sepia(1) hue-rotate(180deg) saturate(4);
+
+            /* Ensures the white background of the sketches turns transparent */
+          }
+
+          @media (max-width: 991px) {
+            .gb-sketch-watermark {
+              opacity: 0.15 !important;
+              width: 300px !important;
+              height: 300px !important;
+              top: 5% !important;
+              left: -10% !important;
+            }
+          }
+
+          @media (max-width: 768px) {
+            .gb-sketch-watermark {
+              opacity: 0.4 !important;
+              width: 160px !important;
+              height: 160px !important;
+              /* Allow inline styles to determine left/right corner placement creatively */
+            }
+          }
+
+          /* --- MOBILE PADDING FIXES --- */
+          .risk-card {
+            padding: 1.5rem 1.25rem !important;
+          }
+
+          .four-f-item {
+            padding: 1rem !important;
+          }
+
+          @media (max-width: 768px) {
+            .diag-box {
+              padding: 2rem 1.25rem !important;
+            }
+
+            .tech-card {
+              padding: 1.75rem 1.25rem !important;
+            }
+
+            .finance-card {
+              padding: 1.75rem 1.25rem !important;
+              border-radius: 1.5rem !important;
+            }
+
+            .creative-info-section {
+              padding: 2rem 1.25rem !important;
+            }
+
+            .gb-section {
+              padding: 2.5rem 0 !important;
+            }
+
+            .gb-journey-card {
+              padding: 1.5rem 1.25rem !important;
+            }
+
+            .diet-modern-card {
+              padding: 1.75rem 1.25rem !important;
+            }
+
+            .gb-hotspot-card {
+              padding: 1.5rem 1.25rem !important;
+            }
+          }
+
+
+          .creative-info-section {
+            background: linear-gradient(145deg, #f8fafc 0%, #edf2f7 100%);
+            border-radius: 2.5rem;
+            padding: 4rem 3rem;
+            margin: 4rem 0 0;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05), inset 0 0 0 2px rgba(255, 255, 255, 0.8);
+            position: relative;
+            overflow: hidden;
+          }
+
+          @media (max-width: 768px) {
+            .creative-info-section {
+              padding: 3rem 1.5rem;
+            }
+          }
+
+          .creative-info-section::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            left: -10%;
+            width: 50%;
+            height: 50%;
+            background: radial-gradient(circle, rgba(129, 205, 191, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            filter: blur(40px);
+          }
+
+          .gb-info-title {
+            font-family: 'Bellefair', Georgia, serif;
+            font-size: 2.5rem;
+            color: var(--blue-deep);
+            text-align: center;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+          }
+
+          .gb-info-desc {
+            text-align: center;
+            color: var(--text-2);
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 3.5rem auto;
+            position: relative;
+            z-index: 2;
+          }
+
+
+
+          @media (max-width: 991px) {}
+
+
+
+
+
+          .anatomy-hotspot {
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+            transform-origin: center;
+          }
+
+          .anatomy-hotspot:hover {
+            transform: scale(1.15);
+            filter: brightness(1.3);
+          }
+
+          .hotspot-pulse {
+            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+          }
+
+          @keyframes pulse-ring {
+            0% {
+              stroke-width: 4;
+              stroke-opacity: 0.8;
+            }
+
+            100% {
+              stroke-width: 25;
+              stroke-opacity: 0;
+            }
+          }
+
+          .gb-info-hotspots {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5rem;
+          }
+
+
+
+
+
+          @media (max-width: 991px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+          /* --- MOBILE PADDING FIXES --- */
+          .risk-card {
+            padding: 1.5rem 1.25rem !important;
+          }
+
+          .four-f-item {
+            padding: 1rem !important;
+          }
+
+          @media (max-width: 768px) {
+            .diag-box {
+              padding: 2rem 1.25rem !important;
+            }
+
+            .tech-card {
+              padding: 1.75rem 1.25rem !important;
+            }
+
+            .finance-card {
+              padding: 1.75rem 1.25rem !important;
+              border-radius: 1.5rem !important;
+            }
+
+            .creative-info-section {
+              padding: 2rem 1.25rem !important;
+            }
+
+            .gb-section {
+              padding: 2.5rem 0 !important;
+            }
+
+            .gb-journey-card {
+              padding: 1.5rem 1.25rem !important;
+            }
+
+            .diet-modern-card {
+              padding: 1.75rem 1.25rem !important;
+            }
+
+          }
+        </style>
         <div style="position: relative; display: inline-block; width: 100%; text-align: center;">
           <h3 class="gb-info-title"
             style="text-align: center; display: flex; justify-content: center; align-items: center;"><i
@@ -1908,44 +2256,50 @@
         <div class="gb-info-anatomy-grid">
           <!-- Left: High-Precision SVG Diagram -->
           <div class="gb-anatomy-svg-box">
-            <img alt="Laparoscopic Surgery Anatomy" class="gb-anatomy-svg" src="assets/img/laparoscopic-anatomy-infographic.png"
+            <img alt="Laparoscopic Surgery Anatomy" class="gb-anatomy-svg"
+              src="assets/img/sketch_laparoscopic_abdomen_1786011745049.png"
               style="width:100%; height:auto; display:block;" />
           </div>
           <!-- Right: Interactive Explanatory Cards -->
           <div class="gb-info-hotspots">
             <div class="gb-hotspot-card active"
-              onclick="this.parentElement.querySelectorAll('.gb-hotspot-card').forEach(el=&gt;el.classList.remove('active')); this.classList.add('active');">
+              onclick="this.parentElement.querySelectorAll('.gb-hotspot-card').forEach(el=>el.classList.remove('active')); this.classList.add('active');">
               <div class="gb-hotspot-num">1</div>
               <div class="gb-hotspot-text">
                 <h4>Minimally Invasive</h4>
-                <p>Instead of a large, painful open cut, laparoscopic surgery relies on small keyhole incisions, minimizing tissue damage and reducing postoperative pain significantly.</p>
+                <p>Instead of a large, painful open cut, laparoscopic surgery relies on small keyhole incisions,
+                  minimizing tissue damage and reducing postoperative pain significantly.</p>
               </div>
             </div>
             <div class="gb-hotspot-card"
-              onclick="this.parentElement.querySelectorAll('.gb-hotspot-card').forEach(el=&gt;el.classList.remove('active')); this.classList.add('active');">
+              onclick="this.parentElement.querySelectorAll('.gb-hotspot-card').forEach(el=>el.classList.remove('active')); this.classList.add('active');">
               <div class="gb-hotspot-num">2</div>
               <div class="gb-hotspot-text">
                 <h4>High-Definition Clarity</h4>
-                <p>A laparoscope equipped with a high-definition camera is inserted, projecting the internal anatomy onto a screen in real-time, allowing the surgeon unparalleled visibility.</p>
+                <p>A laparoscope equipped with a high-definition camera is inserted, projecting the internal anatomy
+                  onto a screen in real-time, allowing the surgeon unparalleled visibility.</p>
               </div>
             </div>
             <div class="gb-hotspot-card"
-              onclick="this.parentElement.querySelectorAll('.gb-hotspot-card').forEach(el=&gt;el.classList.remove('active')); this.classList.add('active');">
+              onclick="this.parentElement.querySelectorAll('.gb-hotspot-card').forEach(el=>el.classList.remove('active')); this.classList.add('active');">
               <div class="gb-hotspot-num">3</div>
               <div class="gb-hotspot-text">
                 <h4>Dr. Peters' Expertise</h4>
-                <p>Utilizing both single-incision laparoscopic surgery (SILS) and the ERAS protocol, Dr. Peters ensures swift operations with fewer complications and an accelerated recovery timeline.</p>
+                <p>Utilizing both single-incision laparoscopic surgery (SILS) and the ERAS protocol, Dr. Peters ensures
+                  swift operations with fewer complications and an accelerated recovery timeline.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </div>
+    </div>
   </section>
   <section class="gb-section" id="technique" style="background-color: #f0f7ff;">
-    <div class="gb-sketch-watermark"
+    <!-- <div class="gb-sketch-watermark"
       style="background-image: url('assets/img/sketch_robotic_surgery_1786011760417.png'); width: 500px; height: 500px; top: 15%; left: -5%; transform: rotate(3deg) scaleX(-1);">
-    </div>
+    </div> -->
     <div class="container">
       <div class="gb-section-header">
         <span class="gb-section-tag">World-Class Precision</span>
@@ -2137,46 +2491,57 @@
         .tech-robotic .tech-list i {
           color: #F6E05E;
         }
-      
-    /* --- MOBILE PADDING FIXES --- */
-      .risk-card { padding: 1.5rem 1.25rem !important; }
-      .four-f-item { padding: 1rem !important; }
-    @media (max-width: 768px) {
-      .diag-box {
-        padding: 2rem 1.25rem !important;
-      }
-      .tech-card {
-        padding: 1.75rem 1.25rem !important;
-      }
-      .finance-card {
-        padding: 1.75rem 1.25rem !important;
-        border-radius: 1.5rem !important;
-      }
-      .creative-info-section {
-        padding: 2rem 1.25rem !important;
-      }
-      .gb-section {
-        padding: 2.5rem 0 !important;
-      }
-      .gb-journey-card {
-        padding: 1.5rem 1.25rem !important;
-      }
-      .diet-modern-card {
-        padding: 1.75rem 1.25rem !important;
-      }
-      .gb-hotspot-card {
-        padding: 1.5rem 1.25rem !important;
-      }
-    }
-    
-  </style>
+
+        /* --- MOBILE PADDING FIXES --- */
+        .risk-card {
+          padding: 1.5rem 1.25rem !important;
+        }
+
+        .four-f-item {
+          padding: 1rem !important;
+        }
+
+        @media (max-width: 768px) {
+          .diag-box {
+            padding: 2rem 1.25rem !important;
+          }
+
+          .tech-card {
+            padding: 1.75rem 1.25rem !important;
+          }
+
+          .finance-card {
+            padding: 1.75rem 1.25rem !important;
+            border-radius: 1.5rem !important;
+          }
+
+          .creative-info-section {
+            padding: 2rem 1.25rem !important;
+          }
+
+          .gb-section {
+            padding: 2.5rem 0 !important;
+          }
+
+          .gb-journey-card {
+            padding: 1.5rem 1.25rem !important;
+          }
+
+          .diet-modern-card {
+            padding: 1.75rem 1.25rem !important;
+          }
+
+        }
+      </style>
       <div class="tech-grid">
         <!-- 4K Laparoscopic -->
         <div class="tech-card tech-laparoscopic">
           <img alt="4K Laparoscopic Tower" src="assets/img/4K-HD-Laparoscopic.webp"
             style="width: 100%; height: 250px; border-radius: 1rem; margin-bottom: 2rem; object-fit: cover; box-shadow: 0 15px 35px rgba(0,0,0,0.1);" />
           <h3 class="tech-title">4K HD Laparoscopic Surgery</h3>
-          <p class="tech-desc">Through tiny keyholes (less than half an inch), a high-definition 4K camera and specialized micro-instruments are introduced. This allows for intricate surgeries like gallbladder or appendix removal with unmatched clarity.</p>
+          <p class="tech-desc">Through tiny keyholes (less than half an inch), a high-definition 4K camera and
+            specialized micro-instruments are introduced. This allows for intricate surgeries like gallbladder or
+            appendix removal with unmatched clarity.</p>
           <ul class="tech-list">
             <li><i class="fa-solid fa-check-circle"></i> Virtually invisible post-operative scars</li>
             <li><i class="fa-solid fa-check-circle"></i> Minimal tissue trauma and zero muscle division</li>
@@ -2189,7 +2554,9 @@
           <img alt="Da Vinci Robotic Console" src="assets/img/Da-Vinci-Robotic.webp"
             style="width: 100%; height: 250px; border-radius: 1rem; margin-bottom: 2rem; object-fit: cover; box-shadow: 0 20px 40px rgba(0,0,0,0.4);" />
           <h3 class="tech-title">Da Vinci Robotic Surgery</h3>
-          <p class="tech-desc">For complex procedures, the advanced Da Vinci Xi Robotic System provides 3D high-definition magnified optics and 360-degree wristed articulation, giving the surgeon greater flexibility and control.</p>
+          <p class="tech-desc">For complex procedures, the advanced Da Vinci Xi Robotic System provides 3D
+            high-definition magnified optics and 360-degree wristed articulation, giving the surgeon greater flexibility
+            and control.</p>
           <ul class="tech-list">
             <li><i class="fa-solid fa-check-circle"></i> Unmatched 10x 3D stereoscopic depth perception</li>
             <li><i class="fa-solid fa-check-circle"></i> Micro-wristed instrumentation eliminates all tremor</li>
@@ -2366,39 +2733,48 @@
         .cvs-safe ul {
           color: #F0FFF4;
         }
-      
-    /* --- MOBILE PADDING FIXES --- */
-      .risk-card { padding: 1.5rem 1.25rem !important; }
-      .four-f-item { padding: 1rem !important; }
-    @media (max-width: 768px) {
-      .diag-box {
-        padding: 2rem 1.25rem !important;
-      }
-      .tech-card {
-        padding: 1.75rem 1.25rem !important;
-      }
-      .finance-card {
-        padding: 1.75rem 1.25rem !important;
-        border-radius: 1.5rem !important;
-      }
-      .creative-info-section {
-        padding: 2rem 1.25rem !important;
-      }
-      .gb-section {
-        padding: 2.5rem 0 !important;
-      }
-      .gb-journey-card {
-        padding: 1.5rem 1.25rem !important;
-      }
-      .diet-modern-card {
-        padding: 1.75rem 1.25rem !important;
-      }
-      .gb-hotspot-card {
-        padding: 1.5rem 1.25rem !important;
-      }
-    }
-    
-  </style>
+
+        /* --- MOBILE PADDING FIXES --- */
+        .risk-card {
+          padding: 1.5rem 1.25rem !important;
+        }
+
+        .four-f-item {
+          padding: 1rem !important;
+        }
+
+        @media (max-width: 768px) {
+          .diag-box {
+            padding: 2rem 1.25rem !important;
+          }
+
+          .tech-card {
+            padding: 1.75rem 1.25rem !important;
+          }
+
+          .finance-card {
+            padding: 1.75rem 1.25rem !important;
+            border-radius: 1.5rem !important;
+          }
+
+          .creative-info-section {
+            padding: 2rem 1.25rem !important;
+          }
+
+          .gb-section {
+            padding: 2.5rem 0 !important;
+          }
+
+          .gb-journey-card {
+            padding: 1.5rem 1.25rem !important;
+          }
+
+          .diet-modern-card {
+            padding: 1.75rem 1.25rem !important;
+          }
+
+        }
+      </style>
       <!-- <div class="cvs-suite">
         <div class="cvs-suite-layout">
           <div>
@@ -2455,7 +2831,7 @@
               </ul>
             </div>
             
-            <a href="#consult" class="btn btn-gold" onclick="showBookAnApptmForm(); return false;" style="margin-top: 1rem; width: 100%; font-size: 1.1rem; padding: 1.2rem;">Get Expert Opinion Today</a>
+            <a href="#consult" class="btn btn-gold" style="margin-top: 1rem; width: 100%; font-size: 1.1rem; padding: 1.2rem;">Get Expert Opinion Today</a>
           </div>
         </div>
       </div> -->
@@ -2539,7 +2915,7 @@
           <!-- Signature Line + CTAs -->
           <div class="about-footer">
             <div class="about-ctas">
-              <a class="btn btn-outline" href="#appointment">Book Consultation â†’</a>
+              <a class="btn btn-outline" href="#appointment">Book Consultation &rarr;</a>
             </div>
           </div>
         </div>
@@ -2678,39 +3054,48 @@
             z-index: 3;
           }
         }
-      
-    /* --- MOBILE PADDING FIXES --- */
-      .risk-card { padding: 1.5rem 1.25rem !important; }
-      .four-f-item { padding: 1rem !important; }
-    @media (max-width: 768px) {
-      .diag-box {
-        padding: 2rem 1.25rem !important;
-      }
-      .tech-card {
-        padding: 1.75rem 1.25rem !important;
-      }
-      .finance-card {
-        padding: 1.75rem 1.25rem !important;
-        border-radius: 1.5rem !important;
-      }
-      .creative-info-section {
-        padding: 2rem 1.25rem !important;
-      }
-      .gb-section {
-        padding: 2.5rem 0 !important;
-      }
-      .gb-journey-card {
-        padding: 1.5rem 1.25rem !important;
-      }
-      .diet-modern-card {
-        padding: 1.75rem 1.25rem !important;
-      }
-      .gb-hotspot-card {
-        padding: 1.5rem 1.25rem !important;
-      }
-    }
-    
-  </style>
+
+        /* --- MOBILE PADDING FIXES --- */
+        .risk-card {
+          padding: 1.5rem 1.25rem !important;
+        }
+
+        .four-f-item {
+          padding: 1rem !important;
+        }
+
+        @media (max-width: 768px) {
+          .diag-box {
+            padding: 2rem 1.25rem !important;
+          }
+
+          .tech-card {
+            padding: 1.75rem 1.25rem !important;
+          }
+
+          .finance-card {
+            padding: 1.75rem 1.25rem !important;
+            border-radius: 1.5rem !important;
+          }
+
+          .creative-info-section {
+            padding: 2rem 1.25rem !important;
+          }
+
+          .gb-section {
+            padding: 2.5rem 0 !important;
+          }
+
+          .gb-journey-card {
+            padding: 1.5rem 1.25rem !important;
+          }
+
+          .diet-modern-card {
+            padding: 1.75rem 1.25rem !important;
+          }
+
+        }
+      </style>
       <div class="gb-journey-grid">
         <div class="gb-journey-card">
           <div class="gb-j-icon"><i class="fa-solid fa-hospital-user"></i></div>
@@ -2823,39 +3208,48 @@
             grid-template-columns: 1fr;
           }
         }
-      
-    /* --- MOBILE PADDING FIXES --- */
-      .risk-card { padding: 1.5rem 1.25rem !important; }
-      .four-f-item { padding: 1rem !important; }
-    @media (max-width: 768px) {
-      .diag-box {
-        padding: 2rem 1.25rem !important;
-      }
-      .tech-card {
-        padding: 1.75rem 1.25rem !important;
-      }
-      .finance-card {
-        padding: 1.75rem 1.25rem !important;
-        border-radius: 1.5rem !important;
-      }
-      .creative-info-section {
-        padding: 2rem 1.25rem !important;
-      }
-      .gb-section {
-        padding: 2.5rem 0 !important;
-      }
-      .gb-journey-card {
-        padding: 1.5rem 1.25rem !important;
-      }
-      .diet-modern-card {
-        padding: 1.75rem 1.25rem !important;
-      }
-      .gb-hotspot-card {
-        padding: 1.5rem 1.25rem !important;
-      }
-    }
-    
-  </style>
+
+        /* --- MOBILE PADDING FIXES --- */
+        .risk-card {
+          padding: 1.5rem 1.25rem !important;
+        }
+
+        .four-f-item {
+          padding: 1rem !important;
+        }
+
+        @media (max-width: 768px) {
+          .diag-box {
+            padding: 2rem 1.25rem !important;
+          }
+
+          .tech-card {
+            padding: 1.75rem 1.25rem !important;
+          }
+
+          .finance-card {
+            padding: 1.75rem 1.25rem !important;
+            border-radius: 1.5rem !important;
+          }
+
+          .creative-info-section {
+            padding: 2rem 1.25rem !important;
+          }
+
+          .gb-section {
+            padding: 2.5rem 0 !important;
+          }
+
+          .gb-journey-card {
+            padding: 1.5rem 1.25rem !important;
+          }
+
+          .diet-modern-card {
+            padding: 1.75rem 1.25rem !important;
+          }
+
+        }
+      </style>
 
       <div class="diet-modern-grid">
         <div class="diet-modern-card">
@@ -3098,39 +3492,48 @@
           background: rgba(0, 0, 0, 0.15);
           border: 1px solid rgba(255, 255, 255, 0.1);
         }
-      
-    /* --- MOBILE PADDING FIXES --- */
-      .risk-card { padding: 1.5rem 1.25rem !important; }
-      .four-f-item { padding: 1rem !important; }
-    @media (max-width: 768px) {
-      .diag-box {
-        padding: 2rem 1.25rem !important;
-      }
-      .tech-card {
-        padding: 1.75rem 1.25rem !important;
-      }
-      .finance-card {
-        padding: 1.75rem 1.25rem !important;
-        border-radius: 1.5rem !important;
-      }
-      .creative-info-section {
-        padding: 2rem 1.25rem !important;
-      }
-      .gb-section {
-        padding: 2.5rem 0 !important;
-      }
-      .gb-journey-card {
-        padding: 1.5rem 1.25rem !important;
-      }
-      .diet-modern-card {
-        padding: 1.75rem 1.25rem !important;
-      }
-      .gb-hotspot-card {
-        padding: 1.5rem 1.25rem !important;
-      }
-    }
-    
-  </style>
+
+        /* --- MOBILE PADDING FIXES --- */
+        .risk-card {
+          padding: 1.5rem 1.25rem !important;
+        }
+
+        .four-f-item {
+          padding: 1rem !important;
+        }
+
+        @media (max-width: 768px) {
+          .diag-box {
+            padding: 2rem 1.25rem !important;
+          }
+
+          .tech-card {
+            padding: 1.75rem 1.25rem !important;
+          }
+
+          .finance-card {
+            padding: 1.75rem 1.25rem !important;
+            border-radius: 1.5rem !important;
+          }
+
+          .creative-info-section {
+            padding: 2rem 1.25rem !important;
+          }
+
+          .gb-section {
+            padding: 2.5rem 0 !important;
+          }
+
+          .gb-journey-card {
+            padding: 1.5rem 1.25rem !important;
+          }
+
+          .diet-modern-card {
+            padding: 1.75rem 1.25rem !important;
+          }
+
+        }
+      </style>
       <div class="finance-grid">
         <div class="finance-card cost-card">
           <div class="finance-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
@@ -3190,8 +3593,7 @@
     </div>
   </section>
   <section class="gb-section" id="faqs" style="background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);">
-    <div class="gb-sketch-watermark"
-      style="background-image: url('assets/img/sketch_person_thinking_gold_1785489153300.png'); width: 450px; height: 450px; top: 15%; left: 5%; right: auto; mix-blend-mode: multiply;
+    <div class="gb-sketch-watermark" style="background-image: url('assets/img/sketch_person_thinking_gold_1785489153300.png'); width: 450px; height: 450px; top: 15%; left: 5%; right: auto; mix-blend-mode: multiply;
       opacity: 0.6; filter: sepia(1) hue-rotate(180deg) saturate(4); transform: rotate(-5deg); opacity: 0.8;">
     </div>
     <div class="container">
@@ -3212,7 +3614,8 @@
             </svg>
           </summary>
           <div class="service-faq-ans">
-            <p style="margin: 0;">Laparoscopic surgery offers numerous advantages including smaller incisions, reduced pain, faster recovery times, and less scarring compared to traditional open surgery.</p>
+            <p style="margin: 0;">Laparoscopic surgery offers numerous advantages including smaller incisions, reduced
+              pain, faster recovery times, and less scarring compared to traditional open surgery.</p>
           </div>
         </details>
         <details class="service-faq-item">
@@ -3223,11 +3626,12 @@
             </svg>
           </summary>
           <div class="service-faq-ans">
-            <p style="margin: 0;">Laparoscopic surgery generally does not require lifelong dietary restrictions. You will gradually resume a normal, healthy diet as recommended by Dr. Peters.</p>
-              metabolism and caloric burning rate remain entirely unchanged. However, many patients who were previously
-              skipping meals or eating poorly out of fear of gallstone pain suddenly find they can enjoy food
-              comfortably after surgery. Maintaining a balanced diet and regular exercise ensures healthy weight
-              management.</p>
+            <p style="margin: 0;">Laparoscopic surgery generally does not require lifelong dietary restrictions. You
+              will gradually resume a normal, healthy diet as recommended by Dr. Peters.</p>
+            metabolism and caloric burning rate remain entirely unchanged. However, many patients who were previously
+            skipping meals or eating poorly out of fear of gallstone pain suddenly find they can enjoy food
+            comfortably after surgery. Maintaining a balanced diet and regular exercise ensures healthy weight
+            management.</p>
           </div>
         </details>
         <details class="service-faq-item">
@@ -3242,7 +3646,7 @@
               mandatory for everyone. However, prophylactic (preventive) laparoscopic cholecystectomy is strongly
               recommended if: (1) you have large stones exceeding 2 to 3 cm, (2) you have small multiple stones under 3
               This approach prevents complications and ensures rapid recovery.
-              </p>
+            </p>
           </div>
         </details>
         <details class="service-faq-item">
@@ -3267,16 +3671,19 @@
             </svg>
           </summary>
           <div class="service-faq-ans">
-            <p style="margin: 0;">Yes, laparoscopic surgery is considered the gold standard for many abdominal procedures, offering a much higher safety profile and lower complication rate compared to traditional open surgery.
+            <p style="margin: 0;">Yes, laparoscopic surgery is considered the gold standard for many abdominal
+              procedures, offering a much higher safety profile and lower complication rate compared to traditional open
+              surgery.
               When performed by an expert like Dr. Peters, risks are minimal.</p>
-              instances (less than 0.5% of cases), a small stone may form inside the bile ducts (primary CBD stones) due
-              to slow bile transit, which is easily managed via endoscopy (ERCP) without surgery.</p>
+            instances (less than 0.5% of cases), a small stone may form inside the bile ducts (primary CBD stones) due
+            to slow bile transit, which is easily managed via endoscopy (ERCP) without surgery.</p>
           </div>
         </details>
         <details class="service-faq-item">
           <summary>
-            <span>Why choose Dr. Atul Peters at Max Smart Super Speciality Hospital, Saket for laparoscopic surgery?</span>
+            <span>Why choose Dr. Atul Peters at Max Smart Super Speciality Hospital, Saket for laparoscopic
               surgery?</span>
+            surgery?</span>
             <svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="20">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
@@ -3442,7 +3849,7 @@
               </div>
               <div class="appt-field">
                 <label for="gb-message">Message</label>
-                <textarea id="gb-message" name="message" placeholder="How can we help you– rows="4"></textarea>
+                <textarea id="gb-message" name="message" placeholder="How can we help you– rows=" 4"></textarea>
               </div>
               <button class="appt-submit" type="submit">
                 <span>Request Expert Consultation</span>
@@ -3547,8 +3954,3 @@
 </body>
 
 </html>
-
-
-
-
-
