@@ -141,4 +141,20 @@ document.write(`<!-- ============================================
       </div>
     </div>
   </div>
-</footer>`);
+</footer>
+
+<!-- TEMPORARY LINKS SECTION -->
+<section class="temp-links" style="padding: 2rem; background: #0f172a; text-align: center; border-top: 1px solid rgba(255,255,255,0.1);">
+  <h4 style="margin-bottom: 1rem; color: #fff;">Temporary Links</h4>
+  <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+    <a href="https://atul-peters.vercel.app/contact.html" style="color: #38bdf8; text-decoration: underline;">Contact</a>
+    <a href="https://atul-peters.vercel.app/laparoscopic-surgery-in-delhi.html" style="color: #38bdf8; text-decoration: underline;">Laparoscopic Surgery</a>
+    <a href="https://atul-peters.vercel.app/best-gallbladder-surgery-in-delhi.html" style="color: #38bdf8; text-decoration: underline;">Gallbladder Surgery</a>
+    <a href="https://atul-peters.vercel.app/hernia-surgery-in-delhi.html" style="color: #38bdf8; text-decoration: underline;">Hernia Surgery</a>
+    <a href="https://atul-peters.vercel.app/best-appendix-surgery-in-delhi-india.html" style="color: #38bdf8; text-decoration: underline;">Appendix Surgery</a>
+    <a href="https://atul-peters.vercel.app/weight-loss-surgery/mini-gastric-bypass.html" style="color: #38bdf8; text-decoration: underline;">Mini Gastric Bypass</a>
+    <a href="https://atul-peters.vercel.app/weight-loss-surgery/sleeve-gastrectomy.html" style="color: #38bdf8; text-decoration: underline;">Sleeve Gastrectomy</a>
+    <a href="https://atul-peters.vercel.app/roux-en-y-gastric-bypass.html" style="color: #38bdf8; text-decoration: underline;">Roux-en-Y Gastric Bypass</a>
+  </div>
+</section>
+`);
