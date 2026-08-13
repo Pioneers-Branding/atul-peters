@@ -14,7 +14,7 @@ document.write(`<!-- ============================================
 
     <!-- Centered big logo + tagline -->
     <div class="footer-hero">
-      <a href="${basePath}index.html" class="footer-logo-big" aria-label="Dr. Atul Peters - Home">
+      <a href="#" class="footer-logo-big" aria-label="Dr. Atul Peters - Home">
         <img src="https://www.atulpeters.com/front/img/logo-04.png" alt="Dr. Atul Peters" class="footer-logo-img"
           onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 60%22%3E%3Ctext x=%22100%22 y=%2240%22 text-anchor=%22middle%22 font-family=%22Georgia%22 font-size=%2230%22 fill=%22%23fff%22%3EDr. Atul Peters%3C/text%3E%3C/svg%3E'">
       </a>
@@ -53,53 +53,53 @@ document.write(`<!-- ============================================
       <div class="footer-col">
         <h4>Bariatric &amp; Metabolic</h4>
         <ul class="footer-links">
-          <li><a href="${basePath}roux-en-y-gastric-bypass.html"><span class="footer-link-dot"></span>Gastric Bypass</a></li>
-          <li><a href="${basePath}weight-loss-surgery/sleeve-gastrectomy.html"><span class="footer-link-dot"></span>Sleeve Gastrectomy</a></li>
-          <li><a href="${basePath}weight-loss-surgery/mini-gastric-bypass.html"><span class="footer-link-dot"></span>Mini Gastric Bypass</a></li>
-          <li><a href="${basePath}surgery-for-diabetes/overview.html"><span class="footer-link-dot"></span>Surgery for Diabetes</a></li>
-          <li><a href="${basePath}weight-loss-surgery-in-delhi.html"><span class="footer-link-dot"></span>WLS in Delhi NCR</a></li>
-          <li><a href="${basePath}weight-loss-surgery/other-laparoscopic-procedures.html"><span class="footer-link-dot"></span>Revision Surgery</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Gastric Bypass</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Sleeve Gastrectomy</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Mini Gastric Bypass</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Surgery for Diabetes</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>WLS in Delhi NCR</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Revision Surgery</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4>General &amp; Robotic</h4>
         <ul class="footer-links">
-          <li><a href="${basePath}other-surgeries/robotic-surgery.html"><span class="footer-link-dot"></span>Robotic Surgery</a></li>
-          <li><a href="${basePath}other-surgeries/laparoscopic-cholecystectomy.html"><span class="footer-link-dot"></span>Gallbladder Surgery</a></li>
-          <li><a href="${basePath}other-surgeries/laparoscopic-hernioplasty-ventral-inguinal.html"><span class="footer-link-dot"></span>Hernia Repair (eTEP/TAR)</a></li>
-          <li><a href="${basePath}other-surgeries/fundoplication-for-gastro-esophageal-reflux-disease.html"><span class="footer-link-dot"></span>GERD &amp; Reflux Surgery</a></li>
-          <li><a href="${basePath}other-surgeries/laparoscopic-appendicectomy.html"><span class="footer-link-dot"></span>Appendix Surgery</a></li>
-          <li><a href="${basePath}other-surgeries/piles-hemorrhoids.html"><span class="footer-link-dot"></span>Laser Piles Surgery (LHP)</a></li>
-          <li><a href="${basePath}other-surgeries/rectal-prolapse.html"><span class="footer-link-dot"></span>Rectal Prolapse (LVMR)</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Robotic Surgery</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Gallbladder Surgery</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Hernia Repair (eTEP/TAR)</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>GERD &amp; Reflux Surgery</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Appendix Surgery</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Laser Piles Surgery (LHP)</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Rectal Prolapse (LVMR)</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4>Delhi NCR Services</h4>
         <ul class="footer-links">
-          <li><a href="${basePath}weight-loss-surgery-in-delhi.html"><span class="footer-link-dot"></span>Weight Loss Surgery</a></li>
-          <li><a href="${basePath}hernia-surgery-in-delhi.html"><span class="footer-link-dot"></span>Hernia Surgery</a></li>
-          <li><a href="${basePath}laparoscopic-surgery-in-delhi.html"><span class="footer-link-dot"></span>Laparoscopic Surgery</a></li>
-          <li><a href="${basePath}robotic-surgery-in-delhi.html"><span class="footer-link-dot"></span>Robotic Surgery</a></li>
-          <li><a href="${basePath}best-appendix-surgery-in-delhi-india.html"><span class="footer-link-dot"></span>Appendix Surgery</a></li>
-          <li><a href="${basePath}best-gallbladder-surgery-in-delhi.html"><span class="footer-link-dot"></span>Gallbladder Surgery</a></li>
-          <li><a href="${basePath}east-delhi.html"><span class="footer-link-dot"></span>East Delhi Clinic</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Weight Loss Surgery</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Hernia Surgery</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Laparoscopic Surgery</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Robotic Surgery</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Appendix Surgery</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Gallbladder Surgery</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>East Delhi Clinic</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4>Quick Links</h4>
         <ul class="footer-links">
-          <li><a href="${basePath}about.html"><span class="footer-link-dot"></span>About Dr. Peters</a></li>
-          <li><a href="${basePath}workshop-conferences.html"><span class="footer-link-dot"></span>Workshops &amp; Conferences</a></li>
-          <li><a href="${basePath}events.html"><span class="footer-link-dot"></span>Events &amp; Workshops</a></li>
-          <li><a href="${basePath}publications.html"><span class="footer-link-dot"></span>Publications</a></li>
-          <li><a href="${basePath}weight-loss.html#success"><span class="footer-link-dot"></span>Success Stories</a></li>
-          <li><a href="${basePath}fitness-factory.html"><span class="footer-link-dot"></span>Peter's Fitness Factory</a></li>
-          <li><a href="${basePath}smart-weight-loss.html"><span class="footer-link-dot"></span>Smart Weight Loss</a></li>
-          <li><a href="${basePath}weight-loss.html#faq"><span class="footer-link-dot"></span>FAQ</a></li>
-          <li><a href="${basePath}contact.html"><span class="footer-link-dot"></span>Book Consultation</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>About Dr. Peters</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Workshops &amp; Conferences</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Events &amp; Workshops</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Publications</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Success Stories</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Peter's Fitness Factory</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Smart Weight Loss</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>FAQ</a></li>
+          <li><a href="#"><span class="footer-link-dot"></span>Book Consultation</a></li>
         </ul>
       </div>
 
@@ -125,7 +125,7 @@ document.write(`<!-- ============================================
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
               <circle cx="12" cy="10" r="3" />
             </svg>
-            <div><strong>Max Smart Super Speciality Hospital, Saket, </strong><span>New Delhi - 110017, India</span>
+            <div><strong>Max Smart Super Speciality Hospital, Saket – New Delhi, </strong><span>110017, India</span>
             </div>
           </div>
         </div>
@@ -135,9 +135,9 @@ document.write(`<!-- ============================================
     <div class="footer-bottom">
       <p>&copy; 2026 Dr. Atul Peters. All rights reserved.</p>
       <div class="footer-legal">
-        <a href="${basePath}privacy-policy.html">Privacy Policy</a>
-        <a href="${basePath}disclaimer.html">Terms of Service</a>
-        <a href="${basePath}index.html">Sitemap</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
       </div>
     </div>
   </div>

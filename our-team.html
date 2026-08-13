@@ -33,16 +33,42 @@
     .team-hero {
       padding: 6rem 0 3rem;
       text-align: center;
-      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      background: linear-gradient(135deg, #0A1E30 0%, #1a365d 50%, #154779 100%);
+      color: #FFFFFF;
+    }
+    .team-breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+    .team-breadcrumb a {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .team-breadcrumb a:hover {
+      color: #FFFFFF;
+    }
+    .team-breadcrumb-sep {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .team-breadcrumb-current {
+      color: #A8DECE;
+      font-weight: 600;
     }
     .team-hero h1 {
       font-size: 2.5rem;
-      color: #0A1E30;
+      color: #FFFFFF;
       margin-bottom: 1rem;
       font-family: 'Outfit', sans-serif;
     }
     .team-hero p {
-      color: #4a5568;
+      color: #E2E8F0;
       max-width: 600px;
       margin: 0 auto;
       font-size: 1.1rem;
@@ -113,6 +139,11 @@
 
   <section class="team-hero">
     <div class="container">
+      <nav class="team-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="team-breadcrumb-sep">/</span>
+        <span class="team-breadcrumb-current">Our Team</span>
+      </nav>
       <h1>Meet Our Team</h1>
       <p>Dedicated experts in Bariatric, Minimal Access, and Robotic Surgery providing world-class care and support.</p>
     </div>
@@ -130,10 +161,17 @@
           <div class="team-content">
             <h3 class="team-name">Dr. Yogesh Gautam</h3>
             <div class="team-role">Associate Director &amp; Advisor</div>
-            <div class="team-desc">
-              <p>Graduated from Delhi University (1978) with a Masters in Surgery and DNB (1983). A pioneer bringing Minimal Access Surgery to India with over 25 years of experience.</p>
-              <p>Trained over 100 surgical students and has been instrumental in setting up General and Laparoscopic Surgery departments in top tertiary care hospitals.</p>
-            </div>
+            <div class="team-desc"><p>Dr. Yogesh Gautam is Associate Director & Advisor at the Institute of Bariatric & Metabolic Surgery. He graduated from Delhi University in the year 1978 and did his Masters in surgery, and Diplomate of National Board Surgery in 1983 and ever since has trained more than 100 surgical students under his guidance. He is one of the pioneers to bring Minimal Access Surgery to India. He has more than 25 years of experience in Minimal Access Surgery and has participated in many teaching programs. He has been associated with tertiary care hospitals such as Sir Ganga Ram Hospital, Batra Hospital and Max Hospital. In Kolmet Hospital, he is instrumental in setting up of the Department of General and Laparoscopic Surgery and leading the academic programmes. He is also an MBA in Healthcare from FMS, Delhi.</p>
+    <p>Memberships & Fellowships:</p>
+    <ul>
+        <li>International Federation for the Surgery of Obesity & Metabolic Disorders (IFSO)</li>
+        <li>Obesity Surgery Society of India (OSSI)</li>
+        <li>Society of American Gastrointestinal & Endoscopic Surgeons (SAGES)</li>
+        <li>Fellow - Indian Association of Gastrointestinal Endo surgeons (FIAGES)</li>
+        <li>Indian Association of Surgical Gastroenterologists</li>
+        <li>Asia Pacific Hernia Society (APHS)</li>
+        <li>Association of Surgeons of India (ASI)</li>
+    </ul></div>
             <div class="team-card-actions"><button class="read-more-btn">Read More</button></div>
           </div>
         </div>
@@ -146,10 +184,8 @@
           <div class="team-content">
             <h3 class="team-name">Dr. Atul Wadhwa</h3>
             <div class="team-role">Principal Consultant</div>
-            <div class="team-desc">
-              <p>Completed Masters in Surgery (1999) and Fellowship in Minimal Access Surgery under Padmashree Dr. P.K. Chowbey. Trained under Prof. Alfred Cuschieri (UK) in Upper GI Laparoscopic Surgery.</p>
-              <p>Active member of the robotic surgery team, trained in the da Vinci robotic system. Specializes in Minimally Invasive Hepato-biliary, Colo-rectal, and Bariatric Surgery.</p>
-            </div>
+            <div class="team-desc"><p>Dr. Atul Wadhwa Completed His Masters in Surgery From the University of Rajasthan in 1999, following Which He Joined Safdarjung Hospital as a Registrar. After Completing the Requisite Training as a Registrar, He Joined the Fellowship Programme in Minimal Access Surgery Under the Able Guidance of Padmashree Dr. P.K. Chowbey at Sir Ganga Ram Hospital. During His Tenure as a Fellow, He Gained Wide Experience in Basic and Advanced Laparoscopic Surgery. He Has Also Trained Under the Esteemed Prof. Alferd Cuscheri Dundee (UK) in the Field of Upper Gi Laparoscopic Surgery. He Has Authored Various Publications in Reputed International and National Journals and Has Received Best Paper Award. He Is Also Author of Various Chapters in Books on Minimal Access Surgery.he Had to His Credit of Being a Speaker at Various National Conferences. He Is an Active Member of National and International Associations of Laparoscopic and Endoscopic Surgery.</p>
+    <p>He Has Interest in Abdominal Surgery Including the Whole Spectrum From Minimally Invasive Hepato-biliary, Colo-rectal and Bariatric Surgery. He has been trained in the da Vinci robotic system and is an active member of robotic surgery team. He is presently working as principal consultant in the Dept. of Bariatric, Minimal Access & Robotic Surgery.</p></div>
             <div class="team-card-actions"><button class="read-more-btn">Read More</button></div>
           </div>
         </div>
@@ -162,10 +198,8 @@
           <div class="team-content">
             <h3 class="team-name">Dr. Shalabh Agarwal</h3>
             <div class="team-role">Senior Consultant</div>
-            <div class="team-desc">
-              <p>Fellow of the International Bariatric Club. Assisted over 1000 bariatric surgeries and holds a Fellowship in Hernia Surgery (FALS).</p>
-              <p>Certified ACLS/BLS provider by the American Heart Association. Special interest in data management, clinical outcomes, and surgical audits. Trained in the Da Vinci Robotic System.</p>
-            </div>
+            <div class="team-desc"><p>Dr. Shalabh Agarwal is Senior Consultant in the dept. of Bariatric, Minimal Access & Robotic Surgery. He was a surgical resident at Hindu Rao Hospital, Delhi, where he gained wide experience in general and laparoscopic Surgery. He has attended several specialized training courses in Minimal Access Surgeries in India, followed by Fellowship in Bariatric & Metabolic Surgery at our Institute. He has assisted more than 1000 bariatric surgeries. He was recently awarded the Fellowship by the International Bariatric Club, after successful completion of the advanced Bariatric Surgery course.</p>
+    <p>Dr. Shalabh is also a trained ACLS/BLS provider, certified by American Heart Association. He has special interest in data management and monitoring of clinical outcomes and surgical audits. He also holds Fellowship in Hernia Surgery (FALS) and a Masters course in Minimal Invasive Proctology by IMAST, Mumbai. He has been trained in the Da Vinci Robotic System and is an active member of the robotic surgery team.</p></div>
             <div class="team-card-actions"><button class="read-more-btn">Read More</button></div>
           </div>
         </div>
@@ -178,10 +212,9 @@
           <div class="team-content">
             <h3 class="team-name">Dr. Saurabh Goswami</h3>
             <div class="team-role">Senior Consultant</div>
-            <div class="team-desc">
-              <p>Holds prestigious fellowships (F.MAS, FALS, FIAGES). Specializes in laparoscopic and advanced abdominal surgery, breast, and colorectal surgeries.</p>
-              <p>Active member of the robotic surgery team. Leads specialized clinics addressing medical problems requiring surgical solutions specifically for women.</p>
-            </div>
+            <div class="team-desc"><p>Dr Saurabh Goswami is presently working as Senior Consultant at the Dept of Bariatric, Minimal Access & Robotic surgery. She began her academic journey completing MBBS from DYPMC, Pune followed by Masters in Gen Surgery from BVP, Pune. Dr. Saurabh holds prestigious fellowships - F.MAS, FALS, FIAGES further honing her expertise. She is also a trained ACLS/BLS provider, certified by American Heart Institute.</p>
+    <p>Throughout her career, she held pivotal roles in esteemed medical institutes such as PGIMSR ESI Hospital, Basaidarapur and Max Smart Super Speciality, Saket Dr. Saurabh has special interests in laparoscopic and advanced abdominal surgery, breast and colorectal surgeries.</p>
+    <p>She has been trained in the Da Vinci Robotic System and is an active member of the robotic surgery team. In addition to her skill set, she provides warmth and care to all the ladies with a smile. She also leads specialized clinics addressing medical problems requiring surgical solutions, in ladies.</p></div>
             <div class="team-card-actions"><button class="read-more-btn">Read More</button></div>
           </div>
         </div>
@@ -194,10 +227,9 @@
           <div class="team-content">
             <h3 class="team-name">Dr. Beena Arora, Ph. D.</h3>
             <div class="team-role">Chief Dietician</div>
-            <div class="team-desc">
-              <p>Ph.D. in Food and Nutrition (University of Delhi). Responsible for pre-operative nutritional assessments and post-operative nutritional care.</p>
-              <p>Leads the bariatric nutritional program and support groups. Faculty member for CICO and runs the non-surgical weight loss program &quot;Think Fit&quot;.</p>
-            </div>
+            <div class="team-desc"><p>Dr. Beena Arora is the Chief Dietician in the Department of Bariatric, Minimal Access, and Robotic Surgery. She holds a Ph.D. in Food and Nutrition from the University of Delhi, focusing on the nutritional profile and quality of life in bariatric surgery patients. With over two decades of experience, she has worked with reputed hospitals and academic institutions.</p> 
+    <p>Dr. Arora is responsible for pre-operative nutritional assessments and post-operative nutritional care of the patients. She leads the bariatric nutritional program and also is the key person responsible for organizing bariatric support groups. She also runs our non-surgical weight loss program "Think Fit", and specializes in the nutritional care of patients undergoing intra-gastric ballooning. Apart from her clinical duties, she is also involved in bariatric data management and research that underscores her commitment to advancing patient care. She also contributes in public health education through social media content writing and blogging.</p>
+    <p>She is a faculty member for the CICO (Certification In Integrated Care of Obesity), jointly run by OSSI (Obesity surgery society of India) and IFSO (International Federation for the Surgery of Obesity and Metabolic disorders) and holds life memberships in the IDA (Indian Dietetic Association), OSSI (Obesity and Metabolic Surgery Society of India), ADE (The Association of Diabetes Educators), and IAPEN (Indian Association for Parenteral and Enteral Nutrition).</p></div>
             <div class="team-card-actions"><button class="read-more-btn">Read More</button></div>
           </div>
         </div>
@@ -210,10 +242,7 @@
           <div class="team-content">
             <h3 class="team-name">Ms. Nalini Massey</h3>
             <div class="team-role">Program Manager</div>
-            <div class="team-desc">
-              <p>Associated with the institute for over 14 years. Primary contact person for patients, organizing workshops, CMEs, and academic activities.</p>
-              <p>Coordinates with all departments for smooth patient scheduling. Key role in handling international patients for travel, stay, and treatment coordination.</p>
-            </div>
+            <div class="team-desc"><p>Ms. Nalini is Program Manager at Institute of Bariatric & Metabolic Surgery and is associated with the institute for over 14 years now. She is the primary contact person for patients in person and is responsible for organizing workshops, CME's and all other marketing and academic activities for the institute. Also, works in coordination with the operation theatre staff, admission department, finance department, operations department, and inpatient personnel for smooth running of the institute and planning the patient's schedule. Further, her key role for the institute is to handle international patients, in terms of coordination for their travel, stay & treatment.</p></div>
             <div class="team-card-actions"><button class="read-more-btn">Read More</button></div>
           </div>
         </div>
@@ -276,7 +305,7 @@
       margin: auto;
       padding: 3rem;
       border-radius: 1.5rem;
-      max-width: 800px;
+      max-width: 1100px;
       width: 90%;
       position: relative;
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
@@ -307,7 +336,7 @@
       align-items: flex-start;
     }
     .team-modal-img-wrapper {
-      flex: 0 0 300px;
+      flex: 0 0 350px;
       border-radius: 1rem;
       overflow: hidden;
       box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);

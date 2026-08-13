@@ -1487,7 +1487,7 @@
         <div class="gb-quick-nav-item"><a href="#about">About Dr. Peters</a></div>
         <div class="gb-quick-nav-item"><a href="#journey">Recovery Timeline</a></div>
         <div class="gb-quick-nav-item"><a href="#diet">Diet &amp; Activities</a></div>
-        <div class="gb-quick-nav-item"><a href="#cost">Cost &amp; Insurance</a></div>
+        <div class="gb-quick-nav-item" style="display: none;"><a href="#cost">Cost &amp; Insurance</a></div>
         <div class="gb-quick-nav-item"><a href="#faqs">FAQs</a></div>
       </div>
     </div>
@@ -2213,7 +2213,7 @@
       </div>
     </div>
   </section>
-  <section class="gb-section" id="cost">
+  <section class="gb-section" id="cost" style="display: none;">
     <div class="container">
       <div class="gb-section-header">
         <span class="gb-section-tag">Transparent Care</span>
@@ -2856,7 +2856,13 @@
             if (link.getAttribute('href') === '#' + current) {
               link.classList.add('active');
               if (slider) {
-                link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                const navItem = link.closest('.gb-quick-nav-item, .wls-quick-nav-item');
+                if (navItem) {
+                  slider.scrollTo({
+                    left: navItem.offsetLeft - (slider.clientWidth / 2) + (navItem.clientWidth / 2),
+                    behavior: 'smooth'
+                  });
+                }
               }
             }
           });
