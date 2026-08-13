@@ -19,7 +19,7 @@ document.write(`<!-- ============================================
           onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 60%22%3E%3Ctext x=%22100%22 y=%2240%22 text-anchor=%22middle%22 font-family=%22Georgia%22 font-size=%2230%22 fill=%22%23fff%22%3EDr. Atul Peters%3C/text%3E%3C/svg%3E'">
       </a>
       <div class="footer-tagline-wrap">
-        <p class="footer-tagline">Compassionate surgical care, advanced bariatric, metabolic, robotic &amp; general surgical solutions, and lifelong wellness — guiding patients across India and beyond for over 25 years.
+        <p class="footer-tagline">Compassionate surgical care, advanced bariatric, metabolic, robotic &amp; general surgical solutions, and lifelong wellness — guiding patients across India and beyond for over three decades.
         </p>
       </div>
       <div class="footer-social">
@@ -125,7 +125,7 @@ document.write(`<!-- ============================================
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
               <circle cx="12" cy="10" r="3" />
             </svg>
-            <div><strong>Max Smart Super Speciality Hospital, Saket – New Delhi, </strong><span>110017, India</span>
+            <div><strong>Max Smart Super Speciality Hospital, Saket – New Delhi, </strong><span>India</span>
             </div>
           </div>
         </div>
